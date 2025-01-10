@@ -1,0 +1,30 @@
+{
+  "item.kubejs.microminer_t1": "§eSteel Plated Micro Miner [Tier One]",
+  "item.kubejs.microminer_t1.desc": "§7§oHarvests Titanium and other light metals from asteroids in the microverse.",
+
+  "item.kubejs.uv_tier_circuit": "UV-Tier Circuit",
+  "item.kubejs.zpm_tier_circuit": "ZPM-Tier Circuit",
+  "item.kubejs.uhv_tier_circuit": "UHV-Tier Circuit",
+  "item.kubejs.uev_tier_circuit": "UEV-Tier Circuit",
+  "item.kubejs.uiv_tier_circuit": "UIV-Tier Circuit",
+  "item.kubejs.max_tier_circuit": "MAX-Tier Circuit",
+  "item.kubejs.infinity_circuit.tooltip" : "Powered by Microverses!",
+  "item.kubejs.godium_processor.tooltip" : "The Beginning of The End",
+  "item.kubejs.godium_processor_assembly.tooltip" : "Can run vanilla Minecraft at a decent FPS",
+  "item.kubejs.godium_processor_computer.tooltip" : "Infinite Power",
+  "item.kubejs.godium_processor_mainframe.tooltip" : "The be-all end-all.",
+
+  "item.kubejs.ulv_universal_circuit": "ULV Universal Circuit",
+  "item.kubejs.lv_universal_circuit": "LV Universal Circuit",
+  "item.kubejs.mv_universal_circuit": "MV Universal Circuit",
+  "item.kubejs.hv_universal_circuit": "HV Universal Circuit",
+  "item.kubejs.ev_universal_circuit": "EV Universal Circuit",
+  "item.kubejs.iv_universal_circuit": "IV Universal Circuit",
+  "item.kubejs.luv_universal_circuit": "LUV Universal Circuit",
+  "item.kubejs.zpm_universal_circuit": "ZPM Universal Circuit",
+  "item.kubejs.uv_universal_circuit": "UV Universal Circuit",
+  "item.kubejs.uhv_universal_circuit": "UHV Universal Circuit",
+  "item.kubejs.uev_universal_circuit": "UEV Universal Circuit",
+  "item.kubejs.uiv_universal_circuit": "UIV Universal Circuit"
+}
+
