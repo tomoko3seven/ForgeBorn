@@ -10,11 +10,11 @@ recipes:
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: false
-  harderRods: false
+  harderRods: true
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
-  harderBrickRecipes: false
+  harderBrickRecipes: true
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
@@ -40,7 +40,7 @@ recipes:
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
-  hardMiscRecipes: false
+  hardMiscRecipes: true
 
   # Whether to make Glass related recipes harder. Default: true
   hardGlassRecipes: true
@@ -51,11 +51,11 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
-  hardAdvancedIronRecipes: false
+  hardAdvancedIronRecipes: true
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
-  hardDyeRecipes: false
+  hardDyeRecipes: true
 
   # Whether to remove charcoal smelting recipes from the vanilla furnace.
   # Default: true
@@ -83,7 +83,7 @@ recipes:
 
   # Whether to nerf machine controller recipes.
   # Default: false
-  hardMultiRecipes: false
+  hardMultiRecipes: true
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
@@ -92,7 +92,7 @@ recipes:
 worldgen:
   # Rubber Tree spawn chance (decimal % per chunk)
   # Default: 0.5
-  rubberTreeSpawnChance: 0.5
+  rubberTreeSpawnChance: 0.1
 
   # Should all Stone Types drop unique Ore Item Blocks?
   # Default: false (meaning only Stone, Netherrack, and Endstone)
@@ -101,7 +101,7 @@ worldgen:
   # Should Sand-like ores fall?
   # This includes gravel, sand, and red sand ores.
   # Default: false (no falling ores)
-  sandOresFall: false
+  sandOresFall: true
 
   # Whether to increase number of rolls for dungeon chests. Increases dungeon loot drastically.
   # Default: true
@@ -136,6 +136,10 @@ worldgen:
     # Make bedrock ore/fluid veins infinite?
     # Default: false
     infiniteBedrockOresFluids: false
+
+    # Generate ores indicators above ore veins
+    # Default: true
+    oreIndicators: true
 
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
@@ -179,10 +183,6 @@ machines:
   # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
   # Default: false
   harmlessActiveTransformers: false
-
-  # Divisor for Recipe Duration per Overclock.
-  # Default: 2.0
-  overclockDivisor: 2.5
 
   # Whether to play machine sounds while machines are active.
   # Default: true
@@ -230,13 +230,17 @@ machines:
   # Whether the machine's circuit slot need to be inserted a real circuit.
   ghostCircuit: true
 
-  # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
+  # Whether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
   # Default: false
   doBedrockOres: false
 
   # What Kind of material should the bedrock ore miner output?
   # Default: "raw"
   bedrockOreDropTagPrefix: raw
+
+  # The base amount of ticks per block for electric singleblock ore miners
+  # Default: 320
+  minerSpeed: 320
 
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false
@@ -277,11 +281,6 @@ machines:
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: false
   orderedAssemblyLineFluids: false
-
-  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
-  # When enabled it, Dual Hatch will can used to assemble line and so on.
-  # Need restart Minecraft to apply.
-  enableMoreDualHatchAbility: false
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
@@ -404,6 +403,11 @@ client:
     # Default: 0
     hudOffsetY: 0
 
+  renderer:
+    # Render fluids in multiblocks that support them?
+    # Default: true
+    renderFluids: true
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -481,11 +485,6 @@ gameplay:
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
 
-  # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
-  # WARNING: INCOMPLETE
-  # Default: false
-  enableCompass: false
-
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems
@@ -522,6 +521,17 @@ compat:
 
   # Config options regarding GTCEu compatibility with minimap mods
   minimap:
+    # Toggle specific map mod integration on/off (need to restart for this to take effect)
+    toggle:
+      # FTB Chunks integration enabled
+      ftbChunksIntegration: false
+
+      # Journey Map integration enabled
+      journeyMapIntegration: true
+
+      # Xaerox's map integration enabled
+      xaerosMapIntegration: true
+
     # The radius, in blocks, that picking up a surface rock will search for veins in.
     # -1 to disable.
     # Default: 24

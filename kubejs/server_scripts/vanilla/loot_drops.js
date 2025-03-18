@@ -6,10 +6,14 @@ LootJS.modifiers((event) => {
     .addEntityLootModifier("minecraft:enderman")
     .replaceLoot("minecraft:ender_pearl", "gtceu:ender_pearl_dust", true);
 
-    event
+  event
     .addEntityLootModifier("minecraft:zombified_piglin")
     .removeLoot("minecraft:gold_nugget");
-
+  
+  event
+    .addEntityLootModifier("minecraft:sheep")
+    .removeLoot("#minecraft:wool") 
+    .addLoot("kubejs:wool_clutch", 1, [1, 1]); 
     
   event
   .addEntityLootModifier("minecraft:iron_golem")

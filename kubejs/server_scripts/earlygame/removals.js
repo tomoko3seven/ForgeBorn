@@ -1,9 +1,8 @@
 ServerEvents.recipes(event => {
     //Deleting recipes
-    event.remove("minecraft:iron_sword");
-    event.remove("minecraft:golden_sword");
-    event.remove("minecraft:diamond_sword");
-    event.remove("minecraft:iron_shovel");
-    event.remove("minecraft:golden_shovel");
-    event.remove("minecraft:diamond_shovel");
+    event.remove({ output: 'minecraft:crafting_table' });
+    event.remove({ output: 'minecraft:furnace' })
+    event.remove({ output: '#minecraft:wool' })
+    event.remove({ output: '#minecraft:beds' })
+    event.remove({ output: 'farmersdelight:stove' })
 })

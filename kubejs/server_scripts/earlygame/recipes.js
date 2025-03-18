@@ -1,74 +1,95 @@
 ServerEvents.recipes(event => {
 // Recipes for beggining
-
-    
-
-        //Swords
 event.shaped(
-    'minecraft:diamond_sword', [
-        ' B ',
-        ' B ',
-        ' S '
+    'minecraft:crafting_table', [
+        'FF ',
+        'WW ',
+        '   '
     ], {
-        B: '#forge:plates/diamond',
-        S: 'minecraft:stick',
+        W: '#minecraft:logs',
+        F: 'minecraft:flint',
     }
-).id('minecraft:shaped/diamond_sword');
+);
+event.shaped(`kubejs:cobblestone_bricks`, ["SCS", "CBC", "SCS"], {
+    S: 'minecraft:cobblestone',
+    C: 'minecraft:clay_ball',
+    B: ['notreepunching:ceramic_water_bucket', '#forge:buckets/water']
+  });
+event.shaped(Item.of('minecraft:furnace'), [
+    'CCC',
+    'CRC',
+    'DDD'
+], {
+    C: 'minecraft:cobblestone',
+    D: '#forge:stone',
+    R: 'gtceu:raw_coal',
+});
+//Pre-Steam
+event.shaped(Item.of('minecraft:white_wool'), [
+    'AA ',
+    'AA ',
+    ' B '
+], {
+    A: 'kubejs:wool_clutch', 
+    B: Item.of('kubejs:needle', '{Damage:0}') 
+}).damageIngredient('kubejs:needle'); 
 
+  event.custom({
+    type: 'minecraft:smelting',
+    ingredient: { item: 'minecraft:iron_ore' },
+    result: 'minecraft:iron_ingot',
+    experience: 0.7,
+    cookingtime: 200,
+    conditions: [
+        {
+            type: 'forge:mod_loaded',
+            modid: 'gtceu'
+        }
+    ]
+}).id('kubejs:custom_furnace_smelting')
+//Steam
 event.shaped(
-    'minecraft:golden_sword', [
-        ' B ',
-        ' B ',
-        ' S '
+    'minecraft:campfire', [
+        ' S ',
+        'S S',
+        'SPS'
     ], {
-        B: '#forge:plates/gold',
-        S: 'minecraft:stick',
+        S: '#forge:rods/wooden',
+        P: '#forge:gems/coke',
     }
-).id('minecraft:shaped/golden_sword');
-
+);
+//LV
 event.shaped(
-    'minecraft:iron_sword', [
-        ' B ',
-        ' B ',
-        ' S '
+    'kubejs:needle', [
+        'BS ',
+        'F  ',
+        '   '
     ], {
-        B: '#forge:plates/iron',
-        S: 'minecraft:stick',
+        F: '#forge:tools/files',
+        S: '#forge:tools/saws',
+        B: 'minecraft:bone',
     }
-).id('minecraft:shaped/iron_sword')
-
- //Shovels
-
-        event.shaped(
-            'minecraft:diamond_shovel', [
-                ' B ',
-                ' S ',
-                ' S '
-            ], {
-                B: '#forge:plates/diamond',
-                S: 'minecraft:stick',
-            }
-        ).id('minecraft:shaped/diamond_shovel');
-        
-        event.shaped(
-            'minecraft:golden_shovel', [
-                ' B ',
-                ' S ',
-                ' S '
-            ], {
-                B: '#forge:plates/gold',
-                S: 'minecraft:stick',
-            }
-        ).id('minecraft:shaped/golden_shovel');
-        
-        event.shaped(
-            'minecraft:iron_shovel', [
-                ' B ',
-                ' S ',
-                ' S '
-            ], {
-                B: '#forge:plates/iron',
-                S: 'minecraft:stick',
-            }
-        ).id('minecraft:shaped/iron_shovel')
-})
+);
+//MV
+event.shaped(
+    'minecraft:spyglass', [
+        'L  ',
+        'R  ',
+        '   '
+    ], {
+        L: 'gtceu:glass_lens',
+        R: 'gtceu:copper_tiny_fluid_pipe',
+    }
+);
+//HV
+event.shaped('minecraft:white_bed', [
+    'WWW',
+    'FMF',
+    '   '
+  ], {
+    B: 'minecraft:white_wool',
+    M: '#forge:tools/mallets',
+    F: '#forge:fences/wooden'
+  }
+);
+});

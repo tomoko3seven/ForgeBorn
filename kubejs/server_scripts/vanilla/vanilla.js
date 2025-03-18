@@ -4,6 +4,28 @@ ServerEvents.recipes((event) => {
   event.remove({ id: "minecraft:blaze_powder" });
   event.remove({ id: "gtceu:shapeless/blaze_rod_to_powder" });
   event.remove({ id: "minecraft:ender_eye" });
+  event.remove({ output: /minecraft:\w+_bed/ });
+
+   // Список всех цветов кроватей
+   let colors = [
+    "white", "orange", "magenta", "light_blue", "yellow", "lime",
+    "pink", "gray", "light_gray", "cyan", "purple", "blue",
+    "brown", "green", "red", "black"
+];
+// Генерируем рецепты для каждой кровати
+colors.forEach(color => {
+  event.shaped(`minecraft:${color}_bed`, [
+      'WWW',
+      'PPP',
+      'MHF'
+  ], {
+      W: `minecraft:${color}_wool`, // Соответствующая шерсть
+      P: '#minecraft:planks', // Любые доски
+      M: '#forge:tools/mallets',
+      H: '#forge:tools/hammers',
+      F: '#forge:tools/files'
+  });
+});
 
   //Ghast Tear
   greg
