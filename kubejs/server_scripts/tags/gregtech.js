@@ -1,6 +1,4 @@
 ServerEvents.tags("item", (event) => {
-  event.add("forge:rods/long/hsla", "kubejs:hsla_steel_long_rod");
-  event.add("forge:springs/hsla", "kubejs:hsla_steel_spring");
   /*event.add('#forge:ingots/terra_steel', 'botania:terrasteel_ingot');
   event.add('#forge:ingots/mana_steel', 'botania:manasteel_ingot');
   event.add('#forge:ingots/elementium', 'botania:elementium_ingot');*/

@@ -6,23 +6,22 @@ ServerEvents.recipes((event) => {
   event.remove({ id: "minecraft:ender_eye" });
   event.remove({ output: /minecraft:\w+_bed/ });
 
-   // Список всех цветов кроватей
    let colors = [
     "white", "orange", "magenta", "light_blue", "yellow", "lime",
     "pink", "gray", "light_gray", "cyan", "purple", "blue",
     "brown", "green", "red", "black"
 ];
-// Генерируем рецепты для каждой кровати
 colors.forEach(color => {
   event.shaped(`minecraft:${color}_bed`, [
       'WWW',
-      'PPP',
+      'TPT',
       'MHF'
   ], {
-      W: `minecraft:${color}_wool`, // Соответствующая шерсть
-      P: '#minecraft:planks', // Любые доски
+      W: `minecraft:${color}_wool`, 
+      P: '#minecraft:planks',
       M: '#forge:tools/mallets',
       H: '#forge:tools/hammers',
+      T: 'gtceu:treated_wood_fence',
       F: '#forge:tools/files'
   });
 });
