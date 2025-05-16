@@ -1,7 +1,0 @@
-
-[sound]
-	#The sound when zombies make when they sprint
-	"Zombie Sound" = true
-	#horse zombie sprinting sound
-	"Horse Zombie Sound" = true
-
