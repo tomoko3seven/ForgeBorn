@@ -1139,7 +1139,7 @@
 		}
 		{
 			dependencies: ["3884187493BA916A"]
-			description: ["This mod is focused aroudn generating and harnessing mana produced by mystical flowers. You can find further documentation in this quest book and the Lexica Botania"]
+			description: ["This mod is focused around generating and harnessing mana produced by mystical flowers. You can find further documentation in this quest book and the Lexica Botania"]
 			id: "645FC277598EA984"
 			shape: "circle"
 			tasks: [{
