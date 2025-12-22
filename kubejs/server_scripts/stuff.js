@@ -1,7 +1,10 @@
-/*building gadgets, torchmaster, elevators, platforms, simple lights, paragliders, trash cans
-*/
+/*building gadgets, torchmaster, elevators, simple lights, paragliders, trash cans*/
 ServerEvents.recipes(event => {
 event.remove({ output: '@nopunching' })
+//Angel Ring
+event.remove({ output: '@angelring' })
+event.recipes.botania.runic_altar('angelring:angel_ring', ['kubejs:basic_botanical_circuit', 'kubejs:basic_botanical_circuit', 'kubejs:wind_tablet', 
+        'kubejs:wind_tablet', Item.of('botania:brew_vial').withNBT({Potion: "botania:feather_feet",}), 'minecraft:feather', 'minecraft:feather', '#forge:rings/rose_gold', 'minecraft:phantom_membrane'], 15000)
 //TORCHMASTER
 event.remove({ output: 'torchmaster:megatorch' })
 event.recipes.botania.runic_altar('torchmaster:megatorch', ['regions_unexplored:brimwood_log', 'regions_unexplored:brimwood_log', 'extendedcrafting:luminessence_block', 'gtceu:rose_gold_block', 'gtceu:rose_gold_block'], 3000)

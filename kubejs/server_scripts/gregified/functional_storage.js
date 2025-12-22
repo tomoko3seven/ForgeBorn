@@ -16,12 +16,28 @@ ServerEvents.recipes(event => {
     event.remove({output: "functionalstorage:collector_upgrade"});
     event.remove({output: "functionalstorage:puller_upgrade"});
     event.remove({output: "functionalstorage:pusher_upgrade"});
+    event.remove({output: 'functionalstorage:linking_tool'});
+    event.remove({output: 'functionalstorage:configuration_tool'});
 
     event.recipes.gtceu.forge_hammer("blank_upgrade")
     .itemInputs('gtceu:double_tin_plate')
     .itemOutputs('kubejs:blank_upgrade')
     .EUt(GTValues.VA[GTValues.ULV])
     .duration(20*3)
+
+    event.recipes.gtceu.assembler("kubejs:linking_tool")
+    .itemInputs('#forge:plates/polyethylene', '#gtceu:circuits/ulv')
+    .inputFluids('gtceu:blue_dye 90')
+    .itemOutputs('functionalstorage:linking_tool')
+    .EUt(GTValues.VA[GTValues.MV])
+    .duration(20*4)
+
+    event.recipes.gtceu.assembler('kubejs:configuration_tool')
+    .itemInputs('#forge:plates/polyethylene', '#gtceu:circuits/ulv')
+    .inputFluids('gtceu:green_dye 90')
+    .itemOutputs('functionalstorage:configuration_tool')
+    .EUt(GTValues.VA[GTValues.MV])
+    .duration(20*4)
 
     event.shaped(Item.of('functionalstorage:copper_upgrade'), [
         ' C ',

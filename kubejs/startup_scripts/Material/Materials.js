@@ -1,5 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
     //////////
+
+//ForgeBorn
 event.create('cobblestone')
         .color(0x8a8a8a)
         .ingot()
@@ -28,12 +30,24 @@ event.create('black_iron')
             GTMaterialFlags.GENERATE_LENS
         )
 
+event.create('black_quartz')
+        .color(0x4c636d)
+
+        .iconSet(GTMaterialIconSet.ROUGH)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING,
+        )
+
 event.create('mana_soldering_alloy')
         .color(0x191970)
         .ingot()
         .fluid()
 
-        .iconSet(GTMaterialIconSet.BRIGHT)
+        .iconSet(GTMaterialIconSet.DULL)
 
 
 
@@ -158,7 +172,7 @@ event.create('thaumium')
         .color(0x6a4fb3)
         .ingot()
 
-        .iconSet(GTMaterialIconSet.SHINY)
+        .iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -248,7 +262,7 @@ event.create('prismarine_infused_alloy')
         .color(0x4caea3)
         .ingot()
 
-        .iconSet(GTMaterialIconSet.SHINY)
+        .iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -263,7 +277,7 @@ event.create('grimsteel')
         .color(0x4b4e55)
         .ingot()
 
-        .iconSet(GTMaterialIconSet.METALLIC)
+        .iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -351,7 +365,7 @@ event.create('muspelheim')
         .color(0xff55cc)
         .ingot()
 
-        .iconSet(GTMaterialIconSet.BRIGHT)
+        .iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -365,7 +379,7 @@ event.create('niflheim')
         .color(0xff55cc)
         .ingot()
 
-        .iconSet(GTMaterialIconSet.BRIGHT)
+        .iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -403,4 +417,30 @@ event.create('gaia')
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
         )
+
+const alloys = [
+  { name: 'copper_alloy',     color: 0xff9c6a },
+  { name: 'energetic_alloy',  color: 0xffa500 },
+  { name: 'vibrant_alloy',    color: 0x7cff00 },
+  { name: 'redstone_alloy',   color: 0xb00000 },
+  { name: 'conductive_alloy',  color: 0x6b6b6b },
+  { name: 'pulsating_alloy',  color: 0x00ff9c },
+  { name: 'soularium',        color: 0x4b2a1f }
+]
+
+alloys.forEach(a => {
+  event.create(a.name)
+    .color(a.color)
+    .ingot()
+    .iconSet(GTMaterialIconSet.DULL)
+    .flags(
+      GTMaterialFlags.GENERATE_PLATE,
+      GTMaterialFlags.GENERATE_BOLT_SCREW,
+      GTMaterialFlags.GENERATE_ROD,
+      GTMaterialFlags.GENERATE_SPRING,
+      GTMaterialFlags.GENERATE_SPRING_SMALL,
+      GTMaterialFlags.NO_SMELTING,
+      GTMaterialFlags.NO_ORE_SMELTING
+    )
+})
 })
