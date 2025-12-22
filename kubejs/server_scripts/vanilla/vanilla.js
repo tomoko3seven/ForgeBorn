@@ -26,14 +26,6 @@ colors.forEach(color => {
   });
 });
 
-  //Ghast Tear
-  greg
-    .chemical_reactor("gtceu:ghast_tear")
-    .itemInputs("#forge:tiny_dusts/potassium", "#forge:tiny_dusts/lithium")
-    .inputFluids("gtceu:salt_water 1000")
-    .itemOutputs("minecraft:ghast_tear")
-    .duration(400)
-    .EUt(30);
   // Skeleton Skull
   greg
     .assembler("gtceu:skeleton_skull")
@@ -47,29 +39,7 @@ colors.forEach(color => {
     .itemInputs("#minecraft:dirt")
     .itemOutputs("bone")
     .duration(100)
-    .EUt(16);
-
-  // Prismarine
-  greg
-    .autoclave("gtceu:prismarine")
-    .itemInputs("minecraft:prismarine_crystals")
-    .inputFluids("minecraft:water 100")
-    .itemOutputs("prismarine_shard")
-    .duration(1200)
-    .EUt(24);
-  greg
-    .autoclave("gtceu:prismarine_distilled")
-    .itemInputs("minecraft:prismarine_crystals")
-    .inputFluids("gtceu:distilled_water 100")
-    .itemOutputs("prismarine_shard")
-    .duration(600)
-    .EUt(24);
-  greg
-    .macerator("gtceu:prismarine_crushed")
-    .itemInputs("minecraft:prismarine_shard")
-    .itemOutputs("prismarine_crystals")
-    .duration(120)
-    .EUt(2);
+    .EUt(8);
 
   // Slimeballs
   greg
@@ -124,40 +94,5 @@ colors.forEach(color => {
     ]
   );
 
-  // XP
-  greg
-    .large_chemical_reactor("gtceu:bottle_o_enchanting")
-    .itemInputs(
-      "glass_bottle",
-      "#forge:tiny_dusts/gold",
-      "#forge:tiny_dusts/sugar"
-    )
-    .inputFluids("water 100")
-    .itemOutputs("experience_bottle")
-    .duration(20)
-    .EUt(256);
 
-  // Nether Star
-  greg
-    .chemical_reactor("gtceu:nether_star")
-    .itemInputs("#forge:dusts/diamond", "#forge:dusts/iridium")
-    .inputFluids("gtceu:rocket_fuel 1000", "gtceu:nether_air 8000")
-    .itemOutputs("2x gtceu:nether_star_dust")
-    .duration(200)
-    .EUt(7680);
-
-  // Netherite
-  greg
-    .alloy_smelter("gtceu:better_netherite")
-    .itemInputs("2x netherite_scrap", "2x #forge:ingots/gold")
-    .itemOutputs("1x netherite_ingot")
-    .duration(150)
-    .EUt(100);
-
-  event.shaped(Item.of('minecraft:enchanted_book').enchant('minecraft:silk_touch', 1), ["RWR", "WBW", "RmR"], {
-    R: "#forge:plates/rubber",
-    W: "#minecraft:wool",
-    B: "minecraft:book",
-    m: "#forge:tools/mallets"
-  });
 });

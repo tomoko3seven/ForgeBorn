@@ -1,0 +1,274 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "how_to_play"
+	group: ""
+	id: "18C41535DCAC6BBF"
+	images: [
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/money"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "crust:textures/icon/heart_hc.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "legendarysurvivaloverhaul:textures/mob_effect/hot_food.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/cancel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "ars_nouveau:textures/gui/discord_tab.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/bone"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:item/book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "botania:item/cosmetic_questgiver_mark"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			height: 3.0d
+			image: "gui:textures/forgeborn.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 0.0d
+			y: -6.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This modpack is created around &9GregTech&r and is very closely related to it. Please read the entire &dchapter&r to be aware of the first &4difficulties&r. &eGood luck!&r"
+				""
+				"Please, don`t use cheats to travel or find ores. Build railways to veins and use prospection tools."
+				""
+				"&4ALPHA!!!&r"
+			]
+			icon: "kubejs:ancient_key"
+			id: "75F777073CF44FE1"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "1D0CE04CB1188C70"
+				title: "12"
+				type: "checkmark"
+			}]
+			title: "Welcome to &#E54612F&#E65B2Do&#E77049r&#E88464g&#E9997Fe&#E9AE9AB&#EAC3B6o&#EBD7D1r&#ECECECn!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: [
+				"The modpack contains enough mods to add or complicate existing gameplay. This is especially true for mobs. "
+				"Each creature here is &4very strong&r and can spawn as a &dmini-boss&r, so be very careful."
+				""
+				"Also important is that &2zombies&r and &acreepers&r are the most &4terrible&r enemies for you, since zombies can now run towards you, as well as notice you from a longer distance. Creepers, in turn, have a chance to spawn &9charged&r!"
+			]
+			id: "54ACCDA07EA6A5A8"
+			shape: "circle"
+			tasks: [{
+				id: "7FA4F8DC27EBEED3"
+				title: "Difficulty "
+				type: "checkmark"
+			}]
+			title: "Difficulty"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: [
+				"Most &6vanilla mechanics&r are disabled here so that there is no way to bypass the system or use &echeese&r."
+				""
+				"For example, this applies to &8golems&r. They do not drop iron, so that using &bdrills from GregTech&r and other things would be more &auseful&r."
+			]
+			id: "49E78D528CCC4185"
+			shape: "circle"
+			tasks: [{
+				id: "21ADD52C79926F22"
+				title: "Forbidden Things"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: [
+				"With the help of &cJEI&r &8(at the moment the modpack uses &bEMI&r)&r you can find out &ecrafting&r, &5method of obtaining&r, &3drops from mobs&r and in general &aabsolutely everything&r about any item!"
+				""
+				"If you have &4difficulties&r with the quest because you do not understand how to craft an item, read the &bquest&r carefully and look at crafting in &cJEI&r."
+			]
+			id: "6C05FB0557D90AA3"
+			shape: "circle"
+			subtitle: "Also read the quests!"
+			tasks: [{
+				id: "15FC93231195D35D"
+				title: "Use JEI!"
+				type: "checkmark"
+			}]
+			title: "Use EMI!"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: ["I will try to &bclearly&r explain all the mod and custom context in the &cquests&r, so read each &cquest&r carefully, because there is not only &4lore&r, &5an explanation of how to get something&r, but also &etips&r!"]
+			id: "36AE05474CD9A7E3"
+			shape: "circle"
+			subtitle: "Also use EMI!"
+			tasks: [{
+				id: "6BA6F16B539F019A"
+				title: "Read The Quests"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: [
+				"&6Croptopia&r, &eFarmer`s Delight&r and its addons add a huge amount of food to the modpack. Why, if regular food is enough?"
+				""
+				"(Deprecated!)The &4hunger&r and &cfood system&r in general has been redesigned. Now you get extra hearts for new food, and you also can’t eat the same thing over and over again. Sooner or later, the character will simply get tired of the monotonous food."
+				""
+				"I advise you to take care of the issue of preparing food in advance, so as not to have problems with this in the future."
+			]
+			id: "7CFB5D995F888658"
+			shape: "circle"
+			tasks: [{
+				id: "3D8D7F61943B1DCA"
+				title: "Make a Food Farm"
+				type: "checkmark"
+			}]
+			title: "A Food Problem"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: [
+				"We will be very glad if you join our &bdiscord&r server. There you can find communication, inspiration and just watch the further development of both this project and others."
+				""
+				"&bhttps://discord.gg/EUuEZqu5DV&r"
+			]
+			id: "796742688E69107E"
+			shape: "circle"
+			tasks: [{
+				id: "29B96E7121198853"
+				title: "Discord"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: ["ForgeBorn is modpack, that i really love and i put a lot of effort in it. I don`t want to gain money from this actually, but if it`s possible - i will. So if anyone likes this project - here`s my Patreon."]
+			id: "4FB6296D6B8214C6"
+			shape: "circle"
+			subtitle: "It`s my hobby."
+			tasks: [{
+				id: "603AE1928A3A5858"
+				title: "Patreon"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: [
+				"The &6temperature&r and &bthirst&r system added by the &2Legendary Survival Overhaul&r mod forces the player to stress more and take care of his well-being and more wisely choose a place of residence with more accessible sources of everything."
+				""
+				"In future you will able to get rid of thirst, temperature and hunger."
+			]
+			id: "2821B0EA0E6B28A5"
+			shape: "circle"
+			tasks: [{
+				id: "359896C4161DB8B3"
+				title: "Other"
+				type: "checkmark"
+			}]
+			title: "Temperature and Thirsty"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: ["You can also open issues on github. It will be very useful, and all information will be documented."]
+			hide_dependency_lines: true
+			id: "40F72CE8CE8846D7"
+			shape: "rsquare"
+			tasks: [{
+				id: "7B28B342CF78F053"
+				type: "checkmark"
+			}]
+			title: "GitHub"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			dependency_requirement: "all_started"
+			description: ["The modpack is in development, so please report any bugs and problems in the discord. Thank you."]
+			hide_dependency_lines: true
+			id: "46C8BD544441AC5D"
+			shape: "rsquare"
+			tasks: [{
+				id: "288247F4A6F6BD68"
+				type: "checkmark"
+			}]
+			title: "Bugs and Problems"
+			x: 6.5d
+			y: -1.0d
+		}
+	]
+	title: "Introduction"
+}

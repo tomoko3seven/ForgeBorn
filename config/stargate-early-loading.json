@@ -1,0 +1,97 @@
+/*
+ * Pay attention to formatting the config, no trailing commas (,) are allowed,
+ * because [a,] is for GSON (library for JSON) the same as [a, null].
+ * On the other hand, comments are allowed, but again,
+ * make sure that by commenting a line you wont create a trailing comma.
+ *
+ * The root directory for paths is either mods classpath
+ * or gameInstance/config/stargate-early-loading
+ * When the same file is present in both locations,
+ * the config directory has priority, allowing to override default files.
+ */
+{
+  // List of stargate variants from which a random one should be chosen for each loading.
+  "variants": {
+    "milky_way": [
+      "default",
+      "promo",
+      "sg-1"
+    ],
+    "universe": [
+      "default"
+    ],
+    "pegasus": [
+      "default"
+    ]
+  },
+  // Adds a logo image to the center of the loading screen
+  // The logo will be in the same place where the Mojang logo will appear
+  // The image will fade out before the Mojang logo appears
+  "logo_texture": null,
+  // set the size of the logo image in pixels
+  "logo_width": 0,
+  "logo_height": 0,
+  // fallback values for variants without an explicit dialing strategy
+  /*
+  Available strategies:
+  - MilkyWay2Step: the ring rotates, chevrons take 2 steps to lock
+  - MilkyWay3Step: the ring rotates, chevrons take 3 steps to lock
+  - PegasusLoading: Symbols are lighting up according to the Minecraft loading progress
+  - PegasusLoop: Symbols are lighting up in an endless loop one at a time, chevrons are locking according to Minecraft loading progress
+  - UniverseLoading: Symbols are lighting up according to the Minecraft loading progress, the whole gate is rotating, all chevrons are active
+  - UniverseLoop: Chevrons are locking according to loading progress, the whole gate is rotating, no symbol is engaged
+  - UniverseLoopAllEngaged: All chevrons are active, the whole gate is rotating, no symbol is engaged
+  */
+  "default_dialing_strategies": {
+    "milky_way": "MilkyWay3Step",
+    "pegasus": "PegasusLoading",
+    "universe": "UniverseLoading"
+  },
+  // List of symbols referenced from stargate variants
+  "symbols": {
+    "milky_way:terra": {
+      // Number of symbols in the file
+      "size": 38,
+      // Relative path from the classpath/config directory
+      "file": "assets/symbols/milky_way/terra.png"
+    },
+    "pegasus:lantea": {
+      "size": 38,
+      "file": "assets/symbols/pegasus/lantea.png"
+    },
+    "universal": {
+      "size": 35,
+      "file": "assets/symbols/universal/universal.png"
+    }
+  },
+  // List of backgrounds from which a random one should be chosen for each loading
+  "backgrounds": [
+    "assets/backgrounds/abydos_2moons.png",
+    "assets/backgrounds/abydos_3moons.png",
+    "assets/backgrounds/dark_sky.png",
+    "assets/backgrounds/lantea.png",
+    "assets/backgrounds/milkyway.png",
+    "assets/backgrounds/milkyway2.png",
+    "assets/backgrounds/milkyway3.png",
+    "assets/backgrounds/milkyway_side.png",
+    "assets/backgrounds/pegasus.png",
+    "assets/backgrounds/pegasus2.png",
+    "assets/backgrounds/blackhole_bottom.png",
+    "assets/backgrounds/blackhole.png"
+  ],
+  "chevron_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ]
+  // alternatively you can use
+  // "chevron_order": [1, 2, 3, 6, 7, 8, 4, 5]
+
+  // The game will automatically exit with Code 13 after the loading is completed (enable only for debugging)
+  // "exit_after_load": true
+}

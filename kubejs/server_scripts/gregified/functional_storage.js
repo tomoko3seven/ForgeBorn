@@ -17,22 +17,29 @@ ServerEvents.recipes(event => {
     event.remove({output: "functionalstorage:puller_upgrade"});
     event.remove({output: "functionalstorage:pusher_upgrade"});
 
+    event.recipes.gtceu.forge_hammer("blank_upgrade")
+    .itemInputs('gtceu:double_tin_plate')
+    .itemOutputs('kubejs:blank_upgrade')
+    .EUt(GTValues.VA[GTValues.ULV])
+    .duration(20*3)
+
     event.shaped(Item.of('functionalstorage:copper_upgrade'), [
         ' C ',
         'CTC',
         ' C '
     ], {
-        C: 'gtceu:double_copper_plate',
-        T: 'gtceu:tin_plate'
+        C: 'gtceu:stainless_steel_plate',
+        T: 'kubejs:blank_upgrade'
     });
 
     event.shaped(Item.of('functionalstorage:iron_downgrade'), [
         ' C ',
-        'CTC',
+        'DTD',
         ' C '
     ], {
         C: 'gtceu:iron_plate',
-        T: 'gtceu:tin_plate'
+        D: 'gtceu:double_iron_plate',
+        T: 'kubejs:blank_upgrade'
     });
 
     event.shaped(Item.of('functionalstorage:void_upgrade'), [
@@ -40,8 +47,8 @@ ServerEvents.recipes(event => {
         'OSO',
         ' O '
     ], {
-        O: 'minecraft:obsidian',
-        S: 'gtceu:soul_infused_plate'
+        O: 'gtceu:obsidian_plate',
+        S: 'kubejs:blank_upgrade'
     });
 
     event.shaped(Item.of('functionalstorage:puller_upgrade'), [
@@ -51,7 +58,7 @@ ServerEvents.recipes(event => {
     ], {
         C: 'gtceu:lv_conveyor_module',
         T: 'gtceu:tin_plate',
-        R: 'minecraft:redstone'
+        R: 'kubejs:blank_upgrade'
     });
 
     event.shaped(Item.of('functionalstorage:pusher_upgrade'), [
@@ -61,16 +68,17 @@ ServerEvents.recipes(event => {
     ], {
         C: 'gtceu:lv_conveyor_module',
         T: 'gtceu:tin_plate',
-        R: 'minecraft:redstone'
+        R: 'kubejs:blank_upgrade'
     });
 
     event.shaped(Item.of('functionalstorage:storage_controller'), [
-        'SSS',
+        'PPP',
         'GCG',
-        'SSS'
+        'SPS'
     ], {
         S: 'minecraft:stone',
         G: '#forge:glass',
+        P: 'gtceu:iron_plate',
         C: '#gtceu:circuits/lv'
     });
 

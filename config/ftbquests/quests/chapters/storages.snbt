@@ -1,0 +1,35 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storages"
+	group: "636E307A32BE4F2F"
+	icon: "ironchest:trapped_diamond_chest"
+	id: "1442278DFF9B041F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7D31C0A5C4379794"
+			tasks: [{
+				id: "35384D94D4F847D9"
+				title: "1114444"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D31C0A5C4379794"]
+			icon: "classicpipes:request_pipe"
+			id: "6765A96C0CE98A0A"
+			tasks: [{
+				id: "77402E3CB289B49C"
+				title: "3"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+	]
+	title: "Storages"
+}

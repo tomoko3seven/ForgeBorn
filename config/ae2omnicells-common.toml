@@ -1,0 +1,66 @@
+#是否允许OMNI系列元件存入MEK的放射性化学品，DENY_SPENT代表仅阻止用尽的核废料，其余为字面意思
+#Allowed Values: ALLOW, DENY_SPENT, DENY_ALL
+mek_radial_chemical_check = "DENY_SPENT"
+
+["CPU Processors Config (Must restart your game after changed)"]
+	#Range: 0 ~ 81920
+	omni_coprocessor_1k = 4
+	#Range: 0 ~ 81920
+	omni_coprocessor_4k = 4
+	#Range: 0 ~ 81920
+	omni_coprocessor_16k = 4
+	#Range: 0 ~ 81920
+	omni_coprocessor_64k = 4
+	#Range: 0 ~ 81920
+	omni_coprocessor_256k = 4
+	#Range: 0 ~ 81920
+	omni_coprocessor_1m = 8
+	#Range: 0 ~ 81920
+	omni_coprocessor_4m = 8
+	#Range: 0 ~ 81920
+	omni_coprocessor_16m = 8
+	#Range: 0 ~ 81920
+	omni_coprocessor_64m = 8
+	#Range: 0 ~ 81920
+	omni_coprocessor_256m = 8
+	#Range: 0 ~ 81920
+	complex_coprocessor_1k = 0
+	#Range: 0 ~ 81920
+	complex_coprocessor_4k = 1
+	#Range: 0 ~ 81920
+	complex_coprocessor_16k = 2
+	#Range: 0 ~ 81920
+	complex_coprocessor_64k = 4
+	#Range: 0 ~ 81920
+	complex_coprocessor_256k = 8
+	#Range: 0 ~ 81920
+	complex_coprocessor_1m = 16
+	#Range: 0 ~ 81920
+	complex_coprocessor_4m = 32
+	#Range: 0 ~ 81920
+	complex_coprocessor_16m = 64
+	#Range: 0 ~ 81920
+	complex_coprocessor_64m = 128
+	#Range: 0 ~ 81920
+	complex_coprocessor_256m = 256
+	#Range: 0 ~ 81920
+	quantum_coprocessor_1k = 512
+	#Range: 0 ~ 81920
+	quantum_coprocessor_4k = 512
+	#Range: 0 ~ 81920
+	quantum_coprocessor_16k = 1024
+	#Range: 0 ~ 81920
+	quantum_coprocessor_64k = 1024
+	#Range: 0 ~ 81920
+	quantum_coprocessor_256k = 2048
+	#Range: 0 ~ 81920
+	quantum_coprocessor_1m = 2048
+	#Range: 0 ~ 81920
+	quantum_coprocessor_4m = 4096
+	#Range: 0 ~ 81920
+	quantum_coprocessor_16m = 4096
+	#Range: 0 ~ 81920
+	quantum_coprocessor_64m = 8192
+	#Range: 0 ~ 81920
+	quantum_coprocessor_256m = 8192
+

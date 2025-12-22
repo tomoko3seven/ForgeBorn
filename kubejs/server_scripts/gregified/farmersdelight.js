@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
   event.remove({ output: 'farmersdelight:cooking_pot' });
+  event.remove({ output: 'farmersdelight:stove' });
     event.shaped('farmersdelight:stove', [
         'PPP',
         'WCW',

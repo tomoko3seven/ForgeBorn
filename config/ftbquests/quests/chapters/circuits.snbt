@@ -1,0 +1,132 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "circuits"
+	group: "288DA1F92F7C0A7A"
+	id: "53ABDE03846D7EE5"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7D843443FC410D22"
+			tasks: [{
+				id: "7F6629A82CB714F1"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "582D5EB40A570494"
+			tasks: [{
+				id: "71922D4CEA1FEC6B"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			id: "6717E1832E208C56"
+			tasks: [{
+				id: "223F4700000B0D18"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "2558A2AF36038836"
+			tasks: [{
+				id: "757AC369648FC51B"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "577DC3F0FBBEB5DE"
+			tasks: [{
+				id: "2742AA2E07EB26E4"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "4DA7C02F93E98E45"
+			tasks: [{
+				id: "77409CBBF75AC319"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "31274A8A8B5054F8"
+			tasks: [{
+				id: "2B9652570821830B"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "38BE36FF8579DD8A"
+			tasks: [{
+				id: "2DFB2A8975862B21"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			id: "3C064489BE8753A7"
+			tasks: [{
+				id: "2E2901ED8CC3808A"
+				item: "kubejs:matter_processor_computer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			id: "684A569BD06F766A"
+			tasks: [{
+				id: "0781DDE9011E05A6"
+				item: "kubejs:infinity_processor_computer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			id: "12BF8C9CAD66B3FB"
+			tasks: [{
+				id: "2D3F399962FFEC40"
+				item: "kubejs:godium_processor_computer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			id: "6213DAF5431648BF"
+			tasks: [{
+				id: "44CDE99C58956565"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+	]
+	title: "Circuits"
+}

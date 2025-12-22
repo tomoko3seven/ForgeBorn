@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
       ], {
         P: '#forge:plates/iron',
         D: '#forge:double_plates/iron',
-        C: '#c:chests'
+        C: 'minecraft:chest'
       }
     );
     event.shaped('ironchest:gold_chest', [

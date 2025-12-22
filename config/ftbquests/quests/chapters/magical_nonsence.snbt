@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magical_nonsence"
+	group: "636E307A32BE4F2F"
+	icon: "botania:corporea_spark"
+	id: "3F3FC3473C6552A8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "13AEB74FE6126618"
+		tasks: [{
+			id: "58B8D05C8F3C29D1"
+			title: "Starting with Botania"
+			type: "checkmark"
+		}]
+		x: -10.0d
+		y: 0.5d
+	}]
+	title: "Magical Nonsence"
+}

@@ -1,0 +1,861 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "gtceu"
+	group: "693226878D58638A"
+	icon: {
+		Count: 1
+		id: "gtceu:flint_pickaxe"
+		tag: {
+			Damage: 0
+			DisallowContainerItem: 0b
+			GT.Behaviours: {
+				TorchPlacing: 1b
+			}
+			GT.Tool: {
+				DefaultEnchantments: [ ]
+				HarvestLevel: 2
+				MaxDamage: 63
+				ToolSpeed: 5.5f
+			}
+			HideFlags: 2
+		}
+	}
+	id: "2F8B0AFE317363C9"
+	images: [
+		{
+			height: 5.0d
+			image: "biomeswevegone:item/bwg_logo"
+			rotation: 0.0d
+			width: 5.0d
+			x: -11.37789115646261d
+			y: -3.261904761904759d
+		}
+		{
+			height: 1.0d
+			image: "gui:textures/stone_age.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -6.5d
+			y: -5.5d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["75F777073CF44FE1"]
+			description: ["*You woke up. Trees are blooming around, animals are running. You know this feeling, but you don't remember where it came from*"]
+			icon: "gtceu:overworld_marker"
+			id: "25289F9E8AE01C29"
+			rewards: [{
+				id: "7D397DBE2D8352FB"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			shape: "none"
+			size: 4.0d
+			tasks: [{
+				id: "6C1F570DB9013DE7"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			title: "???"
+			x: -11.330272108843573d
+			y: -3.1666666666666643d
+		}
+		{
+			dependencies: ["3A2F8256E86DC5F3"]
+			description: ["You need fuel, which can be wood until you find a vein of coal. Coal, by the way, also needs to be smelted, but you will get twice as much as you dig up."]
+			id: "2BDB8A9D6652280D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "54044B132D392FF2"
+				table_id: 3104703034975322137L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			size: 1.6d
+			subtitle: "My generation didnt use this type of technologies"
+			tasks: [{
+				count: 2L
+				id: "0EE4EC1D5790B899"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Regular Furnace"
+			x: -4.1040816326530525d
+			y: -2.1250000000000004d
+		}
+		{
+			dependencies: ["4D45BC7F9DD88068"]
+			description: ["Workbench can be made by right clicking with flint knife in main hand on the any log."]
+			id: "2E957F7E56FB198B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "472CA51C353D7506"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6C9338DA3B62C617"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "3611108A19025CD1"
+					item: {
+						Count: 1
+						id: "farmersdelight:flint_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -8.397959183673441d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2BDB8A9D6652280D"]
+			description: ["Make more furnaces... Just trust me... Also you will need storage to store your resources, so make some chests!"]
+			icon: "gtceu:gregification_hazard_sign_block"
+			id: "35B066A54CBF2667"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "560301183A1456EB"
+				title: "Thanks"
+				type: "checkmark"
+			}]
+			title: "My advice"
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2E957F7E56FB198B"]
+			description: ["GregTech is a mod that requires you to have a lot of resources and different items. You need to store them somewhere, so PLEASE don't skimp on your comfort."]
+			id: "616B494E248D88E9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "78B6FAAEA18781B1"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 2L
+				id: "5ADD2C27F86570F8"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			x: -8.39999999999999d
+			y: -2.089965986394582d
+		}
+		{
+			dependencies: ["2BDB8A9D6652280D"]
+			description: ["The way to bronze things. "]
+			id: "21DC8ECCCE15351E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "037214AB6697B4A4"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 64L
+					id: "30A81ED622B5BD6E"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "33B74211D5552B02"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+			]
+			title: "Copper and Tin"
+			x: -2.6112244897959256d
+			y: -2.130782312925206d
+		}
+		{
+			dependencies: ["3A4B35AA64F60096"]
+			description: ["I advise you to chunk load your base and constantly go dig more and more resources for bronze. This will help you pass the next stage painlessly."]
+			id: "73FB99F48CD69B25"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7413C47D595C5E08"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "0EF826B3602C9D7A"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: -1.6914965986394768d
+			y: 0.4882653061224077d
+		}
+		{
+			dependencies: ["21DC8ECCCE15351E"]
+			description: ["Before macerator.. there was MORTAR"]
+			id: "5D617C14AF5E2ABB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1066862C11B2110A"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3483875B351DE5B2"
+				item: {
+					Count: 1
+					id: "gtceu:flint_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -0.9037414965986363d
+			y: -2.1171768707483456d
+		}
+		{
+			dependencies: ["5D617C14AF5E2ABB"]
+			description: ["Dusts"]
+			id: "3A4B35AA64F60096"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A989700CE1D8EF8"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [
+				{
+					id: "0BEEA92177941273"
+					item: "gtceu:copper_dust"
+					type: "item"
+				}
+				{
+					id: "30F47203B58E4E81"
+					item: "gtceu:tin_dust"
+					type: "item"
+				}
+			]
+			x: -1.7486394557823195d
+			y: -0.9212585034014039d
+		}
+		{
+			dependencies: ["73FB99F48CD69B25"]
+			description: [
+				"Enviroment on this planet is very dangerous. I`ve seen some of undead-like creatures. I don`t even know is this people or just... Okay, forget."
+				""
+				"Just remember, that they are very dangerous and i reccomend not to fight them."
+				""
+				"(Pack has some mods for mobs, for example \"Special Mobs\". Same mod as GTNH...)"
+			]
+			icon: "gtceu:generic_hazard_sign_block"
+			id: "1C89A53F7F783DD8"
+			optional: true
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "38ADE836A58139B7"
+				title: "Combat"
+				type: "checkmark"
+			}]
+			title: "Some information about enviroment"
+			x: -0.024829931972820435d
+			y: -0.845068027210928d
+		}
+		{
+			dependencies: ["73FB99F48CD69B25"]
+			description: ["I would advise making 4+ of these, to tide you over untill you can make solar boilers or liquid boilers, which have the highest steam production rates."]
+			id: "661E54379A9CDCEE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C43EB47BF9A403C"
+					table_id: 3104703034975322137L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A9EAD0416F76147"
+					table_id: 3104703034975322137L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "716C6B9776446223"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -3.5486394557823395d
+			y: -0.1307823129252128d
+		}
+		{
+			dependencies: ["661E54379A9CDCEE"]
+			description: [
+				"You can use coke coal for fuel. Also install one or two primitive water pumps."
+				""
+				"Solar Boilers and water pupms = ezzz steam"
+			]
+			icon: "gtceu:coal_ore"
+			id: "17129C8BFD37D280"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "461388F28B25C08B"
+				type: "checkmark"
+			}]
+			title: "Best source of fuel"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["661E54379A9CDCEE"]
+			description: ["Try to keep an eye on your boilers at all times as they can explode."]
+			icon: "minecraft:tnt"
+			id: "444465561D4DDBED"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "69001923313C2026"
+				type: "checkmark"
+			}]
+			title: "BLOW UP - Radiohead"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E957F7E56FB198B"]
+			description: [
+				"The only tools available before iron (except Tinkers)."
+				""
+				"Also, these tools have Fire Aspect on them, so you can easily kill some animals and cook their meet at the same time."
+			]
+			id: "1DC5DC64F32415C0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5DF8FFDE73316019"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "180A8FC08EAA95AC"
+					item: {
+						Count: 1
+						id: "gtceu:flint_pickaxe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EF80FDEA666EA30"
+					item: {
+						Count: 1
+						id: "gtceu:flint_shovel"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43A4FCCBBC2C7631"
+					item: {
+						Count: 1
+						id: "gtceu:flint_sword"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							Enchantments: [{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}]
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 4.0f
+								AttackSpeed: -2.4f
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7822EAB0BFFE6531"
+					item: {
+						Count: 1
+						id: "gtceu:cobblestone_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 75
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Flint Tools"
+			x: -6.799999999999999d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1DC5DC64F32415C0"]
+			description: ["The most terrible block for you, but I assure you - you can do as much as you need.."]
+			id: "3A2F8256E86DC5F3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3406A2FF07C3E50F"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 3L
+				id: "2C908975E0CB0F2F"
+				item: { Count: 3, id: "twigs:cobblestone_bricks" }
+				type: "item"
+			}]
+			x: -5.5763605442176996d
+			y: -1.1606292517006978d
+		}
+		{
+			dependencies: ["2BDB8A9D6652280D"]
+			description: ["Your first iron. I recommend spending it on tools and digging up more right away. You're going to need a LOT of resources soon."]
+			id: "7E1A7E5E5EE9A90B"
+			shape: "hexagon"
+			tasks: [{
+				count: 32L
+				id: "49FB13511CAC5816"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -2.5925170068027112d
+			y: -3.8200680272108802d
+		}
+		{
+			dependencies: ["7D91E90383656163"]
+			description: ["Coke? Charcoal? Creosote? These are all fuels that you get absolutely free. Coke ovens don't require fuel, so I recommend making 4 of them. Creosote can be used to make treated wood, and from that, a bed."]
+			id: "73488B39DFE88402"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "455F37A02E13602C"
+				table_id: 3104703034975322137L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "5D1136FFECC98AE8"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "2CD97B79FC621E9A"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+			]
+			x: -1.9000000000000006d
+			y: -5.820068027210878d
+		}
+		{
+			dependencies: ["73488B39DFE88402"]
+			description: ["i hate phantoms."]
+			icon: "minecraft:red_bed"
+			id: "090F40F78A79FCFC"
+			optional: true
+			rewards: [{
+				id: "3978E07FC3593ED8"
+				item: "paraglider:goddess_statue"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				icon: "minecraft:white_bed"
+				id: "581DE8EF6EC994F2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				title: "Any Bed"
+				type: "item"
+			}]
+			title: "BED TIME!"
+			x: -0.9217687074830059d
+			y: -6.999999999999998d
+		}
+		{
+			dependencies: ["73488B39DFE88402"]
+			description: ["rewardeeee"]
+			id: "1F63222433BCA468"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "49A5E9C73214700C"
+				item: "gtceu:coke_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 64L
+				id: "7ED9F31E52635F3F"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
+			x: -2.9000000000000012d
+			y: -6.999999999999998d
+		}
+		{
+			dependencies: [
+				"7E1A7E5E5EE9A90B"
+				"2BDB8A9D6652280D"
+			]
+			description: ["First GT tools! You`ll stick to them for a short while."]
+			id: "216757436BCABF06"
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [
+				{
+					id: "008480B0390C85F1"
+					item: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1758AB51FD8036A9"
+					item: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4892507DC6C1A477"
+					item: {
+						Count: 1
+						id: "gtceu:iron_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5AFC88E173C26E61"
+					item: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22500B0ED20ED128"
+					item: {
+						Count: 1
+						id: "gtceu:iron_saw"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -4.102721088435363d
+			y: -3.826870748299321d
+		}
+		{
+			dependencies: ["7E1A7E5E5EE9A90B"]
+			description: [
+				"You need this to make the compressed bricks, it doesn't use durability so don't worry about making more."
+				""
+				"The ammount of materials needed for the coke oven may seem like alot, but dont worry, all of these will soon be farmable in one way or another."
+			]
+			id: "610F433CFC55B005"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "12BC5C1295EC9090"
+				table_id: 3104703034975322137L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "037EDD17853E4799"
+					item: "gtceu:brick_wooden_form"
+					type: "item"
+				}
+				{
+					count: 105L
+					id: "563C64365BCE889F"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 175L
+					id: "41A0EDC07A8D327D"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
+			x: -1.117006802721095d
+			y: -3.8129251700680347d
+		}
+		{
+			dependencies: ["610F433CFC55B005"]
+			description: ["Once you have all these you can make the 26 coke oven bricks needed, 25 for the structure and 1 for the controller."]
+			id: "7D91E90383656163"
+			shape: "hexagon"
+			tasks: [{
+				count: 104L
+				id: "490F8770652E1AFF"
+				item: "gtceu:compressed_coke_clay"
+				type: "item"
+			}]
+			x: -0.40000000000000113d
+			y: -4.999999999999998d
+		}
+		{
+			dependencies: ["25289F9E8AE01C29"]
+			description: ["Break grass with hands to collect some plant fiber and make plant strings. "]
+			id: "41BA880BB1F7D39E"
+			tasks: [
+				{
+					count: 3L
+					id: "3673938C72076CA3"
+					item: { Count: 3, id: "kubejs:plant_fiber" }
+					type: "item"
+				}
+				{
+					id: "69BEEF2A369ECB7F"
+					item: "kubejs:plant_string"
+					type: "item"
+				}
+			]
+			x: -11.300000000000002d
+			y: -0.5000000000000007d
+		}
+		{
+			dependencies: ["41BA880BB1F7D39E"]
+			description: ["Make an axe to harvest wood."]
+			id: "4D45BC7F9DD88068"
+			tasks: [{
+				id: "5C5343F05640EC2B"
+				item: {
+					Count: 1
+					id: "gtceu:flint_axe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 2.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -9.9d
+			y: -0.5000000000000007d
+		}
+		{
+			dependencies: ["25289F9E8AE01C29"]
+			description: ["If you have some issues with temperature, than use these blocks. To power them use redstone."]
+			id: "3274C1D80BEC66C1"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "41FB43B36C9605F6"
+					item: "legendarysurvivaloverhaul:heater"
+					type: "item"
+				}
+				{
+					id: "52DC819E92087F65"
+					item: "legendarysurvivaloverhaul:cooler"
+					type: "item"
+				}
+			]
+			x: -11.338265306122473d
+			y: -6.398724489795935d
+		}
+		{
+			dependencies: ["1DC5DC64F32415C0"]
+			description: ["Tinkers is not gregified yet, but you are allowed to use it."]
+			id: "3800302F80AFA20F"
+			shape: "diamond"
+			tasks: [{
+				id: "147A70B5E1C52862"
+				title: "!"
+				type: "checkmark"
+			}]
+			title: "TINKER CONSTRUCT!"
+			x: -6.800000000000001d
+			y: -2.1d
+		}
+		{
+			dependencies: ["610F433CFC55B005"]
+			id: "13AB3B249DB96409"
+			optional: true
+			shape: "circle"
+			tasks: [
+				{
+					id: "60E4F1B6DFF2D565"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+				{
+					id: "10041B82687451FE"
+					item: "kubejs:seared_bricks_raw"
+					type: "item"
+				}
+				{
+					id: "2720A0F3906032EC"
+					item: "tconstruct:seared_brick"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"13AB3B249DB96409"
+				"740B1A9E552E2DEE"
+			]
+			id: "6059DC46FF094FA7"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "189A374BC2F94BD9"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 0.5664965986394321d
+			y: -4.121428571428574d
+		}
+		{
+			dependencies: ["13AB3B249DB96409"]
+			id: "740B1A9E552E2DEE"
+			shape: "circle"
+			tasks: [{
+				id: "298656F201E4631D"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+	]
+	title: "First Days of Caveman"
+}

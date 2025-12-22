@@ -1,0 +1,30 @@
+{
+	id: "2B161EF5FCC80019"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "minecraft:pumpkin_pie" }
+		{ item: "minecraft:bread" }
+		{ item: "minecraft:cooked_salmon" }
+		{ item: "minecraft:cooked_cod" }
+		{ item: "minecraft:cooked_rabbit" }
+		{ item: "minecraft:cooked_chicken" }
+		{ item: "minecraft:apple" }
+		{ item: "vintagedelight:ghostly_chili" }
+		{ item: "vintagedelight:pad_thai" }
+		{ item: "vintagedelight:cheese_pasta" }
+		{ item: "vintagedelight:cucumber_salad" }
+		{ item: "vintagedelight:cucumber_salad" }
+		{ item: "vintagedelight:pb_j" }
+		{ item: "vintagedelight:meat_pizza_slice" }
+		{ item: "vintagedelight:cheese_slice" }
+		{ item: "vintagedelight:stuffed_burrito" }
+		{ item: "minecraft:golden_apple" }
+		{ item: "minecraft:baked_potato" }
+		{ item: "minecraft:sweet_berries" }
+		{ item: "minecraft:glow_berries" }
+		{ item: "minecraft:carrot" }
+		{ item: "minecraft:cooked_beef" }
+	]
+	title: "food"
+}

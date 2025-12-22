@@ -1,0 +1,13 @@
+{
+  "name": "singularity.avaritia.blue_ice",
+  "colors": [
+    "8eb8fe",
+    "6b9dfb"
+  ],
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "minecraft:blue_ice"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

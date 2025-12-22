@@ -1,0 +1,170 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "elfs_would_be_proud"
+	group: "0F9F08EAC5B450D0"
+	icon: {
+		Count: 1
+		id: "botania:dice"
+		tag: {
+			soulbindUUID: "338154cf-c9ff-48aa-8268-efd32435d4c6"
+		}
+	}
+	id: "753E075A6452A168"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "06D4F55FB797227A"
+			shape: "circle"
+			tasks: [{
+				id: "4F99D5E7B408AFE2"
+				title: "Vanilla Botania Challenges"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			id: "2C106834997DF834"
+			shape: "circle"
+			tasks: [{
+				id: "2F89E296728789F6"
+				title: "Mythic Botania Challenges"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			id: "28C9D7D003D4E4DF"
+			shape: "circle"
+			tasks: [{
+				id: "0F65D1B93F0AA57B"
+				title: "Botania Additions Challenges"
+				type: "checkmark"
+			}]
+			title: "Botanic Additions Challenges"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["06D4F55FB797227A"]
+			icon: {
+				Count: 1
+				id: "botania:terra_pick"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2566650A3BB0757F"
+			rewards: [{
+				id: "1BEA5532AA38B596"
+				item: {
+					Count: 1
+					id: "botania:terra_pick"
+					tag: {
+						Damage: 0
+						mana: 2147483646
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "1CE18E3DD4A1BE63"
+				item: { Count: 512, id: "botania:terrasteel_ingot" }
+				type: "item"
+			}]
+			title: "Super Drill (MAX Tier??)"
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C106834997DF834"]
+			icon: {
+				Count: 1
+				id: "mythicbotany:alfsteel_pick"
+				tag: {
+					Damage: 0
+					mana: 2147483646
+				}
+			}
+			id: "5569E51EFB884F65"
+			rewards: [{
+				id: "42141FC9CF9244F3"
+				item: {
+					Count: 1
+					id: "mythicbotany:alfsteel_pick"
+					tag: {
+						Damage: 0
+						mana: 2147483646
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "518A0253F58B7115"
+				item: "mythicbotany:mjoellnir"
+				type: "item"
+			}]
+			title: "Alf Shatterer"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["28C9D7D003D4E4DF"]
+			icon: "botanicadds:gaiasteel_block"
+			id: "27ED27B72A0EBB50"
+			rewards: [{
+				count: 64
+				id: "706B52CB6D2130D6"
+				item: "botanicadds:gaiasteel_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "50854C4ADAB850A5"
+					item: "botanicadds:flowers/necroidus"
+					type: "item"
+				}
+				{
+					id: "658179B74A5E1F47"
+					item: "botanicadds:flowers/energizera"
+					type: "item"
+				}
+				{
+					id: "317275A69DD4D6F8"
+					item: "botanicadds:flowers/vibrantia"
+					type: "item"
+				}
+				{
+					id: "0FCE0BF928AFF34E"
+					item: "botanicadds:flowers/tempestea"
+					type: "item"
+				}
+				{
+					id: "51065EC950ABF4BA"
+					item: "botanicadds:flowers/rainute"
+					type: "item"
+				}
+				{
+					id: "2B35781E10AD99AA"
+					item: "botanicadds:flowers/glaciflora"
+					type: "item"
+				}
+			]
+			title: "You did well."
+			x: 3.5d
+			y: -3.0d
+		}
+	]
+	title: "Elves would be proud..."
+}

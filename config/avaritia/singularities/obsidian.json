@@ -1,0 +1,13 @@
+{
+  "name": "singularity.avaritia.obsidian",
+  "colors": [
+    "3b2754",
+    "100c1c"
+  ],
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

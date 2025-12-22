@@ -1,7 +1,15 @@
 LootJS.modifiers((event) => {
+
+  event.addBlockLootModifier("minecraft:dirt").addLoot("minecraft:stick");
+
   event
-    .addEntityLootModifier("minecraft:blaze")
+    .addEntityLootModifier('specialmobs:blaze')
     .replaceLoot("minecraft:blaze_rod", "gtceu:sulfur_dust", true);
+
+  event
+    .addEntityLootModifier('minecraft:wither')
+    .addLoot("kubejs:wither_heart");
+  
   event
     .addEntityLootModifier("minecraft:enderman")
     .replaceLoot("minecraft:ender_pearl", "gtceu:ender_pearl_dust", true);
@@ -18,4 +26,20 @@ LootJS.modifiers((event) => {
   event
   .addEntityLootModifier("minecraft:iron_golem")
   .removeLoot("minecraft:iron_ingot");
+
+  event
+    .addEntityLootModifier("minecraft:wither")
+    .killedByPlayer()
+    .addLoot("kubejs:wither_heart");
+
+  event
+    .addLootTypeModifier(LootType.ENTITY)
+    .randomChance(0.1)
+    .addLoot("kubejs:sulfuric_mushroom");
 });
+
+LootJS.modifiers(event => {
+   event.addBlockLootModifier("minecraft:grass")
+    .addLoot('kubejs:plant_fiber')
+    .randomChance(0.5)
+})

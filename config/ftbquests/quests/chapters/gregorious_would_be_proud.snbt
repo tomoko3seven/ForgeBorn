@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gregorious_would_be_proud"
+	group: "0F9F08EAC5B450D0"
+	icon: "gtceu:nan_certificate"
+	id: "2705C5D2758B2ADE"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Greg would be proud..."
+}

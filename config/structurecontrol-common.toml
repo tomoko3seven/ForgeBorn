@@ -1,0 +1,190 @@
+
+#General Options
+[general]
+	#Enable / Disables the ability to throw the eye of ender to locate the stronghold structure
+	#
+	#Default: false
+	throwEyeOfEnder = false
+	#Enable / Disables the ability to use the eye of ender on the end portal frame blocks
+	#
+	#Default: false
+	useEyeOfEnder = false
+	#Enable / Disables the ability to activate the nether portal
+	#
+	#Default: false
+	activateNetherPortal = true
+	#Enable / Disables logging debug messages
+	#
+	#Default: false
+	logDebug = false
+
+#World Generation
+[worldgen]
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: -1
+	generateStronghold = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateRuinedPortal = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateBuriedTreasure = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateDesertPyramid = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateEndCity = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateFortress = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateIgloo = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateJungleTemple = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: -1
+	generateMineshaft = -1
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateNetherFossil = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateOceanMonument = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateOceanRuin = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: -1
+	generateShipwreck = -1
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateSwampHut = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateWoodlandMansion = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateAncientCity = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateBastionRemnant = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateMansion = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generatePillagerOutpost = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateTrailRuins = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateTrialChambers = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateVillageDesert = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateVillagePlains = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateVillageSavanna = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateVillageSnowy = 0
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# Default: 0
+	generateVillageTaiga = 0
+	# Provide a comma separated list of modded structures in the syntax of mod:structure:value
+	#
+	# mod is the name of the mod
+	# structure is the full structure name, partial name ending with *, or only * for all structures in the mod
+	# value is one of the following:
+	# -1 = Don't change generation
+	# 0 = Disable structure generation
+	# 1-999999999 = Limits structure generation to no more than defined number
+	#
+	# HINT: Use the /locate structure command to determine the mod and structure names
+	generateModdedStructure = "example_mod:structure:0,other_example_mod:*:0,example_mod:struct*:0"
+

@@ -32,21 +32,40 @@ ServerEvents.recipes((event) => {
     L: "minecraft:leather",
     I: "#forge:plates/steel",
     C: "#forge:screws/steel",*/
-  });
-  /*event.remove({ id: "toolbelt:pouch" });
+
+      /*event.remove({ id: "toolbelt:pouch" });
   event.shaped("toolbelt:pouch", [" G ", "LSL", "   "], {
     G: "#forge:rings/gold",
     L: "minecraft:leather",
     S: "#forge:plates/steel",
   });*/
-// Chisel
-  /*event.shaped(
-    'chisel:chisel', [
-        'P  ',
-        'S  ',
-        '   '
-    ], {
-        P: '#forge:plates/iron',
-        S: '#forge:rods/wooden',
-    }
-);*/
+
+  //Nether Remastered
+    event.shaped('nether_remastered:seal_piece_1', [" P ", "PTP", " P "], {
+    P: '#forge:plates/gold',
+    T: 'kubejs:token_of_light'
+  });
+    event.shaped('nether_remastered:seal_piece_2', [" P ", "PTP", " P "], {
+    P: '#forge:plates/gold',
+    T: 'kubejs:token_of_darkness'
+  });
+  event.recipes.enderio.alloy_smelting(
+      Item.of('nether_remastered:seal_piece_4', 1),
+      [Item.of('#forge:plates/gold'), Ingredient.of('minecraft:netherrack')],
+      1000,
+      5.5
+  );
+      event.shaped('nether_remastered:seal_piece_3', [" P ", "PTP", " P "], {
+    P: '#forge:plates/gold',
+    T: 'actuallyadditions:void_crystal'
+  });
+  event.remove({ id: 'nether_remastered:seal_of_the_underworld_item' });
+        event.shaped('nether_remastered:seal_of_the_underworld_item', ["QPW", "PTP", "EPR"], {
+    P: '#forge:plates/gold',
+    Q: 'nether_remastered:seal_piece_1',
+    W: 'nether_remastered:seal_piece_2',
+    E: 'nether_remastered:seal_piece_3',
+    R: 'nether_remastered:seal_piece_4',
+    T: 'minecraft:cake'
+  });
+  });

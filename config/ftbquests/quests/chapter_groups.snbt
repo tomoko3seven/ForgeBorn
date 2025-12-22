@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "693226878D58638A", title: "Main Progression" }
+		{ id: "0F9F08EAC5B450D0", title: "Challenges" }
+		{ id: "636E307A32BE4F2F", title: "Other" }
+		{ id: "288DA1F92F7C0A7A", title: "Guides + More" }
+	]
+}

@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/voidbound/voidbound_casing_ctm"
+    }
+}

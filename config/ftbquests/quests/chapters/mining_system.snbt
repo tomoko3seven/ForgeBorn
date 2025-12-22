@@ -1,0 +1,224 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mining_system"
+	group: "288DA1F92F7C0A7A"
+	id: "26B0785EDA1F76D8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "07ECDD512BE71E3F"
+			tasks: [{
+				id: "578BB3347E165CA0"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07ECDD512BE71E3F"]
+			id: "441CDCBB7CB41C0D"
+			tasks: [{
+				id: "208AA3FAE11BB216"
+				item: {
+					Count: 1
+					id: "gtceu:flint_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 4.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["441CDCBB7CB41C0D"]
+			id: "391CA7DDBB2AB666"
+			tasks: [{
+				id: "50BD0AF9290019D7"
+				item: {
+					Count: 1
+					id: "gtceu:bronze_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 2
+							MaxDamage: 191
+							ToolSpeed: 7.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["391CA7DDBB2AB666"]
+			id: "4CBD7266091E889A"
+			tasks: [{
+				id: "40A16BB673D9F23D"
+				item: {
+					Count: 1
+					id: "gtceu:iron_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 2
+							MaxDamage: 255
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["391CA7DDBB2AB666"]
+			id: "3190193D2F023101"
+			tasks: [{
+				id: "202E319287735971"
+				item: {
+					Count: 1
+					id: "gtceu:wrought_iron_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 2
+							MaxDamage: 383
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3190193D2F023101"
+				"4CBD7266091E889A"
+			]
+			dependency_requirement: "one_completed"
+			id: "039C848E83783525"
+			tasks: [{
+				id: "02CE589D6BE8B2AE"
+				item: {
+					Count: 1
+					id: "gtceu:steel_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 3
+							MaxDamage: 511
+							ToolSpeed: 9.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["039C848E83783525"]
+			id: "770A9A8EDFC65768"
+			tasks: [{
+				id: "2C30F76D8E24AC74"
+				item: {
+					Count: 1
+					id: "gtceu:aluminium_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 2
+							MaxDamage: 767
+							ToolSpeed: 10.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["770A9A8EDFC65768"]
+			id: "33315B15E98BAFBC"
+			tasks: [{
+				id: "0B61394FD8EE71A8"
+				item: {
+					Count: 1
+					id: "gtceu:diamond_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 3
+							MaxDamage: 767
+							ToolSpeed: 10.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			description: ["In future i want to add custom mining system, similar to GT:NH or E2E. It takes too much effort. I don`t know how to code this, so just wait."]
+			icon: "gtceu:flawless_emerald_gem"
+			id: "574217C8A678C9B4"
+			size: 3.0d
+			title: "READ ME!"
+			x: -5.0d
+			y: -3.0d
+		}
+	]
+	title: "Mining System (WIP)"
+}

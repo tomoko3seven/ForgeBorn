@@ -1,0 +1,243 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "multiblocks"
+	group: "288DA1F92F7C0A7A"
+	icon: "gtceu:uhv_output_hatch"
+	id: "4EA11ACF4254FB4E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7D49F72183F1E010"
+			tasks: [{
+				id: "3AA27BD94750E442"
+				title: "1"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "37BB750A2DAE7C9D"
+			tasks: [{
+				id: "37F417796D755B8D"
+				title: "12"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "3755C4A2B1B0A713"
+			tasks: [{
+				id: "2063FA27AE4B61A2"
+				title: "13"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "3FA38284CE3ECEFC"
+			tasks: [{
+				id: "5C78D87F1ABEA79B"
+				title: "14"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			id: "18652A5AF9B01DCD"
+			tasks: [{
+				id: "4C0F5451B7DDC977"
+				title: "15"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "6BA3A39B82498B52"
+			tasks: [{
+				id: "4657095D01F38020"
+				title: "16"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "08E47EA82F86FB09"
+			tasks: [{
+				id: "356B9D444C8E4E23"
+				title: "115"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			id: "7D3AB5F54B8189D4"
+			tasks: [{
+				id: "67E12088B388BC8D"
+				title: "88"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "72FAF29FF12FFF9F"
+			tasks: [{
+				id: "62591523ECCAD57C"
+				title: "00"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "32778CFD257B495C"
+			tasks: [{
+				id: "0A74F9544F3ACDFF"
+				title: "ß0"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			id: "17135265027B540E"
+			tasks: [{
+				id: "0174070867145631"
+				title: "ßß"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "741782C02E916580"
+			tasks: [{
+				id: "7B59136CEF4EC8BC"
+				title: "1111"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			id: "0054D8A74C492571"
+			tasks: [{
+				id: "10E57272EA598597"
+				title: "141414"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			id: "6BE0FC041DF531BC"
+			tasks: [{
+				id: "13CDBDA23FA4E245"
+				title: "44444"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			id: "34BA65ECC940B3E8"
+			tasks: [{
+				id: "553FE363898D6890"
+				title: "41422"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			id: "2BDCB36C2FA28CFA"
+			tasks: [{
+				id: "57AFCD0B0CDE041A"
+				title: "14214"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			id: "2C1C00E6A876FFEE"
+			tasks: [{
+				id: "2A18DD3FB3B72BE3"
+				title: "55555"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			id: "398A5646D1CAF3BF"
+			tasks: [{
+				id: "0F3402C819586D58"
+				title: "5553332"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			id: "336A1F97AF2E6979"
+			tasks: [{
+				id: "3FE0B806DBDEAAC3"
+				title: "1242341"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "6820033FE3B0E1FE"
+			tasks: [{
+				id: "2F40E0FDED2276A5"
+				title: "552452"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			id: "3B886468D9917F7E"
+			tasks: [{
+				id: "4029E82B50ECAFB3"
+				title: "4444321"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			id: "38AC208581BA76EA"
+			tasks: [{
+				id: "427D0F9C8FE13527"
+				title: "1111333222"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			id: "08301F4EC188E0F6"
+			tasks: [{
+				id: "14DF2B9F972256F3"
+				title: "3124241"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+	]
+	title: "Multiblocks"
+}
