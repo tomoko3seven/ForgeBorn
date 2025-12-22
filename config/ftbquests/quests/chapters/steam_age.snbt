@@ -37,9 +37,9 @@
 		{
 			dependencies: ["661E54379A9CDCEE"]
 			description: [
-				"Steam is the source of energy for this stage of the game. All machines work on steam, in addition, each machine needs to release steam after the action is performed. To open the hatch - press the wrench on any side of the machine."
+				""Steam is the primary energy source for this stage of the game. All machines run on steam and must release exhaust steam after every operation. To create an exhaust vent, right-click any side of the machine with a Wrench."
 				""
-				"Also, be careful not to step on steam, as you may die."
+				"Be careful not to step into the vented steam, or you will take damage."
 			]
 			icon: "gtceu:steam_bucket"
 			id: "5DD49D500327A0E2"
@@ -75,8 +75,8 @@
 		{
 			dependencies: ["03DBF1961AE21C76"]
 			description: [
-				"Uses solid fuel for heating and water to create steam."
-				"Explodes if there isn't enough water and the temperature is too high."
+				"Uses solid fuel to generate heat and water to produce steam."
+				"Warning: It will explode if it runs out of water while hot."
 			]
 			id: "43067C07F1CF53D8"
 			optional: true
@@ -90,7 +90,7 @@
 		}
 		{
 			dependencies: ["22801BC8E559BC55"]
-			description: ["Needed for compressing ingots into blocks."]
+			description: ["Required for compressing ingots into blocks and other materials."]
 			id: "21B69724512B0BFF"
 			shape: "hexagon"
 			tasks: [{
@@ -103,7 +103,7 @@
 		}
 		{
 			dependencies: ["22801BC8E559BC55"]
-			description: ["Allows you to create plates in a simpler and cheaper way, namely 3 ingots per plate."]
+			description: ["Allows you to create plates more efficiently: 3 Ingots yield 2 Plates."]
 			id: "54ACE3A0AC660A50"
 			shape: "hexagon"
 			tasks: [{
@@ -116,7 +116,7 @@
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
-			description: ["Needed for the first alloys, as well as the main alloy of this century - Red Alloy"]
+			description: ["Required for early-game alloys, including the most important alloy of this era: Red Alloy."]
 			id: "68D6CBA3B0836C88"
 			shape: "hexagon"
 			size: 2.0d
@@ -130,7 +130,7 @@
 		}
 		{
 			dependencies: ["22801BC8E559BC55"]
-			description: ["Allows you to macerate resources, doubling them."]
+			description: ["Allows you to macerate ores, sometimes doubling your output!"]
 			id: "07B76D0844D99724"
 			shape: "hexagon"
 			tasks: [{
@@ -143,7 +143,7 @@
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
-			description: ["A multi-block furnace powered by steam. Allows you to quickly smelt items with a parallel crafting rate of 4 at a time."]
+			description: ["A steam-powered multi-block furnace. It smelts items quickly and processes up to 4 items simultaneously."]
 			id: "1F8932F343B91A7C"
 			shape: "octagon"
 			size: 1.2d
@@ -160,7 +160,7 @@
 				"07B76D0844D99724"
 				"21B69724512B0BFF"
 			]
-			description: ["The next step in getting steel. It will also be needed in very large quantities."]
+			description: ["The next step towards Steel. You will need this in very large quantities."]
 			id: "6D20A46BE1B8769D"
 			shape: "hexagon"
 			size: 1.8d
@@ -210,8 +210,8 @@
 		{
 			dependencies: ["03DBF1961AE21C76"]
 			description: [
-				"Uses liquid fuel for heating and water to create steam."
-				"Explodes if there isn't enough water and the temperature is too high."
+				"Uses liquid fuel to generate heat and water to produce steam."
+				"Warning: It will explode if it runs out of water while hot."
 			]
 			id: "1B627DEC9EB7A6D4"
 			optional: true
@@ -226,8 +226,8 @@
 		{
 			dependencies: ["03DBF1961AE21C76"]
 			description: [
-				"Heats from sun and uses water to create steam."
-				"Explodes if there isn't enough water and the temperature is too high."
+				"Uses solar energy to generate heat and water to produce steam."
+				"Warning: It will explode if it runs out of water while hot."
 			]
 			id: "353C34E5559C0D6C"
 			optional: true
@@ -281,7 +281,7 @@
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
-			description: ["These pipes store steam and do not burn, but you can still get scalded by them."]
+			description: ["These pipes transport steam and won't burn, but touching them can still scald you."]
 			id: "4A72F661F5A46996"
 			shape: "circle"
 			tasks: [{
@@ -294,7 +294,7 @@
 		}
 		{
 			dependencies: ["4A72F661F5A46996"]
-			description: ["Just better than bronze"]
+			description: ["Simply better than Bronze"]
 			icon: "gtceu:potin_normal_fluid_pipe"
 			id: "4A378CC993422DE9"
 			optional: true
@@ -339,7 +339,7 @@
 				"41298DA7145EE9D4"
 				"1D66BF00AD04DB6F"
 			]
-			description: ["I advise you to immediately try to make several of these furnaces to speed up the time it takes to obtain ingots."]
+			description: ["I recommend building several of these furnaces immediately to speed up Steel production. Remember, wall sharing is enabled."]
 			id: "288B39E91190E173"
 			optional: true
 			shape: "circle"
@@ -353,7 +353,7 @@
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
-			description: ["Fundamental metal in the ULV era."]
+			description: ["A fundamental metal for the ULV and LV era."]
 			id: "7873341ED0BEECC5"
 			tasks: [{
 				count: 32L
@@ -367,9 +367,9 @@
 		{
 			dependencies: ["5DD49D500327A0E2"]
 			description: [
-				"Build this thing and you will never have problems."
+				"Build this and your water problems are solved."
 				""
-				"(it pomps water wooow)"
+				"(It pumps water... wow!)"
 			]
 			id: "2090574AFF225180"
 			rewards: [{
@@ -404,7 +404,7 @@
 				"7873341ED0BEECC5"
 				"4028B45A0B6542DE"
 			]
-			description: ["Very useful things needed for automation and ULV machines."]
+			description: ["Essential components for automation and ULV machines."]
 			id: "34B2703714D4876C"
 			optional: true
 			rewards: [{
@@ -452,7 +452,7 @@
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
-			description: ["Basically smart crafting table."]
+			description: ["Basically a smarter Crafting Table."]
 			id: "09F45604AE96227C"
 			optional: true
 			rewards: [{
@@ -500,7 +500,7 @@
 				"1D66BF00AD04DB6F"
 				"4028B45A0B6542DE"
 			]
-			description: ["Congratulations on completing the Steam era."]
+			description: ["Congratulations on completing the Steam Age."]
 			id: "04508643F6EFAD96"
 			rewards: [{
 				id: "3E0CF56750B8F294"
@@ -529,7 +529,7 @@
 				"35610B562243BC08"
 				"0BFF9D24E70AA90F"
 			]
-			description: ["This is the first rubber you can make. It will become easier to obtain later, and eventually you'll abandon it in favor of better wire insulation."]
+			description: ["This is the first Rubber you can produce. It will become easier to obtain later, though you will eventually replace it with better materials."]
 			id: "4028B45A0B6542DE"
 			tasks: [{
 				id: "28C8D42D83990EA8"
@@ -541,7 +541,7 @@
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
-			description: ["Allows the conversion of rubber tree materials into rubber."]
+			description: ["Allows for the extraction of Rubber from Rubber Tree logs, sticky resin, and leaves."]
 			id: "19D8640B984699A7"
 			tasks: [{
 				id: "7E7B6E6F43CAC68F"
@@ -581,7 +581,7 @@
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
-			description: ["These trees are used to produce sticky rubber. They ignore tree growth conditions, allowing them to be planted close together and be quickly chopped using Tinker's Construct tools."]
+			description: ["These trees produce Sticky Resin. They may be planted densely and harvested quickly using Tinkers' Construct tools."]
 			hide_dependency_lines: true
 			id: "4E90911EBD418378"
 			tasks: [{
@@ -594,9 +594,9 @@
 		}
 		{
 			description: [
-				"At the moment to get sulfur mushrooms you need to kill mobs. Every mob has a low chance to drop it. Then cut mushrooms on cutting board to get slfur chunks."
+				"Currently, to obtain Sulfur Mushrooms, you must kill mobs; every mob has a low chance to drop them. Cut the mushrooms on a Cutting Board to get Sulfur Chunks."
 				""
-				"To get sulfur dust - macerate sulfur chunks."
+				"Macerate the chunks to obtain Sulfur Dust."
 			]
 			id: "35610B562243BC08"
 			shape: "circle"
@@ -620,7 +620,7 @@
 				"5673A00D1E6CC930"
 				"1D66BF00AD04DB6F"
 			]
-			description: ["Needs no explanation. Can be improved and painted."]
+			description: ["Needs no explanation. Can be upgraded and dyed."]
 			id: "6E36E7EBAFBCB686"
 			shape: "circle"
 			tasks: [{
@@ -644,7 +644,7 @@
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
-			description: ["Just like in real life, after creating a vacuum tube, you need to create a vacuum inside it. Later, you'll be able to use more efficient vacuum tube recipes."]
+			description: ["Just like in real life, a Vacuum Tube needs... a vacuum. You will unlock more efficient recipes for these later."]
 			id: "3906BB5555D181F2"
 			shape: "circle"
 			tasks: [{
@@ -657,7 +657,7 @@
 		}
 		{
 			dependencies: ["3906BB5555D181F2"]
-			description: ["The first ULV microchips. They're needed in large quantities, so stock up."]
+			description: ["The first ULV circuits. You will need these in large quantities, so stock up."]
 			id: "39205CF2CB1EA09B"
 			shape: "octagon"
 			size: 1.7d
@@ -671,7 +671,7 @@
 		}
 		{
 			dependencies: ["1D66BF00AD04DB6F"]
-			description: ["Decent armor for you. Also provides with temperature resistance (not implemented yet)."]
+			description: ["Decent armor for this stage. It also provides temperature resistance (Not yet implemented)."]
 			id: "0CBF32D58514F936"
 			optional: true
 			shape: "circle"

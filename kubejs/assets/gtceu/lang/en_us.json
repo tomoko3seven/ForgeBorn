@@ -18,7 +18,7 @@
   "material.gtceu.cobblestone":"Cobblestone",
 
 
-  "material.gtceu.sourcemetall":"Sourcemetall",
+  "material.gtceu.sourcemetall":"Sourcemetal",
   "material.gtceu.archwood":"Archwood",
 
   "material.gtceu.livingwood":"Livingwood",
@@ -40,10 +40,10 @@
   "material.gtceu.froststeel":"Froststeel",
   "material.gtceu.utherium":"Utherium",
 
-  "material.gtceu.aqua":"Aqua Crystall",
-  "material.gtceu.fire":"Fire Crystall",
-  "material.gtceu.wind":"Wind Crystall",
-  "material.gtceu.earth":"Earth Crystall",
+  "material.gtceu.aqua":"Aqua Crystal",
+  "material.gtceu.fire":"Fire Crystal",
+  "material.gtceu.wind":"Wind Crystal",
+  "material.gtceu.earth":"Earth Crystal",
 
   "material.gtceu.runic_iron":"Runic Iron",
   "material.gtceu.cloggrumsteel":"Cloggrumsteel",
