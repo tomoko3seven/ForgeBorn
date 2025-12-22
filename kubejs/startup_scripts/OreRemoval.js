@@ -1,17 +1,6 @@
-//This code is from Cosmic Frontiers. https://github.com/Frontiers-PackForge/CosmicFrontiers/tree/872a1255ac69e5c466871506fcbc605a7e5b35f2
-
 WorldgenEvents.remove(event => {
   event.removeOres(props => {
     props.blocks = [
-      'forbidden_arcanus:deepslate_arcane_crystal_ore',
-      'forbidden_arcanus:arcane_crystal_ore',
-      'forbidden_arcanus:xpetrified_ore',
-      'forbidden_arcanus:stella_arcanum',
-      'forbidden_arcanus:runic_darkstone',
-      'forbidden_arcanus:runic_deepslate',
-      'forbidden_arcanus:runic_stone',
-      /*'evilcraft:dark_ore',
-      'evilcraft:dark_ore_deepslate',*/
       'undergarden:depthrock_coal_ore',
       'undergarden:shiverstone_coal_ore',
       'undergarden:depthrock_iron_ore',
@@ -37,7 +26,12 @@ WorldgenEvents.remove(event => {
       'malum:natural_quartz_ore',
       'malum:cthonic_gold_ore',
       'malum:brilliant_stone',
-      'malum:brilliant_deepslate'
+      'malum:brilliant_deepslate',
+
+      'forestry:apatite_ore',
+      'forestry:deepslate_apatite_ore',
+      'forestry:tin_ore',
+      'forestry:deepslate_tin_ore'
     ]
   })
   event.removeFeatureById('raw_generation', [
