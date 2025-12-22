@@ -211,7 +211,7 @@
 			description: ["ForgeBorn is a modpack that I really love, and I have put a lot of effort into it. While this is a passion project, any support is appreciated. If you enjoy the pack and want to support me, here is my Patreon."]
 			id: "4FB6296D6B8214C6"
 			shape: "circle"
-			subtitle: "It`s my hobby."
+			subtitle: "It's my hobby."
 			tasks: [{
 				id: "603AE1928A3A5858"
 				title: "Patreon"
