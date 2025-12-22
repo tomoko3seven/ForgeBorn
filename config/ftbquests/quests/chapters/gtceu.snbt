@@ -744,7 +744,7 @@
 			description: [
 				"Make an axe to harvest wood." 
 				""
-				"Note: The Flint axe does not come with treefelling, and this is unlocked with Iron and above."]"
+				"Note: The Flint axe does not come with treefelling, and this is unlocked with Iron and above."]
 			id: "4D45BC7F9DD88068"
 			tasks: [{
 				id: "5C5343F05640EC2B"
