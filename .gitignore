@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# Except these directories
+!kubejs/
+!defaultconfig/
+!config/
+
+# Allow files in excepted directories
+!kubejs/**
+!defaultconfig/**
+!config/**
+
+# Keep .gitignore itself
+!.gitignore

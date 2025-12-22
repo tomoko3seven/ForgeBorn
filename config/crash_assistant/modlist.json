@@ -1,8 +1,8 @@
 {
-  "fmlloader-1.20.1-47.4.6.jar (modloader)": {
-    "jarName": "fmlloader-1.20.1-47.4.6.jar (modloader)",
+  "fmlloader-1.20.1-47.4.13.jar (modloader)": {
+    "jarName": "fmlloader-1.20.1-47.4.13.jar (modloader)",
     "modId": "forge",
-    "version": "fmlloader-1.20.1-47.4.6.jar"
+    "version": "fmlloader-1.20.1-47.4.13.jar"
   },
   "ActuallySubtractions-1.20.1-1.2.14.19+mc1.20.1.jar": {
     "jarName": "ActuallySubtractions-1.20.1-1.2.14.19+mc1.20.1.jar",
@@ -93,11 +93,6 @@
     "jarName": "blasmatech-1.20.1-1.1.4-all.jar",
     "modId": "blasmatech",
     "version": "1.20.1-1.1.4"
-  },
-  "bloodmagic-1.20.1-3.3.3-45.jar": {
-    "jarName": "bloodmagic-1.20.1-3.3.3-45.jar",
-    "modId": "bloodmagic",
-    "version": "3.3.3-45"
   },
   "Bookshelf-Forge-1.20.1-20.2.13.jar": {
     "jarName": "Bookshelf-Forge-1.20.1-20.2.13.jar",
@@ -496,11 +491,6 @@
   },
   "kotlinforforge-4.11.0-all.jar": {
     "jarName": "kotlinforforge-4.11.0-all.jar"
-  },
-  "KubeJS Blood Magic-1.0.2-1.20.1.jar": {
-    "jarName": "KubeJS Blood Magic-1.0.2-1.20.1.jar",
-    "modId": "kubejsbloodmagic",
-    "version": "1.0.2-1.20.1"
   },
   "kubejs-forge-2001.6.5-build.16.jar": {
     "jarName": "kubejs-forge-2001.6.5-build.16.jar",
