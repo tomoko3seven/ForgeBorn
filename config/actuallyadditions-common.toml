@@ -8,7 +8,7 @@
 	#If true, Actually Additions' Update Checker searches for updates for the Minecraft Version you currently play on.
 	versionSpecificUpdateChecker = true
 	#If true, Mobs will randomly drop solidified XP occasionally.
-	doXpDrops = true
+	doXpDrops = false
 	#If true, Cats drop Hairy Balls Occasionally.
 	doCatDrops = true
 	#Should Bat wings drop from Bats?
@@ -53,10 +53,10 @@
 	farmerArea = 9
 	#The amount of power the atomic reconstructor can store.
 	#Range: > 300000
-	reconstructorPower = 300000
+	reconstructorPower = 500000
 	#The amount of power the oil generator can transfer per tick.
 	#Range: > 100
-	oilGeneratorTransfer = 500
+	oilGeneratorTransfer = 1500
 	#The energy use of the Atomic Reconstructor's Mining Lens.
 	#Range: > 1
 	minerLensEnergy = 60000
