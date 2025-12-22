@@ -211,7 +211,7 @@
 			y: -6.0d
 		}
 		{
-			description: ["In future i want to add custom mining system, similar to GT:NH or E2E. It takes too much effort. I don`t know how to code this, so just wait."]
+			description: ["NOT CURRENTLY IMPLEMENTED"]
 			icon: "gtceu:flawless_emerald_gem"
 			id: "574217C8A678C9B4"
 			size: 3.0d

@@ -252,7 +252,7 @@
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
-			description: ["You need that for upgrading your Mana.Pulse Infuser"]
+			description: ["This is needed to upgrade your Mana Pulse Infuser"]
 			id: "0C97D87F4BDC5E7C"
 			shape: "circle"
 			tasks: [{

@@ -36,7 +36,7 @@
 	quests: [
 		{
 			dependencies: ["6AFAED3DD020217F"]
-			description: ["Machines can receive a lot of energy through wires, but this energy must be of the same voltage as the machines. Use large, insulated wires for better energy utilization."]
+			description: ["Machines accept energy through cables, but the voltage must match the machine's tier. Use thicker cables to carry more Amperage (energy packets). Use insulated wires to carry a stronger signal further and to not take damage."]
 			id: "3884187493BA916A"
 			shape: "circle"
 			tasks: [{
@@ -49,7 +49,7 @@
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
-			description: ["Allows you to make wires in a very cheap way."]
+			description: ["Allows you to produce wires much more efficiently. This should be your first machine."]
 			id: "1CA4AEA25456E4E3"
 			shape: "circle"
 			tasks: [{
@@ -62,7 +62,7 @@
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
-			description: ["Large Assembler is yours first electrical multiblock, that can be upgraded with energy hatches, meaning that you dont need to make another assembler every time you move to the next voltage tier."]
+			description: ["The Large Assembler is your first electrical multiblock. It can be upgraded with Energy Hatches, meaning you won't need to craft a new Assembler every time you move to the next voltage tier."]
 			id: "5B7BC416799EA7AC"
 			rewards: [{
 				id: "55744549CD5040F2"
@@ -96,10 +96,11 @@
 		{
 			dependencies: ["3884187493BA916A"]
 			description: [
-				"GregTech's energy system, &9EU&r (Energy Units),"
-				"works with &cVoltage&r (V) and &dAmperage&r (A), transferring power in packets where Voltage is packet size and Amperage is packet count, with total power being &9EU/t&r (EU per tick). Machines and cables have specific Voltage tier limits (like LV, MV, HV) and Amperage ratings; exceeding these causes explosions or fires. Progression involves stepping up voltage tiers with transformers and managing cable loss, making it a complex system of matching energy supply to demand across tiers."
-				""
-				"Also do not put your machines under open sky, because they cn blow up if it`s raining."
+				"GregTech's energy system, &9EU&r (Energy Units), works with &cVoltage&r (V) and &dAmperage&r (A). Power is transferred in packets: Voltage is the packet size, and Amperage is the packet count."
+				"" 
+				"Machines and cables have specific Voltage tier limits (LV, MV, HV) and Amperage ratings. Exceeding these causes explosions or fires. Progression involves stepping up voltage tiers with transformers and managing cable loss."
+				"" 
+				"Also, do not place your machines under the open sky; they will explode if it rains."
 			]
 			id: "310B08BB2DFC4D6F"
 			shape: "circle"
@@ -114,11 +115,11 @@
 		{
 			dependencies: ["04508643F6EFAD96"]
 			description: [
-				"Stand on y=-63 in Overworld to teleport to the Undergarden."
+				"Stand on y=-63 in the Overworld to teleport to the Undergarden."
 				""
-				"To come back stand on y=121."
+				"To return, stand on y=121."
 				""
-				"Dont be scared of falling down or suffocating in walls. Your magical presence protects you from instant dying."
+				"Don't be afraid of falling or suffocating in walls; your magical presence protects you from instant death."
 			]
 			id: "4AC5E057FBD83372"
 			shape: "none"
@@ -134,7 +135,13 @@
 		}
 		{
 			dependencies: ["645FC277598EA984"]
-			description: ["Harvest fome of the mystical flowers."]
+			description: [
+				"The Sky of Beginning"
+				""
+				"Pick up as many of Botania's mystical flowers as you can. Right now, white is the most useful for you."
+				""
+				"You may also grow them by using a mystical fertilizer on a petal placed on the floor, or by using mystical fertilizer on grass."
+				]
 			id: "2271ABC7231D8B63"
 			tasks: [{
 				id: "5F8E02A14EA9FB1E"
@@ -157,7 +164,7 @@
 		}
 		{
 			dependencies: ["2271ABC7231D8B63"]
-			description: ["Used in \"Botania\" and \"Nature`s Aura\" recipes."]
+			description: ["Used in \"Botania\" and \"Nature's Aura\" recipes."]
 			id: "2E601621FDC14F92"
 			tasks: [{
 				id: "08D0C7913BED82EA"
@@ -184,7 +191,7 @@
 				"5B7BC416799EA7AC"
 				"089DE1A20438504A"
 			]
-			description: ["Basic Manapool. Regular..."]
+			description: ["A standard mana pool"]
 			id: "60CC6B0FFB125162"
 			rewards: [{
 				count: 3
@@ -232,7 +239,7 @@
 		}
 		{
 			dependencies: ["7E27C475FE68D0FD"]
-			description: ["Your key to Botania."]
+			description: ["The key to Botania."]
 			id: "7E4FED40355C4195"
 			tasks: [{
 				id: "79F0A8BBB86DA933"
@@ -247,7 +254,7 @@
 				"7E4FED40355C4195"
 				"236E5910A5F70B4E"
 			]
-			description: ["Bad version of basic manapool. Has very small capacity for mana."]
+			description: ["A weaker version of the Mana Pool. It has a very small Mana capacity."]
 			id: "5F4EAA3099100BE6"
 			shape: "octagon"
 			size: 1.5d
@@ -264,7 +271,7 @@
 				"5F4EAA3099100BE6"
 				"12AFFE6ACED3F9FA"
 			]
-			description: ["Manasteel is supreme material for early game tools. Use it wisely and make more and more."]
+			description: ["Manasteel is a supreme material for early-game tools. Use it wisely and craft it in bulk."]
 			id: "611883FA18804DBD"
 			shape: "hexagon"
 			size: 1.2d
@@ -320,7 +327,7 @@
 				"7BB3610D75E30813"
 				"5A372D32DFCA06C4"
 			]
-			description: ["Use seal to become worthy of entering nether dimension."]
+			description: ["Use the Seal to become worthy of entering the Nether."]
 			id: "4E1C035012ADA7CA"
 			shape: "hexagon"
 			size: 1.6d
@@ -1010,7 +1017,7 @@
 		}
 		{
 			dependencies: ["3884187493BA916A"]
-			description: ["The Chemistry Reactor is designed for various chemical shenanigans, but for now you should be using it to create Dense Mana."]
+			description: ["The Chemical Reactor is designed for various chemical operations, but for now, you should use it to create Dense Mana."]
 			id: "6EF72FE4C3597EFB"
 			tasks: [{
 				id: "47D742636FAF20C8"
@@ -1060,7 +1067,7 @@
 		}
 		{
 			dependencies: ["4AC5E057FBD83372"]
-			description: ["After entering new layer of earth be careful of new flora and fauna. It can be friendly, but also very dangerous."]
+			description: ["After entering this new layer of the Earth, be careful of the new flora and fauna. They can be friendly, but also very dangerous."]
 			id: "03B56ECF5AA7CF3E"
 			shape: "circle"
 			subtitle: "Also, what are these creatures?"
@@ -1069,7 +1076,7 @@
 				title: "12"
 				type: "checkmark"
 			}]
-			title: "Uhh.. We didn`t have this before."
+			title: "Uhh... We didn't have this before."
 			x: -6.5d
 			y: -7.0d
 		}
@@ -1088,9 +1095,9 @@
 		{
 			dependencies: ["6EF72FE4C3597EFB"]
 			description: [
-				"Used in a huge number of crafts associated with this era."
+				"Used in a huge number of recipes associated with this era."
 				""
-				"For Automation you can put flowerson GT pipes and they will transfer mana to nearest destination."
+				"Place Botania flowers on Gregtech pipes to transfer mana out of them."
 			]
 			id: "641A75A9A7BF3A46"
 			rewards: [{
@@ -1132,7 +1139,7 @@
 		}
 		{
 			dependencies: ["3884187493BA916A"]
-			description: ["I guess everyone is familiar with this mod already, so i won`t introduce you to this mod."]
+			description: ["This mod is focused around generating and harnessing mana produced by mystical flowers. You can find further documentation in this quest book and the Lexica Botania"]
 			id: "645FC277598EA984"
 			shape: "circle"
 			tasks: [{
@@ -1145,7 +1152,7 @@
 		}
 		{
 			dependencies: ["60CC6B0FFB125162"]
-			description: ["Used in Ars Noveau recipes. I recommend crafting this metal as often as Manasteel."]
+			description: ["Used in Ars Nouveau recipes. I recommend crafting this metal as frequently as Manasteel."]
 			id: "747104184C6255A9"
 			shape: "circle"
 			size: 0.8d
@@ -1160,7 +1167,7 @@
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
-			description: ["Using tinker construct you can be able to mine obsidian."]
+			description: ["Using Tinkers' Construct, you will be able to mine Obsidian."]
 			hide_dependency_lines: true
 			id: "34FC06C0C9D594AA"
 			shape: "circle"
@@ -1244,7 +1251,7 @@
 				"3BD39E2CAB2EBA12"
 				"6186D5BEE0E1EEFA"
 			]
-			description: ["Throw items in front of rhis block and they will turn into new items."]
+			description: ["Throw items in front of this block to convert them into new items. I suggest using a redstone torch to convert the mode to Pulse mold and using a button to activate it."]
 			id: "031E20E8B9633833"
 			tasks: [{
 				id: "245F2918118C4A34"
@@ -1293,7 +1300,7 @@
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
-			description: ["Used to make diffirent wooden plates."]
+			description: ["Used to make certain wooden plates"]
 			id: "5C39E556D173BC50"
 			optional: true
 			shape: "circle"
