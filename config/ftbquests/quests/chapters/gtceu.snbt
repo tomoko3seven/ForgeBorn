@@ -45,7 +45,7 @@
 	quests: [
 		{
 			dependencies: ["75F777073CF44FE1"]
-			description: ["*You woke up. Trees are blooming around, animals are running. You know this feeling, but you don't remember where it came from*"]
+			description: ["*You wake up. Trees are blooming around you; animals are scurrying about. You recognize this sensation, yet you cannot recall its origin.*"]
 			icon: "gtceu:overworld_marker"
 			id: "25289F9E8AE01C29"
 			rewards: [{
@@ -66,7 +66,7 @@
 		}
 		{
 			dependencies: ["3A2F8256E86DC5F3"]
-			description: ["You need fuel, which can be wood until you find a vein of coal. Coal, by the way, also needs to be smelted, but you will get twice as much as you dig up."]
+			description: ["You need fuel. Wood will do until you find a coal vein. Raw Coal must be smelted to be usable, but this yields twice the resources."]
 			id: "2BDB8A9D6652280D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -76,7 +76,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.6d
-			subtitle: "My generation didnt use this type of technologies"
+			subtitle: "My generation didn't have this type of technology"
 			tasks: [{
 				count: 2L
 				id: "0EE4EC1D5790B899"
@@ -89,7 +89,7 @@
 		}
 		{
 			dependencies: ["4D45BC7F9DD88068"]
-			description: ["Workbench can be made by right clicking with flint knife in main hand on the any log."]
+			description: ["A Crafting Table can be created by right-clicking any log while holding a Flint Knife in your hand."]
 			id: "2E957F7E56FB198B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -122,7 +122,7 @@
 		}
 		{
 			dependencies: ["2BDB8A9D6652280D"]
-			description: ["Make more furnaces... Just trust me... Also you will need storage to store your resources, so make some chests!"]
+			description: ["Craft more furnaces... Trust me on this. You will also need a place to store your resources, so make some chests!"]
 			icon: "gtceu:gregification_hazard_sign_block"
 			id: "35B066A54CBF2667"
 			optional: true
@@ -138,7 +138,7 @@
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
-			description: ["GregTech is a mod that requires you to have a lot of resources and different items. You need to store them somewhere, so PLEASE don't skimp on your comfort."]
+			description: ["GregTech requires a massive amount of resources and components. You need somewhere to store them, so PLEASE do not underestimate your storage needs."]
 			id: "616B494E248D88E9"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -187,7 +187,7 @@
 		}
 		{
 			dependencies: ["3A4B35AA64F60096"]
-			description: ["I advise you to chunk load your base and constantly go dig more and more resources for bronze. This will help you pass the next stage painlessly."]
+			description: ["I advise you to chunk-load your base and continuously mine for Copper and Tin. Stockpiling Bronze now will make the next stage much less painful."]
 			id: "73FB99F48CD69B25"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -208,7 +208,7 @@
 		}
 		{
 			dependencies: ["21DC8ECCCE15351E"]
-			description: ["Before macerator.. there was MORTAR"]
+			description: ["Before the Macerator... there was the MORTAR"]
 			id: "5D617C14AF5E2ABB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -267,11 +267,11 @@
 		{
 			dependencies: ["73FB99F48CD69B25"]
 			description: [
-				"Enviroment on this planet is very dangerous. I`ve seen some of undead-like creatures. I don`t even know is this people or just... Okay, forget."
+				"The environment on this planet is hostile. I've seen undead creatures roaming about. I don't know if they were once people or just... never mind."
 				""
-				"Just remember, that they are very dangerous and i reccomend not to fight them."
+				"Just remember: they are dangerous. Avoid combat if possible."
 				""
-				"(Pack has some mods for mobs, for example \"Special Mobs\". Same mod as GTNH...)"
+				"This pack includes mob mods like \"Special Mobs\" - similar to GTNH."
 			]
 			icon: "gtceu:generic_hazard_sign_block"
 			id: "1C89A53F7F783DD8"
@@ -289,7 +289,7 @@
 		}
 		{
 			dependencies: ["73FB99F48CD69B25"]
-			description: ["I would advise making 4+ of these, to tide you over untill you can make solar boilers or liquid boilers, which have the highest steam production rates."]
+			description: ["I advise crafting at least 4 of these until you can make High Pressure or Liquid Boilers, which have much higher steam production rates."]
 			id: "661E54379A9CDCEE"
 			rewards: [
 				{
@@ -318,9 +318,9 @@
 		{
 			dependencies: ["661E54379A9CDCEE"]
 			description: [
-				"You can use coke coal for fuel. Also install one or two primitive water pumps."
+				"You can use Coal Coke for fuel, but I'd recommend switching to another source of steam as soon as possible. You should also install a primitive water pump for massive amounts of water."
 				""
-				"Solar Boilers and water pupms = ezzz steam"
+				"Solar Boilers + Water Pumps = Easy Steam"
 			]
 			icon: "gtceu:coal_ore"
 			id: "17129C8BFD37D280"
@@ -336,7 +336,7 @@
 		}
 		{
 			dependencies: ["661E54379A9CDCEE"]
-			description: ["Try to keep an eye on your boilers at all times as they can explode."]
+			description: ["Keep an eye on your boilers at all times. If they run dry while hot, adding water will cause them to explode."]
 			icon: "minecraft:tnt"
 			id: "444465561D4DDBED"
 			optional: true
@@ -352,9 +352,9 @@
 		{
 			dependencies: ["2E957F7E56FB198B"]
 			description: [
-				"The only tools available before iron (except Tinkers)."
+				"The first tools you will get before Tinkers'"
 				""
-				"Also, these tools have Fire Aspect on them, so you can easily kill some animals and cook their meet at the same time."
+				"Also, these tools have Fire Aspect on them, so you can easily kill some animals and cook their meat at the same time."
 			]
 			id: "1DC5DC64F32415C0"
 			rewards: [{
@@ -453,7 +453,7 @@
 		}
 		{
 			dependencies: ["1DC5DC64F32415C0"]
-			description: ["The most terrible block for you, but I assure you - you can do as much as you need.."]
+			description: ["A tedious block to craft, but I assure you, you will need quite a few of them."]
 			id: "3A2F8256E86DC5F3"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -474,7 +474,7 @@
 		}
 		{
 			dependencies: ["2BDB8A9D6652280D"]
-			description: ["Your first iron. I recommend spending it on tools and digging up more right away. You're going to need a LOT of resources soon."]
+			description: ["Your first Iron. I recommend crafting tools and mining more immediately. You are going to need a LOT of resources soon."]
 			id: "7E1A7E5E5EE9A90B"
 			shape: "hexagon"
 			tasks: [{
@@ -488,7 +488,7 @@
 		}
 		{
 			dependencies: ["7D91E90383656163"]
-			description: ["Coke? Charcoal? Creosote? These are all fuels that you get absolutely free. Coke ovens don't require fuel, so I recommend making 4 of them. Creosote can be used to make treated wood, and from that, a bed."]
+			description: ["Coke? Charcoal? Creosote? These are all fuels you can obtain for free. Coke Ovens do not require external fuel to operate. I recommend building 4 of them. Remember, wall sharing is enabled. Creosote is a byproduct used to make Treated Wood, which is required for a bed."]
 			id: "73488B39DFE88402"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -545,7 +545,7 @@
 		}
 		{
 			dependencies: ["73488B39DFE88402"]
-			description: ["rewardeeee"]
+			description: ["Bonus Reward"]
 			id: "1F63222433BCA468"
 			optional: true
 			rewards: [{
@@ -569,7 +569,7 @@
 				"7E1A7E5E5EE9A90B"
 				"2BDB8A9D6652280D"
 			]
-			description: ["First GT tools! You`ll stick to them for a short while."]
+			description: ["Your first GT Tools! You will rely on these for a while."]
 			id: "216757436BCABF06"
 			shape: "hexagon"
 			size: 1.4d
@@ -671,9 +671,9 @@
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
 			description: [
-				"You need this to make the compressed bricks, it doesn't use durability so don't worry about making more."
+				"You need this to make Compressed Coke Clay. It does not use durability, so you only need one."
 				""
-				"The ammount of materials needed for the coke oven may seem like alot, but dont worry, all of these will soon be farmable in one way or another."
+				"The amount of materials required for the Coke Oven may seem daunting, but don't worry. All of these resources will soon be easy to get."
 			]
 			id: "610F433CFC55B005"
 			rewards: [{
@@ -707,7 +707,7 @@
 		}
 		{
 			dependencies: ["610F433CFC55B005"]
-			description: ["Once you have all these you can make the 26 coke oven bricks needed, 25 for the structure and 1 for the controller."]
+			description: ["Once you have these, you can craft the 26 Coke Oven Bricks required: 25 for the structure and 1 for the controller."]
 			id: "7D91E90383656163"
 			shape: "hexagon"
 			tasks: [{
@@ -721,7 +721,7 @@
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
-			description: ["Break grass with hands to collect some plant fiber and make plant strings. "]
+			description: ["Break grass to collect Plant Fiber, then craft it into Plant String."]
 			id: "41BA880BB1F7D39E"
 			tasks: [
 				{
@@ -741,7 +741,10 @@
 		}
 		{
 			dependencies: ["41BA880BB1F7D39E"]
-			description: ["Make an axe to harvest wood."]
+			description: [
+				"Make an axe to harvest wood." 
+				""
+				"Note: The Flint axe does not come with treefelling, and this is unlocked with Iron and above."]
 			id: "4D45BC7F9DD88068"
 			tasks: [{
 				id: "5C5343F05640EC2B"
@@ -770,7 +773,7 @@
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
-			description: ["If you have some issues with temperature, than use these blocks. To power them use redstone."]
+			description: ["If you are having issues with temperature, use these blocks. They are powered by Redstone."]
 			id: "3274C1D80BEC66C1"
 			shape: "hexagon"
 			tasks: [
@@ -790,7 +793,7 @@
 		}
 		{
 			dependencies: ["1DC5DC64F32415C0"]
-			description: ["Tinkers is not gregified yet, but you are allowed to use it."]
+			description: ["Tinkers' Construct is not Gregified yet, but you are free to use it."]
 			id: "3800302F80AFA20F"
 			shape: "diamond"
 			tasks: [{
