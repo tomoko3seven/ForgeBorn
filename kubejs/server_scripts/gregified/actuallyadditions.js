@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 //Removes
-event.remove({ output: '#actuallyadditions:drills' })
+/*event.remove({ output: '#actuallyadditions:drills' })
 event.remove({ output: 'actuallyadditions:wooden_aiot' })
 event.remove({ output: 'actuallyadditions:stone_aiot' })
 event.remove({ output: 'actuallyadditions:iron_aiot' })
@@ -147,5 +147,5 @@ event.replaceInput(
     { id: 'actuallyadditions:powered_furnace' },
     'minecraft:cobblestone',
     '#forge:double_plates/steel'
-  )
+  )*/
 })

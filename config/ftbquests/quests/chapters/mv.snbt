@@ -5,7 +5,7 @@
 	group: "693226878D58638A"
 	icon: "gtceu:mv_machine_casing"
 	id: "01B60ADCB08CF997"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -127,8 +127,8 @@
 				item: "buildinggadgets2:gadget_building"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 11.5d
+			x: 8.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["4CB1455C2F29A3F1"]
@@ -138,8 +138,8 @@
 				item: "buildinggadgets2:gadget_exchanging"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 11.5d
+			x: 9.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["4CB1455C2F29A3F1"]
@@ -153,8 +153,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 11.5d
+			x: 10.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["4CB1455C2F29A3F1"]
@@ -175,8 +175,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 11.5d
+			x: 11.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["43014E117DC60F1D"]
@@ -191,32 +191,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["43014E117DC60F1D"]
-			id: "16C3937866616174"
-			tasks: [{
-				id: "3C206D1A105AC1A0"
-				item: "gtceu:mv_energy_input_hatch"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"4BB5BB63B306F6E5"
-				"16C3937866616174"
-			]
-			id: "533B5CB4417509A9"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "74D1C116AE6377F2"
-				type: "custom"
-			}]
-			x: 3.0d
-			y: -3.5d
-		}
-		{
 			dependencies: ["1A7423033F08BBD2"]
 			id: "75BBE863AE13C81B"
 			tasks: [{
@@ -228,8 +202,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 10.0d
+			x: 8.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["1A7423033F08BBD2"]
@@ -239,56 +213,10 @@
 				item: "functionalstorage:configuration_tool"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 10.0d
+			x: 9.5d
+			y: 12.5d
 		}
 		{
-			dependencies: ["533B5CB4417509A9"]
-			id: "1A56ADF89D1C85A3"
-			tasks: [{
-				id: "4626FD83C059A3CE"
-				item: "extendedcrafting:advanced_table"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["43014E117DC60F1D"]
-			id: "44735A368FC627C8"
-			tasks: [{
-				id: "017AA97007C0A8C3"
-				item: "gtceu:mv_macerator"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["43014E117DC60F1D"]
-			id: "7DFF73C27B92CDE0"
-			tasks: [{
-				id: "13949DD1C67BFAA8"
-				item: "gtceu:mv_mixer"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["16C3937866616174"]
-			id: "1AD915BF4DDB1B15"
-			shape: "circle"
-			tasks: [{
-				id: "7DBDD09683796A7E"
-				title: "MV Assembler"
-				type: "checkmark"
-			}]
-			x: 4.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["533B5CB4417509A9"]
 			hide_dependency_lines: true
 			id: "1A7423033F08BBD2"
 			shape: "circle"
@@ -297,11 +225,10 @@
 				title: "Wireless Drawers"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 10.0d
+			x: 7.5d
+			y: 12.5d
 		}
 		{
-			dependencies: ["533B5CB4417509A9"]
 			hide_dependency_lines: true
 			id: "4CB1455C2F29A3F1"
 			shape: "circle"
@@ -310,8 +237,8 @@
 				title: "Building Tools"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 11.5d
+			x: 7.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["43014E117DC60F1D"]
@@ -326,8 +253,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["43014E117DC60F1D"]
@@ -371,7 +298,7 @@
 				item: "gtceu:runic_iron_ingot"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -6.899999999999999d
 			y: -3.5d
 		}
 		{
@@ -393,18 +320,18 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.899999999999999d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5C29EEE07BF005A2"]
 			id: "0C2E1B870D1966A9"
 			tasks: [{
-				id: "2984E3A2CC26B1B1"
-				title: "lumi-acid"
-				type: "custom"
+				id: "572548364E255F3B"
+				item: "gtceu:lumi_acid_bucket"
+				type: "item"
 			}]
-			x: -6.0d
+			x: -6.899999999999999d
 			y: 4.5d
 		}
 		{
@@ -414,51 +341,40 @@
 			]
 			id: "2A85BBB33F0AC3CE"
 			tasks: [{
-				id: "14E9571AC1279E21"
-				title: "luminessence crystalline slurry"
-				type: "custom"
+				id: "14BA8A7668CD8F73"
+				item: "gtceu:lumicrystalline_slurry_bucket"
+				type: "item"
 			}]
-			x: -5.0d
+			x: -5.5d
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"2A85BBB33F0AC3CE"
-				"39F1CDCA87334DAA"
-			]
+			dependencies: ["2A85BBB33F0AC3CE"]
 			id: "718E87BF4CC05C84"
 			tasks: [{
-				id: "23965F00C04CECD2"
-				title: "Lumicrystalline seed"
-				type: "custom"
-			}]
-			x: -5.0d
-			y: 7.5d
-		}
-		{
-			id: "39F1CDCA87334DAA"
-			shape: "circle"
-			tasks: [{
-				id: "2DECDFB97EF72466"
-				item: "ae2:certus_quartz_crystal"
+				id: "58CD9506713238BD"
+				item: "kubejs:lumicrystalline_seed"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.5d
 			y: 7.5d
 		}
 		{
-			dependencies: ["718E87BF4CC05C84"]
+			dependencies: [
+				"718E87BF4CC05C84"
+				"018CA45EB0AD1EAE"
+			]
 			id: "0776CF6EA514B6C7"
 			tasks: [{
-				id: "5D61FD67E90498E3"
-				title: "Lumicrystalline"
-				type: "custom"
+				id: "17911CF42D58A378"
+				item: "gtceu:lumicrystalline_gem"
+				type: "item"
 			}]
 			x: -7.5d
 			y: 7.5d
 		}
 		{
-			dependencies: ["512C795815B8A9B6"]
+			dependencies: ["0776CF6EA514B6C7"]
 			id: "0D2890EBD74B3088"
 			shape: "hexagon"
 			size: 2.0d
@@ -467,8 +383,8 @@
 				item: "gtceu:lumicrystalltine_alloy_ingot"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 9.5d
+			x: -9.666666666666671d
+			y: 7.488095238095241d
 		}
 		{
 			dependencies: ["7C93AA2D9DDBD3AF"]
@@ -479,7 +395,7 @@
 				type: "custom"
 			}]
 			title: "Runic matrix Core"
-			x: -6.5d
+			x: -6.899999999999999d
 			y: 0.0d
 		}
 		{
@@ -491,7 +407,7 @@
 				title: "runic casings"
 				type: "custom"
 			}]
-			x: -9.0d
+			x: -9.699999999999998d
 			y: -3.5d
 		}
 		{
@@ -502,7 +418,7 @@
 				title: "New buses"
 				type: "checkmark"
 			}]
-			x: -9.0d
+			x: -9.699999999999998d
 			y: 2.5d
 		}
 		{
@@ -519,7 +435,7 @@
 				title: "Runic Matrix"
 				type: "custom"
 			}]
-			x: -9.0d
+			x: -9.699999999999998d
 			y: 0.0d
 		}
 		{
@@ -530,8 +446,8 @@
 				title: "New Metalls"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 8.5d
+			x: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["7AA5CE6E3AB24FF3"]
@@ -541,45 +457,8 @@
 				item: "extendedcrafting:ender_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["739CDA04B50C5994"]
-			id: "50E3DBDFE51A1ACB"
-			shape: "circle"
-			tasks: [{
-				id: "45181C0D216CCC89"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [{
-								amount: 0
-								filter: {
-									Count: 1b
-									id: "minecraft:ender_pearl"
-								}
-							}]
-						}
-					}
-					id: "reliquary:ender_staff"
-				}
-				type: "item"
-			}]
-			x: 9.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["16C3937866616174"]
-			id: "512C795815B8A9B6"
-			tasks: [{
-				id: "2762BCF8597C2707"
-				item: "gtceu:stainless_steel_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 9.5d
+			x: 8.5d
+			y: 11.0d
 		}
 		{
 			description: ["NOT COMPLETED"]
@@ -590,8 +469,169 @@
 				title: "WIP!"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -7.0d
+			x: -10.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["43014E117DC60F1D"]
+			id: "48926DA73000B62B"
+			tasks: [{
+				id: "4DC9FE69144D544E"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["43014E117DC60F1D"]
+			id: "16C1B4269375B9D3"
+			tasks: [{
+				id: "2370BB41CADCA496"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["48926DA73000B62B"]
+			id: "6D0F4203220B2E24"
+			shape: "circle"
+			tasks: [{
+				id: "62DD49BA3520DC94"
+				title: "Easy Aluminium!"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F611F850DDDA517"]
+			id: "3A203FF1626504BB"
+			shape: "circle"
+			tasks: [{
+				id: "7EB718EC6CB22954"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"16C1B4269375B9D3"
+				"3A203FF1626504BB"
+			]
+			id: "5EDC072ADEA059A3"
+			tasks: [{
+				id: "7548573BEB680DD9"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5EDC072ADEA059A3"
+				"13757B5B271A9AA1"
+			]
+			id: "20DDE40195E70B4D"
+			tasks: [{
+				id: "16B0D8DE4A6CB0D6"
+				item: "gtceu:ulpic_wafer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"20DDE40195E70B4D"
+				"16C1B4269375B9D3"
+			]
+			id: "2A58BCE47C77577C"
+			tasks: [{
+				id: "570D82D8EB5B7E17"
+				item: "gtceu:ulpic_chip"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["43014E117DC60F1D"]
+			hide_dependency_lines: true
+			id: "13757B5B271A9AA1"
+			shape: "circle"
+			tasks: [{
+				id: "18663CF6A11F1603"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A58BCE47C77577C"]
+			id: "4231EC4514D9C4CA"
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "176A2A765825373B"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.199999999999999d
+		}
+		{
+			dependencies: ["6BF9C1C574A21C42"]
+			id: "018CA45EB0AD1EAE"
+			shape: "circle"
+			tasks: [{
+				id: "28CE17828122C7DD"
+				title: "Vacuum Growth Oven"
+				type: "custom"
+			}]
+			x: -7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4231EC4514D9C4CA"]
+			id: "6BF9C1C574A21C42"
+			tasks: [{
+				id: "5AA3315774BC75FA"
+				title: "New Recipes"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 8.999999999999998d
+		}
+		{
+			dependencies: ["6BF9C1C574A21C42"]
+			id: "67D2BF02EF4B3920"
+			shape: "diamond"
+			tasks: [{
+				id: "594F14FB9ECC7881"
+				title: "Tree Growth Simulator"
+				type: "custom"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6BF9C1C574A21C42"]
+			id: "7A4D37F639E9FB41"
+			shape: "diamond"
+			tasks: [{
+				id: "2F56A5252C13DB42"
+				title: "Compact Growth Chamber"
+				type: "custom"
+			}]
+			x: 3.0d
+			y: 8.5d
 		}
 	]
 	title: "&bMedium Voltage"
