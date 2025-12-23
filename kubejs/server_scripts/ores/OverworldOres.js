@@ -19,11 +19,11 @@ GTCEuServerEvents.oreVeins(event => {
     })
     event.add('kubejs:crystallyne_vein', vein => {
         vein.layer('sand')
-        vein.weight(20)
+        vein.weight(30)
         vein.clusterSize(14)
-        vein.density(0.90)
+        vein.density(3)
         vein.discardChanceOnAirExposure(0)
-        vein.heightRangeUniform(5, 7)
+        vein.heightRangeUniform(58, 62)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).mat(GTMaterials.get('crystallyne')).size(3, 4))

@@ -4,11 +4,6 @@
     "modId": "forge",
     "version": "fmlloader-1.20.1-47.4.13.jar"
   },
-  "ActuallySubtractions-1.20.1-1.2.14.19+mc1.20.1.jar": {
-    "jarName": "ActuallySubtractions-1.20.1-1.2.14.19+mc1.20.1.jar",
-    "modId": "actuallyadditions",
-    "version": "1.2.14.19+mc1.20.1"
-  },
   "ad_astra-forge-1.20.1-1.15.20.jar": {
     "jarName": "ad_astra-forge-1.20.1-1.15.20.jar",
     "modId": "ad_astra",
@@ -58,11 +53,6 @@
     "jarName": "ApothicAttributes-1.20.1-1.3.7.jar",
     "modId": "attributeslib",
     "version": "1.3.7"
-  },
-  "appleskin-forge-mc1.20.1-2.5.1.jar": {
-    "jarName": "appleskin-forge-mc1.20.1-2.5.1.jar",
-    "modId": "appleskin",
-    "version": "2.5.1+mc1.20.1"
   },
   "appliedenergistics2-forge-15.4.10.jar": {
     "jarName": "appliedenergistics2-forge-15.4.10.jar",
@@ -229,10 +219,20 @@
     "modId": "curios",
     "version": "5.14.1+1.20.1"
   },
+  "Data_Anchor-forge-1.20.1-1.0.0.20.jar": {
+    "jarName": "Data_Anchor-forge-1.20.1-1.0.0.20.jar",
+    "modId": "dataanchor",
+    "version": "1.0.0.20"
+  },
   "DripSounds-1.19.4-0.3.2.jar": {
     "jarName": "DripSounds-1.19.4-0.3.2.jar",
     "modId": "waterdripsound",
     "version": "0.3.2"
+  },
+  "Dungeon Crawl-1.20.1-2.3.15.jar": {
+    "jarName": "Dungeon Crawl-1.20.1-2.3.15.jar",
+    "modId": "dungeoncrawl",
+    "version": "2.3.15"
   },
   "duradisp-1.0.2.jar": {
     "jarName": "duradisp-1.0.2.jar",
@@ -264,15 +264,15 @@
     "modId": "enchdesc",
     "version": "17.1.19"
   },
-  "EnderIO-1.20.1-6.2.16-beta-all(1).jar": {
-    "jarName": "EnderIO-1.20.1-6.2.16-beta-all(1).jar",
-    "modId": "enderio",
-    "version": "6.2.16-beta"
-  },
   "EnderStorage-1.20.1-2.11.0.188-universal.jar": {
     "jarName": "EnderStorage-1.20.1-2.11.0.188-universal.jar",
     "modId": "enderstorage",
     "version": "2.11.0.188"
+  },
+  "Enhanced-Celestials-forge-1.20.1-5.0.3.1.jar": {
+    "jarName": "Enhanced-Celestials-forge-1.20.1-5.0.3.1.jar",
+    "modId": "enhancedcelestials",
+    "version": "1.20.1-5.0.3.1"
   },
   "EpheroLib-1.20.1-FORGE-1.2.0.jar": {
     "jarName": "EpheroLib-1.20.1-FORGE-1.2.0.jar",
@@ -507,11 +507,6 @@
     "modId": "kubejs_botania",
     "version": "1.4.0"
   },
-  "kubejs_enderio-forge-1.20.1-0.6.0.jar": {
-    "jarName": "kubejs_enderio-forge-1.20.1-0.6.0.jar",
-    "modId": "kubejs_enderio",
-    "version": "1.20.1-0.6.0"
-  },
   "kubejs_extended_crafting-2001.5.jar": {
     "jarName": "kubejs_extended_crafting-2001.5.jar",
     "modId": "kubejs_extended_crafting",
@@ -536,11 +531,6 @@
     "jarName": "legendarysurvivaloverhaul-1.20.1-2.3.22.1.jar",
     "modId": "legendarysurvivaloverhaul",
     "version": "1.20.1-2.3.22.1"
-  },
-  "LegendaryTooltips-1.20.1-forge-1.4.5.jar": {
-    "jarName": "LegendaryTooltips-1.20.1-forge-1.4.5.jar",
-    "modId": "legendarytooltips",
-    "version": "1.4.5"
   },
   "LibX-1.20.1-5.0.14.jar": {
     "jarName": "LibX-1.20.1-5.0.14.jar",
@@ -864,6 +854,11 @@
     "jarName": "toms_storage-1.20-1.7.1.jar",
     "modId": "toms_storage",
     "version": "1.7.1"
+  },
+  "tooltipoverhaul-forge-1.20.1-1.4.0.jar": {
+    "jarName": "tooltipoverhaul-forge-1.20.1-1.4.0.jar",
+    "modId": "tooltipoverhaul",
+    "version": "1.4.0"
   },
   "torchmaster-20.1.9.jar": {
     "jarName": "torchmaster-20.1.9.jar",

@@ -521,8 +521,8 @@
 			id: "090F40F78A79FCFC"
 			optional: true
 			rewards: [{
-				id: "3978E07FC3593ED8"
-				item: "paraglider:goddess_statue"
+				id: "55089DA689758406"
+				item: "croptopia:sticky_toffee_pudding"
 				type: "item"
 			}]
 			shape: "circle"
@@ -742,9 +742,10 @@
 		{
 			dependencies: ["41BA880BB1F7D39E"]
 			description: [
-				"Make an axe to harvest wood." 
+				"Make an axe to harvest wood."
 				""
-				"Note: The Flint axe does not come with treefelling, and this is unlocked with Iron and above."]
+				"&9Note&r: The Flint axe does not come with treefelling, and this is unlocked with Iron and above."
+			]
 			id: "4D45BC7F9DD88068"
 			tasks: [{
 				id: "5C5343F05640EC2B"
@@ -831,10 +832,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"13AB3B249DB96409"
-				"740B1A9E552E2DEE"
-			]
+			dependencies: ["13AB3B249DB96409"]
 			id: "6059DC46FF094FA7"
 			optional: true
 			shape: "hexagon"
@@ -846,18 +844,6 @@
 			}]
 			x: 0.5664965986394321d
 			y: -4.121428571428574d
-		}
-		{
-			dependencies: ["13AB3B249DB96409"]
-			id: "740B1A9E552E2DEE"
-			shape: "circle"
-			tasks: [{
-				id: "298656F201E4631D"
-				item: "tconstruct:seared_melter"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -3.0d
 		}
 	]
 	title: "First Days of Caveman"

@@ -49,16 +49,16 @@ ServerEvents.recipes((event) => {
     P: '#forge:plates/gold',
     T: 'kubejs:token_of_darkness'
   });
-  event.recipes.enderio.alloy_smelting(
+/*  event.recipes.enderio.alloy_smelting(
       Item.of('nether_remastered:seal_piece_4', 1),
       [Item.of('#forge:plates/gold'), Ingredient.of('minecraft:netherrack')],
       1000,
       5.5
-  );
-      event.shaped('nether_remastered:seal_piece_3', [" P ", "PTP", " P "], {
+  );*/
+/*      event.shaped('nether_remastered:seal_piece_3', [" P ", "PTP", " P "], {
     P: '#forge:plates/gold',
     T: 'actuallyadditions:void_crystal'
-  });
+  });*/
   event.remove({ id: 'nether_remastered:seal_of_the_underworld_item' });
         event.shaped('nether_remastered:seal_of_the_underworld_item', ["QPW", "PTP", "EPR"], {
     P: '#forge:plates/gold',
