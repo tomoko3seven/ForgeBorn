@@ -31,11 +31,11 @@
 			y: 5.5d
 		}
 	]
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6AFAED3DD020217F"]
+			dependencies: ["661E54379A9CDCEE"]
 			description: ["Machines accept energy through cables, but the voltage must match the machine's tier. Use thicker cables to carry more Amperage (energy packets). Use insulated wires to carry a stronger signal further and to not take damage."]
 			id: "3884187493BA916A"
 			shape: "circle"
@@ -113,7 +113,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["04508643F6EFAD96"]
 			description: [
 				"Stand on y=-63 in the Overworld to teleport to the Undergarden."
 				""
@@ -808,10 +807,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"4E90911EBD418378"
-				"04508643F6EFAD96"
-			]
 			id: "096DA994D539DD93"
 			shape: "circle"
 			tasks: [{
@@ -904,7 +899,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["39205CF2CB1EA09B"]
 			id: "69DEE03140388B37"
 			shape: "circle"
 			tasks: [{
@@ -1205,7 +1199,6 @@
 			y: 5.800000000000001d
 		}
 		{
-			dependencies: ["031E20E8B9633833"]
 			id: "302EF65C05218BB4"
 			shape: "diamond"
 			tasks: [{
@@ -1217,7 +1210,6 @@
 			y: 9.1d
 		}
 		{
-			dependencies: ["78E9ED7C85DF1535"]
 			id: "4F2FE067C6D7A8DB"
 			shape: "diamond"
 			tasks: [{
@@ -1247,45 +1239,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"3BD39E2CAB2EBA12"
-				"6186D5BEE0E1EEFA"
-			]
-			description: ["Throw items in front of this block to convert them into new items. I suggest using a redstone torch to convert the mode to Pulse mold and using a button to activate it."]
-			id: "031E20E8B9633833"
-			tasks: [{
-				id: "245F2918118C4A34"
-				item: "actuallyadditions:atomic_reconstructor"
-				type: "item"
-			}]
-			x: 9.9d
-			y: 10.5d
-		}
-		{
-			dependencies: ["3BD39E2CAB2EBA12"]
-			id: "78E9ED7C85DF1535"
-			tasks: [{
-				id: "1D5AF9BA0A3017FA"
-				item: "enderio:primitive_alloy_smelter"
-				type: "item"
-			}]
-			x: 11.9d
-			y: 10.5d
-		}
-		{
-			dependencies: ["310B08BB2DFC4D6F"]
-			hide_dependency_lines: true
-			id: "3BD39E2CAB2EBA12"
-			shape: "circle"
-			tasks: [{
-				id: "083A4C73EA259C96"
-				item: "enderio:grains_of_infinity"
-				type: "item"
-			}]
-			x: 10.9d
-			y: 12.0d
-		}
-		{
 			dependencies: ["310B08BB2DFC4D6F"]
 			hide_dependency_lines: true
 			id: "5A372D32DFCA06C4"
@@ -1303,28 +1256,15 @@
 			description: ["Used to make certain wooden plates"]
 			id: "5C39E556D173BC50"
 			optional: true
-			shape: "circle"
+			shape: "diamond"
 			tasks: [{
 				id: "7A4B31C67483D3B9"
 				item: "gtceu:sawmill"
 				type: "item"
 			}]
 			title: "Easy planks!"
-			x: 4.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["3BD39E2CAB2EBA12"]
-			description: ["Needed for FE energy."]
-			id: "6186D5BEE0E1EEFA"
-			shape: "circle"
-			tasks: [{
-				id: "5BA81BFDC4D8FA6B"
-				item: "actuallyadditions:coal_generator"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 12.0d
+			x: 4.299999999999999d
+			y: -4.000000000000001d
 		}
 		{
 			dependencies: [
@@ -1341,6 +1281,18 @@
 			}]
 			x: 2.819047619047616d
 			y: 10.739285714285721d
+		}
+		{
+			dependencies: ["5B7BC416799EA7AC"]
+			id: "50ADED740D608F0A"
+			shape: "diamond"
+			tasks: [{
+				id: "196F0C34605C18B7"
+				item: "gtceu:cognitium_solidifier"
+				type: "item"
+			}]
+			x: 3.8d
+			y: -3.5d
 		}
 	]
 	title: "Hi, Electricity!"

@@ -63,6 +63,11 @@ event.create('kubejs:undergarden_dim');
   event.create("rope");
   event.create("blank_upgrade");
 
+  event.create("lumicrystalline_seed");
+  event.create("cursed_cloth").maxStackSize(64);
+  event.create("enchanted_fabric").maxStackSize(64);
+
+  event.create("magic_thread").maxStackSize(64);
   event.create("obsidian_skull").maxStackSize(1);
 
 event.create("air_bottle").displayName("Bottle of Air").tooltip('§8Fresh Air...')

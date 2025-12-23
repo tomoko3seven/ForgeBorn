@@ -280,7 +280,7 @@ event.replaceInput(
     .EUt(GTValues.VA[GTValues.ULV])
     .duration(20*15)
     event.recipes.gtceu.mana_pulse_infuser('gtceu:prismarine_infused_alloy_ingot')
-    .itemInputs('enderio:conductive_alloy_ingot', '4x minecraft:prismarine_shard', '8x minecraft:prismarine_crystals')
+    .itemInputs('gtceu:conductive_alloy_ingot', '4x minecraft:prismarine_shard', '8x minecraft:prismarine_crystals')
     .inputFluids('kubejs:dense_mana 300')
     .itemOutputs('gtceu:prismarine_infused_alloy_ingot')
     .EUt(GTValues.VA[GTValues.ULV])

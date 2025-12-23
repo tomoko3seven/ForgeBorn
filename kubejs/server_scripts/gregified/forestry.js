@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    event.remove({ mod: "@forestry" })
     event.remove({ id: 'forestry:worktable' })
     event.remove({ id: 'forestry:ingot_bronze' })
     event.remove({ output: 'gtceu:phenolic_circuit_board' })

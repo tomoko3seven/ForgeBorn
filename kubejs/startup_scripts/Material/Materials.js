@@ -315,6 +315,14 @@ event.create('lumicrystalltine_alloy')
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
         )
+event.create('lumicrystalline')
+        .color(0x8a6fcf)
+        .gem()
+
+        .iconSet(GTMaterialIconSet.CERTUS)
+        .flags(
+            GTMaterialFlags.NO_SMELTING,
+        )
 
 event.create('mysterium')
         .color(0xff55cc)
@@ -333,91 +341,14 @@ event.create('mysterium')
 
 
 
-//Move to Botania later
-event.create('elvorium')
-        .color(0x3fbf9a)
-        .ingot()
+//Null
+ event.create('lumi_acid')
+         .color(0xffff55)
+         .liquid()
+ event.create('lumicrystalline_slurry')
+         .color(0xcccc33)
+         .liquid()
 
-        .iconSet(GTMaterialIconSet.BRIGHT)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('mauftrium')
-        .color(0xff55cc)
-        .ingot()
-
-        .iconSet(GTMaterialIconSet.BRIGHT)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('muspelheim')
-        .color(0xff55cc)
-        .ingot()
-
-        .iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('niflheim')
-        .color(0xff55cc)
-        .ingot()
-
-        .iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('gaiasteel')
-        .color(0xff55cc)
-        .ingot()
-
-        .iconSet(GTMaterialIconSet.BRIGHT)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('gaia')
-        .color(0xff55cc)
-        .ingot()
-
-        .iconSet(GTMaterialIconSet.BRIGHT)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-        )
 
 const alloys = [
   { name: 'copper_alloy',     color: 0xff9c6a },

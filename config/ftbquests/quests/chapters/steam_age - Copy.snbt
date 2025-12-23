@@ -1,0 +1,714 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_age"
+	group: "693226878D58638A"
+	icon: "gtceu:bronze_brick_casing"
+	id: "3B89FB8839204148"
+	images: [
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/ulv/bottom"
+			rotation: 0.0d
+			width: 2.0d
+			x: 11.792234600871588d
+			y: 0.8933673469387813d
+		}
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/ulv/bottom"
+			rotation: 45.0d
+			width: 2.0d
+			x: 11.792234600871588d
+			y: 0.9290816326530589d
+		}
+		{
+			height: 1.0d
+			image: "gui:textures/steam_age.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -1.8341666666666683d
+			y: 1.7333333333333272d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["661E54379A9CDCEE"]
+			description: [
+				""Steam is the primary energy source for this stage of the game. All machines run on steam and must release exhaust steam after every operation. To create an exhaust vent, right-click any side of the machine with a Wrench."
+				""
+				"Be careful not to step into the vented steam, or you will take damage."
+			]
+			icon: "gtceu:steam_bucket"
+			id: "5DD49D500327A0E2"
+			shape: "diamond"
+			size: 3.0d
+			title: "Hi, hot gas water!"
+			x: -1.9302380952381029d
+			y: -0.4285714285714306d
+		}
+		{
+			dependencies: ["2090574AFF225180"]
+			description: [""]
+			id: "03DBF1961AE21C76"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Pshhhhh, pshhhhh..."
+			tasks: [
+				{
+					id: "03BA041BE9C347FD"
+					item: "gtceu:bronze_machine_casing"
+					type: "item"
+				}
+				{
+					id: "16BE7F615B0E3FD4"
+					item: "gtceu:bronze_brick_casing"
+					type: "item"
+				}
+			]
+			title: "Some Casings"
+			x: 2.010952380952368d
+			y: -0.3905357142857184d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"Uses solid fuel to generate heat and water to produce steam."
+				"Warning: It will explode if it runs out of water while hot."
+			]
+			id: "43067C07F1CF53D8"
+			optional: true
+			tasks: [{
+				id: "3152FAD8493409E7"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22801BC8E559BC55"]
+			description: ["Required for compressing ingots into blocks and other materials."]
+			id: "21B69724512B0BFF"
+			shape: "hexagon"
+			tasks: [{
+				id: "635E19CADBADBE07"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 9.299999999999997d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22801BC8E559BC55"]
+			description: ["Allows you to create plates more efficiently: 3 Ingots yield 2 Plates."]
+			id: "54ACE3A0AC660A50"
+			shape: "hexagon"
+			tasks: [{
+				id: "4564C31237D3B447"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 6.799999999999997d
+			y: -3.5d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: ["Required for early-game alloys, including the most important alloy of this era: Red Alloy."]
+			id: "68D6CBA3B0836C88"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0036FBF3DB91D515"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 5.4215795068027255d
+			y: -0.38265306122449516d
+		}
+		{
+			dependencies: ["22801BC8E559BC55"]
+			description: ["Allows you to macerate ores, sometimes doubling your output!"]
+			id: "07B76D0844D99724"
+			shape: "hexagon"
+			tasks: [{
+				id: "1D585162B6B1952C"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: 8.799999999999997d
+			y: -3.5d
+		}
+		{
+			dependencies: ["68D6CBA3B0836C88"]
+			description: ["A steam-powered multi-block furnace. It smelts items quickly and processes up to 4 items simultaneously."]
+			id: "1F8932F343B91A7C"
+			shape: "octagon"
+			size: 1.2d
+			tasks: [{
+				id: "426F60B458F90D12"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: 5.439946853741507d
+			y: -2.284693877551007d
+		}
+		{
+			dependencies: [
+				"07B76D0844D99724"
+				"21B69724512B0BFF"
+			]
+			description: ["The next step towards Steel. You will need this in very large quantities."]
+			id: "6D20A46BE1B8769D"
+			shape: "hexagon"
+			size: 1.8d
+			tasks: [
+				{
+					id: "6EFB047B414BBDE4"
+					item: "gtceu:fireclay_dust"
+					type: "item"
+				}
+				{
+					id: "471CB671E21C5584"
+					item: "gtceu:compressed_fireclay"
+					type: "item"
+				}
+			]
+			x: 10.482803996598657d
+			y: -2.8918367346938703d
+		}
+		{
+			dependencies: [
+				"6D20A46BE1B8769D"
+				"05413ED2DBA0371D"
+			]
+			id: "63105DD121AA63E0"
+			tasks: [{
+				id: "4961B9317BE79E8E"
+				item: "gtceu:firebricks"
+				type: "item"
+			}]
+			x: 12.135257759353737d
+			y: -3.489455782312951d
+		}
+		{
+			dependencies: ["63105DD121AA63E0"]
+			description: ["I advise you to keep the blast furnace busy at all times."]
+			id: "41298DA7145EE9D4"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "38F3866C3656AAB6"
+				item: "gtceu:primitive_blast_furnace"
+				type: "item"
+			}]
+			x: 14.88287680697277d
+			y: -1.5370748299320007d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"Uses liquid fuel to generate heat and water to produce steam."
+				"Warning: It will explode if it runs out of water while hot."
+			]
+			id: "1B627DEC9EB7A6D4"
+			optional: true
+			tasks: [{
+				id: "78C45629BCF3A0B7"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"Uses solar energy to generate heat and water to produce steam."
+				"Warning: It will explode if it runs out of water while hot."
+			]
+			id: "353C34E5559C0D6C"
+			optional: true
+			tasks: [{
+				id: "082FDA5AC0BA777F"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1B627DEC9EB7A6D4"]
+			id: "44BE0D3C3ACD0C22"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "3A386D73F27328E9"
+				item: "gtceu:hp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["43067C07F1CF53D8"]
+			id: "0CD7D0351131B4A5"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "2D200BA1EDA52BA0"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["353C34E5559C0D6C"]
+			id: "4D4AA1BE12C7A24E"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "549C6E63AD8F0ECB"
+				item: "gtceu:hp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: ["These pipes transport steam and won't burn, but touching them can still scald you."]
+			id: "4A72F661F5A46996"
+			shape: "circle"
+			tasks: [{
+				id: "5EAFB8EABB31FADA"
+				item: "gtceu:bronze_normal_fluid_pipe"
+				type: "item"
+			}]
+			x: 0.3685182823129409d
+			y: -1.9275510204081527d
+		}
+		{
+			dependencies: ["4A72F661F5A46996"]
+			description: ["Simply better than Bronze"]
+			icon: "gtceu:potin_normal_fluid_pipe"
+			id: "4A378CC993422DE9"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "3E6FBAC8EE298726"
+				title: "Potin "
+				type: "checkmark"
+			}]
+			x: 0.3685182823129409d
+			y: -3.4632653061224445d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			id: "0DABA8BC440E8EBD"
+			shape: "octagon"
+			size: 1.4d
+			tasks: [{
+				id: "31F88CEBB8ECA654"
+				title: "Steel Upgrade!"
+				type: "checkmark"
+			}]
+			x: 1.975661139455795d
+			y: -2.5704081632652986d
+		}
+		{
+			dependencies: ["41298DA7145EE9D4"]
+			id: "1D66BF00AD04DB6F"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				count: 32L
+				id: "102703FA9C6C288F"
+				item: { Count: 32, id: "gtceu:steel_ingot" }
+				type: "item"
+			}]
+			x: 14.835257759353725d
+			y: 0.891496598639421d
+		}
+		{
+			dependencies: [
+				"41298DA7145EE9D4"
+				"1D66BF00AD04DB6F"
+			]
+			description: ["I recommend building several of these furnaces immediately to speed up Steel production. Remember, wall sharing is enabled."]
+			id: "288B39E91190E173"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "47A1E8698D21889E"
+				title: "MORE STEEL!"
+				type: "checkmark"
+			}]
+			x: 16.44001966411565d
+			y: -1.5285714285714243d
+		}
+		{
+			dependencies: ["68D6CBA3B0836C88"]
+			description: ["A fundamental metal for the ULV and LV era."]
+			id: "7873341ED0BEECC5"
+			tasks: [{
+				count: 32L
+				id: "0A58DBDD6DF28886"
+				item: { Count: 32, id: "gtceu:red_alloy_ingot" }
+				type: "item"
+			}]
+			x: 7.782803996598652d
+			y: -0.3632653061224502d
+		}
+		{
+			dependencies: ["5DD49D500327A0E2"]
+			description: [
+				"Build this and your water problems are solved."
+				""
+				"(It pumps water... wow!)"
+			]
+			id: "2090574AFF225180"
+			rewards: [{
+				id: "3AA9D5D7E0348151"
+				item: "paraglider:spirit_orb"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BDA87B36475CD03"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			x: 0.39119047619046654d
+			y: -0.3928571428571459d
+		}
+		{
+			dependencies: ["7873341ED0BEECC5"]
+			id: "22801BC8E559BC55"
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [{
+				count: 8L
+				id: "54342951F3977E45"
+				item: { Count: 8, id: "minecraft:piston" }
+				type: "item"
+			}]
+			x: 7.782803996598652d
+			y: -1.9918367346938766d
+		}
+		{
+			dependencies: [
+				"7873341ED0BEECC5"
+				"4028B45A0B6542DE"
+			]
+			description: ["Essential components for automation and ULV machines."]
+			id: "34B2703714D4876C"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "33B19668CDF7A271"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0E21070FF755EE03"
+					item: "ulvcovm:ulv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "499B2629F17B2D65"
+					item: "ulvcovm:ulv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "57FEC63F4229D15F"
+					item: "ulvcovm:ulv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "15E30403980838C2"
+					item: "ulvcovm:ulv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "1B176BF1294FA2F4"
+					item: "ulvcovm:ulv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "0A4F0187A2F8FA50"
+					item: "ulvcovm:ulv_fluid_regulator"
+					type: "item"
+				}
+			]
+			x: 9.907974064625908d
+			y: -0.3639455782312311d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: ["Basically a smarter Crafting Table."]
+			id: "09F45604AE96227C"
+			optional: true
+			rewards: [{
+				id: "5B86C5B969FBB8D9"
+				item: "avaritia:compressed_chest"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "07FA5F6B369C26E1"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			title: "Smart Table!"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["09F45604AE96227C"]
+			id: "4AF576FC52553667"
+			shape: "circle"
+			tasks: [{
+				id: "6A4C6AF74DEE77A2"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6D20A46BE1B8769D"]
+			description: ["Using a drum with cement, you can craft all the bricks at once."]
+			id: "05413ED2DBA0371D"
+			shape: "circle"
+			tasks: [{
+				id: "7AF05EE9C6A33EA3"
+				item: "gtceu:concrete_bucket"
+				type: "item"
+			}]
+			x: 12.180329838966822d
+			y: -2.000425170068027d
+		}
+		{
+			dependencies: [
+				"1D66BF00AD04DB6F"
+				"4028B45A0B6542DE"
+			]
+			description: ["Congratulations on completing the Steam Age."]
+			id: "04508643F6EFAD96"
+			rewards: [{
+				id: "3E0CF56750B8F294"
+				item: "croptopia:mango_sapling"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6AFAED3DD020217F"
+					item: "gtceu:ulv_machine_casing"
+					type: "item"
+				}
+				{
+					id: "0390EE2CCB103E0F"
+					item: "gtceu:ulv_machine_hull"
+					type: "item"
+				}
+			]
+			x: 11.799999999999994d
+			y: 0.8999999999999992d
+		}
+		{
+			dependencies: [
+				"35610B562243BC08"
+				"0BFF9D24E70AA90F"
+			]
+			description: ["This is the first Rubber you can produce. It will become easier to obtain later, though you will eventually replace it with better materials."]
+			id: "4028B45A0B6542DE"
+			tasks: [{
+				id: "28C8D42D83990EA8"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: 9.943278725552695d
+			y: 3.2005102040816302d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: ["Allows for the extraction of Rubber from Rubber Tree logs, sticky resin, and leaves."]
+			id: "19D8640B984699A7"
+			tasks: [{
+				id: "7E7B6E6F43CAC68F"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			x: 5.399999999999997d
+			y: 3.0000000000000013d
+		}
+		{
+			dependencies: [
+				"19D8640B984699A7"
+				"16A4773C7F0FC5E4"
+			]
+			description: [""]
+			id: "0BFF9D24E70AA90F"
+			tasks: [{
+				id: "14E226512ACF1C5D"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 9.900421582695541d
+			y: 4.871938775510204d
+		}
+		{
+			dependencies: ["4E90911EBD418378"]
+			description: [""]
+			id: "16A4773C7F0FC5E4"
+			shape: "circle"
+			tasks: [{
+				id: "61F19DC38A811175"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 5.400421582695548d
+			y: 4.836224489795918d
+		}
+		{
+			dependencies: ["5DD49D500327A0E2"]
+			description: ["These trees produce Sticky Resin. They may be planted densely and harvested quickly using Tinkers' Construct tools."]
+			hide_dependency_lines: true
+			id: "4E90911EBD418378"
+			tasks: [{
+				id: "03C1C8657BFAEC01"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			x: 5.4d
+			y: 6.299999999999994d
+		}
+		{
+			description: [
+				"Currently, to obtain Sulfur Mushrooms, you must kill mobs; every mob has a low chance to drop them. Cut the mushrooms on a Cutting Board to get Sulfur Chunks."
+				""
+				"Macerate the chunks to obtain Sulfur Dust."
+			]
+			id: "35610B562243BC08"
+			shape: "circle"
+			tasks: [
+				{
+					id: "76EA6F6EF9D38798"
+					item: "kubejs:sulfur_chunk"
+					type: "item"
+				}
+				{
+					id: "2D5729D07AFB8A4A"
+					item: "kubejs:sulfuric_mushroom"
+					type: "item"
+				}
+			]
+			x: 11.800421582695535d
+			y: 3.236224489795929d
+		}
+		{
+			dependencies: [
+				"5673A00D1E6CC930"
+				"1D66BF00AD04DB6F"
+			]
+			description: ["Needs no explanation. Can be upgraded and dyed."]
+			id: "6E36E7EBAFBCB686"
+			shape: "circle"
+			tasks: [{
+				id: "6B786FDE60111BF7"
+				item: "usefulbackpacks:backpack_small"
+				type: "item"
+			}]
+			x: 14.78488095238096d
+			y: 4.832908163265309d
+		}
+		{
+			id: "5673A00D1E6CC930"
+			shape: "circle"
+			tasks: [{
+				id: "1F17F4ECC9E9A25B"
+				item: "kubejs:tanned_leather"
+				type: "item"
+			}]
+			x: 11.784880952380952d
+			y: 4.868622448979593d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: ["Just like in real life, a Vacuum Tube needs... a vacuum. You will unlock more efficient recipes for these later."]
+			id: "3906BB5555D181F2"
+			shape: "circle"
+			tasks: [{
+				id: "6F1BAE4FB370A24D"
+				item: "kubejs:not_vacuum_tube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3906BB5555D181F2"]
+			description: ["The first ULV circuits. You will need these in large quantities, so stock up."]
+			id: "39205CF2CB1EA09B"
+			shape: "octagon"
+			size: 1.7d
+			tasks: [{
+				id: "33645B24B02E4246"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D66BF00AD04DB6F"]
+			description: ["Decent armor for this stage. It also provides temperature resistance (Not yet implemented)."]
+			id: "0CBF32D58514F936"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "5B227CFBAECB3CF0"
+				item: {
+					Count: 1
+					id: "gtceu:steel_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21B69724512B0BFF"]
+			id: "078EE0E971B97F6E"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "662638DF0F448A81"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: {
+						texture: "forestry:resource_storage_bronze"
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+	]
+	subtitle: ["Harness the power of Steam and learn the basics"]
+	title: "Bronze Machines go BRRRRR!"
+}
