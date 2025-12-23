@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(1, 0, 0, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
-        event.create('electric_cloche')
+        event.create('cloche')
         .category('gregtech')
         .setEUIO('in') 
         .setMaxIOSize(2, 1, 2, 0)
@@ -228,7 +228,7 @@ event.create('lava_furnace', 'multiblock')
 
 event.create('electric_cloche', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('lava_furnace')
+		.recipeType('cloche')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
 		.appearanceBlock(() => Block.getBlock('gtceu:steel_machine_casing'))
 		.pattern(definition => FactoryBlockPattern.start()

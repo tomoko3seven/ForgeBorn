@@ -1263,8 +1263,8 @@
 				type: "item"
 			}]
 			title: "Easy planks!"
-			x: 4.299999999999999d
-			y: -4.000000000000001d
+			x: 3.9999999999999996d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1291,8 +1291,32 @@
 				item: "gtceu:cognitium_solidifier"
 				type: "item"
 			}]
-			x: 3.8d
-			y: -3.5d
+			x: 3.4999999999999996d
+			y: -2.499999999999999d
+		}
+		{
+			dependencies: ["5B7BC416799EA7AC"]
+			id: "57A2B1AA59666BB4"
+			shape: "diamond"
+			tasks: [{
+				id: "3407581F9457543D"
+				item: "gtceu:lava_furnace"
+				type: "item"
+			}]
+			x: 4.500000000000002d
+			y: -2.499999999999999d
+		}
+		{
+			dependencies: ["5B7BC416799EA7AC"]
+			id: "00F8C522C7EC2ADA"
+			shape: "diamond"
+			tasks: [{
+				id: "5BAC9AAEAF8773ED"
+				item: "gtceu:electric_cloche"
+				type: "item"
+			}]
+			x: 4.000000000000002d
+			y: -1.9999999999999991d
 		}
 	]
 	title: "Hi, Electricity!"
