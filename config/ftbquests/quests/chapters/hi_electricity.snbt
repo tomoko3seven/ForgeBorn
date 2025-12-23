@@ -97,9 +97,9 @@
 			dependencies: ["3884187493BA916A"]
 			description: [
 				"GregTech's energy system, &9EU&r (Energy Units), works with &cVoltage&r (V) and &dAmperage&r (A). Power is transferred in packets: Voltage is the packet size, and Amperage is the packet count."
-				"" 
+				""
 				"Machines and cables have specific Voltage tier limits (LV, MV, HV) and Amperage ratings. Exceeding these causes explosions or fires. Progression involves stepping up voltage tiers with transformers and managing cable loss."
-				"" 
+				""
 				"Also, do not place your machines under the open sky; they will explode if it rains."
 			]
 			id: "310B08BB2DFC4D6F"
@@ -141,7 +141,7 @@
 				"Pick up as many of Botania's mystical flowers as you can. Right now, white is the most useful for you."
 				""
 				"You may also grow them by using a mystical fertilizer on a petal placed on the floor, or by using mystical fertilizer on grass."
-				]
+			]
 			id: "2271ABC7231D8B63"
 			tasks: [{
 				id: "5F8E02A14EA9FB1E"

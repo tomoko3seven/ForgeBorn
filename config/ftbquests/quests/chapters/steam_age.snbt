@@ -37,7 +37,7 @@
 		{
 			dependencies: ["661E54379A9CDCEE"]
 			description: [
-				""Steam is the primary energy source for this stage of the game. All machines run on steam and must release exhaust steam after every operation. To create an exhaust vent, right-click any side of the machine with a Wrench."
+				"Steam is the primary energy source for this stage of the game. All machines run on steam and must release exhaust steam after every operation. To create an exhaust vent, right-click any side of the machine with a Wrench."
 				""
 				"Be careful not to step into the vented steam, or you will take damage."
 			]

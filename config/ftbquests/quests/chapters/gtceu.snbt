@@ -101,11 +101,6 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "6C9338DA3B62C617"
-					item: "minecraft:crafting_table"
-					type: "item"
-				}
-				{
 					id: "3611108A19025CD1"
 					item: {
 						Count: 1
@@ -115,6 +110,15 @@
 						}
 					}
 					type: "item"
+				}
+				{
+					icon: "minecraft:crafting_table"
+					id: "1DB008DEC7E09AE8"
+					observe_type: 0
+					timer: 0L
+					title: "Observe Crafting Table"
+					to_observe: "minecraft:crafting_table"
+					type: "observation"
 				}
 			]
 			x: -8.397959183673441d
@@ -742,9 +746,10 @@
 		{
 			dependencies: ["41BA880BB1F7D39E"]
 			description: [
-				"Make an axe to harvest wood." 
+				"Make an axe to harvest wood."
 				""
-				"Note: The Flint axe does not come with treefelling, and this is unlocked with Iron and above."]
+				"Note: The Flint axe does not come with treefelling, and this is unlocked with Iron and above."
+			]
 			id: "4D45BC7F9DD88068"
 			tasks: [{
 				id: "5C5343F05640EC2B"
