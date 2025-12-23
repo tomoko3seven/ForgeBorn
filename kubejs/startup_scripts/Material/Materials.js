@@ -290,6 +290,7 @@ event.create('grimsteel')
 
 event.create('crystallyne')
         .color(0x6fa7c4)
+        .ore()
         .gem()
 
         .iconSet(GTMaterialIconSet.CERTUS)

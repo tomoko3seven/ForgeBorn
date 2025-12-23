@@ -184,6 +184,11 @@
     "modId": "corgilib",
     "version": "4.0.3.4"
   },
+  "CraftPresence-2.7.0+1.20.1-forge.jar": {
+    "jarName": "CraftPresence-2.7.0+1.20.1-forge.jar",
+    "modId": "craftpresence",
+    "version": "2.7.0"
+  },
   "CrashAssistant-forge-1.19-1.20.1-1.10.10.jar": {
     "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.10.jar",
     "modId": "crash_assistant",
@@ -894,6 +899,11 @@
     "jarName": "ulvcovm-0.3.2.jar",
     "modId": "ulvcovm",
     "version": "0.3.2"
+  },
+  "UniLib-1.2.0+1.20.1-forge.jar": {
+    "jarName": "UniLib-1.2.0+1.20.1-forge.jar",
+    "modId": "unilib",
+    "version": "1.2.0"
   },
   "useful_backpacks-forge-1.20.1-2.0.1.124.jar": {
     "jarName": "useful_backpacks-forge-1.20.1-2.0.1.124.jar",
