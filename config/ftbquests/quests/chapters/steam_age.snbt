@@ -45,6 +45,10 @@
 			id: "5DD49D500327A0E2"
 			shape: "diamond"
 			size: 3.0d
+			tasks: [{
+				id: "17314D0EDB5E4965"
+				type: "checkmark"
+			}]
 			title: "Hi, hot gas water!"
 			x: -1.9302380952381029d
 			y: -0.4285714285714306d
@@ -372,11 +376,6 @@
 				"(It pumps water... wow!)"
 			]
 			id: "2090574AFF225180"
-			rewards: [{
-				id: "3AA9D5D7E0348151"
-				item: "paraglider:spirit_orb"
-				type: "item"
-			}]
 			tasks: [{
 				id: "1BDA87B36475CD03"
 				item: "gtceu:primitive_pump"

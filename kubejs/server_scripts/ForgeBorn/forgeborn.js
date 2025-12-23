@@ -11,7 +11,7 @@ event.shaped(Item.of('4x gtceu:cobblestone_ingot'), [
     ' F '
 ], {
     C: 'minecraft:cobblestone', 
-    F: 'gtceu:cobblestone_file'
+    F: '#gtceu:tools/crafting_files'
 })
 event.shaped(Item.of('kubejs:rope'), [
     ' S ',

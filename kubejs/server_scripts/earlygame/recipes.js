@@ -57,27 +57,6 @@ event.shaped(Item.of('minecraft:chest'), [
     B: '#minecraft:logs',
     F: 'minecraft:flint',
 });
-event.shaped(`kubejs:cobblestone_bricks`, ["SCS", "CBC", "SCS"], {
-    S: 'minecraft:cobblestone',
-    C: 'minecraft:clay_ball',
-    B: ['notreepunching:ceramic_water_bucket', '#forge:buckets/water']
-  });
-  event.recipes.gtceu.assembler('gtceu:assembler/cobblestone_bricks')
-  .itemInputs('4x minecraft:cobblestone')
-  .inputFluids('minecraft:water 200')
-  .itemOutputs('4x kubejs:cobblestone_bricks')
-  .EUt(GTValues.VA[GTValues.ULV])
-  .duration(200)
-event.shaped(Item.of('minecraft:furnace'), [
-    'BCB',
-    'GFG',
-    'BCB'
-], {
-    C: 'minecraft:cobblestone',
-    G: 'gtceu:stone_gear',
-    B: 'kubejs:cobblestone_bricks',
-    F: 'minecraft:flint',
-});
 //Pre-Steam
 event.shaped(Item.of('minecraft:white_wool'), [
     'AA ',
