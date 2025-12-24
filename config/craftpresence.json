@@ -30,7 +30,7 @@
     "fallbackDimensionIcon": "forgeborn_f",
     "dimensionData": {
       "default": {
-        "textOverride": "In the {dimension.name}"
+        "textOverride": "Exploring the {dimension.name}"
       }
     }
   },

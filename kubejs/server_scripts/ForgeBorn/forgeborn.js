@@ -224,6 +224,54 @@ event.replaceInput(
     S: '#forge:tools/screwdrivers', 
     C: 'gtceu:steam_fluid_input_hatch'
 });*/
+    event.shaped('gtceu:sawmill', [
+    'MSM',
+    'UHU',
+    'CCC'
+], {
+    H: 'kubejs:spruce_zinc_casing',
+    U: '#gtceu:circuits/ulv',
+    C: 'gtceu:lead_single_cable',
+    M: 'ulvcovm:ulv_electric_motor', 
+    S: 'gtceu:steel_buzz_saw_blade',
+});
+    event.shaped('gtceu:cognitium_solidifier', [
+    'MSM',
+    'UPU',
+    'CHC'
+], {
+    H: 'gtceu:ulv_machine_hull',
+    P: 'kubejs:solid_wrought_iron_casing',
+    U: '#gtceu:circuits/ulv',
+    C: 'gtceu:lead_single_cable',
+    M: 'gtceu:wrought_iron_plate', 
+    S: 'mob_grinding_utils:xpsolidifier'
+});
+    event.shaped('gtceu:lava_furnace', [
+    'PPP',
+    'UHU',
+    'PCP'
+], {
+    H: 'gtceu:ulv_machine_hull',
+    P: 'kubejs:solid_wrought_iron_casing',
+    U: '#gtceu:circuits/ulv',
+    C: 'gtceu:lead_quadruple_cable'
+});
+    event.shaped('gtceu:electric_cloche', [
+    'SLS',
+    'UHU',
+    'PCP'
+], {
+    H: 'gtceu:ulv_machine_hull',
+    P: 'kubejs:solid_wrought_iron_casing',
+    U: '#gtceu:circuits/ulv',
+    S: '#forge:plates/wrought_iron',
+    L: 'gtceu:ulv_voltage_coil',
+    C: 'gtceu:lead_single_cable'
+});
+
+
+
 
     event.recipes.gtceu.macerator('gtceu:macerator/contradiction_stone_dust')
     .itemInputs('kubejs:contradiction_stone')
