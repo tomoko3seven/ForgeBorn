@@ -313,6 +313,38 @@ C: 'gtceu:red_alloy_single_cable',
 I: '#gtceu:circuits/ulv',
 H: 'gtceu:ulv_machine_hull'
 })
+event.shaped('gtceu:ulv_input_bus', [
+" I ",
+" H ",
+"   "
+], {
+I: '#forge:chests/wooden',
+H: 'gtceu:ulv_machine_hull'
+})
+event.shaped('gtceu:ulv_output_bus', [
+" H ",
+" I ",
+"   "
+], {
+I: '#forge:chests/wooden',
+H: 'gtceu:ulv_machine_hull'
+})
+event.shaped('gtceu:ulv_input_hatch', [
+" I ",
+" H ",
+"   "
+], {
+I: '#forge:glass',
+H: 'gtceu:ulv_machine_hull'
+})
+event.shaped('gtceu:ulv_output_hatch', [
+" H ",
+" I ",
+"   "
+], {
+I: '#forge:glass',
+H: 'gtceu:ulv_machine_hull'
+})
 
 /////////////////////
 /////////LV//////////
