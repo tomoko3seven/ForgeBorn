@@ -13,7 +13,7 @@ ServerEvents.tags("item", (event) => {
   const ad_astra = [
     "iron",
     "steel"
-  ]
+  ];
   ad_astra.forEach((material) => {
     event.remove('forge:plates/' + material, 'ad_astra:' + material + '_plate');
     event.remove('forge:rods/' + material, 'ad_astra:' + material + '_rod');
