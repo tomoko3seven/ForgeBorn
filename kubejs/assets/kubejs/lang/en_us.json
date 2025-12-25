@@ -58,5 +58,8 @@
   "item.kubejs.cursed_cloth": "Cursed Cloth",
   "item.kubejs.enchanted_fabric": "Enchanted Fabric",
   "item.kubejs.magic_thread": "Magic Thread",
-  "item.kubejs.obsidian_skull": "Obsidian Skull"
+  "item.kubejs.obsidian_skull": "Obsidian Skull",
+
+  "item.kubejs.eternal_feast": "§bEternal Feast",
+  "item.kubejs.eternal_feast.tooltip": "Wearing this grants infinite saturation."
 }
