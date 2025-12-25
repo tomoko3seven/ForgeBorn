@@ -583,6 +583,7 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["02FDA32EE16B5608"]
 			id: "1512E27F183A6190"
 			tasks: [{
 				id: "5762CA0748A143C2"
@@ -2839,6 +2840,7 @@
 				"6957099A4D23C013"
 				"2886DF50F00C9825"
 			]
+			hide_dependency_lines: true
 			id: "5F1C550EF7C97D02"
 			shape: "hexagon"
 			size: 5.0d

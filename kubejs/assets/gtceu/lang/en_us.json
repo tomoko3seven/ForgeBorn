@@ -1,82 +1,86 @@
 {
-  "block.gtceu.gaia_garden":"Garden of Gaia", 
-  "gtceu.gaia_garden":"Garden Of Gaia",
-  "gtceu.extraterrestial_agglomeration":"Extraterrestial Agglomeration",
+  "block.gtceu.gaia_garden": "Garden of Gaia",
+  "block.gtceu.mana_pulse_infuser": "Mana-Pulse Infuser",
+  "block.gtceu.primitive_assembler": "Primitive Assembler",
+  "block.gtceu.sawmill": "Sawmill",
+
+  "gtceu.extraterrestial_agglomeration": "Extraterrestial Agglomeration",
+  "gtceu.gaia_garden": "Garden Of Gaia",
+  "gtceu.mana_infuser": "Mana Infusion",
+  "gtceu.mana_pulse_infuser": "Mana-Pulse Infusion",
+  "gtceu.laser_welder": "Laser Welding",
+  "gtceu.crystallizer": "Crystallizing",
+  "gtceu.botanical_purification_chamber": "Botanical Purification",
+  "gtceu.runic_assembler": "Runic Assembling",
+  "gtceu.culinary_assembler": "Culinary Assembling",
+  "gtceu.source_imbument": "Source Imbument",
+  "gtceu.source_extraction": "Source Extraction",
+  "gtceu.sawmill": "Milling",
+  "gtceu.lava_furnace": "Lava Smelting",
+  "gtceu.cloche": "Cloche",
+  "gtceu.cognitium_solidification": "Cognitium Solidification",
+  "gtceu.squeezer": "Squeezing",
+
+  "material.gtceu.cobblestone": "Cobblestone",
+  "material.gtceu.sourcemetall": "Sourcemetal",
+  "material.gtceu.archwood": "Archwood",
+  "material.gtceu.dreamwood": "Dreamwood",
+  "material.gtceu.ditchbulb_resin": "Ditchbulb-Resin",
+
+  "material.gtceu.livingwood": "Livingwood",
+  "material.gtceu.livingrock": "Livingrock",
+  "material.gtceu.manasteel": "Manasteel",
+  "material.gtceu.mana_soldering_alloy": "Mana-soldering Alloy",
+  "material.gtceu.managold": "Managold",
+  "material.gtceu.annealed_manasteel": "Annealed Manasteel",
+  "material.gtceu.terrasteel": "Terrasteel",
+  "material.gtceu.elementium": "Elementium",
+  "material.gtceu.mauftrium": "Mauftrium",
+  "material.gtceu.muspelheim": "Muspelheim",
+  "material.gtceu.niflheim": "Niflheim",
+  "material.gtceu.gaiasteel": "Gaiasteel",
+  "material.gtceu.gaia": "Gaia",
+  "material.gtceu.elvorium": "Elvorium",
+
+  "material.gtceu.cloggrum": "Cloggrum",
+  "material.gtceu.froststeel": "Froststeel",
+  "material.gtceu.utherium": "Utherium",
+  "material.gtceu.aqua": "Aqua Crystal",
+  "material.gtceu.fire": "Fire Crystal",
+  "material.gtceu.wind": "Wind Crystal",
+  "material.gtceu.earth": "Earth Crystal",
+  "material.gtceu.runic_iron": "Runic Iron",
+  "material.gtceu.cloggrumsteel": "Cloggrumsteel",
+  "material.gtceu.prismarine_infused_alloy": "Prismarine-infused Alloy",
+  "material.gtceu.firestone": "Firestone",
+  "material.gtceu.aethersteel": "Aethersteel",
+  "material.gtceu.lumicrystalltine_alloy": "Lumicrystalltine Alloy",
+  "material.gtceu.lumicrystalline": "Lumicrystalline",
+  "material.gtceu.crystallyne": "Crystallyne",
+  "material.gtceu.lumicrystalline_slurry": "Lumicrystalline Slurry",
+  "material.gtceu.lumi_acid": "Lumi Acid",
+  "material.gtceu.thaumium": "Thaumium",
+
+  "material.gtceu.energetic_alloy": "Energetic Alloy",
+  "material.gtceu.vibrant_alloy": "Vibrant Alloy",
+  "material.gtceu.pulsating_alloy": "Pulsating Alloy",
+  "material.gtceu.redstone_alloy": "Redstone Alloy",
+  "material.gtceu.black_quartz": "Black Quartz",
+  "material.gtceu.copper_alloy": "Copper Alloy",
+  "material.gtceu.black_iron": "Black Iron",
+  "material.gtceu.soularium": "Soularium",
+  "material.gtceu.conductive_alloy": "Conductive Alloy",
 
 
-  "gtceu.mana_infuser":"Mana Infusion",
-  "block.gtceu.mana_pulse_infuser":"Mana-Pulse Infuser", 
-  "gtceu.mana_pulse_infuser":"Mana-Pulse Infusion",
+  "material.gtceu.stormsilver": "§3Stormsilver",
+  "material.gtceu.starsilver": "§bStarsilver",
+  "material.gtceu.voidbound": "§0Voidbound",
+  "material.gtceu.voidmetall": "§8Voidmetal",
+  "material.gtceu.grimsteel": "§4Grimsteel",
+  "material.gtceu.mysterium": "§5Mysterium",
 
-  "block.gtceu.primitive_assembler":"Primitive Assembler",
-  "block.gtceu.sawmill":"Sawmill",
-  "gtceu.sawmill":"Sawmill", 
-
-
-
-
-
-
-  "material.gtceu.cobblestone":"Cobblestone",
-
-
-  "material.gtceu.sourcemetall":"Sourcemetal",
-  "material.gtceu.archwood":"Archwood",
-
-  "material.gtceu.livingwood":"Livingwood",
-  "material.gtceu.livingrock":"Livingrock",
-  "material.gtceu.manasteel":"Manasteel",
-  "material.gtceu.mana_soldering_alloy":"Mana-soldering Alloy",
-  "material.gtceu.managold":"Managold",
-  "material.gtceu.annealed_manasteel":"Annealed Manasteel",
-  "material.gtceu.terrasteel":"Terrasteel",
-  "material.gtceu.mauftrium":"Mauftrium",
-  "material.gtceu.muspelheim":"Muspelheim",
-  "material.gtceu.niflheim":"Niflheim",
-  "material.gtceu.gaiasteel":"Gaiasteel",
-  "material.gtceu.gaia":"Gaia",
-
-  "material.gtceu.ditchbulb_resin":"Ditchbulb-Resin",
-
-  "material.gtceu.cloggrum":"Cloggrum",
-  "material.gtceu.froststeel":"Froststeel",
-  "material.gtceu.utherium":"Utherium",
-
-  "material.gtceu.aqua":"Aqua Crystal",
-  "material.gtceu.fire":"Fire Crystal",
-  "material.gtceu.wind":"Wind Crystal",
-  "material.gtceu.earth":"Earth Crystal",
-
-  "material.gtceu.runic_iron":"Runic Iron",
-  "material.gtceu.cloggrumsteel":"Cloggrumsteel",
-  "material.gtceu.prismarine_infused_alloy":"Prismarine-infused Alloy",
-  "material.gtceu.firestone":"Firestone",
-  "material.gtceu.aethersteel":"Aethersteel",
-  "material.gtceu.lumicrystalltine_alloy":"Lumicrystalltine Alloy",
-  "material.gtceu.lumicrystalline":"Lumicrystalline",
-
-  "material.gtceu.stormsilver":"§3Stormsilver",
-  "material.gtceu.starsilver":"§bStarsilver",
-
-  "material.gtceu.voidbound":"§0Voidbound",
-  "material.gtceu.voidmetall":"§8Voidmetall",
-  "material.gtceu.grimsteel":"§4Grimsteel",
-  "material.gtceu.mysterium":"§5Mysterium",
-
-
-
-
-
-
-
-
-
-
-
-
-"gtceu.jei.ore_vein.ug_cloggrum_vein":"Cloggrum Vein",
-"gtceu.jei.ore_vein.ug_certus":"Certus Quartz Vein",
-"gtceu.jei.ore_vein.ug_utherium_vein":"Cloggrum Vein",
-"gtceu.jei.ore_vein.ug_frosteel_vein":"Froststeel Vein"
-
+  "gtceu.jei.ore_vein.ug_cloggrum_vein": "Cloggrum Vein",
+  "gtceu.jei.ore_vein.ug_certus": "Certus Quartz Vein",
+  "gtceu.jei.ore_vein.ug_utherium_vein": "Utherium Vein",
+  "gtceu.jei.ore_vein.ug_frosteel_vein": "Froststeel Vein"
 }

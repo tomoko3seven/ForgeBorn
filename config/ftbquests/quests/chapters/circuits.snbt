@@ -28,16 +28,6 @@
 			y: 1.0d
 		}
 		{
-			id: "6717E1832E208C56"
-			tasks: [{
-				id: "223F4700000B0D18"
-				item: "gtceu:advanced_integrated_circuit"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 2.0d
-		}
-		{
 			id: "2558A2AF36038836"
 			tasks: [{
 				id: "757AC369648FC51B"
@@ -126,6 +116,16 @@
 			}]
 			x: -1.0d
 			y: -1.0d
+		}
+		{
+			id: "5D9606E2A6026545"
+			tasks: [{
+				id: "54B2457AB58B1B26"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
 		}
 	]
 	title: "Circuits"

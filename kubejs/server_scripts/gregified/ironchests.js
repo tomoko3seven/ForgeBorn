@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ironchest:gold_to_diamond_chest_upgrade' });
     event.remove({ output: 'ironchest:diamond_to_crystal_chest_upgrade' });
     event.remove({ output: 'ironchest:diamond_to_obsidian_chest_upgrade' });
-    //fuck off copper
+    // screw off copper
     event.remove({ output: 'ironchest:copper_chest' });
     event.remove({ output: 'ironchest:copper_to_iron_chest_upgrade' });
     event.remove({ output: 'ironchest:wood_to_copper_chest_upgrade' });
