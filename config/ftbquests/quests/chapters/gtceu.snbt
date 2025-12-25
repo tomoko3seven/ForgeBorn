@@ -818,7 +818,7 @@
 					type: "item"
 				}
 			]
-			x: -1.742261904761932d
+			x: -1.8422619047619322d
 			y: -6.649319727891161d
 		}
 		{
@@ -950,6 +950,7 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [
 				{
 					id: "2431C124CBE37E0C"
