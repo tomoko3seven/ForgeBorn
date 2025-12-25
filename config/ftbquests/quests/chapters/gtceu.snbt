@@ -90,6 +90,7 @@
 		{
 			dependencies: ["4D45BC7F9DD88068"]
 			description: ["A Crafting Table can be created by right-clicking any log while holding a Flint Knife in your hand."]
+			icon: "minecraft:crafting_table"
 			id: "2E957F7E56FB198B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -269,7 +270,7 @@
 			y: -0.9212585034014039d
 		}
 		{
-			dependencies: ["73FB99F48CD69B25"]
+			dependencies: ["4D45BC7F9DD88068"]
 			description: [
 				"The environment on this planet is hostile. I've seen undead creatures roaming about. I don't know if they were once people or just... never mind."
 				""
@@ -287,9 +288,9 @@
 				title: "Combat"
 				type: "checkmark"
 			}]
-			title: "Some information about enviroment"
-			x: -0.024829931972820435d
-			y: -0.845068027210928d
+			title: "Some information about the environment"
+			x: -9.861309523809545d
+			y: 0.8459183673469326d
 		}
 		{
 			dependencies: ["73FB99F48CD69B25"]
@@ -493,6 +494,7 @@
 		{
 			dependencies: ["7D91E90383656163"]
 			description: ["Coke? Charcoal? Creosote? These are all fuels you can obtain for free. Coke Ovens do not require external fuel to operate. I recommend building 4 of them. Remember, wall sharing is enabled. Creosote is a byproduct used to make Treated Wood, which is required for a bed."]
+			icon: "gtceu:coke_oven"
 			id: "73488B39DFE88402"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -515,8 +517,8 @@
 					type: "item"
 				}
 			]
-			x: -1.9000000000000006d
-			y: -5.820068027210878d
+			x: 0.583588435374125d
+			y: -6.707142857142859d
 		}
 		{
 			dependencies: ["73488B39DFE88402"]
@@ -544,8 +546,8 @@
 				type: "item"
 			}]
 			title: "BED TIME!"
-			x: -0.9217687074830059d
-			y: -6.999999999999998d
+			x: 1.497874149659836d
+			y: -7.964285714285722d
 		}
 		{
 			dependencies: ["73488B39DFE88402"]
@@ -565,8 +567,8 @@
 				item: "gtceu:coke_gem"
 				type: "item"
 			}]
-			x: -2.9000000000000012d
-			y: -6.999999999999998d
+			x: 2.1550170068026873d
+			y: -6.7071428571428555d
 		}
 		{
 			dependencies: [
@@ -574,29 +576,26 @@
 				"2BDB8A9D6652280D"
 			]
 			description: ["Your first GT Tools! You will rely on these for a while."]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "216757436BCABF06"
 			shape: "hexagon"
 			size: 1.4d
 			tasks: [
-				{
-					id: "008480B0390C85F1"
-					item: {
-						Count: 1
-						id: "gtceu:iron_hammer"
-						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: { }
-							GT.Tool: {
-								HarvestLevel: 2
-								MaxDamage: 255
-								ToolSpeed: 6.0f
-							}
-							HideFlags: 2
-						}
-					}
-					type: "item"
-				}
 				{
 					id: "1758AB51FD8036A9"
 					item: {
@@ -668,6 +667,26 @@
 					}
 					type: "item"
 				}
+				{
+					id: "5CBFDB0D7F1521BF"
+					item: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
 			]
 			x: -4.102721088435363d
 			y: -3.826870748299321d
@@ -679,6 +698,7 @@
 				""
 				"The amount of materials required for the Coke Oven may seem daunting, but don't worry. All of these resources will soon be easy to get."
 			]
+			icon: "gtceu:brick_wooden_form"
 			id: "610F433CFC55B005"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -777,9 +797,14 @@
 			y: -0.5000000000000007d
 		}
 		{
-			dependencies: ["25289F9E8AE01C29"]
+			dependencies: [
+				"6929FC84905A30B5"
+				"73488B39DFE88402"
+			]
+			dependency_requirement: "one_completed"
 			description: ["If you are having issues with temperature, use these blocks. They are powered by Redstone."]
 			id: "3274C1D80BEC66C1"
+			optional: true
 			shape: "hexagon"
 			tasks: [
 				{
@@ -793,25 +818,13 @@
 					type: "item"
 				}
 			]
-			x: -11.338265306122473d
-			y: -6.398724489795935d
-		}
-		{
-			dependencies: ["1DC5DC64F32415C0"]
-			description: ["Tinkers' Construct is not Gregified yet, but you are free to use it."]
-			id: "3800302F80AFA20F"
-			shape: "diamond"
-			tasks: [{
-				id: "147A70B5E1C52862"
-				title: "!"
-				type: "checkmark"
-			}]
-			title: "TINKER CONSTRUCT!"
-			x: -6.800000000000001d
-			y: -2.1d
+			x: -1.742261904761932d
+			y: -6.649319727891161d
 		}
 		{
 			dependencies: ["610F433CFC55B005"]
+			description: ["Grout is used to create the Tinkers' Smeltery"]
+			icon: "tconstruct:grout"
 			id: "13AB3B249DB96409"
 			optional: true
 			shape: "circle"
@@ -836,7 +849,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["13AB3B249DB96409"]
+			dependencies: ["38E042EB364667F2"]
 			id: "6059DC46FF094FA7"
 			optional: true
 			shape: "hexagon"
@@ -846,8 +859,156 @@
 				item: "tconstruct:smeltery_controller"
 				type: "item"
 			}]
-			x: 0.5664965986394321d
-			y: -4.121428571428574d
+			x: 2.2203231292516747d
+			y: -4.072448979591847d
+		}
+		{
+			dependencies: ["7E1A7E5E5EE9A90B"]
+			description: ["Wrought Iron is a more durable replacement for Iron. It is created by smelting Iron Nuggets."]
+			id: "6929FC84905A30B5"
+			shape: "hexagon"
+			tasks: [{
+				count: 8L
+				id: "3B769D7D24E465A1"
+				item: { Count: 8, id: "gtceu:wrought_iron_ingot" }
+				type: "item"
+			}]
+			title: "Better Iron"
+			x: -1.8136904761905086d
+			y: -4.9826530612244895d
+		}
+		{
+			dependencies: ["13AB3B249DB96409"]
+			icon: "tconstruct:seared_melter"
+			id: "38E042EB364667F2"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "41AFCFDEB974052E"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "77BCF6F7131C5DE0"
+					item: "tconstruct:seared_heater"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C9594525A16536A"
+					item: "tconstruct:seared_fuel_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "15736F54E1C1DCE4"
+					item: { Count: 2, id: "tconstruct:seared_faucet" }
+					type: "item"
+				}
+				{
+					id: "544A531134165D98"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "02E7D975B4F835B4"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
+			x: 0.6897108843537083d
+			y: -4.072448979591847d
+		}
+		{
+			dependencies: ["616B494E248D88E9"]
+			description: ["Storage Drawers are available in the Stone Age! However, you do not have access to controllers and upgrades. "]
+			id: "748ADF31A25531F8"
+			shape: "hexagon"
+			tasks: [{
+				id: "65329F72F19AEF91"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any #functionalstorage:drawer"
+				type: "item"
+			}]
+			title: "Storage Drawers"
+			x: -7.7871173469388d
+			y: -3.124659863945581d
+		}
+		{
+			dependencies: ["1DC5DC64F32415C0"]
+			id: "46E546F17E3E267F"
+			rewards: [{
+				count: 4
+				id: "61091F5890A7C829"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2431C124CBE37E0C"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					id: "3C110929A25EF4D0"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+			]
+			x: -6.810926870748332d
+			y: 1.1610544217687107d
+		}
+		{
+			dependencies: ["2E957F7E56FB198B"]
+			id: "1EB20C6A3E752200"
+			shape: "hexagon"
+			tasks: [{
+				id: "631132BAE59FA124"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			x: -8.40616496598642d
+			y: 0.9467687074829954d
+		}
+		{
+			dependencies: ["38E042EB364667F2"]
+			description: ["Required for more advanced tools."]
+			icon: {
+				Count: 1
+				id: "tconstruct:scorched_anvil"
+				tag: {
+					texture: "forestry:resource_storage_bronze"
+				}
+			}
+			id: "761F2F4234BA9B66"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4A7106F6FBD311E8"
+					item: {
+						Count: 1
+						id: "tconstruct:scorched_anvil"
+						tag: {
+							texture: "forestry:resource_storage_bronze"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1BAEC34ACFB4A0D8"
+					type: "checkmark"
+				}
+			]
+			x: 1.403358843537383d
+			y: -2.9159013605442183d
 		}
 	]
 	title: "First Days of Caveman"

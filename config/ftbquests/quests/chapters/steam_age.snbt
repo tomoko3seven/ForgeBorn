@@ -450,38 +450,6 @@
 			y: -0.3639455782312311d
 		}
 		{
-			dependencies: ["03DBF1961AE21C76"]
-			description: ["Basically a smarter Crafting Table."]
-			id: "09F45604AE96227C"
-			optional: true
-			rewards: [{
-				id: "5B86C5B969FBB8D9"
-				item: "avaritia:compressed_chest"
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "07FA5F6B369C26E1"
-				item: "tconstruct:crafting_station"
-				type: "item"
-			}]
-			title: "Smart Table!"
-			x: 3.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["09F45604AE96227C"]
-			id: "4AF576FC52553667"
-			shape: "circle"
-			tasks: [{
-				id: "6A4C6AF74DEE77A2"
-				item: "functionalstorage:oak_1"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -3.5d
-		}
-		{
 			dependencies: ["6D20A46BE1B8769D"]
 			description: ["Using a drum with cement, you can craft all the bricks at once."]
 			id: "05413ED2DBA0371D"
@@ -687,25 +655,6 @@
 			}]
 			x: 16.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["21B69724512B0BFF"]
-			id: "078EE0E971B97F6E"
-			optional: true
-			shape: "circle"
-			tasks: [{
-				id: "662638DF0F448A81"
-				item: {
-					Count: 1
-					id: "tconstruct:tinkers_anvil"
-					tag: {
-						texture: "forestry:resource_storage_bronze"
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: -1.5d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
