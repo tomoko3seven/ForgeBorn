@@ -507,6 +507,11 @@
     "modId": "kubejs_botania",
     "version": "1.4.0"
   },
+  "kubejs_curios_forge_1.20.1-1.0.4.jar": {
+    "jarName": "kubejs_curios_forge_1.20.1-1.0.4.jar",
+    "modId": "kubejs_curios",
+    "version": "1.0.4"
+  },
   "kubejs_extended_crafting-2001.5.jar": {
     "jarName": "kubejs_extended_crafting-2001.5.jar",
     "modId": "kubejs_extended_crafting",
