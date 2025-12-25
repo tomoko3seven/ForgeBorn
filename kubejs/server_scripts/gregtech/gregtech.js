@@ -41,16 +41,16 @@ ServerEvents.recipes(event => {
         D: '#forge:double_plates/bronze',
         P: '#forge:plates/bronze'
     });
-    // Duplicate recipe logic from original script kept here
-    event.shaped("gtceu:bronze_machine_casing", [
-        'PPP',
-        'DHD',
-        'PPP'
-    ], {
-        H: '#forge:tools/hammers',
-        D: '#forge:plates/iron',
-        P: '#forge:plates/bronze'
-    });
+    
+    // event.shaped("gtceu:bronze_machine_casing", [
+    //     'PPP',
+    //     'DHD',
+    //     'PPP'
+    // ], {
+    //     H: '#forge:tools/hammers',
+    //     D: '#forge:plates/iron',
+    //     P: '#forge:plates/bronze'
+    // });
 
     event.shaped('gtceu:industrial_steam_casing', [
         'PHP',
