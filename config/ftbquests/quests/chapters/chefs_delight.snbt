@@ -2841,14 +2841,20 @@
 				"2886DF50F00C9825"
 			]
 			hide_dependency_lines: true
+			icon: "kubejs:eternal_feast"
 			id: "5F1C550EF7C97D02"
+			rewards: [{
+				id: "7A3709868010AEC3"
+				item: "kubejs:eternal_feast"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 5.0d
 			tasks: [{
-				id: "444268C00B6BC89B"
-				title: "Human, that doesn`t eat."
-				type: "custom"
+				id: "72304EF3C9300AE7"
+				type: "checkmark"
 			}]
+			title: "Chefs Gift"
 			x: 22.0d
 			y: -5.0d
 		}
