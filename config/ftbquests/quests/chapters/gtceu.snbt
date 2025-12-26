@@ -1011,6 +1011,20 @@
 			x: 1.403358843537383d
 			y: -2.9159013605442183d
 		}
+		{
+			dependencies: ["73FB99F48CD69B25"]
+			description: ["Until you have planes or other option of fast travel, I highly recommend making a walking cane or building railroad tracks to your ore veins. Later, a multiblock will become available, which will help you conserve resources on rails."]
+			id: "490E61F446374877"
+			shape: "circle"
+			tasks: [{
+				id: "761187C0BC2D4D01"
+				item: "extrabotany:walking_cane"
+				type: "item"
+			}]
+			title: "Advice For Getting Resources"
+			x: -0.40616496598642016d
+			y: -0.306377551020411d
+		}
 	]
 	title: "First Days of Caveman"
 }

@@ -1199,6 +1199,7 @@
 			y: 5.800000000000001d
 		}
 		{
+			dependencies: ["36E10C0E5108CAFF"]
 			id: "302EF65C05218BB4"
 			shape: "diamond"
 			tasks: [{
@@ -1285,38 +1286,54 @@
 		{
 			dependencies: ["5B7BC416799EA7AC"]
 			id: "50ADED740D608F0A"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "196F0C34605C18B7"
 				item: "gtceu:cognitium_solidifier"
 				type: "item"
 			}]
+			title: "Infinite Resources at ULV??"
 			x: 3.4999999999999996d
 			y: -2.499999999999999d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
 			id: "57A2B1AA59666BB4"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "3407581F9457543D"
 				item: "gtceu:lava_furnace"
 				type: "item"
 			}]
+			title: "Endless Lava"
 			x: 4.500000000000002d
 			y: -2.499999999999999d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
 			id: "00F8C522C7EC2ADA"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "5BAC9AAEAF8773ED"
 				item: "gtceu:electric_cloche"
 				type: "item"
 			}]
+			title: "Duping Flowers isn`t difficult."
 			x: 4.000000000000002d
 			y: -1.9999999999999991d
+		}
+		{
+			id: "36E10C0E5108CAFF"
+			tasks: [{
+				id: "4BC3DFDD749C5ED1"
+				item: "legendarysurvivaloverhaul:sun_fern_gold_leaf"
+				type: "item"
+			}]
+			x: 9.9d
+			y: 10.5d
 		}
 	]
 	title: "Hi, Electricity!"
