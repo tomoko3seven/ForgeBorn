@@ -41,7 +41,8 @@ event.create('kubejs:undergarden_dim');
   ///////////////
   ///ForgeBorn///
   ///////////////
-  event.create('ingot_form').maxStackSize(1)
+  event.create('ingot_form').maxStackSize(1);
+  event.create('gt_quantum').displayName("GT-Quantum Token").tooltip('§8Right-Click to use this Coin and obtain Bronze Stew.').maxStackSize(16);
   event.create('seared_bricks_raw').maxStackSize(64).displayName("Raw Seared Brick")
   event.create('plant_fiber').maxStackSize(64)
   event.create('plant_string').maxStackSize(64)

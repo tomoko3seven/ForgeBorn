@@ -7,7 +7,6 @@ BlockEvents.rightClicked(event => {
   const isChiselItem = item.id === 'farmersdelight:flint_knife'
   // const isChiselTag  = item.hasTag('forge:tools/chisels')
 
-  // Проверка, что в руке именно зубило
   if (!(isChiselItem /*|| isChiselTag*/)) return
 
   if (!block.hasTag('minecraft:logs')) return

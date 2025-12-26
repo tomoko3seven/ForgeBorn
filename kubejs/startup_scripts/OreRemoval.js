@@ -35,6 +35,11 @@ WorldgenEvents.remove(event => {
     ]
   })
   event.removeFeatureById('raw_generation', [
+    'forestry:apatite_ore',
+    'forestry:deepslate_apatite_ore',
+    'forestry:tin_ore',
+    'forestry:deepslate_tin_ore',
+
     'ad_astra:moon_iron_ore',
     'ad_astra:deepslate_desh_ore',
     'ad_astra:moon_desh_ore',
@@ -53,7 +58,12 @@ WorldgenEvents.remove(event => {
     'malum:brilliant_stone',
     'malum:brilliant_deepslate'
   ])
-  event.removeFeatureById('underground_ores', [   
+  event.removeFeatureById('underground_ores', [
+    'forestry:apatite_ore',
+    'forestry:deepslate_apatite_ore',
+    'forestry:tin_ore',
+    'forestry:deepslate_tin_ore',
+
     'undergarden:depthrock_coal_ore',
     'undergarden:shiverstone_coal_ore',
     'undergarden:depthrock_iron_ore',
