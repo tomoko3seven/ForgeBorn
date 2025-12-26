@@ -49,6 +49,11 @@ ServerEvents.recipes((event) => {
     P: '#forge:plates/gold',
     T: 'kubejs:token_of_darkness'
   });
+  event.recipes.gtceu.alloy_smelter('gtceu:alloy_smelter/seal_piece_3',)
+    .itemInputs('#forge:plates/gold', '4x legendarysurvivaloverhaul:sun_fern_gold_leaf')
+    .itemOutputs('nether_remastered:seal_piece_4')
+    .EUt(GTValues.VA[GTValues.ULV])
+    .duration(20*30)
 /*  event.recipes.enderio.alloy_smelting(
       Item.of('nether_remastered:seal_piece_4', 1),
       [Item.of('#forge:plates/gold'), Ingredient.of('minecraft:netherrack')],
@@ -59,7 +64,7 @@ ServerEvents.recipes((event) => {
     P: '#forge:plates/gold',
     T: 'actuallyadditions:void_crystal'
   });*/
-  event.remove({ id: 'nether_remastered:seal_of_the_underworld_item' });
+  event.remove({ id: 'nether_remastered:sotu_recipe' });
         event.shaped('nether_remastered:seal_of_the_underworld_item', ["QPW", "PTP", "EPR"], {
     P: '#forge:plates/gold',
     Q: 'nether_remastered:seal_piece_1',
