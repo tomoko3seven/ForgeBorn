@@ -1,8 +1,14 @@
 {
   "block.gtceu.gaia_garden": "Garden of Gaia",
   "block.gtceu.mana_pulse_infuser": "Mana-Pulse Infuser",
+
   "block.gtceu.primitive_assembler": "Primitive Assembler",
   "block.gtceu.sawmill": "Sawmill",
+  "block.gtceu.lava_furnace": "Lava Furnace",
+  "block.gtceu.electric_cloche": "Electric Cloche",
+  "block.gtceu.cognitium_solidifier": "Cognitium Solidifier",
+
+
 
   "gtceu.extraterrestial_agglomeration": "Extraterrestial Agglomeration",
   "gtceu.gaia_garden": "Garden Of Gaia",
@@ -18,7 +24,7 @@
   "gtceu.sawmill": "Milling",
   "gtceu.lava_furnace": "Lava Smelting",
   "gtceu.cloche": "Cloche",
-  "gtceu.cognitium_solidification": "Cognitium Solidification",
+  "gtceu.congitium_solidification": "Cognitium Solidification",
   "gtceu.squeezer": "Squeezing",
 
   "material.gtceu.cobblestone": "Cobblestone",

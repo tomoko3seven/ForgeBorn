@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
-event.remove({ id: 'mob_grinding_utils:entity_conveyor' })
-event.remove({ id: 'mob_grinding_utils:tank' })
+event.remove({ id: 'mob_grinding_utils:recipe_entity_conveyor' })
+event.remove({ id: 'mob_grinding_utils:recipe_tank' })
 
 event.shaped(Item.of('4x mob_grinding_utils:entity_conveyor'), [
     ' P ',
