@@ -5,11 +5,17 @@
 !kubejs/
 !defaultconfig/
 !config/
+!docs/
 
 # Allow files in excepted directories
 !kubejs/**
 !defaultconfig/**
 !config/**
+!docs/**
+
+# Ignore these files 
+config/SpecialMobs/**
+config/oculus.properties
 
 # Keep .gitignore itself
 !.gitignore
