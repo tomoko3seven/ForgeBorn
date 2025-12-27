@@ -899,6 +899,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["39205CF2CB1EA09B"]
 			id: "69DEE03140388B37"
 			shape: "circle"
 			tasks: [{
@@ -1199,7 +1200,6 @@
 			y: 5.800000000000001d
 		}
 		{
-			dependencies: ["36E10C0E5108CAFF"]
 			id: "302EF65C05218BB4"
 			shape: "diamond"
 			tasks: [{
@@ -1211,6 +1211,7 @@
 			y: 9.1d
 		}
 		{
+			dependencies: ["36E10C0E5108CAFF"]
 			id: "4F2FE067C6D7A8DB"
 			shape: "diamond"
 			tasks: [{
@@ -1280,6 +1281,7 @@
 				title: "They have no use right now..."
 				type: "checkmark"
 			}]
+			title: "Advanced Materials"
 			x: 2.819047619047616d
 			y: 10.739285714285721d
 		}
@@ -1332,7 +1334,7 @@
 				item: "legendarysurvivaloverhaul:sun_fern_gold_leaf"
 				type: "item"
 			}]
-			x: 9.9d
+			x: 11.9d
 			y: 10.5d
 		}
 	]

@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     // ---------------------------------------------------------
     // Removals
     // ---------------------------------------------------------
-    event.remove({ output: 'malum:poppet' })
+    event.remove({ output: 'extrabotany:walking_cane' })
     event.remove({ output: 'botania:mana_pool' })
     event.remove({ output: 'botania:mana_spreader' })
     event.remove({ output: 'botania:diluted_pool' })
@@ -91,6 +91,16 @@ ServerEvents.recipes(event => {
         L: 'botania:livingrock',
         M: 'kubejs:mana_core',
         H: '#forge:tools/hammers'
+    })
+
+    // Walking Cane
+    event.shaped('extrabotany:walking_cane', [
+        ' GB',
+        ' BG',
+        'B  '
+    ], {
+        B: 'minecraft:bone',
+        G: '#forge:foils/gold'
     })
 
     // Apothecary

@@ -137,15 +137,17 @@
 			size: 2.0d
 			tasks: [
 				{
+					consume_items: true
 					count: 64L
 					id: "4FA244348856D7E4"
-					item: { Count: 64, id: "legendarysurvivaloverhaul:sun_fern_gold_leaf" }
+					item: "legendarysurvivaloverhaul:sun_fern_gold_leaf"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 64L
 					id: "777ADD4867D129CA"
-					item: { Count: 64, id: "legendarysurvivaloverhaul:ice_fern_gold_leaf" }
+					item: "legendarysurvivaloverhaul:ice_fern_gold_leaf"
 					type: "item"
 				}
 			]

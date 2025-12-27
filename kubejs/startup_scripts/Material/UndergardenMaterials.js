@@ -9,13 +9,14 @@ event.create('ditchbulb_resin')
         )
 
 event.create('froststeel')
+        .ingot()
         .liquid()
         .color(0x67b9ee)
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,

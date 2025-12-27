@@ -518,7 +518,7 @@
 				}
 			]
 			x: 0.583588435374125d
-			y: -6.707142857142859d
+			y: -6.607142857142859d
 		}
 		{
 			dependencies: ["73488B39DFE88402"]
@@ -546,8 +546,8 @@
 				type: "item"
 			}]
 			title: "BED TIME!"
-			x: 1.497874149659836d
-			y: -7.964285714285722d
+			x: 1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["73488B39DFE88402"]
@@ -568,7 +568,7 @@
 				type: "item"
 			}]
 			x: 2.1550170068026873d
-			y: -6.7071428571428555d
+			y: -6.607142857142856d
 		}
 		{
 			dependencies: [
@@ -741,7 +741,7 @@
 				type: "item"
 			}]
 			x: -0.40000000000000113d
-			y: -4.999999999999998d
+			y: -4.899999999999999d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
@@ -818,8 +818,8 @@
 					type: "item"
 				}
 			]
-			x: -1.8422619047619322d
-			y: -6.649319727891161d
+			x: -1.8170493197279072d
+			y: -6.602891156462594d
 		}
 		{
 			dependencies: ["610F433CFC55B005"]
@@ -849,7 +849,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["38E042EB364667F2"]
+			dependencies: ["13AB3B249DB96409"]
 			id: "6059DC46FF094FA7"
 			optional: true
 			shape: "hexagon"
@@ -859,8 +859,8 @@
 				item: "tconstruct:smeltery_controller"
 				type: "item"
 			}]
-			x: 2.2203231292516747d
-			y: -4.072448979591847d
+			x: 0.760501700680237d
+			y: -4.005612244897968d
 		}
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
@@ -876,49 +876,6 @@
 			title: "Better Iron"
 			x: -1.8136904761905086d
 			y: -4.9826530612244895d
-		}
-		{
-			dependencies: ["13AB3B249DB96409"]
-			icon: "tconstruct:seared_melter"
-			id: "38E042EB364667F2"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "41AFCFDEB974052E"
-					item: "tconstruct:seared_melter"
-					type: "item"
-				}
-				{
-					id: "77BCF6F7131C5DE0"
-					item: "tconstruct:seared_heater"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "3C9594525A16536A"
-					item: "tconstruct:seared_fuel_tank"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "15736F54E1C1DCE4"
-					item: { Count: 2, id: "tconstruct:seared_faucet" }
-					type: "item"
-				}
-				{
-					id: "544A531134165D98"
-					item: "tconstruct:seared_table"
-					type: "item"
-				}
-				{
-					id: "02E7D975B4F835B4"
-					item: "tconstruct:seared_basin"
-					type: "item"
-				}
-			]
-			x: 0.6897108843537083d
-			y: -4.072448979591847d
 		}
 		{
 			dependencies: ["616B494E248D88E9"]
@@ -963,8 +920,8 @@
 					type: "item"
 				}
 			]
-			x: -6.810926870748332d
-			y: 1.1610544217687107d
+			x: -6.799022108843566d
+			y: 0.9776360544217582d
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
@@ -979,7 +936,7 @@
 			y: 0.9467687074829954d
 		}
 		{
-			dependencies: ["38E042EB364667F2"]
+			dependencies: ["6059DC46FF094FA7"]
 			description: ["Required for more advanced tools."]
 			icon: {
 				Count: 1

@@ -224,11 +224,6 @@
     "modId": "dataanchor",
     "version": "1.0.0.20"
   },
-  "DripSounds-1.19.4-0.3.2.jar": {
-    "jarName": "DripSounds-1.19.4-0.3.2.jar",
-    "modId": "waterdripsound",
-    "version": "0.3.2"
-  },
   "Dungeon Crawl-1.20.1-2.3.15.jar": {
     "jarName": "Dungeon Crawl-1.20.1-2.3.15.jar",
     "modId": "dungeoncrawl",
@@ -562,11 +557,6 @@
     "modId": "malum",
     "version": "1.20.1-1.6.7"
   },
-  "man_of_many_planes-0.2.0+1.20.1-forge.jar": {
-    "jarName": "man_of_many_planes-0.2.0+1.20.1-forge.jar",
-    "modId": "man_of_many_planes",
-    "version": "0.2.0+1.20.1"
-  },
   "Mantle-1.20.1-1.11.79.jar": {
     "jarName": "Mantle-1.20.1-1.11.79.jar",
     "modId": "mantle",
@@ -717,11 +707,6 @@
     "modId": "regions_unexplored",
     "version": "0.5.6"
   },
-  "reliquary-1.20.1-2.0.51.1294.jar": {
-    "jarName": "reliquary-1.20.1-2.0.51.1294.jar",
-    "modId": "reliquary",
-    "version": "2.0.51.1294"
-  },
   "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
     "jarName": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
     "modId": "resourcefulconfig",
@@ -801,9 +786,6 @@
     "jarName": "Stargate Journey-1.20.1-0.6.42.jar",
     "modId": "sgjourney",
     "version": "0.6.42"
-  },
-  "StargateEarlyLoading-0.2-forge.jar": {
-    "jarName": "StargateEarlyLoading-0.2-forge.jar"
   },
   "Stellar View-1.20.1-0.5.1-Forge.jar": {
     "jarName": "Stellar View-1.20.1-0.5.1-Forge.jar",

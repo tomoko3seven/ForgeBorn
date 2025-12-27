@@ -121,12 +121,6 @@
 			dependencies: ["28C9D7D003D4E4DF"]
 			icon: "botanicadds:gaiasteel_block"
 			id: "27ED27B72A0EBB50"
-			rewards: [{
-				count: 64
-				id: "706B52CB6D2130D6"
-				item: "botanicadds:gaiasteel_block"
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [
