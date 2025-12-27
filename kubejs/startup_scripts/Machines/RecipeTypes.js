@@ -1,7 +1,7 @@
 const $IO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO')
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
+// Multiblock Machines Recipes
     event.create('mana_pulse_infuser')
     .category('forgeborn')
     .setMaxIOSize(6, 2, 1, 1) //Max Item in, max item out, max fluid in, max fluid out (in slots)
@@ -10,6 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
     .setSound(GTSoundEntries.ELECTROLYZER)
 
+// Simple-Machines Recipes
     event.create('mana_infuser')
     .category('forgeborn')
     .setMaxIOSize(1, 1, 1, 1) //Max Item in, max item out, max fluid in, max fluid out (in slots)
