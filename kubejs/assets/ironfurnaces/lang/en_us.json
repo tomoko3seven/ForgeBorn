@@ -1,0 +1,21 @@
+{
+    "block.ironfurnaces.diamond_furnace": "Steel Furnace",
+    "item.ironfurnaces.diamond_furnace": "Steel Furnace",
+    "item.ironfurnaces.upgrade_diamond": "Gold to Steel Furnace Upgrade",
+    "container.ironfurnaces.diamond_furnace": "Steel Furnace",
+
+    "block.ironfurnaces.emerald_furnace": "Diamond Furnace",
+    "item.ironfurnaces.emerald_furnace": "Diamond Furnace",
+    "item.ironfurnaces.upgrade_emerald": "Steel to Diamond Furnace Upgrade",
+    "container.ironfurnaces.emerald_furnace": "Diamond Furnace",
+
+    "block.ironfurnaces.obsidian_furnace": "Cloggrumsteel Furnace",
+    "item.ironfurnaces.obsidian_furnace": "Cloggrumsteel Furnace",
+    "item.ironfurnaces.upgrade_obsidian": "Diamond to Cloggrumsteel Furnace Upgrade",
+    "container.ironfurnaces.obsidian_furnace": "Cloggrumsteel Furnace",
+
+    "block.ironfurnaces.netherite_furnace": "Aluminum Furnace",
+    "item.ironfurnaces.netherite_furnace": "Aluminum Furnace",
+    "item.ironfurnaces.upgrade_netherite": "Cloggrumsteel to Aluminum Furnace Upgrade",
+    "container.ironfurnaces.netherite_furnace": "Aluminum Furnace"
+}
