@@ -6,9 +6,8 @@
 !defaultconfig/
 !config/
 !docs/
-!.github
+!.github/
 !.prettierrc
-!node_modules/
 !package-lock.json
 !package.json
 !.eslintrc.json
@@ -18,6 +17,7 @@
 !defaultconfig/**
 !config/**
 !docs/**
+!.github/**
 
 # Ignore these files 
 config/SpecialMobs/**
