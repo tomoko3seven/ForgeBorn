@@ -1,0 +1,599 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "electricity_ulv"
+	group: "693226878D58638A"
+	icon: "gtceu:vacuum_tube"
+	id: "08D0A0C102FF47E9"
+	images: [
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/ulv/bottom"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/ulv/bottom"
+			rotation: 45.0d
+			width: 2.0d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/lv/bottom"
+			rotation: 45.0d
+			width: 2.0d
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/lv/bottom"
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.5d
+			y: -0.5d
+		}
+	]
+	order_index: 3
+	quest_links: [{
+		id: "421AD345C8015FFB"
+		linked_quest: "78378E5AE4197F31"
+		x: 4.5d
+		y: 1.5d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"4028B45A0B6542DE"
+				"21B69724512B0BFF"
+			]
+			id: "1B1A196DE6DD738E"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1E4AC29E0E097FA3"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7873341ED0BEECC5"
+				"4028B45A0B6542DE"
+				"1B1A196DE6DD738E"
+			]
+			description: ["Essential components for automation and ULV machines."]
+			icon: "ulvcovm:ulv_electric_motor"
+			id: "34B2703714D4876C"
+			rewards: [{
+				count: 64
+				id: "33B19668CDF7A271"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "0E21070FF755EE03"
+					item: "ulvcovm:ulv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "499B2629F17B2D65"
+					item: "ulvcovm:ulv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "57FEC63F4229D15F"
+					item: "ulvcovm:ulv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "15E30403980838C2"
+					item: "ulvcovm:ulv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "1B176BF1294FA2F4"
+					item: "ulvcovm:ulv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "0A4F0187A2F8FA50"
+					item: "ulvcovm:ulv_fluid_regulator"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"310B08BB2DFC4D6F"
+				"1B1A196DE6DD738E"
+			]
+			description: ["The Large Assembler is your first electrical multiblock. It can be upgraded with Energy Hatches, meaning you won't need to craft a new Assembler every time you move to the next voltage tier."]
+			icon: "gtceu:primitive_assembler"
+			id: "5B7BC416799EA7AC"
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "A big box for big crafts."
+			tasks: [
+				{
+					id: "4C4B3206E6339FAB"
+					item: "gtceu:primitive_assembler"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "421A8D5F9B7267BB"
+					item: { Count: 15, id: "kubejs:solid_wrought_iron_casing" }
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "4BE1F8AAA28B0004"
+					item: { Count: 17, id: "kubejs:wrought_iron_firebox" }
+					type: "item"
+				}
+				{
+					id: "077B2C44778ACBFD"
+					item: "gtceu:ulv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "337477A3216FD49F"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "69143006F960877B"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+			]
+			title: "Large Primitive Assembler"
+			x: 2.2357142857142662d
+			y: 1.558928571428602d
+		}
+		{
+			dependencies: [
+				"310B08BB2DFC4D6F"
+				"1B1A196DE6DD738E"
+			]
+			id: "221E0F816FB19AC7"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4DC1A0913EC035C6"
+				item: "gtceu:ulv_centrifuge"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"310B08BB2DFC4D6F"
+				"1B1A196DE6DD738E"
+			]
+			description: ["Allows you to produce wires much more efficiently. This should be your first machine."]
+			id: "1CA4AEA25456E4E3"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Stop wasting metal!"
+			tasks: [{
+				id: "0911A0EBA1456C1C"
+				item: "gtceu:ulv_wiremill"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			id: "577E310497967F7C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "47CF876D545E2AA9"
+				item: "gtceu:ulv_bender"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			id: "0C13D150B2CE720E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "68E42B7D92684D2D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ulv_steam_turbine"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_combustion_generator"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -2.2833333333333314d
+			y: -1.080059523809517d
+		}
+		{
+			dependencies: ["124045C387BF05B7"]
+			id: "5727AE2B6B26479A"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2F375680EDD6C4A8"
+				item: "gtceu:ulv_cutter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			id: "124045C387BF05B7"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "04D87F852C1DEB48"
+				title: "Technomancy?"
+				type: "checkmark"
+			}]
+			x: 2.230952380952388d
+			y: -0.8514880952380892d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			id: "51DA2F6BC98C72D7"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3CEE638D7E7F349A"
+				item: "gtceu:ulv_chemical_reactor"
+				type: "item"
+			}]
+			x: 2.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["78378E5AE4197F31"]
+			hide_dependency_lines: false
+			id: "3D45090E28F88D1F"
+			tasks: [{
+				id: "0320C90FE57C59F5"
+				item: "gtceu:mana_pulse_infuser"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5727AE2B6B26479A"]
+			id: "2234D18036881E94"
+			tasks: [{
+				id: "32A50C20DE010D12"
+				item: "gtceu:livingrock_plate"
+				type: "item"
+			}]
+			x: 6.516666666666673d
+			y: -0.7372023809523753d
+		}
+		{
+			dependencies: ["3D45090E28F88D1F"]
+			id: "146188397BA61A15"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 64L
+				id: "397D73DDAFDF3899"
+				item: "gtceu:cloggrumsteel_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["146188397BA61A15"]
+			id: "165BB8C778AC3497"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0559543E7D3FAF1F"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"The Undergarden is a damp, subterranean dimension located beneath bedrock. It contains unique animals, plants, ores, and danger required to progress."
+				""
+				"Stand on y=-63 in the Overworld to teleport to the Undergarden."
+				""
+				"To return, stand on y=121."
+				""
+				"Don't be afraid of falling or suffocating in walls; your magical presence protects you from instant death."
+			]
+			icon_scale: 2.0d
+			id: "4AC5E057FBD83372"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Journey to the Center of the Earth"
+			tasks: [{
+				id: "5A6A3B68CB581932"
+				item: "kubejs:undergarden_dim"
+				type: "item"
+			}]
+			title: "Fall through Bedrock."
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4AC5E057FBD83372"]
+			icon: "gtceu:raw_utherium_block"
+			id: "1E761A7B29C2DCE9"
+			tasks: [
+				{
+					id: "615F4BDC1C18EE86"
+					optional_task: true
+					title: "Ores"
+					type: "custom"
+				}
+				{
+					id: "474690CCC3B8ADB7"
+					type: "checkmark"
+				}
+			]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["03B56ECF5AA7CF3E"]
+			id: "035D8AA73E48143F"
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [{
+				id: "4AB08CCCF74BD619"
+				item: "undergarden:ditchbulb"
+				type: "item"
+			}]
+			x: -5.607142857142854d
+			y: -5.107142857142858d
+		}
+		{
+			id: "096DA994D539DD93"
+			tasks: [{
+				id: "6FD911A01C9A997F"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: -6.12619047619048d
+			y: -3.9937500000000163d
+		}
+		{
+			dependencies: ["035D8AA73E48143F"]
+			id: "16CDEF2DD759F160"
+			tasks: [{
+				id: "3258F9245FBDBAC2"
+				item: "undergarden:ditchbulb_paste"
+				type: "item"
+			}]
+			x: -5.12619047619048d
+			y: -3.9937500000000163d
+		}
+		{
+			dependencies: [
+				"096DA994D539DD93"
+				"16CDEF2DD759F160"
+			]
+			id: "7D414D4621FF2BC2"
+			tasks: [{
+				id: "59FE57230D63359B"
+				item: "gtceu:ditchbulb_resin_ingot"
+				type: "item"
+			}]
+			x: -5.62619047619048d
+			y: -2.9937500000000163d
+		}
+		{
+			dependencies: ["7D414D4621FF2BC2"]
+			id: "055E5B9F67AEC28D"
+			tasks: [{
+				count: 16L
+				id: "39FEE0584474D994"
+				item: { Count: 16, id: "gtceu:ditchbulb_resin_plate" }
+				type: "item"
+			}]
+			x: -5.62619047619048d
+			y: -1.9937500000000163d
+		}
+		{
+			dependencies: ["055E5B9F67AEC28D"]
+			id: "53FBE557B32D5A1C"
+			tasks: [{
+				id: "066F2EED3FF3E5F8"
+				item: "gtceu:resin_circuit_board"
+				type: "item"
+			}]
+			x: -5.62619047619048d
+			y: -0.9937500000000163d
+		}
+		{
+			dependencies: [
+				"53FBE557B32D5A1C"
+				"0FFF447C2E51C45F"
+			]
+			id: "6364B1DF5559645B"
+			shape: "hexagon"
+			size: 1.9d
+			tasks: [{
+				id: "3E6B451900576B03"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: -5.7d
+			y: 0.9500000000000001d
+		}
+		{
+			dependencies: ["1E761A7B29C2DCE9"]
+			id: "439B5A3053490783"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				count: 64L
+				id: "0E21BA1A88EE8156"
+				item: { Count: 64, id: "undergarden:raw_froststeel" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["439B5A3053490783"]
+			id: "2C51C945E164AA01"
+			tasks: [{
+				id: "118FC87EC25C6707"
+				item: "gtceu:fine_froststeel_wire"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C51C945E164AA01"]
+			id: "7849B938AB1615B5"
+			shape: "hexagon"
+			size: 1.9d
+			tasks: [{
+				id: "752BB93CCB975976"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: -7.6000000000000005d
+			y: 0.9500000000000001d
+		}
+		{
+			dependencies: ["4AC5E057FBD83372"]
+			description: ["After entering this new layer of the Earth, be careful of the new flora and fauna. They can be friendly, but also very dangerous."]
+			id: "03B56ECF5AA7CF3E"
+			shape: "circle"
+			subtitle: "Also, what are these creatures?"
+			tasks: [{
+				id: "761130ADB496ECD1"
+				title: "12"
+				type: "checkmark"
+			}]
+			title: "Uhh... We didn't have this before."
+			x: -5.62619047619048d
+			y: -6.493750000000016d
+		}
+		{
+			dependencies: ["221E0F816FB19AC7"]
+			id: "0FFF447C2E51C45F"
+			tasks: [{
+				id: "46E33F048CD74AAF"
+				item: "gtceu:glue_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7849B938AB1615B5"
+				"6364B1DF5559645B"
+			]
+			id: "0D37FB64CD3EBBBC"
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "35134152E742055D"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -6.657142857142858d
+			y: 3.8214285714285694d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			hide_dependency_lines: true
+			id: "4AD8FAD926D42898"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "3783695363882CBB"
+				item: "gtceu:cognitium_solidifier"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			hide_dependency_lines: true
+			id: "789BD8A329564F78"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "4D7151202AED5002"
+				item: "gtceu:lava_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			hide_dependency_lines: true
+			id: "105A3915F3C6F613"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "71076C8CEF3EC6DF"
+				item: "gtceu:electric_cloche"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1B1A196DE6DD738E"]
+			hide_dependency_lines: true
+			id: "17919A314F147AF5"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "4C3BFA6C83FA90EA"
+				item: "gtceu:sawmill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+	]
+	title: "Electricity! [ULV]"
+}

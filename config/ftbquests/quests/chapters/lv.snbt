@@ -31,7 +31,7 @@
 			y: -5.5d
 		}
 	]
-	order_index: 3
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -364,7 +364,7 @@
 			y: -8.000000000000002d
 		}
 		{
-			dependencies: ["3B18BBD4D086C198"]
+			dependencies: ["641A75A9A7BF3A46"]
 			id: "03A35659AD6C318A"
 			tasks: [{
 				id: "07A756F4111EF663"
@@ -373,18 +373,6 @@
 			}]
 			x: -1.5d
 			y: -5.0d
-		}
-		{
-			dependencies: ["641A75A9A7BF3A46"]
-			id: "3B18BBD4D086C198"
-			shape: "circle"
-			tasks: [{
-				id: "7FDF75B65E70C830"
-				item: "kubejs:dense_mana_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -3.5d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]

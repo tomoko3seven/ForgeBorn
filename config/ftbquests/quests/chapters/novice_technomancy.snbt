@@ -1,0 +1,871 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "novice_technomancy"
+	group: "693226878D58638A"
+	icon: "botania:pure_daisy"
+	id: "72E274870686DBD0"
+	images: [
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/lv/bottom"
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/lv/bottom"
+			rotation: 45.0d
+			width: 2.0d
+			x: -3.0d
+			y: 8.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "botania:white_petal"
+			id: "4953247826298569"
+			rewards: [{
+				id: "0BCCFC3365A0C0B5"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "5F3FFA4238F2FC61"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:petals"
+					}
+				}
+				title: "Any #botania:petals"
+				type: "item"
+			}]
+			title: "Sky of Beginning"
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4953247826298569"]
+			id: "72EADBA8FFD8F2DA"
+			tasks: [{
+				id: "44E4DDBEABF37F71"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["72EADBA8FFD8F2DA"]
+			id: "592A45638AAB2268"
+			tasks: [{
+				id: "64780FC9908201C8"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["592A45638AAB2268"]
+			id: "0228B4BC05D54377"
+			tasks: [{
+				id: "42056C3D2A99B82C"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["592A45638AAB2268"]
+			id: "345CBA428E80F1D4"
+			tasks: [{
+				id: "7427ACF254FF01E4"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -1.5d
+		}
+		{
+			id: "16FC4C7A316ED2EB"
+			rewards: [{
+				id: "2D6FEBAE350D0156"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "naturesaura:book"
+					}
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "50B4A10C632E36E7"
+				item: "naturesaura:gold_fiber"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["16FC4C7A316ED2EB"]
+			id: "04FE19E3607EACCB"
+			tasks: [{
+				id: "4FDF92DC579111AE"
+				item: "naturesaura:gold_leaf"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["04FE19E3607EACCB"]
+			icon: "naturesaura:wood_stand"
+			id: "1E4D0B48262EB3F1"
+			tasks: [
+				{
+					count: 8L
+					id: "6D44D0087F876808"
+					item: { Count: 8, id: "naturesaura:wood_stand" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5CA6D10BC6E083D8"
+					item: { Count: 16, id: "naturesaura:gold_powder" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1E4D0B48262EB3F1"]
+			id: "2EDDD66D8C67AD2D"
+			tasks: [{
+				id: "4019B1D017447B9E"
+				item: "kubejs:omnipetal"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38DDDC916EB21A35"]
+			id: "1FF05E53C41426E7"
+			tasks: [{
+				id: "5232BCCC42F4DA21"
+				item: "kubejs:mana_core"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0228B4BC05D54377"
+				"1FF05E53C41426E7"
+				"2234D18036881E94"
+			]
+			id: "541A6A343DD76D6A"
+			tasks: [{
+				id: "7574B88EC355467A"
+				item: "botania:diluted_pool"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EDDD66D8C67AD2D"]
+			icon: "naturesaura:nature_altar"
+			id: "38DDDC916EB21A35"
+			tasks: [
+				{
+					id: "36C6353B75912ECB"
+					item: "naturesaura:nature_altar"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "33DACB66C219E10D"
+					item: { Count: 8, id: "naturesaura:gold_brick" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1ED5A79DF12E55C2"
+					item: { Count: 4, id: "minecraft:chiseled_stone_bricks" }
+					type: "item"
+				}
+				{
+					id: "375E0CB30AD347EA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Any #minecraft:planks"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "08AB988F0B86E896"
+					item: { Count: 16, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1FF05E53C41426E7"
+				"541A6A343DD76D6A"
+			]
+			id: "263364865A7B9910"
+			size: 1.0d
+			tasks: [{
+				id: "6A6C7F15BD0353C6"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"541A6A343DD76D6A"
+				"2D29B0931F636EEA"
+			]
+			id: "1EC786B59B128A53"
+			tasks: [{
+				id: "2E0D6625416DD439"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E4D0B48262EB3F1"]
+			id: "278A82571B3C1CF3"
+			tasks: [{
+				id: "574A980EA8C495BD"
+				item: "kubejs:token_of_light"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1E4D0B48262EB3F1"]
+			id: "32BC9354DD9098A7"
+			tasks: [{
+				id: "3E387309E36B3F87"
+				item: "kubejs:token_of_darkness"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["278A82571B3C1CF3"]
+			id: "63B3CFF3685508AE"
+			tasks: [{
+				id: "1F80E284EDDB03E2"
+				item: "nether_remastered:seal_piece_1"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["32BC9354DD9098A7"]
+			id: "5D6D43E53B8F1E54"
+			tasks: [{
+				id: "59B14789D8B26D40"
+				item: "nether_remastered:seal_piece_2"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["014FAE2FEEB62AD5"]
+			id: "3840FD41432FB50A"
+			tasks: [{
+				id: "452C26A2BA3CCE4A"
+				item: "nether_remastered:seal_piece_3"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["046501DD7CACCF5E"]
+			id: "7FE42B58083593D1"
+			tasks: [{
+				id: "44ABC838C3586A0C"
+				item: "nether_remastered:seal_piece_4"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "046501DD7CACCF5E"
+			tasks: [{
+				id: "508B1FADF5090C10"
+				item: "legendarysurvivaloverhaul:sun_fern_gold_leaf"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			id: "014FAE2FEEB62AD5"
+			tasks: [{
+				id: "21CD482DE6C71243"
+				type: "custom"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5D6D43E53B8F1E54"
+				"3840FD41432FB50A"
+				"7FE42B58083593D1"
+				"63B3CFF3685508AE"
+			]
+			icon: "nether_remastered:seal_of_the_underworld_item"
+			id: "77BB87EEB6147685"
+			tasks: [
+				{
+					id: "3A037299C5D80DF9"
+					item: "nether_remastered:seal_of_the_underworld_item"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					id: "00271BE5183F0F24"
+					type: "dimension"
+				}
+			]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["77BB87EEB6147685"]
+			id: "3C0110137FA6DF16"
+			tasks: [{
+				id: "140D561C26FC3312"
+				item: "gtceu:electrotine_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C0110137FA6DF16"]
+			id: "2D29B0931F636EEA"
+			tasks: [{
+				id: "6D46AD7CD8A16142"
+				item: "gtceu:blue_alloy_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72EADBA8FFD8F2DA"]
+			id: "0886C631EDDE6D3F"
+			tasks: [{
+				id: "1C84C32A450E4B28"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["345CBA428E80F1D4"]
+			id: "7D28D6881C104B92"
+			tasks: [{
+				id: "2342C698C9B3048D"
+				item: "gtceu:livingwood_plate"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D28D6881C104B92"
+				"78378E5AE4197F31"
+			]
+			id: "1A86BAA89F67C7BB"
+			tasks: [{
+				id: "1FE2B6276ED22D07"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EC786B59B128A53"
+				"124045C387BF05B7"
+			]
+			id: "78378E5AE4197F31"
+			tasks: [{
+				id: "02EA2CF5A2730AC7"
+				item: "kubejs:mana_chip"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1FF05E53C41426E7"
+				"541A6A343DD76D6A"
+			]
+			id: "1108B91EC0A90999"
+			tasks: [{
+				id: "580A3C728DB16424"
+				item: "kubejs:advanced_mana_core"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0886C631EDDE6D3F"]
+			id: "3BF86401AAE84B87"
+			tasks: [{
+				id: "7F89AF8F9125A3B4"
+				item: "kubejs:dense_mana_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1108B91EC0A90999"]
+			id: "0F84281AFBB01C8D"
+			tasks: [{
+				id: "02E4436625EC5FE9"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F84281AFBB01C8D"]
+			id: "26044568C448C1E6"
+			tasks: [{
+				id: "3A61B73441EEC5AF"
+				item: "botania:rune_water"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F84281AFBB01C8D"]
+			id: "3589A1B093EA0926"
+			tasks: [{
+				id: "17767D746BC5437E"
+				item: "botania:rune_fire"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0F84281AFBB01C8D"]
+			id: "5173F63DED509767"
+			tasks: [{
+				id: "6C66FED71F2EA822"
+				item: "botania:rune_earth"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F84281AFBB01C8D"]
+			id: "127A584CAC222EE3"
+			tasks: [{
+				id: "2AEEE5545BF7D75A"
+				item: "botania:rune_air"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0F84281AFBB01C8D"]
+			id: "5B9F456467EDFE49"
+			tasks: [{
+				id: "05D1C452F8A5AC38"
+				item: "botania:rune_mana"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0F84281AFBB01C8D"]
+			id: "48A05AB55C0B8F55"
+			tasks: [
+				{
+					id: "671D5AF945481F08"
+					item: "gtceu:fire_gem"
+					type: "item"
+				}
+				{
+					id: "4188408E821B5992"
+					item: "gtceu:aqua_gem"
+					type: "item"
+				}
+				{
+					id: "07BC06432C203E60"
+					item: "gtceu:earth_gem"
+					type: "item"
+				}
+				{
+					id: "59BFCD4B3F5FB699"
+					item: "gtceu:wind_gem"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F84281AFBB01C8D"]
+			id: "634D5D6F8B731629"
+			tasks: [{
+				id: "1797312F193A4DDD"
+				item: {
+					Count: 1
+					id: "travelersboots:travelers_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["541A6A343DD76D6A"]
+			id: "513922624B521F6D"
+			tasks: [{
+				id: "2C318577F0909C66"
+				item: "gtceu:managold_ingot"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			id: "1AB62D32C1D5DBC9"
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "6E8CF909D9B1C8E4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:logs/archwood"
+					}
+				}
+				title: "Any #forge:logs/archwood"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["54ECC16962144BB8"]
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "36D2D10F00B3D39F"
+			tasks: [
+				{
+					id: "41677D7F99738B38"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "74808C0CDEB11AB7"
+					item: { Count: 4, id: "ars_nouveau:source_gem" }
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["36D2D10F00B3D39F"]
+			icon: "ars_nouveau:agronomic_sourcelink"
+			id: "65C8862B8037E7D0"
+			tasks: [{
+				id: "5AFC380CB94C87D7"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: ".*sourcelink.*"
+					}
+				}
+				type: "item"
+			}]
+			x: -15.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["65C8862B8037E7D0"]
+			id: "137A98742E7EFC42"
+			tasks: [{
+				id: "121006796EEB8EF9"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["137A98742E7EFC42"]
+			id: "041AD16D6625346E"
+			tasks: [{
+				id: "4F6E56405FD79FFB"
+				title: "Essences"
+				type: "checkmark"
+			}]
+			x: -15.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["041AD16D6625346E"]
+			id: "344B6BDFBEAA8A15"
+			tasks: [{
+				id: "77506EC87FAA50C8"
+				item: "ars_nouveau:abjuration_essence"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["041AD16D6625346E"]
+			id: "008BD7F86139FD1A"
+			tasks: [{
+				id: "761469293AEFD080"
+				item: "ars_nouveau:conjuration_essence"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["041AD16D6625346E"]
+			id: "0A7995EB70EE4A83"
+			tasks: [{
+				id: "3825855C275B6A90"
+				item: "ars_nouveau:air_essence"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["041AD16D6625346E"]
+			id: "5DAD2192BCF93280"
+			tasks: [{
+				id: "52D37B022DB7B796"
+				item: "ars_nouveau:earth_essence"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["041AD16D6625346E"]
+			id: "2741833E0CEA9AAD"
+			tasks: [{
+				id: "462DA5BC8542D89D"
+				item: "ars_nouveau:fire_essence"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["041AD16D6625346E"]
+			id: "5AFC663EE92EEF6C"
+			tasks: [{
+				id: "028A522A0B5B08DD"
+				item: "ars_nouveau:water_essence"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["041AD16D6625346E"]
+			id: "647C8E2D4D7E8F8B"
+			tasks: [{
+				id: "2A67D20DB73BBF58"
+				item: "ars_nouveau:manipulation_essence"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1AB62D32C1D5DBC9"]
+			id: "54ECC16962144BB8"
+			tasks: [{
+				id: "44D9DFCC19FB85A5"
+				item: "gtceu:managold_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["16FF1B0194F5CD5B"]
+			id: "0B5E1EABA5B7A083"
+			tasks: [{
+				id: "6FB36F8888C2BA34"
+				item: "kubejs:fire_tablet"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"16FF1B0194F5CD5B"
+				"127A584CAC222EE3"
+			]
+			id: "5D09A8980E61F2C6"
+			tasks: [{
+				id: "225181FC970C2E3A"
+				item: "kubejs:wind_tablet"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"16FF1B0194F5CD5B"
+				"26044568C448C1E6"
+			]
+			id: "6B3BBC62B2BA3B1C"
+			tasks: [{
+				id: "558706A7899B211C"
+				item: "kubejs:water_tablet"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"16FF1B0194F5CD5B"
+				"5173F63DED509767"
+			]
+			id: "355E0DA0F23A18E9"
+			tasks: [{
+				id: "13A3D0D3DE728ECC"
+				item: "kubejs:earth_tablet"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["78378E5AE4197F31"]
+			hide_dependency_lines: true
+			id: "16FF1B0194F5CD5B"
+			tasks: [{
+				id: "0C6F43F97629D0EE"
+				item: "gtceu:mana_pulse_infuser"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["355E0DA0F23A18E9"]
+			id: "18168DDD16D32830"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 64L
+				id: "446190A6464F10C5"
+				item: "gtceu:cloggrumsteel_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["18168DDD16D32830"]
+			id: "7AF845090900D31B"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "65DFC281B863A8DD"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["16FF1B0194F5CD5B"]
+			id: "6F58E7EF2A1953FF"
+			tasks: [
+				{
+					id: "7FD75E2417037924"
+					item: "legendarysurvivaloverhaul:sun_fern_seeds"
+					type: "item"
+				}
+				{
+					id: "39ED7812FC7BD466"
+					item: "legendarysurvivaloverhaul:ice_fern_seeds"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 9.0d
+		}
+	]
+	title: "Novice Technomancy"
+}

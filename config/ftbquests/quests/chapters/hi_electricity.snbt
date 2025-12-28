@@ -1,4 +1,5 @@
 {
+	autofocus_id: "4910B0525557FF82"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "hi_electricity"
@@ -11,77 +12,32 @@
 			image: "gtceu:block/casings/voltage/lv/bottom"
 			rotation: 45.0d
 			width: 2.4d
-			x: -0.9547619047618952d
-			y: 11.029761904761905d
+			x: -4.5d
+			y: 11.0d
 		}
 		{
 			height: 2.4d
 			image: "gtceu:block/casings/voltage/lv/bottom"
 			rotation: 0.0d
 			width: 2.4d
-			x: -0.9547619047618952d
-			y: 11.029761904761905d
+			x: -4.5d
+			y: 11.0d
 		}
 		{
 			height: 2.0d
 			image: "gui:textures/ulv_age.png"
 			rotation: 0.0d
 			width: 4.1d
-			x: -1.5d
-			y: 5.5d
+			x: -3.5d
+			y: -4.0d
 		}
 	]
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["661E54379A9CDCEE"]
-			description: ["Machines accept energy through cables, but the voltage must match the machine's tier. Use thicker cables to carry more Amperage (energy packets). Use insulated wires to carry a stronger signal further and to not take damage."]
-			id: "3884187493BA916A"
-			shape: "circle"
-			tasks: [{
-				id: "1E30A0C367FC0C44"
-				title: "Electricity, yay!"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -5.5d
-		}
-		{
 			dependencies: ["310B08BB2DFC4D6F"]
-			description: ["Allows you to produce wires much more efficiently. This should be your first machine."]
-			id: "1CA4AEA25456E4E3"
-			shape: "circle"
-			tasks: [{
-				id: "0911A0EBA1456C1C"
-				item: "gtceu:ulv_wiremill"
-				type: "item"
-			}]
-			x: -2.1999999999999997d
-			y: -2.5d
-		}
-		{
-			dependencies: ["310B08BB2DFC4D6F"]
-			description: ["The Large Assembler is your first electrical multiblock. It can be upgraded with Energy Hatches, meaning you won't need to craft a new Assembler every time you move to the next voltage tier."]
-			id: "5B7BC416799EA7AC"
-			rewards: [{
-				id: "55744549CD5040F2"
-				item: "gtceu:prospector.lv"
-				type: "item"
-			}]
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "4C4B3206E6339FAB"
-				item: "gtceu:primitive_assembler"
-				type: "item"
-			}]
-			title: "Large Primitive Assembler"
-			x: 2.1d
-			y: -2.5d
-		}
-		{
-			dependencies: ["3884187493BA916A"]
+			description: ["Your first source of power. It burns liquid fuels (such as creosote, oil, or even lava) to generate EU. Make sure to connect it to your machines using the right cables!"]
 			id: "47133099B6931EE5"
 			shape: "circle"
 			tasks: [{
@@ -90,11 +46,11 @@
 				optional_task: true
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["3884187493BA916A"]
+			dependencies: ["69DEE03140388B37"]
 			description: [
 				"GregTech's energy system, &9EU&r (Energy Units), works with &cVoltage&r (V) and &dAmperage&r (A). Power is transferred in packets: Voltage is the packet size, and Amperage is the packet count."
 				""
@@ -102,6 +58,7 @@
 				""
 				"Also, do not place your machines under the open sky; they will explode if it rains."
 			]
+			hide_dependency_lines: false
 			id: "310B08BB2DFC4D6F"
 			shape: "circle"
 			tasks: [{
@@ -110,48 +67,29 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -2.5d
-		}
-		{
-			description: [
-				"Stand on y=-63 in the Overworld to teleport to the Undergarden."
-				""
-				"To return, stand on y=121."
-				""
-				"Don't be afraid of falling or suffocating in walls; your magical presence protects you from instant death."
-			]
-			id: "4AC5E057FBD83372"
-			shape: "none"
-			size: 2.0d
-			tasks: [{
-				id: "5A6A3B68CB581932"
-				item: "kubejs:undergarden_dim"
-				type: "item"
-			}]
-			title: "Fall through Bedrock."
-			x: -10.499999999999998d
-			y: -7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["645FC277598EA984"]
 			description: [
-				"The Sky of Beginning"
-				""
 				"Pick up as many of Botania's mystical flowers as you can. Right now, white is the most useful for you."
 				""
 				"You may also grow them by using a mystical fertilizer on a petal placed on the floor, or by using mystical fertilizer on grass."
 			]
 			id: "2271ABC7231D8B63"
+			subtitle: "Flower Power"
 			tasks: [{
 				id: "5F8E02A14EA9FB1E"
 				item: "botania:white_petal"
 				type: "item"
 			}]
+			title: "The Sky of Beginning"
 			x: 7.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["2271ABC7231D8B63"]
+			description: ["The apothecary is used to craft magical flowers. Fill it with watetr, drop the required petals in, and finish the recipe by throwing any seed in."]
 			id: "6BED4439C998605A"
 			tasks: [{
 				id: "6485AC34C9DB8E4B"
@@ -162,8 +100,11 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["2271ABC7231D8B63"]
-			description: ["Used in \"Botania\" and \"Nature's Aura\" recipes."]
+			dependencies: [
+				"2271ABC7231D8B63"
+				"3CE0DCD46A0E35AD"
+			]
+			description: ["A unique petal used in many Botania and Nature's Aura recipes"]
 			id: "2E601621FDC14F92"
 			tasks: [{
 				id: "08D0C7913BED82EA"
@@ -175,7 +116,7 @@
 		}
 		{
 			dependencies: ["6BED4439C998605A"]
-			description: [""]
+			description: ["This flower cleanses blocks around it. Place Stone or Wood Logs next to it, wait a bit, adn they will transform into Livingrock and Livingwood."]
 			id: "2CFF6BCC5C94D72F"
 			tasks: [{
 				id: "73BA1E60B943D289"
@@ -184,27 +125,6 @@
 			}]
 			x: 6.0d
 			y: -0.7999999999999999d
-		}
-		{
-			dependencies: [
-				"5B7BC416799EA7AC"
-				"089DE1A20438504A"
-			]
-			description: ["A standard mana pool"]
-			id: "60CC6B0FFB125162"
-			rewards: [{
-				count: 3
-				id: "778FDCCF5EBB47C2"
-				item: "botania:floating_endoflame"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6E2DF8643C743DC9"
-				item: "botania:mana_pool"
-				type: "item"
-			}]
-			x: 2.1285714285714334d
-			y: -0.7500000000000071d
 		}
 		{
 			dependencies: ["2CFF6BCC5C94D72F"]
@@ -227,7 +147,9 @@
 				"2E601621FDC14F92"
 				"1567303A505B75C2"
 			]
+			description: ["The main crafting item for Nature's Aura. It draws Aura from the environment to infused items. Make sure you are in an area with sufficient Aura. This is usually around lush vegitation."]
 			id: "7E27C475FE68D0FD"
+			subtitle: "Natural Infusion"
 			tasks: [{
 				id: "1F982DB284D26594"
 				item: "naturesaura:nature_altar"
@@ -263,7 +185,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 1.1d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -279,8 +201,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 7.521428571428579d
-			y: 2.607142857142847d
+			x: 6.027210884353778d
+			y: 2.1452380952381134d
 		}
 		{
 			dependencies: ["2F2E26046D98117D"]
@@ -346,7 +268,8 @@
 			y: 7.499999999999999d
 		}
 		{
-			dependencies: ["60CC6B0FFB125162"]
+			dependencies: ["5F4EAA3099100BE6"]
+			hide_dependency_lines: true
 			id: "74E480FBC0BE66B0"
 			tasks: [{
 				count: 4L
@@ -354,14 +277,11 @@
 				item: { Count: 4, id: "botania:mana_powder" }
 				type: "item"
 			}]
-			x: 4.011904761904759d
-			y: -0.7505102040816354d
+			x: 0.5d
+			y: 4.992857142857112d
 		}
 		{
-			dependencies: [
-				"310B08BB2DFC4D6F"
-				"611883FA18804DBD"
-			]
+			dependencies: ["611883FA18804DBD"]
 			description: ["Needed for livingrock and livingwood plates."]
 			id: "039A1E011CF022FD"
 			tasks: [{
@@ -369,8 +289,8 @@
 				item: "gtceu:ulv_cutter"
 				type: "item"
 			}]
-			x: -0.03333333333332292d
-			y: 2.5809523809523798d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3CE0DCD46A0E35AD"]
@@ -418,8 +338,8 @@
 				item: { Count: 16, id: "gtceu:livingrock_plate" }
 				type: "item"
 			}]
-			x: 2.1499999999999986d
-			y: 0.8571428571428541d
+			x: -1.2085034013605238d
+			y: 0.9962585034013856d
 		}
 		{
 			dependencies: [
@@ -443,8 +363,8 @@
 					type: "item"
 				}
 			]
-			x: 2.1857142857142833d
-			y: 3.9642857142857153d
+			x: -1.3142857142857167d
+			y: 3.957142857142827d
 		}
 		{
 			dependencies: ["74E480FBC0BE66B0"]
@@ -454,8 +374,8 @@
 				item: "kubejs:advanced_mana_core"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 0.5d
+			y: 3.992857142857112d
 		}
 		{
 			dependencies: ["611883FA18804DBD"]
@@ -496,45 +416,19 @@
 				item: "gtceu:livingwood_plate"
 				type: "item"
 			}]
-			x: -2.2142857142857153d
-			y: 2.578571428571429d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["310B08BB2DFC4D6F"]
-			id: "40ABD97C30E46DD3"
-			tasks: [{
-				count: 16L
-				id: "71DC958C58CD1F70"
-				item: { Count: 16, id: "gtceu:manasteel_foil" }
-				type: "item"
-			}]
-			x: -4.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["310B08BB2DFC4D6F"]
-			id: "70189ABCAAB548A6"
-			tasks: [{
-				id: "1338A59FF879C7C3"
-				item: "gtceu:manasteel_plate"
-				type: "item"
-			}]
-			x: -2.204761904761895d
-			y: 0.6250000000000213d
-		}
-		{
-			dependencies: [
-				"70189ABCAAB548A6"
-				"40ABD97C30E46DD3"
-			]
+			dependencies: ["611883FA18804DBD"]
 			id: "7D52F97AB6CC2F62"
 			tasks: [{
 				id: "3BB357F92461E24B"
 				item: "kubejs:mana_chip"
 				type: "item"
 			}]
-			x: -4.0040816326530475d
-			y: 0.6488095238095368d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -549,22 +443,34 @@
 				item: "botania:mana_spreader"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.0d
+			x: 0.16292517006805696d
+			y: 2.488095238095262d
 		}
 		{
 			dependencies: ["2271ABC7231D8B63"]
+			icon: {
+				Count: 1
+				id: "botania:twig_wand"
+				tag: { }
+			}
 			id: "50A00E1A6980321C"
 			shape: "circle"
-			tasks: [{
-				id: "067974062756DFD5"
-				item: {
-					Count: 1
-					id: "botania:twig_wand"
-					tag: { }
+			tasks: [
+				{
+					id: "067974062756DFD5"
+					item: {
+						Count: 1
+						id: "botania:twig_wand"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "55E576EC827B5799"
+					type: "checkmark"
+				}
+			]
 			x: 7.5d
 			y: -1.5d
 		}
@@ -593,8 +499,8 @@
 					type: "item"
 				}
 			]
-			x: 2.1619047619047578d
-			y: 6.102380952380955d
+			x: -1.3380952380952422d
+			y: 6.0952380952380665d
 		}
 		{
 			dependencies: [
@@ -607,8 +513,8 @@
 				item: "kubejs:earth_tablet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: -3.5d
+			y: 7.492857142857112d
 		}
 		{
 			dependencies: [
@@ -621,8 +527,8 @@
 				item: "kubejs:fire_tablet"
 				type: "item"
 			}]
-			x: 1.4d
-			y: 7.5d
+			x: -2.1d
+			y: 7.492857142857112d
 		}
 		{
 			dependencies: [
@@ -635,8 +541,8 @@
 				item: "kubejs:water_tablet"
 				type: "item"
 			}]
-			x: 2.8d
-			y: 7.5d
+			x: -0.7000000000000002d
+			y: 7.492857142857112d
 		}
 		{
 			dependencies: [
@@ -649,36 +555,16 @@
 				item: "kubejs:wind_tablet"
 				type: "item"
 			}]
-			x: 4.199999999999999d
-			y: 7.5d
-		}
-		{
-			dependencies: ["4AC5E057FBD83372"]
-			icon: "gtceu:raw_utherium_block"
-			id: "1E761A7B29C2DCE9"
-			shape: "circle"
-			tasks: [
-				{
-					id: "615F4BDC1C18EE86"
-					optional_task: true
-					title: "Ores"
-					type: "custom"
-				}
-				{
-					id: "474690CCC3B8ADB7"
-					type: "checkmark"
-				}
-			]
-			x: -10.5d
-			y: 4.0d
+			x: 0.6999999999999993d
+			y: 7.492857142857112d
 		}
 		{
 			dependencies: [
-				"278F193C885CC35F"
-				"64F09E6FD2A4ED1B"
 				"12B18BA775D485A5"
+				"4EDF39C88BD5349C"
+				"278F193C885CC35F"
 				"70DE12E7C1CDFE7C"
-				"25FCA058437B0F4C"
+				"64F09E6FD2A4ED1B"
 			]
 			hide_dependency_lines: true
 			id: "4923249498343065"
@@ -695,8 +581,8 @@
 					type: "item"
 				}
 			]
-			x: 4.209523809523809d
-			y: 6.126190476190473d
+			x: 2.8948979591836874d
+			y: 10.59013605442179d
 		}
 		{
 			dependencies: ["4923249498343065"]
@@ -714,11 +600,14 @@
 					type: "item"
 				}
 			]
-			x: 5.780952380952385d
-			y: 6.126190476190473d
+			x: 1.6568027210884466d
+			y: 10.566326530612272d
 		}
 		{
-			dependencies: ["01D3D697522331EF"]
+			dependencies: [
+				"7D52F97AB6CC2F62"
+				"641A75A9A7BF3A46"
+			]
 			id: "4EDF39C88BD5349C"
 			shape: "hexagon"
 			size: 2.0d
@@ -727,8 +616,8 @@
 				item: "gtceu:mana_pulse_infuser"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 9.0d
+			x: 2.8772108843537723d
+			y: 8.988095238095262d
 		}
 		{
 			dependencies: [
@@ -743,8 +632,8 @@
 				type: "item"
 			}]
 			title: "Cloggrum Steel"
-			x: 0.0d
-			y: 9.0d
+			x: -3.5d
+			y: 8.992857142857112d
 		}
 		{
 			dependencies: [
@@ -759,8 +648,8 @@
 				item: "gtceu:firestone_ingot"
 				type: "item"
 			}]
-			x: 1.3928571428571388d
-			y: 9.042857142857144d
+			x: -2.107142857142861d
+			y: 9.035714285714256d
 		}
 		{
 			dependencies: [
@@ -775,9 +664,9 @@
 				item: "gtceu:prismarine_infused_alloy_ingot"
 				type: "item"
 			}]
-			title: "Prisamarine-Infused Alloy"
-			x: 2.8214285714285765d
-			y: 9.042857142857144d
+			title: "Prismarine-Infused Alloy"
+			x: -0.6785714285714235d
+			y: 9.035714285714256d
 		}
 		{
 			dependencies: [
@@ -790,96 +679,8 @@
 				item: "gtceu:aethersteel_ingot"
 				type: "item"
 			}]
-			x: 4.202380952380949d
-			y: 9.042857142857144d
-		}
-		{
-			dependencies: ["03B56ECF5AA7CF3E"]
-			id: "035D8AA73E48143F"
-			shape: "hexagon"
-			size: 1.4d
-			tasks: [{
-				id: "4AB08CCCF74BD619"
-				item: "undergarden:ditchbulb"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -5.5d
-		}
-		{
-			id: "096DA994D539DD93"
-			shape: "circle"
-			tasks: [{
-				id: "6FD911A01C9A997F"
-				item: "gtceu:raw_rubber_dust"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["035D8AA73E48143F"]
-			id: "16CDEF2DD759F160"
-			tasks: [{
-				id: "3258F9245FBDBAC2"
-				item: "undergarden:ditchbulb_paste"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"096DA994D539DD93"
-				"16CDEF2DD759F160"
-			]
-			id: "7D414D4621FF2BC2"
-			tasks: [{
-				id: "59FE57230D63359B"
-				item: "gtceu:ditchbulb_resin_ingot"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["7D414D4621FF2BC2"]
-			id: "055E5B9F67AEC28D"
-			tasks: [{
-				count: 16L
-				id: "39FEE0584474D994"
-				item: { Count: 16, id: "gtceu:ditchbulb_resin_plate" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: -0.9999999999999997d
-		}
-		{
-			dependencies: ["055E5B9F67AEC28D"]
-			id: "53FBE557B32D5A1C"
-			tasks: [{
-				id: "066F2EED3FF3E5F8"
-				item: "gtceu:resin_circuit_board"
-				type: "item"
-			}]
-			x: -8.5d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"53FBE557B32D5A1C"
-				"0FFF447C2E51C45F"
-			]
-			id: "6364B1DF5559645B"
-			shape: "hexagon"
-			size: 1.9d
-			tasks: [{
-				id: "3E6B451900576B03"
-				item: "gtceu:resin_printed_circuit_board"
-				type: "item"
-			}]
-			x: -6.5d
-			y: 0.5d
+			x: 0.702380952380949d
+			y: 9.035714285714256d
 		}
 		{
 			dependencies: [
@@ -887,6 +688,7 @@
 				"69DEE03140388B37"
 				"7849B938AB1615B5"
 			]
+			hide_dependency_lines: true
 			id: "40FD4C545208D53B"
 			shape: "octagon"
 			size: 2.0d
@@ -895,8 +697,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 9.0d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			id: "69DEE03140388B37"
@@ -906,49 +708,10 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 9.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["1E761A7B29C2DCE9"]
-			id: "439B5A3053490783"
-			shape: "hexagon"
-			size: 1.3d
-			tasks: [{
-				count: 64L
-				id: "0E21BA1A88EE8156"
-				item: { Count: 64, id: "undergarden:raw_froststeel" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["439B5A3053490783"]
-			id: "2C51C945E164AA01"
-			shape: "circle"
-			tasks: [{
-				id: "118FC87EC25C6707"
-				item: "gtceu:fine_froststeel_wire"
-				type: "item"
-			}]
-			x: -8.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["2C51C945E164AA01"]
-			id: "7849B938AB1615B5"
-			shape: "circle"
-			tasks: [{
-				id: "752BB93CCB975976"
-				item: "gtceu:resistor"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["3884187493BA916A"]
 			hide_dependency_lines: true
 			id: "18F03EC732084EE6"
 			shape: "circle"
@@ -975,8 +738,8 @@
 				}
 			]
 			title: "Follow the Shiny Object"
-			x: -1.5d
-			y: 7.5d
+			x: -5.0d
+			y: 7.492857142857112d
 		}
 		{
 			dependencies: ["49FCC2EDF68DCD61"]
@@ -993,8 +756,8 @@
 				item: "gtceu:lv_machine_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 11.0d
+			x: -4.472789115646222d
+			y: 11.007142857142895d
 		}
 		{
 			dependencies: ["1169EBFFA83FE0C3"]
@@ -1010,16 +773,16 @@
 			y: -2.4780612244897995d
 		}
 		{
-			dependencies: ["3884187493BA916A"]
 			description: ["The Chemical Reactor is designed for various chemical operations, but for now, you should use it to create Dense Mana."]
+			hide_dependency_lines: true
 			id: "6EF72FE4C3597EFB"
 			tasks: [{
 				id: "47D742636FAF20C8"
 				item: "gtceu:ulv_chemical_reactor"
 				type: "item"
 			}]
-			x: -2.2d
-			y: -7.5d
+			x: 4.984353741496626d
+			y: 10.539115646258537d
 		}
 		{
 			dependencies: ["4A5684E692DC430D"]
@@ -1041,7 +804,6 @@
 			y: 10.6d
 		}
 		{
-			dependencies: ["3884187493BA916A"]
 			description: ["Forestry isn't implemented yet, but you can still do it since it will be OP later."]
 			id: "7A8DD9280DB4EB5B"
 			shape: "circle"
@@ -1058,21 +820,6 @@
 			}]
 			x: 0.0d
 			y: -7.5d
-		}
-		{
-			dependencies: ["4AC5E057FBD83372"]
-			description: ["After entering this new layer of the Earth, be careful of the new flora and fauna. They can be friendly, but also very dangerous."]
-			id: "03B56ECF5AA7CF3E"
-			shape: "circle"
-			subtitle: "Also, what are these creatures?"
-			tasks: [{
-				id: "761130ADB496ECD1"
-				title: "12"
-				type: "checkmark"
-			}]
-			title: "Uhh... We didn't have this before."
-			x: -6.5d
-			y: -7.0d
 		}
 		{
 			dependencies: ["3AE3AD4D597D8061"]
@@ -1100,42 +847,23 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.9d
+			size: 1.4d
 			tasks: [{
 				id: "593D7ED294A7E22A"
 				item: "kubejs:dense_mana_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -7.5d
+			x: 4.984353741496626d
+			y: 9.003401360544245d
 		}
 		{
-			dependencies: ["310B08BB2DFC4D6F"]
-			id: "221E0F816FB19AC7"
-			tasks: [{
-				id: "4DC1A0913EC035C6"
-				item: "gtceu:ulv_centrifuge"
-				type: "item"
-			}]
-			x: -2.1853741496598573d
-			y: -0.9818027210884352d
-		}
-		{
-			dependencies: ["221E0F816FB19AC7"]
-			id: "0FFF447C2E51C45F"
-			tasks: [{
-				id: "46E33F048CD74AAF"
-				item: "gtceu:glue_bucket"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3884187493BA916A"]
+			dependencies: ["25289F9E8AE01C29"]
+			dependency_requirement: "one_completed"
 			description: ["This mod is focused around generating and harnessing mana produced by mystical flowers. You can find further documentation in this quest book and the Lexica Botania"]
+			icon: "botania:lexicon"
 			id: "645FC277598EA984"
 			shape: "circle"
+			size: 2.0d
 			tasks: [{
 				id: "7E1F170A92D557F7"
 				title: "WELCOME TO BOTANIA!"
@@ -1143,21 +871,6 @@
 			}]
 			x: 7.5d
 			y: -5.5d
-		}
-		{
-			dependencies: ["60CC6B0FFB125162"]
-			description: ["Used in Ars Nouveau recipes. I recommend crafting this metal as frequently as Manasteel."]
-			id: "747104184C6255A9"
-			shape: "circle"
-			size: 0.8d
-			tasks: [{
-				id: "1DD637DEF12DF1F0"
-				item: "gtceu:managold_ingot"
-				type: "item"
-			}]
-			title: "First Step into Ars Noveau"
-			x: 1.0248299319727963d
-			y: -0.7428571428571473d
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
@@ -1222,7 +935,6 @@
 			y: 9.1d
 		}
 		{
-			dependencies: ["3884187493BA916A"]
 			description: ["Create this book and learn the new mod!"]
 			id: "3AE3AD4D597D8061"
 			tasks: [{
@@ -1264,8 +976,8 @@
 				type: "item"
 			}]
 			title: "Easy planks!"
-			x: 3.9999999999999996d
-			y: -3.0d
+			x: 3.8999999999999995d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1280,8 +992,8 @@
 				title: "They have no use right now..."
 				type: "checkmark"
 			}]
-			x: 2.819047619047616d
-			y: 10.739285714285721d
+			x: -0.6809523809523839d
+			y: 10.732142857142833d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1294,8 +1006,8 @@
 				type: "item"
 			}]
 			title: "Infinite Resources at ULV??"
-			x: 3.4999999999999996d
-			y: -2.499999999999999d
+			x: 3.3999999999999995d
+			y: -0.9999999999999991d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1308,8 +1020,8 @@
 				type: "item"
 			}]
 			title: "Endless Lava"
-			x: 4.500000000000002d
-			y: -2.499999999999999d
+			x: 4.400000000000002d
+			y: -0.9999999999999991d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1322,8 +1034,8 @@
 				type: "item"
 			}]
 			title: "Duping Flowers isn`t difficult."
-			x: 4.000000000000002d
-			y: -1.9999999999999991d
+			x: 3.9000000000000017d
+			y: -0.4999999999999991d
 		}
 		{
 			id: "36E10C0E5108CAFF"
@@ -1334,6 +1046,18 @@
 			}]
 			x: 9.9d
 			y: 10.5d
+		}
+		{
+			dependencies: ["5F4EAA3099100BE6"]
+			id: "2BE59DB7C7F5DDF5"
+			shape: "circle"
+			tasks: [{
+				id: "1EB180EE2925BCA2"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 8.99863945578236d
+			y: 2.2142857142857366d
 		}
 	]
 	title: "Hi, Electricity!"

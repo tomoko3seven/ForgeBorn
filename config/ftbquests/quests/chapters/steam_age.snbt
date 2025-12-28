@@ -7,28 +7,28 @@
 	id: "3B89FB8839204148"
 	images: [
 		{
-			height: 2.0d
-			image: "gtceu:block/casings/voltage/ulv/bottom"
-			rotation: 0.0d
-			width: 2.0d
-			x: 11.792234600871588d
-			y: 0.8933673469387813d
-		}
-		{
-			height: 2.0d
-			image: "gtceu:block/casings/voltage/ulv/bottom"
-			rotation: 45.0d
-			width: 2.0d
-			x: 11.792234600871588d
-			y: 0.9290816326530589d
-		}
-		{
 			height: 1.0d
 			image: "gui:textures/steam_age.png"
 			rotation: 0.0d
 			width: 4.0d
 			x: -1.8341666666666683d
 			y: 1.7333333333333272d
+		}
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/ulv/bottom"
+			rotation: 45.0d
+			width: 2.0d
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			height: 2.0d
+			image: "gtceu:block/casings/voltage/ulv/bottom"
+			rotation: 0.0d
+			width: 2.0d
+			x: 12.0d
+			y: 0.5d
 		}
 	]
 	order_index: 1
@@ -102,7 +102,7 @@
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: 9.299999999999997d
+			x: 10.5d
 			y: -2.0d
 		}
 		{
@@ -115,8 +115,8 @@
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 6.799999999999997d
-			y: -3.5d
+			x: 6.6900595238095235d
+			y: -2.028571428571432d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -142,22 +142,22 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: 8.799999999999997d
-			y: -3.5d
+			x: 7.797202380952378d
+			y: -4.028571428571432d
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
 			description: ["A steam-powered multi-block furnace. It smelts items quickly and processes up to 4 items simultaneously."]
 			id: "1F8932F343B91A7C"
-			shape: "octagon"
-			size: 1.2d
+			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "426F60B458F90D12"
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: 5.439946853741507d
-			y: -2.284693877551007d
+			x: 5.4536649659864125d
+			y: -2.7139455782312822d
 		}
 		{
 			dependencies: [
@@ -180,8 +180,8 @@
 					type: "item"
 				}
 			]
-			x: 10.482803996598657d
-			y: -2.8918367346938703d
+			x: 10.547202380952378d
+			y: -3.8857142857142897d
 		}
 		{
 			dependencies: [
@@ -194,8 +194,8 @@
 				item: "gtceu:firebricks"
 				type: "item"
 			}]
-			x: 12.135257759353737d
-			y: -3.489455782312951d
+			x: 12.2614880952381d
+			y: -3.850000000000005d
 		}
 		{
 			dependencies: ["63105DD121AA63E0"]
@@ -399,57 +399,6 @@
 			y: -1.9918367346938766d
 		}
 		{
-			dependencies: [
-				"7873341ED0BEECC5"
-				"4028B45A0B6542DE"
-			]
-			description: ["Essential components for automation and ULV machines."]
-			id: "34B2703714D4876C"
-			optional: true
-			rewards: [{
-				count: 64
-				id: "33B19668CDF7A271"
-				item: "gtceu:steel_ingot"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "0E21070FF755EE03"
-					item: "ulvcovm:ulv_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "499B2629F17B2D65"
-					item: "ulvcovm:ulv_robot_arm"
-					type: "item"
-				}
-				{
-					id: "57FEC63F4229D15F"
-					item: "ulvcovm:ulv_electric_motor"
-					type: "item"
-				}
-				{
-					id: "15E30403980838C2"
-					item: "ulvcovm:ulv_electric_piston"
-					type: "item"
-				}
-				{
-					id: "1B176BF1294FA2F4"
-					item: "ulvcovm:ulv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "0A4F0187A2F8FA50"
-					item: "ulvcovm:ulv_fluid_regulator"
-					type: "item"
-				}
-			]
-			x: 9.907974064625908d
-			y: -0.3639455782312311d
-		}
-		{
 			dependencies: ["6D20A46BE1B8769D"]
 			description: ["Using a drum with cement, you can craft all the bricks at once."]
 			id: "05413ED2DBA0371D"
@@ -459,37 +408,8 @@
 				item: "gtceu:concrete_bucket"
 				type: "item"
 			}]
-			x: 12.180329838966822d
-			y: -2.000425170068027d
-		}
-		{
-			dependencies: [
-				"1D66BF00AD04DB6F"
-				"4028B45A0B6542DE"
-			]
-			description: ["Congratulations on completing the Steam Age."]
-			id: "04508643F6EFAD96"
-			rewards: [{
-				id: "3E0CF56750B8F294"
-				item: "croptopia:mango_sapling"
-				type: "item"
-			}]
-			shape: "octagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "6AFAED3DD020217F"
-					item: "gtceu:ulv_machine_casing"
-					type: "item"
-				}
-				{
-					id: "0390EE2CCB103E0F"
-					item: "gtceu:ulv_machine_hull"
-					type: "item"
-				}
-			]
-			x: 11.799999999999994d
-			y: 0.8999999999999992d
+			x: 12.225773809523808d
+			y: -2.6357142857142932d
 		}
 		{
 			dependencies: [
@@ -610,33 +530,6 @@
 			y: 4.868622448979593d
 		}
 		{
-			dependencies: ["03DBF1961AE21C76"]
-			description: ["Just like in real life, a Vacuum Tube needs... a vacuum. You will unlock more efficient recipes for these later."]
-			id: "3906BB5555D181F2"
-			shape: "circle"
-			tasks: [{
-				id: "6F1BAE4FB370A24D"
-				item: "kubejs:not_vacuum_tube"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3906BB5555D181F2"]
-			description: ["The first ULV circuits. You will need these in large quantities, so stock up."]
-			id: "39205CF2CB1EA09B"
-			shape: "octagon"
-			size: 1.7d
-			tasks: [{
-				id: "33645B24B02E4246"
-				item: "gtceu:vacuum_tube"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["1D66BF00AD04DB6F"]
 			description: ["Decent armor for this stage. It also provides temperature resistance (Not yet implemented)."]
 			id: "0CBF32D58514F936"
@@ -655,6 +548,36 @@
 			}]
 			x: 16.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["07B76D0844D99724"]
+			hide_dependency_lines: false
+			id: "12919662A5597A7B"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "3D30067A5E2E2D1C"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 5.4536649659864125d
+			y: -4.0234693877550995d
+		}
+		{
+			dependencies: [
+				"21B69724512B0BFF"
+				"4028B45A0B6542DE"
+			]
+			id: "5955B856F9598B40"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "04A42A74CD0DE07E"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
