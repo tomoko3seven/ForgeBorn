@@ -722,6 +722,11 @@
     "modId": "rhino",
     "version": "2001.2.3-build.10"
   },
+  "rubberdrawers-1.1.jar": {
+    "jarName": "rubberdrawers-1.1.jar",
+    "modId": "rubberdrawers",
+    "version": "1.1"
+  },
   "RUExpansion-1.0.1+1.20.1.jar": {
     "jarName": "RUExpansion-1.0.1+1.20.1.jar",
     "modId": "ru_expansion",
@@ -786,6 +791,11 @@
     "jarName": "Stargate Journey-1.20.1-0.6.42.jar",
     "modId": "sgjourney",
     "version": "0.6.42"
+  },
+  "steamadditions-1.5.1.jar": {
+    "jarName": "steamadditions-1.5.1.jar",
+    "modId": "steamadditions",
+    "version": "1.5.1"
   },
   "Stellar View-1.20.1-0.5.1-Forge.jar": {
     "jarName": "Stellar View-1.20.1-0.5.1-Forge.jar",

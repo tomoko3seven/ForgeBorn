@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kubejs:block/heavy_cabling_front",
+    "side": "kubejs:block/heavy_cabling"
+  }
+}

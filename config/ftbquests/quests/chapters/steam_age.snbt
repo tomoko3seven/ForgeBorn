@@ -129,7 +129,7 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 5.4215795068027255d
+			x: 5.021579506802727d
 			y: -0.38265306122449516d
 		}
 		{
@@ -156,7 +156,7 @@
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: 5.439946853741507d
+			x: 4.539946853741508d
 			y: -2.284693877551007d
 		}
 		{
@@ -655,6 +655,43 @@
 			}]
 			x: 16.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["68D6CBA3B0836C88"]
+			id: "5911B5A496A0C2B6"
+			shape: "octagon"
+			tasks: [{
+				id: "64D17D66ACC96DBE"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 3.5999999999999996d
+			y: -1.5d
+		}
+		{
+			dependencies: ["68D6CBA3B0836C88"]
+			id: "538B15079F0C05CB"
+			shape: "octagon"
+			tasks: [{
+				id: "7584F04F4D6262AE"
+				item: "steamadditions:steam_separator"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["68D6CBA3B0836C88"]
+			id: "3EE4B77E9AA5F07F"
+			shape: "octagon"
+			size: 1.2d
+			tasks: [{
+				id: "79D6719C73FB5F01"
+				item: "steamadditions:steam_foundry"
+				type: "item"
+			}]
+			x: 5.700000000000001d
+			y: -2.3d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

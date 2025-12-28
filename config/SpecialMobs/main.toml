@@ -16,7 +16,7 @@
 
   # If enabled, mobs spawned from spawner blocks/dungeon spawners will not be subject to mob replacement.
   # <Boolean> Valid Values: { true, false }, Default: false
-  general.skip_spawner_spawns = false
+  general.skip_spawner_spawns = true
 
   # Whether the mod uses Special Mobs entities in place of vanilla entities for non-special species. This allows your
   #   config options to apply to non-special species and allows them to benefit from Special Mob Data and any

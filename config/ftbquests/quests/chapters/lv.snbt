@@ -73,35 +73,36 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: -8.0d
 		}
 		{
-			dependencies: ["6D99600BC5801200"]
+			dependencies: ["22B0D4002FE6E8C2"]
 			id: "59AF246571A318C7"
 			tasks: [{
 				id: "7FE3060252C28AD2"
 				item: "functionalstorage:storage_controller"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.5d
+			x: 8.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["6D99600BC5801200"]
+			dependencies: ["22B0D4002FE6E8C2"]
 			id: "536C7E75D8D220D9"
 			tasks: [{
 				id: "4710AC90D67D98E3"
 				item: "toms_storage:ts.storage_terminal"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -4.5d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
 				"536C7E75D8D220D9"
 				"59AF246571A318C7"
+				"3F4056CDD3721F21"
 			]
 			id: "015EB8AEE050B577"
 			shape: "circle"
@@ -110,8 +111,8 @@
 				title: "First \"Digital\" Storage"
 				type: "checkmark"
 			}]
-			x: 12.5d
-			y: -5.0d
+			x: 9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["443ADA5BA384C78C"]
@@ -148,19 +149,20 @@
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
-			icon: "gtceu:lv_assembler"
+			icon: "gtceu:lv_energy_input_hatch"
 			id: "6D99600BC5801200"
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				id: "581F1BBDEB9457FA"
-				type: "checkmark"
+				id: "56A4685FC2E0CDDE"
+				item: "gtceu:lv_energy_input_hatch"
+				type: "item"
 			}]
-			x: 10.0d
+			x: 10.2d
 			y: -5.0d
 		}
 		{
-			dependencies: ["6D99600BC5801200"]
+			dependencies: ["22B0D4002FE6E8C2"]
 			id: "3F4056CDD3721F21"
 			shape: "circle"
 			tasks: [{
@@ -168,8 +170,8 @@
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -6.5d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["61DC26C52C32EA88"]
@@ -235,8 +237,8 @@
 				item: "gtceu:prospector.lv"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -6.5d
+			x: 7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -772,7 +774,7 @@
 				item: "gtceu:lv_distillery"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: -1.5d
 		}
 		{
@@ -783,7 +785,7 @@
 				item: "gtceu:cloggrum_spring"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: -5.0d
 		}
 		{
@@ -802,7 +804,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 12.5d
+			x: 13.0d
 			y: -1.5d
 		}
 		{
@@ -816,7 +818,7 @@
 				item: "gtceu:sulfuric_naphtha_bucket"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -830,7 +832,7 @@
 				item: "gtceu:naphtha_bucket"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: 1.5d
 		}
 		{
@@ -842,7 +844,7 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 1.5d
 		}
 		{
@@ -854,7 +856,7 @@
 				item: "gtceu:steam_bucket"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 3.0d
 		}
 		{
@@ -868,7 +870,7 @@
 				item: "gtceu:lightly_steam_cracked_naphtha_bucket"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: 3.0d
 		}
 		{
@@ -879,7 +881,7 @@
 				item: "gtceu:heavy_fuel_bucket"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: 4.5d
 		}
 		{
@@ -890,7 +892,7 @@
 				item: "gtceu:phenol_bucket"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: 6.0d
 		}
 		{
@@ -944,7 +946,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 12.5d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -1008,7 +1010,7 @@
 				item: "gtceu:hydrogen_sulfide_bucket"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
@@ -1020,7 +1022,7 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.5d
 			y: 7.5d
 		}
 		{
@@ -1032,7 +1034,7 @@
 				item: "gtceu:sodium_bisulfate_dust"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: 7.5d
 		}
 		{
@@ -1196,7 +1198,7 @@
 				title: "Real chemistry (almost)"
 				type: "checkmark"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: -3.0d
 		}
 		{
@@ -1278,7 +1280,7 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
+			x: 17.5d
 			y: 1.5d
 		}
 		{
