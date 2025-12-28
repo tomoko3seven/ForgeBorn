@@ -6,6 +6,12 @@
 !defaultconfig/
 !config/
 !docs/
+!.github
+!.prettierrc
+!node_modules/
+!package-lock.json
+!package.json
+!.eslintrc.json
 
 # Allow files in excepted directories
 !kubejs/**
@@ -16,6 +22,7 @@
 # Ignore these files 
 config/SpecialMobs/**
 config/oculus.properties
+config/legendarytooltips-common.toml
 
 # Keep .gitignore itself
 !.gitignore
