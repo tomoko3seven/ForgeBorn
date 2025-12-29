@@ -1,36 +1,37 @@
 //Materials
-GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('livingrock')
+GTCEuStartupEvents.registry('gtceu:material', (event) => {
+    event
+        .create('livingrock')
         .color(0xd7d7c8)
         .iconSet(GTMaterialIconSet.ROUGH)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE
-        )
+        .flags(GTMaterialFlags.GENERATE_PLATE);
 
-    event.create('livingwood')
+    event
+        .create('livingwood')
         .color(0x34140c)
         .iconSet(GTMaterialIconSet.WOOD)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-        )
-    event.create('dreamwood')
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        );
+    event
+        .create('dreamwood')
         .color(0xb9ddd3)
         .iconSet(GTMaterialIconSet.WOOD)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-        )
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        );
 
-
-    event.create('terrasteel')
+    event
+        .create('terrasteel')
         .color(0x55f609)
         .ingot()
         .element(GTElements.get('terrasteel'))
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.MV], 8, 1, false)
-        .toolStats(new ToolProperty(12, 7, 3072, 6,
-            [
+        .toolStats(
+            new ToolProperty(12, 7, 3072, 6, [
                 GTToolType.SWORD,
                 GTToolType.PICKAXE,
                 GTToolType.SHOVEL,
@@ -61,9 +62,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
                 GTToolType.WIRE_CUTTER_HV,
                 GTToolType.WIRE_CUTTER_IV,
                 GTToolType.BUZZSAW,
-                GTToolType.SCREWDRIVER_LV
-            ]
-        ))
+                GTToolType.SCREWDRIVER_LV,
+            ])
+        )
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -73,16 +74,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FRAME
-        )
+        );
 
-    event.create('manasteel')
+    event
+        .create('manasteel')
         .liquid()
         .color(0x67b9ee)
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
 
-        .toolStats(new ToolProperty(8, 5, 2048, 4,
-            [
+        .toolStats(
+            new ToolProperty(8, 5, 2048, 4, [
                 GTToolType.SWORD,
                 GTToolType.PICKAXE,
                 GTToolType.SHOVEL,
@@ -113,9 +115,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
                 GTToolType.WIRE_CUTTER_HV,
                 GTToolType.WIRE_CUTTER_IV,
                 GTToolType.BUZZSAW,
-                GTToolType.SCREWDRIVER_LV
-            ]
-        ))
+                GTToolType.SCREWDRIVER_LV,
+            ])
+        )
         .iconSet(GTMaterialIconSet.getByName('mana'))
         .flags(
             GTMaterialFlags.GENERATE_FINE_WIRE,
@@ -123,13 +125,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_GEAR,)
+            GTMaterialFlags.GENERATE_GEAR
+        );
 
-    event.create('annealed_manasteel')
+    event
+        .create('annealed_manasteel')
         .ingot()
         .liquid()
         .color(0xa8ddff)
-        .components("manasteel")
+        .components('manasteel')
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.MV], 2, 3, false)
         .iconSet(GTMaterialIconSet.getByName('mana'))
@@ -142,9 +146,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
-        )
+        );
 
-    event.create('elementium')
+    event
+        .create('elementium')
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
@@ -157,8 +162,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING
-        ).toolStats(new ToolProperty(20, 8, 8072, 6,
-            [
+        )
+        .toolStats(
+            new ToolProperty(20, 8, 8072, 6, [
                 GTToolType.SWORD,
                 GTToolType.PICKAXE,
                 GTToolType.SHOVEL,
@@ -189,11 +195,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
                 GTToolType.WIRE_CUTTER_HV,
                 GTToolType.WIRE_CUTTER_IV,
                 GTToolType.BUZZSAW,
-                GTToolType.SCREWDRIVER_LV
-            ]
-        ))
+                GTToolType.SCREWDRIVER_LV,
+            ])
+        );
 
-event.create('elvorium')
+    event
+        .create('elvorium')
         .color(0x3fbf9a)
         .ingot()
 
@@ -206,8 +213,9 @@ event.create('elvorium')
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('mauftrium')
+        );
+    event
+        .create('mauftrium')
         .color(0xff55cc)
         .ingot()
 
@@ -220,8 +228,9 @@ event.create('mauftrium')
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('muspelheim')
+        );
+    event
+        .create('muspelheim')
         .color(0xff55cc)
         .ingot()
 
@@ -234,8 +243,9 @@ event.create('muspelheim')
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('niflheim')
+        );
+    event
+        .create('niflheim')
         .color(0xff55cc)
         .ingot()
 
@@ -248,8 +258,9 @@ event.create('niflheim')
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('gaiasteel')
+        );
+    event
+        .create('gaiasteel')
         .color(0xff55cc)
         .ingot()
 
@@ -262,8 +273,9 @@ event.create('gaiasteel')
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
-        )
-event.create('gaia')
+        );
+    event
+        .create('gaia')
         .color(0xff55cc)
         .ingot()
 
@@ -276,19 +288,31 @@ event.create('gaia')
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
-        )
+        );
+});
+StartupEvents.postInit((event) => {
+    GTMaterials.get('manasteel')
+        .getProperty(PropertyKey.INGOT)
+        .setArcSmeltingInto('annealed_manasteel');
+});
 
-})
-StartupEvents.postInit(event => {
-    GTMaterials.get('manasteel').getProperty(PropertyKey.INGOT).setArcSmeltingInto('annealed_manasteel')
-})
-
-GTCEuStartupEvents.materialModification(event => {
+GTCEuStartupEvents.materialModification((event) => {
     // TagPrefix.ingot.setIgnored(GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
     // TagPrefix.ingot.setIgnored(GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
     // TagPrefix.ingot.setIgnored(GTMaterials.get('elementium'))
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('manasteel'), () => Item.getItem('botania:manasteel_ingot'))
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
-
-})
+    TagPrefix.ingot[
+        'setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'
+    ](GTMaterials.get('manasteel'), () =>
+        Item.getItem('botania:manasteel_ingot')
+    );
+    TagPrefix.ingot[
+        'setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'
+    ](GTMaterials.get('terrasteel'), () =>
+        Item.getItem('botania:terrasteel_ingot')
+    );
+    TagPrefix.ingot[
+        'setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'
+    ](GTMaterials.get('elementium'), () =>
+        Item.getItem('botania:elementium_ingot')
+    );
+});
