@@ -13,9 +13,14 @@
 !config/**
 !docs/**
 
+# Allow everything in .github
+!.github/
+!.github/**
+
 # Ignore these files 
 config/SpecialMobs/**
 config/oculus.properties
 
 # Keep .gitignore itself
 !.gitignore
+!CONTRIBUTING.md
