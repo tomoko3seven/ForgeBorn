@@ -1,38 +1,18 @@
-/**
- * ESLint configuration file.
- * credit to MoniLabs for the base config
- */
-
 import js from "@eslint/js";
-import stylistic from "@stylistic/eslint-plugin-js";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
     js.configs.recommended,
     {
-    // Ignores generated files and libraries
         ignores: ["probe/**", "node_modules/**", ".git/**"],
     },
     {
-        plugins: {
-            "@stylistic/js": stylistic,
-        },
         rules: {
             "no-unused-vars": "off",
             "no-undef": "off",
-            "no-unexpected-multiline": "off",
             "no-var": "error",
             "no-useless-escape": "warn",
-            "space-infix-ops": ["error", { int32Hint: true }],
-            "@stylistic/js/indent": ["error", 4],
-            "@stylistic/js/spaced-comment": "error",
-            "@stylistic/js/linebreak-style": ["error", "unix"],
-            "@stylistic/js/no-trailing-spaces": "error",
-            "@stylistic/js/eol-last": ["error", "always"],
-            "@stylistic/js/no-multi-spaces": ["error", { ignoreEOLComments: true }],
-            "@stylistic/js/no-multiple-empty-lines": ["error", { max: 2, maxEOF: 0 }],
-            "@stylistic/js/no-extra-semi": "error",
-            "@stylistic/js/quotes": ["error", "double", { avoidEscape: true }],
+            "eqeqeq": ["error", "smart"],
         },
     },
 ];
