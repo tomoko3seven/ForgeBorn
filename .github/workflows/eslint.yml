@@ -1,0 +1,36 @@
+# CREDIT MoniLabs for this workflow
+name: Check ESLint in a folder
+on:
+  workflow_call:
+    inputs:
+      folder:
+        required: true
+        description: Path to the folder to check (e.g., 'kubejs')
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  lint-folder:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.folder }} # This sets the default folder for all 'run' steps
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+          cache-dependency-path: ${{ inputs.folder }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npx eslint .
