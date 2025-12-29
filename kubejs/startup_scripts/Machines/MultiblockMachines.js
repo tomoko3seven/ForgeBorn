@@ -1,3 +1,21 @@
+/*const $GTRecipe = Java.loadClass("com.gregtech.gtceu.api.recipe.GTRecipe");
+const $MetaMachine = Java.loadClass("com.gregtech.gtceu.api.machine.MetaMachine");
+const $ContentModifier = Java.loadClass("com.gregtech.gtceu.api.recipe.content.ContentModifier");
+const $ModifierFunction = Java.loadClass("com.gregtech.gtceu.api.recipe.modifier.ModifierFunction");
+
+function DefaultParallels(machine, recipe, parallelAmount) {
+    if (!(machine instanceof $MetaMachine)) return $ModifierFunction.IDENTITY;
+    if (!(recipe instanceof $GTRecipe)) return $ModifierFunction.IDENTITY;
+
+    var parallelModifier = $ModifierFunction.builder()
+        .modifyAllContents($ContentModifier.multiplier(parallelAmount))
+        .parallels(parallelAmount)
+        .build();
+
+    return parallelModifier;
+}*/
+
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         event.create('extraterrestial_agglomeration')
         .category('botania')
@@ -312,31 +330,23 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/assembler")
 
 
-
-        /*event.create('mana_pulse_infuser', 'multiblock')
+/*event.create('bending_box', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeTypes("mana_pulse_infuser")
+		.recipeType(GTRecipeTypes.BENDER_RECIPES)
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => DefaultParallels(machine,recipe,4)])
 		.appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
-			.aisle("B         B", "           ", "           ", "           ", "           ", "           ", "           ")
-            .aisle(" B       B ", " B       B ", "           ", "           ", "           ", "           ", "           ")
-            .aisle("  B     B  ", "  B     B  ", "  B     B  ", "           ", "           ", "           ", "           ")
-            .aisle("   B   B   ", "   B   B   ", "   B   B   ", "   B   B   ", "           ", "           ", "           ")
-            .aisle("    CCC    ", "    DDD    ", "           ", "           ", "    B B    ", "    B B    ", "           ")
-            .aisle("    CDC    ", "    DGD    ", "           ", "           ", "           ", "     D     ", "     B     ")
-            .aisle("    CCC    ", "    DID    ", "           ", "           ", "    B B    ", "    B B    ", "           ")
-            .aisle("   B   B   ", "   B   B   ", "   B   B   ", "   B   B   ", "           ", "           ", "           ")
-            .aisle("  B     B  ", "  B     B  ", "  B     B  ", "           ", "           ", "           ", "           ")
-            .aisle(" B       B ", " B       B ", "           ", "           ", "           ", "           ", "           ")
-            .aisle("B         B", "           ", "           ", "           ", "           ", "           ", "           ")
-			.where('I', Predicates.controller(Predicates.blocks(definition.get())))
-            .where("G", Predicates.blocks("minecraft:glass"))
-			.where('D', Predicates.blocks('kubejs:solid_wrought_iron_casing')
-				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+			.aisle('RRRRR', '#####', ' ### ')
+			.aisle('RRRRR', '#   #', ' ### ')
+			.aisle('RRRRR', '##C##', ' ### ')
+			.where('C', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('#', Predicates.blocks('kubejs:solid_wrought_iron_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(6).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
 				.or(Predicates.blocks(PartAbility.INPUT_ENERGY.getBlocks([GTValues.ULV]).toArray()).setMaxGlobalLimited(2).setPreviewCount(1)))
-            .where('C', Predicates.blocks('kubejs:wrought_iron_firebox'))
+            .where('R', Predicates.blocks('kubejs:wrought_iron_firebox'))
 			.where(' ', Predicates.any())
 			.build())
-		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/mana_infuser");*/
+		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/assembler")
+*/
 });

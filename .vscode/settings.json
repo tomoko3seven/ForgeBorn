@@ -1,0 +1,16 @@
+{
+  "eslint.workingDirectories": [
+    { "directory": "./kubejs", "changeProcessCWD": true }
+  ],
+  "eslint.useFlatConfig": true,
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  
+  "eslint.validate": [ "javascript" ]
+}

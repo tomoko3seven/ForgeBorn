@@ -1,7 +1,18 @@
 StartupEvents.registry('block', event => {
-    event.create('cobblestone_bricks').soundType('stone').tagBlock('minecraft:mineable/pickaxe').hardness(3.0).resistance(2.0).requiresTool(true).textureAll('kubejs:block/cobblestone_bricks');
-    event.create('contradiction_stone').soundType('netherrack').tagBlock('minecraft:mineable/pickaxe').hardness(2.0).resistance(1.0).requiresTool(true).textureAll('kubejs:block/contradiction_stone');
-    event.create('empty_ender_casing').soundType('stone').tagBlock('minecraft:mineable/pickaxe');
+const BlockProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.BlockStateProperties');
+
+event.create('cobblestone_bricks').soundType('stone').tagBlock('minecraft:mineable/pickaxe').hardness(3.0).resistance(2.0).requiresTool(true).textureAll('kubejs:block/cobblestone_bricks');
+event.create('contradiction_stone').soundType('netherrack').tagBlock('minecraft:mineable/pickaxe').hardness(2.0).resistance(1.0).requiresTool(true).textureAll('kubejs:block/contradiction_stone');
+event.create('empty_ender_casing').soundType('stone').tagBlock('minecraft:mineable/pickaxe');
+
+event.create('heavy_cabeling')
+        .material('wool')
+        .hardness(2.0)
+        .tagBlock('forge:mineable/wire_cutter')
+        .property(BlockProperty.AXIS)
+        .placementState(ctx => {
+            return ctx.set('axis', ctx.clickedFace.axis);
+        });
 
     //Huge Thanks to Puff
     global.Casings = [
@@ -34,6 +45,17 @@ StartupEvents.registry('block', event => {
             'kubejs:block/casings/manasteel_livingrock/manasteel_firebox',
             'kubejs:block/casings/manasteel_livingrock/manasteel_livingrock_casing')
         .displayName('Manasteel Firebox')
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+    event.create('terrasteel_firebox', 'gtceu:active')
+        .firebox(
+            'kubejs:block/casings/terrasteel_livingwood/terrasteel_livingwood_casing',
+            'kubejs:block/casings/terrasteel_livingwood/terrasteel_firebox',
+            'kubejs:block/casings/terrasteel_livingwood/terrasteel_livingwood_casing')
+        .displayName('Terrasteel Firebox')
         .soundType('metal')
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")

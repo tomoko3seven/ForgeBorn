@@ -43,19 +43,19 @@ event.create('kubejs:undergarden_dim');
   ///////////////
   event.create('ingot_form').maxStackSize(1);
   event.create('gt_quantum').texture('assets/item/gt_quantum').displayName("GT-Quantum Token").tooltip('§8Right-Click to use this Coin and obtain Bronze Stew.').maxStackSize(16);
-  event.create('seared_bricks_raw').maxStackSize(64).displayName("Raw Seared Brick")
-  event.create('plant_fiber').maxStackSize(64)
-  event.create('plant_string').maxStackSize(64)
-  event.create('plant_rope').maxStackSize(64)
+  event.create('seared_bricks_raw').displayName("Raw Seared Brick")
+  event.create('plant_fiber')
+  event.create('plant_string')
+  event.create('plant_rope')
   event.create("needle").maxStackSize(1).maxDamage(50);
   event.create('flint_chisel').maxStackSize(1).maxDamage(12)
-  event.create("wool_clutch").maxStackSize(64);
+  event.create("wool_clutch");
   event.create("ancient_key").maxStackSize(1);
-  event.create("contradiction_stone_dust").maxStackSize(64);
-  event.create("tanned_leather").maxStackSize(64);
-  event.create("stabilized_latex").maxStackSize(64);
-  event.create("sulfur_chunk").maxStackSize(64);
-  event.create("coke_brick_dust").maxStackSize(64);
+  event.create("contradiction_stone_dust");
+  event.create("tanned_leather");
+  event.create("stabilized_latex");
+  event.create("sulfur_chunk");
+  event.create("coke_brick_dust");
   event.create("greg_icon");
   event.create("lurking_soul");
   event.create("omnipetal");
@@ -63,12 +63,16 @@ event.create('kubejs:undergarden_dim');
   event.create("coin");
   event.create("rope");
   event.create("blank_upgrade");
+  //Industrial
+  event.create("basic_mechanical_parts");
 
   event.create("lumicrystalline_seed");
-  event.create("cursed_cloth").maxStackSize(64);
-  event.create("enchanted_fabric").maxStackSize(64);
 
-  event.create("magic_thread").maxStackSize(64);
+  event.create("manaweave_thread");
+  event.create("manasteel_gear_bundle");
+  event.create("cursed_cloth");
+  event.create("enchanted_fabric");
+  event.create("basic_nature_catalyst");
   event.create("obsidian_skull").maxStackSize(1);
 
 event.create("air_bottle").displayName("Bottle of Air").tooltip('§8Fresh Air...')

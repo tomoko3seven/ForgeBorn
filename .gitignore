@@ -1,25 +1,52 @@
-# Ignore everything
+# 1. ROOT STRATEGY: Ignore everything by default
 *
 
-# Except these directories
+# 2. WHITELISTED DIRECTORIES (Un-ignore these folders)
 !kubejs/
 !defaultconfig/
 !config/
 !docs/
+!.github/
+!.vscode/
 
-# Allow files in excepted directories
+# 3. WHITELISTED CONTENTS (Allow files inside the folders above)
 !kubejs/**
 !defaultconfig/**
 !config/**
 !docs/**
-
-# Allow everything in .github
-!.github/
 !.github/**
+!.vscode/**
 
-# Ignore these files 
-config/SpecialMobs/**
+# 4. WHITELISTED ROOT FILES (Specific files to keep in the root)
+!.prettierrc
+!package-lock.json
+!package.json
+!.eslintrc.json
+!eslint.config.mjs
+!eslint.config.js
+!.gitignore
+
+# 5. RE-IGNORE RULES (Block specific junk inside the whitelisted folders)
+# -- KubeJS specific junk --
+kubejs/node_modules/
+kubejs/.eslintcache
+kubejs/probe
+
+# -- VS Code specific junk (Keep settings, ignore local user state) --
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/forgeborn.code-workspace
+!.vscode/probe.code-snippets
+
+# -- Config specific junk --
+config/SpecialMobs/
 config/oculus.properties
+config/legendarytooltips-common.toml
+config/c2me.toml
+config/embeddium-fingerprint.json
+config/embeddium-options.json
+config/jei/
 
 # Keep .gitignore itself
 !.gitignore

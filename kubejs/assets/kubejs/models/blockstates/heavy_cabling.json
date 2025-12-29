@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "kubejs:block/heavy_cabling"
+    },
+    "axis=z": {
+      "model": "kubejs:block/heavy_cabling",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "kubejs:block/heavy_cabling",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

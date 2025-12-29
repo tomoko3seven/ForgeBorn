@@ -5,18 +5,6 @@ LootJS.modifiers((event) => {
   event
     .addEntityLootModifier('specialmobs:blaze')
     .replaceLoot("minecraft:blaze_rod", "gtceu:sulfur_dust", true);
-
-  event
-    .addEntityLootModifier('minecraft:wither')
-    .addLoot("kubejs:wither_heart");
-  
-  event
-    .addEntityLootModifier("minecraft:enderman")
-    .replaceLoot("minecraft:ender_pearl", "gtceu:ender_pearl_dust", true);
-
-  event
-    .addEntityLootModifier("minecraft:zombified_piglin")
-    .removeLoot("minecraft:gold_nugget");
   
   event
     .addEntityLootModifier("minecraft:sheep")
@@ -41,5 +29,5 @@ LootJS.modifiers((event) => {
 LootJS.modifiers(event => {
    event.addBlockLootModifier("minecraft:grass")
     .addLoot('kubejs:plant_fiber')
-    .randomChance(0.5)
+    .randomChance(0.2)
 })
