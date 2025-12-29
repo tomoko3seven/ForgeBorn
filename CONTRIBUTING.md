@@ -51,7 +51,7 @@ This repository uses the following branching strategy:
    - Confirmation that the changes have been tested thoroughly, including:
      - Successful game launch without errors or crashes.
      - Running `/kubejs reload` to verify there are no script errors.
-     - Ensuring that any changes to recipes or scripts display correctly in JEI/REI.
+     - Ensuring that any changes to recipes or scripts display correctly in JEI/EMI.
        <!-- - Verification that the code adheres to the coding standards: -->
          <!-- Uncomment these lines once ESLint and Prettier are implemented -->
          <!--
