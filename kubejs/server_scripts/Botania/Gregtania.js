@@ -274,7 +274,7 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.mana_infusion(
         'botania:manasteel_ingot',
         'gtceu:blue_alloy_ingot',
-        2700 * 10
+        3000
     );
     event.recipes.gtceu
         .mana_infuser('manasteel_block_best')
