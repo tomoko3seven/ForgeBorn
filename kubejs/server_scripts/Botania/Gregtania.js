@@ -135,6 +135,12 @@ ServerEvents.recipes((event) => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(200);
 
+    event.recipes.botania.mana_infusion(
+        'kubejs:mana-filled_idol',
+        'kubejs:token_of_light',
+        100000
+    );
+
     // ---------------------------------------------------------
     // Casings
     // ---------------------------------------------------------

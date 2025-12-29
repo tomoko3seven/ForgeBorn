@@ -184,7 +184,13 @@ ServerEvents.recipes((event) => {
         }
     );
 
-    // Livingwood Bow
+    // Botanical Tools or Weapons
+    event.remove({ output: 'botania:manasteel_pick' });
+    event.remove({ output: 'botania:manasteel_shovel' });
+    event.remove({ output: 'botania:manasteel_axe' });
+    event.remove({ output: 'botania:manasteel_hoe' });
+    event.remove({ output: 'botania:manasteel_sword' });
+
     event.shaped(
         'botania:livingwood_bow',
         [
