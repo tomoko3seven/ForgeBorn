@@ -1,20 +1,3 @@
-/*const $GTRecipe = Java.loadClass("com.gregtech.gtceu.api.recipe.GTRecipe");
-const $MetaMachine = Java.loadClass("com.gregtech.gtceu.api.machine.MetaMachine");
-const $ContentModifier = Java.loadClass("com.gregtech.gtceu.api.recipe.content.ContentModifier");
-const $ModifierFunction = Java.loadClass("com.gregtech.gtceu.api.recipe.modifier.ModifierFunction");
-
-function DefaultParallels(machine, recipe, parallelAmount) {
-    if (!(machine instanceof $MetaMachine)) return $ModifierFunction.IDENTITY;
-    if (!(recipe instanceof $GTRecipe)) return $ModifierFunction.IDENTITY;
-
-    var parallelModifier = $ModifierFunction.builder()
-        .modifyAllContents($ContentModifier.multiplier(parallelAmount))
-        .parallels(parallelAmount)
-        .build();
-
-    return parallelModifier;
-}*/
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
     event
         .create('extraterrestial_agglomeration')
@@ -98,874 +81,84 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
-    event
-        .create('gaia_garden', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType([
-            'extraterrestial_agglomeration',
-            'runic_assembler',
-        ])
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
-        .appearanceBlock(() =>
-            Block.getBlock('kubejs:terrasteel_livingwood_casing')
-        )
-        .pattern((definition) =>
-            FactoryBlockPattern.start()
-                .aisle(
-                    '      BBBBB      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '      BBBBB      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '   BBBBBBBBBBB   ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '      D   C      ',
-                    '          D      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '      E   E      ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '      C   C      ',
-                    '   BBBBBBBBBBB   ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '  BBBBBBBBBBBBB  ',
-                    '    F       F    ',
-                    '    F       F    ',
-                    '    F       F    ',
-                    '    F       F    ',
-                    '    F       F    ',
-                    '    G       G    ',
-                    '    C       C    ',
-                    '    C       C    ',
-                    '    C       C    ',
-                    '    C       C    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '  BBBBBBBBBBBBB  ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    ' BBBBBBBHBBBBBBB ',
-                    '   C        IC   ',
-                    '   C        IC   ',
-                    '   C         C   ',
-                    '   C         C   ',
-                    '   C         C   ',
-                    '   C         C   ',
-                    '   D         C   ',
-                    '             C   ',
-                    '             C   ',
-                    '             D   ',
-                    '                 ',
-                    '                 ',
-                    '   E         E   ',
-                    '   C         C   ',
-                    '   C         C   ',
-                    '   C         C   ',
-                    ' BBBBBBBBBBBBBBB ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    ' BBBBBBBBBBBBBBB ',
-                    '  F   G   G  IF  ',
-                    '  F   C   C  IF  ',
-                    '  F   G   G  IF  ',
-                    '  F   E   E   F  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  C           C  ',
-                    '  C           C  ',
-                    '  C           C  ',
-                    '  C           C  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    ' BBBBBBBBBBBBBBB ',
-                    '          F      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '      I          ',
-                    '      II         ',
-                    '                 ',
-                    '         I       ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    ' BBBBHBBBBBHBBBB ',
-                    '             I   ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    ' BBBBBBBBBBBBBBB ',
-                    '   FF   FFF      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '      I          ',
-                    '     III         ',
-                    '     IFI F       ',
-                    '      II  F      ',
-                    '         III     ',
-                    '         I       ',
-                    '                 '
-                )
-                .aisle(
-                    'BBBBBBBHBHBBBBBBB',
-                    ' C  G       G  C ',
-                    ' C  C       C  C ',
-                    ' C  E       E  C ',
-                    ' C             C ',
-                    ' C             C ',
-                    ' D             C ',
-                    '               C ',
-                    '               C ',
-                    '               C ',
-                    '               C ',
-                    '               D ',
-                    '                 ',
-                    ' E             E ',
-                    ' C             C ',
-                    ' C             C ',
-                    ' C             C ',
-                    'BBBBBBBBBBBBBBBBB',
-                    '    FF  FFFF     ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '      II  I      ',
-                    '     IIFFF II    ',
-                    '      IIIIII I   ',
-                    '        IIII     ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    'BBBBBBHBHBHBBBBBB',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    'BBBBBBBBBBBBBBBBB',
-                    '     FFFFFFF     ',
-                    '       FFF       ',
-                    '        F        ',
-                    '        F        ',
-                    '        F        ',
-                    '      I  III     ',
-                    '      IIFIIII    ',
-                    '       IIIIIII   ',
-                    '    IIIIII  I    ',
-                    '    II           ',
-                    '                 '
-                )
-                .aisle(
-                    'BBBHBBBHHHBBBHBBB',
-                    '        J        ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    'BBBBBBBBBBBBBBBBB',
-                    '     FFFFFFFFF   ',
-                    '       FFFF      ',
-                    '       FFF       ',
-                    '       FFF       ',
-                    '       FFF       ',
-                    '        FIIII    ',
-                    '       IFFFFII   ',
-                    '    IIIFFIIIFI   ',
-                    '    IFFIII IIII  ',
-                    '      III   II   ',
-                    '                 '
-                )
-                .aisle(
-                    'BBBBBBHBHBHBBBBBB',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    'BBBBBBBBBBBBBBBBB',
-                    '    FFFFFFFF FF  ',
-                    '       FFF       ',
-                    '       FFF       ',
-                    '        F        ',
-                    '        F        ',
-                    '           I     ',
-                    '        FIIII    ',
-                    '     II F  IIII  ',
-                    '     IF I        ',
-                    '      II         ',
-                    '      I          '
-                )
-                .aisle(
-                    'BBBBBBBHBHBBBBBBB',
-                    ' C  C       C  C ',
-                    ' C  E       E  C ',
-                    ' C             C ',
-                    ' C             C ',
-                    ' D             C ',
-                    '               C ',
-                    '               C ',
-                    '               C ',
-                    '               C ',
-                    '               C ',
-                    '               C ',
-                    '               D ',
-                    ' E             E ',
-                    ' C             C ',
-                    ' C             C ',
-                    ' C             C ',
-                    'BBBBBBBBBBBBBBBBB',
-                    '    F FFFFF      ',
-                    '        F        ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '       III       ',
-                    '        IF       ',
-                    '      I III      ',
-                    '     IFI         ',
-                    '      I          '
-                )
-                .aisle(
-                    ' BBBBHBBBBBHBBBB ',
-                    '   I             ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    ' BBBBBBBBBBBBBBB ',
-                    '  FF   F FF      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '        I        ',
-                    '        II       ',
-                    '        IFI      ',
-                    '      I  I       ',
-                    '                 '
-                )
-                .aisle(
-                    ' BBBBBBBBBBBBBBB ',
-                    '  FII        IF  ',
-                    '  FI       I  F  ',
-                    '  F         I F  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  C           C  ',
-                    '  C           C  ',
-                    '  C           C  ',
-                    '  C           C  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    '  G           G  ',
-                    ' BBBBBBBBBBBBBBB ',
-                    '       F  FF     ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '         I       ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    ' BBBBBBBHBBBBBBB ',
-                    '   CI      IIC   ',
-                    '   C       IIC   ',
-                    '   C        IC   ',
-                    '   D        IC   ',
-                    '             C   ',
-                    '             C   ',
-                    '             C   ',
-                    '             C   ',
-                    '             C   ',
-                    '             C   ',
-                    '             C   ',
-                    '             C   ',
-                    '   E         D   ',
-                    '   C             ',
-                    '   C             ',
-                    '   D             ',
-                    ' BBBBBBBBBBBBBBB ',
-                    '      FF   F     ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '  BBBBBBBBBBBBB  ',
-                    '    F      IF    ',
-                    '    F       F    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    C       C    ',
-                    '    C       C    ',
-                    '    C       C    ',
-                    '    C       C    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '    G       G    ',
-                    '  BBBBBBBBBBBBB  ',
-                    '      F    F     ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '   BBBBBBBBBBB   ',
-                    '      C   C      ',
-                    '      C   D      ',
-                    '      D          ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '      E   E      ',
-                    '      C   D      ',
-                    '      D   C      ',
-                    '      C   C      ',
-                    '   BBBBBBBBBBB   ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '      BBBBB      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '            I    ',
-                    '            I    ',
-                    '            I    ',
-                    '            I    ',
-                    '           II    ',
-                    '          II     ',
-                    '      BBBBB I    ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '       BBB       ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '          I      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '      BKKKB      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '     FBKBKBF     ',
-                    '     F  B  F     ',
-                    '     G  L  G     ',
-                    '     C  B  C     ',
-                    '     E    E      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '      BKKKB      ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .aisle(
-                    '       BBB       ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 ',
-                    '                 '
-                )
-                .where(
-                    'L',
-                    Predicates.controller(Predicates.blocks(definition.get()))
-                )
-                .where(' ', Predicates.any())
-                .where(
-                    'B',
-                    Predicates.blocks('kubejs:terrasteel_livingwood_casing')
-                )
-                .where('F', Predicates.blocks('botania:livingwood_log'))
-                .where(
-                    'K',
-                    Predicates.blocks('botania:livingwood_planks')
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_ITEMS)
-                                .setMaxGlobalLimited(3)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.blocks(
-                                PartAbility.INPUT_ENERGY.getBlocks([
-                                    GTValues.HV,
-                                ]).toArray()
-                            )
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                )
-                .where('G', Predicates.blocks('botania:livingwood_wall'))
-                .where('C', Predicates.blocks('botania:livingwood_fence'))
-                .where('E', Predicates.blocks('botania:natura_pylon'))
-                .where('I', Predicates.blocks('minecraft:oak_leaves'))
-                .where('D', Predicates.blocks('extrabotany:gaia_quartz_block'))
-                .where('H', Predicates.blocks('gtceu:terrasteel_block'))
-                .where('J', Predicates.blocks('botanicadds:elven_altar'))
-                .build()
-        )
-        .workableCasingModel(
-            'kubejs:block/casings/terrasteel_livingwood/terrasteel_livingwood_casing',
-            'gtceu:block/multiblock/generator/large_gas_turbine'
-        );
+    // prettier-ignore
+    event.create('gaia_garden', 'multiblock')
+    .rotationState(RotationState.NON_Y_AXIS)
+    .recipeType(['extraterrestial_agglomeration', "runic_assembler"])
+    .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+    .appearanceBlock(() => Block.getBlock('kubejs:terrasteel_livingwood_casing'))
+    .pattern(definition => FactoryBlockPattern.start()
+    .aisle("      BBBBB      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "      BBBBB      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("   BBBBBBBBBBB   ", "      C   C      ", "      C   C      ", "      C   C      ", "      C   C      ", "      C   C      ", "      C   C      ", "      C   C      ", "      D   C      ", "          D      ", "                 ", "                 ", "                 ", "      E   E      ", "      C   C      ", "      C   C      ", "      C   C      ", "   BBBBBBBBBBB   ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("  BBBBBBBBBBBBB  ", "    F       F    ", "    F       F    ", "    F       F    ", "    F       F    ", "    F       F    ", "    G       G    ", "    C       C    ", "    C       C    ", "    C       C    ", "    C       C    ", "    G       G    ", "    G       G    ", "    G       G    ", "    G       G    ", "    G       G    ", "    G       G    ", "  BBBBBBBBBBBBB  ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle(" BBBBBBBHBBBBBBB ", "   C        IC   ", "   C        IC   ", "   C         C   ", "   C         C   ", "   C         C   ", "   C         C   ", "   D         C   ", "             C   ", "             C   ", "             D   ", "                 ", "                 ", "   E         E   ", "   C         C   ", "   C         C   ", "   C         C   ", " BBBBBBBBBBBBBBB ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle(" BBBBBBBBBBBBBBB ", "  F   G   G  IF  ", "  F   C   C  IF  ", "  F   G   G  IF  ", "  F   E   E   F  ", "  G           G  ", "  G           G  ", "  C           C  ", "  C           C  ", "  C           C  ", "  C           C  ", "  G           G  ", "  G           G  ", "  G           G  ", "  G           G  ", "  G           G  ", "  G           G  ", " BBBBBBBBBBBBBBB ", "          F      ", "                 ", "                 ", "                 ", "                 ", "      I          ", "      II         ", "                 ", "         I       ", "                 ", "                 ")
+    .aisle(" BBBBHBBBBBHBBBB ", "             I   ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", " BBBBBBBBBBBBBBB ", "   FF   FFF      ", "                 ", "                 ", "                 ", "      I          ", "     III         ", "     IFI F       ", "      II  F      ", "         III     ", "         I       ", "                 ")
+    .aisle("BBBBBBBHBHBBBBBBB", " C  G       G  C ", " C  C       C  C ", " C  E       E  C ", " C             C ", " C             C ", " D             C ", "               C ", "               C ", "               C ", "               C ", "               D ", "                 ", " E             E ", " C             C ", " C             C ", " C             C ", "BBBBBBBBBBBBBBBBB", "    FF  FFFF     ", "                 ", "                 ", "                 ", "                 ", "      II  I      ", "     IIFFF II    ", "      IIIIII I   ", "        IIII     ", "                 ", "                 ")
+    .aisle("BBBBBBHBHBHBBBBBB", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "BBBBBBBBBBBBBBBBB", "     FFFFFFF     ", "       FFF       ", "        F        ", "        F        ", "        F        ", "      I  III     ", "      IIFIIII    ", "       IIIIIII   ", "    IIIIII  I    ", "    II           ", "                 ")
+    .aisle("BBBHBBBHHHBBBHBBB", "        J        ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "BBBBBBBBBBBBBBBBB", "     FFFFFFFFF   ", "       FFFF      ", "       FFF       ", "       FFF       ", "       FFF       ", "        FIIII    ", "       IFFFFII   ", "    IIIFFIIIFI   ", "    IFFIII IIII  ", "      III   II   ", "                 ")
+    .aisle("BBBBBBHBHBHBBBBBB", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "BBBBBBBBBBBBBBBBB", "    FFFFFFFF FF  ", "       FFF       ", "       FFF       ", "        F        ", "        F        ", "           I     ", "        FIIII    ", "     II F  IIII  ", "     IF I        ", "      II         ", "      I          ")
+    .aisle("BBBBBBBHBHBBBBBBB", " C  C       C  C ", " C  E       E  C ", " C             C ", " C             C ", " D             C ", "               C ", "               C ", "               C ", "               C ", "               C ", "               C ", "               D ", " E             E ", " C             C ", " C             C ", " C             C ", "BBBBBBBBBBBBBBBBB", "    F FFFFF      ", "        F        ", "                 ", "                 ", "                 ", "                 ", "       III       ", "        IF       ", "      I III      ", "     IFI         ", "      I          ")
+    .aisle(" BBBBHBBBBBHBBBB ", "   I             ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", " BBBBBBBBBBBBBBB ", "  FF   F FF      ", "                 ", "                 ", "                 ", "                 ", "                 ", "        I        ", "        II       ", "        IFI      ", "      I  I       ", "                 ")
+    .aisle(" BBBBBBBBBBBBBBB ", "  FII        IF  ", "  FI       I  F  ", "  F         I F  ", "  G           G  ", "  G           G  ", "  G           G  ", "  C           C  ", "  C           C  ", "  C           C  ", "  C           C  ", "  G           G  ", "  G           G  ", "  G           G  ", "  G           G  ", "  G           G  ", "  G           G  ", " BBBBBBBBBBBBBBB ", "       F  FF     ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "         I       ", "                 ", "                 ")
+    .aisle(" BBBBBBBHBBBBBBB ", "   CI      IIC   ", "   C       IIC   ", "   C        IC   ", "   D        IC   ", "             C   ", "             C   ", "             C   ", "             C   ", "             C   ", "             C   ", "             C   ", "             C   ", "   E         D   ", "   C             ", "   C             ", "   D             ", " BBBBBBBBBBBBBBB ", "      FF   F     ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("  BBBBBBBBBBBBB  ", "    F      IF    ", "    F       F    ", "    G       G    ", "    G       G    ", "    G       G    ", "    G       G    ", "    C       C    ", "    C       C    ", "    C       C    ", "    C       C    ", "    G       G    ", "    G       G    ", "    G       G    ", "    G       G    ", "    G       G    ", "    G       G    ", "  BBBBBBBBBBBBB  ", "      F    F     ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("   BBBBBBBBBBB   ", "      C   C      ", "      C   D      ", "      D          ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "      E   E      ", "      C   D      ", "      D   C      ", "      C   C      ", "   BBBBBBBBBBB   ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("      BBBBB      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "            I    ", "            I    ", "            I    ", "            I    ", "           II    ", "          II     ", "      BBBBB I    ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("       BBB       ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "          I      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("      BKKKB      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("     FBKBKBF     ", "     F  B  F     ", "     G  L  G     ", "     C  B  C     ", "     E    E      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("      BKKKB      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+    .aisle("       BBB       ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ")
+   .where('L', Predicates.controller(Predicates.blocks(definition.get())))
+   .where(" ", Predicates.any())
+   .where("B", Predicates.blocks("kubejs:terrasteel_livingwood_casing"))
+   .where("F", Predicates.blocks("botania:livingwood_log"))
+   .where("K", Predicates.blocks("botania:livingwood_planks")
+   .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(3).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.blocks(PartAbility.INPUT_ENERGY.getBlocks([GTValues.HV]).toArray()).setMaxGlobalLimited(1).setPreviewCount(1)))
+   .where("G", Predicates.blocks("botania:livingwood_wall"))
+   .where("C", Predicates.blocks("botania:livingwood_fence"))
+   .where("E", Predicates.blocks("botania:natura_pylon"))
+   .where("I", Predicates.blocks("minecraft:oak_leaves"))
+   .where("D", Predicates.blocks("extrabotany:gaia_quartz_block"))
+   .where("H", Predicates.blocks("gtceu:terrasteel_block"))
+   .where("J", Predicates.blocks("botanicadds:elven_altar"))
+    .build()
+    )
+    .workableCasingModel("kubejs:block/casings/terrasteel_livingwood/terrasteel_livingwood_casing", "gtceu:block/multiblock/generator/large_gas_turbine")
 
-    event
-        .create('mana_pulse_infuser', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('mana_pulse_infuser')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
-        .appearanceBlock(() =>
-            Block.getBlock('kubejs:solid_wrought_iron_casing')
-        )
-        .pattern((definition) =>
-            FactoryBlockPattern.start()
-                .aisle(
-                    'B     B',
-                    'B     B',
-                    'B     B',
-                    'B     B',
-                    'C     C',
-                    '  CCC  ',
-                    '       '
-                )
-                .aisle(
-                    '  DDD  ',
-                    '  CCC  ',
-                    '       ',
-                    '       ',
-                    '  CCC  ',
-                    ' CCCCC ',
-                    '       '
-                )
-                .aisle(
-                    ' DCCCD ',
-                    ' CCCCC ',
-                    '  B B  ',
-                    '  B B  ',
-                    ' CDDDC ',
-                    'CCCCCCC',
-                    '   C   '
-                )
-                .aisle(
-                    ' DCCCD ',
-                    ' CCECC ',
-                    '       ',
-                    '       ',
-                    ' CDEDC ',
-                    'CCCCCCC',
-                    '  CCC  '
-                )
-                .aisle(
-                    ' DCCCD ',
-                    ' CCCCC ',
-                    '  B B  ',
-                    '  B B  ',
-                    ' CDDDC ',
-                    'CCCCCCC',
-                    '   C   '
-                )
-                .aisle(
-                    '  DDD  ',
-                    '  CRC  ',
-                    '       ',
-                    '       ',
-                    '  CCC  ',
-                    ' CCCCC ',
-                    '       '
-                )
-                .aisle(
-                    'B     B',
-                    'B     B',
-                    'B     B',
-                    'B     B',
-                    'C     C',
-                    '  CCC  ',
-                    '       '
-                )
-                .where('B', Predicates.blocks('gtceu:steel_frame'))
-                .where(
-                    'C',
-                    Predicates.blocks('kubejs:solid_wrought_iron_casing')
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_ITEMS)
-                                .setMaxGlobalLimited(6)
-                                .setPreviewCount(3)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.blocks(
-                                PartAbility.INPUT_ENERGY.getBlocks([
-                                    GTValues.ULV,
-                                ]).toArray()
-                            )
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                )
-                .where('D', Predicates.blocks('kubejs:wrought_iron_firebox'))
-                .where('E', Predicates.blocks('minecraft:glass'))
-                .where(
-                    'R',
-                    Predicates.controller(Predicates.blocks(definition.get()))
-                )
-                .where(' ', Predicates.any())
-                .build()
-        )
-        .workableCasingModel(
-            'kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing',
-            'gtceu:block/machines/electrolyzer'
-        );
-
+    // prettier-ignore
+    event.create('mana_pulse_infuser', 'multiblock')
+    .rotationState(RotationState.NON_Y_AXIS)
+    .recipeType('mana_pulse_infuser')
+    .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+    .appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
+    .pattern(definition => FactoryBlockPattern.start()
+    .aisle("B     B", "B     B", "B     B", "B     B", "C     C", "  CCC  ", "       ")
+    .aisle("  DDD  ", "  CCC  ", "       ", "       ", "  CCC  ", " CCCCC ", "       ")
+    .aisle(" DCCCD ", " CCCCC ", "  B B  ", "  B B  ", " CDDDC ", "CCCCCCC", "   C   ")
+    .aisle(" DCCCD ", " CCECC ", "       ", "       ", " CDEDC ", "CCCCCCC", "  CCC  ")
+    .aisle(" DCCCD ", " CCCCC ", "  B B  ", "  B B  ", " CDDDC ", "CCCCCCC", "   C   ")
+    .aisle("  DDD  ", "  CRC  ", "       ", "       ", "  CCC  ", " CCCCC ", "       ")
+    .aisle("B     B", "B     B", "B     B", "B     B", "C     C", "  CCC  ", "       ")
+            .where("B", Predicates.blocks("gtceu:steel_frame"))
+			.where('C', Predicates.blocks('kubejs:solid_wrought_iron_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(6).setPreviewCount(3))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.blocks(PartAbility.INPUT_ENERGY.getBlocks([GTValues.ULV]).toArray()).setMaxGlobalLimited(1).setPreviewCount(1)))
+            .where('D', Predicates.blocks('kubejs:wrought_iron_firebox'))
+            .where('E',  Predicates.blocks("minecraft:glass"))
+            .where('R',  Predicates.controller(Predicates.blocks(definition.get())))
+			.where(' ', Predicates.any())
+    .build()
+    )
+    .workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/electrolyzer")
+    // prettier-ignore
     /*event.create('steel_blast_furnace', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('sbf')
@@ -985,218 +178,92 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
 			.build())	
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/primitive_blast_furnace")*/
 
-    event
-        .create('cognitium_solidifier', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('congnitium_solidification')
-        .recipeModifiers([
-            GTRecipeModifiers.PARALLEL_HATCH,
-            GTRecipeModifiers.OC_PERFECT_SUBTICK,
-        ])
-        .appearanceBlock(() =>
-            Block.getBlock('kubejs:solid_wrought_iron_casing')
-        )
-        .pattern((definition) =>
-            FactoryBlockPattern.start()
-                .aisle('BBB', 'CCC', 'CCC', 'CCC', 'BBB')
-                .aisle('BBB', 'C C', 'C C', 'C C', 'BBB')
-                .aisle('BBB', 'CCC', 'CTC', 'CCC', 'BBB')
-                .where(
-                    'T',
-                    Predicates.controller(Predicates.blocks(definition.get()))
-                )
-                .where(
-                    'C',
-                    Predicates.blocks('kubejs:solid_wrought_iron_casing')
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.INPUT_ENERGY)
-                                .setMaxGlobalLimited(2)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(
-                                PartAbility.PARALLEL_HATCH
-                            ).setMaxGlobalLimited(1)
-                        )
-                )
-                .where('B', Predicates.blocks('gtceu:solid_machine_casing'))
-                .where(' ', Predicates.blocks('gtceu:steel_pipe_casing'))
-                .build()
-        )
-        .workableCasingModel(
-            'kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing',
-            'gtceu:block/multiblock/implosion_compressor'
-        );
+    // prettier-ignore
+    event.create('cognitium_solidifier', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('congnitium_solidification')
+		.recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK])
+		.appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle("BBB", "CCC", "CCC", "CCC", "BBB")
+            .aisle("BBB", "C C", "C C", "C C", "BBB")
+            .aisle("BBB", "CCC", "CTC", "CCC", "BBB")
+			.where('T', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks('kubejs:solid_wrought_iron_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+			.where("B", Predicates.blocks("gtceu:solid_machine_casing"))
+			.where(' ', Predicates.blocks('gtceu:steel_pipe_casing'))
+			.build())	
+		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/implosion_compressor")
 
-    event
-        .create('sawmill', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('sawmill')
+    // prettier-ignore
+    event.create('sawmill', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('sawmill')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
-        .appearanceBlock(() => Block.getBlock('kubejs:spruce_zinc_casing'))
-        .pattern((definition) =>
-            FactoryBlockPattern.start()
-                .aisle('BBBBBBBCCC', ' C C C CCC', ' C C C CCC')
-                .aisle('BBBBBBBCCC', '       C C', 'CCCCCCCCCC')
-                .aisle('BBBBBBBCCC', ' C C C CDC', ' C C C CCC')
-                .where(
-                    'D',
-                    Predicates.controller(Predicates.blocks(definition.get()))
-                )
-                .where(
-                    'C',
-                    Predicates.blocks('kubejs:spruce_zinc_casing')
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.INPUT_ENERGY)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                )
-                .where('B', Predicates.blocks('gtceu:steel_machine_casing'))
-                .where(' ', Predicates.blocks('minecraft:air'))
-                .build()
-        )
-        .workableCasingModel(
-            'kubejs:block/casings/spruce_zinc/spruce_zinc_casing',
-            'gtceu:block/multiblock/implosion_compressor'
-        );
-
-    event
-        .create('lava_furnace', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('lava_furnace')
+		.appearanceBlock(() => Block.getBlock('kubejs:spruce_zinc_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+            .aisle("BBBBBBBCCC", " C C C CCC", " C C C CCC")
+            .aisle("BBBBBBBCCC", "       C C", "CCCCCCCCCC")
+            .aisle("BBBBBBBCCC", " C C C CDC", " C C C CCC")
+			.where('D', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks("kubejs:spruce_zinc_casing")
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
+			.where("B", Predicates.blocks("gtceu:steel_machine_casing"))
+			.where(' ', Predicates.blocks("minecraft:air"))
+			.build())
+		.workableCasingModel("kubejs:block/casings/spruce_zinc/spruce_zinc_casing", "gtceu:block/multiblock/implosion_compressor")
+    // prettier-ignore
+    event.create('lava_furnace', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('lava_furnace')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
-        .appearanceBlock(() =>
-            Block.getBlock('kubejs:solid_wrought_iron_casing')
-        )
-        .pattern((definition) =>
-            FactoryBlockPattern.start()
-                .aisle('BBB', 'CCC', 'CCC')
-                .aisle('BBB', 'C C', 'CCC')
-                .aisle('BBB', 'CDC', 'CCC')
-                .where(
-                    'D',
-                    Predicates.controller(Predicates.blocks(definition.get()))
-                )
-                .where(
-                    'C',
-                    Predicates.blocks('kubejs:solid_wrought_iron_casing')
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.INPUT_ENERGY)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                )
-                .where('B', Predicates.blocks('kubejs:wrought_iron_firebox'))
-                .where(' ', Predicates.blocks('minecraft:air'))
-                .build()
-        )
-        .workableCasingModel(
-            'kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing',
-            'gtceu:block/multiblock/implosion_compressor'
-        );
-
-    event
-        .create('electric_cloche', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('cloche')
+		.appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+            .aisle("BBB", "CCC", "CCC")
+            .aisle("BBB", "C C", "CCC")
+            .aisle("BBB", "CDC", "CCC")
+			.where('D', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks("kubejs:solid_wrought_iron_casing")
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
+			.where("B", Predicates.blocks("kubejs:wrought_iron_firebox"))
+			.where(' ', Predicates.blocks("minecraft:air"))
+			.build())
+		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/implosion_compressor")
+    // prettier-ignore
+    event.create('electric_cloche', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('cloche')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
-        .appearanceBlock(() => Block.getBlock('gtceu:steel_machine_casing'))
-        .pattern((definition) =>
-            FactoryBlockPattern.start()
-                .aisle('BCCCB', 'BDDDB', ' DDD ', ' BBB ')
-                .aisle('BCECB', 'BD DB', ' D D ', ' BFB ')
-                .aisle('BCGCB', 'BDDDB', ' DDD ', ' BBB ')
-                .where(
-                    'G',
-                    Predicates.controller(Predicates.blocks(definition.get()))
-                )
-                .where(
-                    'B',
-                    Predicates.blocks('gtceu:solid_machine_casing')
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_FLUIDS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.INPUT_ENERGY)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                )
-                .where('D', Predicates.blocks('minecraft:white_stained_glass'))
-                .where('C', Predicates.blocks('gtceu:solid_machine_casing'))
-                .where('E', Predicates.blocks('minecraft:grass_block'))
-                .where(
-                    'F',
-                    Predicates.abilities(PartAbility.MUFFLER)
-                        .setMaxGlobalLimited(1)
-                        .setPreviewCount(1)
-                )
-                .where(' ', Predicates.blocks('minecraft:air'))
-                .build()
-        )
-        .workableCasingModel(
-            'kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing',
-            'gtceu:block/multiblock/implosion_compressor'
-        );
-
+		.appearanceBlock(() => Block.getBlock('gtceu:steel_machine_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+            .aisle("BCCCB", "BDDDB", " DDD ", " BBB ")
+            .aisle("BCECB", "BD DB", " D D ", " BFB ")
+            .aisle("BCGCB", "BDDDB", " DDD ", " BBB ")
+			.where('G', Predicates.controller(Predicates.blocks(definition.get())))
+			.where("B", Predicates.blocks("gtceu:solid_machine_casing")
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
+			.where("D", Predicates.blocks("minecraft:white_stained_glass"))
+            .where("C", Predicates.blocks("gtceu:solid_machine_casing"))
+            .where("E", Predicates.blocks("minecraft:grass_block"))
+            .where("F", Predicates.abilities(PartAbility.MUFFLER).setMaxGlobalLimited(1).setPreviewCount(1))
+			.where(' ', Predicates.blocks("minecraft:air"))
+			.build())
+		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/implosion_compressor")
+    // prettier-ignore
     /*event.create('high_pressure_mixer', 'multiblock')
     .rotationState(RotationState.NON_Y_AXIS)
     .recipeTypes(['mixer'])
@@ -1218,7 +285,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     .build()
     )
     .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel", "gtceu:block/multiblock/implosion_compressor")
-
+// prettier-ignore
 event.create('high_pressure_distillation_apparatus', 'multiblock')
 .rotationState(RotationState.NON_Y_AXIS)
 .recipeTypes(['hpda'])
@@ -1241,58 +308,10 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
     )
     .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel", "gtceu:block/multiblock/implosion_compressor")
     }); // .or(Predicates.blocks(INPUT_ENERGY_HATCH[EV]))*/
-    event
-        .create('primitive_assembler', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType(GTRecipeTypes.ASSEMBLER_RECIPES)
-        .appearanceBlock(() =>
-            Block.getBlock('kubejs:solid_wrought_iron_casing')
-        )
-        .pattern((definition) =>
-            FactoryBlockPattern.start()
-                .aisle('RRRRR', '#####', ' ### ')
-                .aisle('RRRRR', '#   #', ' ### ')
-                .aisle('RRRRR', '##C##', ' ### ')
-                .where(
-                    'C',
-                    Predicates.controller(Predicates.blocks(definition.get()))
-                )
-                .where(
-                    '#',
-                    Predicates.blocks('kubejs:solid_wrought_iron_casing')
-                        .or(
-                            Predicates.abilities(PartAbility.IMPORT_ITEMS)
-                                .setMaxGlobalLimited(6)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.abilities(PartAbility.EXPORT_ITEMS)
-                                .setMaxGlobalLimited(1)
-                                .setPreviewCount(1)
-                        )
-                        .or(
-                            Predicates.blocks(
-                                PartAbility.INPUT_ENERGY.getBlocks([
-                                    GTValues.ULV,
-                                ]).toArray()
-                            )
-                                .setMaxGlobalLimited(2)
-                                .setPreviewCount(1)
-                        )
-                )
-                .where('R', Predicates.blocks('kubejs:wrought_iron_firebox'))
-                .where(' ', Predicates.any())
-                .build()
-        )
-        .workableCasingModel(
-            'kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing',
-            'gtceu:block/machines/assembler'
-        );
-
-    /*event.create('bending_box', 'multiblock')
+    // prettier-ignore
+    event.create('primitive_assembler', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType(GTRecipeTypes.BENDER_RECIPES)
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => DefaultParallels(machine,recipe,4)])
+		.recipeType(GTRecipeTypes.ASSEMBLER_RECIPES)
 		.appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('RRRRR', '#####', ' ### ')
@@ -1307,5 +326,32 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
 			.where(' ', Predicates.any())
 			.build())
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/assembler")
-*/
+
+    // prettier-ignore
+    /*event.create('mana_pulse_infuser', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeTypes("mana_pulse_infuser")
+		.appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle("B         B", "           ", "           ", "           ", "           ", "           ", "           ")
+            .aisle(" B       B ", " B       B ", "           ", "           ", "           ", "           ", "           ")
+            .aisle("  B     B  ", "  B     B  ", "  B     B  ", "           ", "           ", "           ", "           ")
+            .aisle("   B   B   ", "   B   B   ", "   B   B   ", "   B   B   ", "           ", "           ", "           ")
+            .aisle("    CCC    ", "    DDD    ", "           ", "           ", "    B B    ", "    B B    ", "           ")
+            .aisle("    CDC    ", "    DGD    ", "           ", "           ", "           ", "     D     ", "     B     ")
+            .aisle("    CCC    ", "    DID    ", "           ", "           ", "    B B    ", "    B B    ", "           ")
+            .aisle("   B   B   ", "   B   B   ", "   B   B   ", "   B   B   ", "           ", "           ", "           ")
+            .aisle("  B     B  ", "  B     B  ", "  B     B  ", "           ", "           ", "           ", "           ")
+            .aisle(" B       B ", " B       B ", "           ", "           ", "           ", "           ", "           ")
+            .aisle("B         B", "           ", "           ", "           ", "           ", "           ", "           ")
+			.where('I', Predicates.controller(Predicates.blocks(definition.get())))
+            .where("G", Predicates.blocks("minecraft:glass"))
+			.where('D', Predicates.blocks('kubejs:solid_wrought_iron_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.blocks(PartAbility.INPUT_ENERGY.getBlocks([GTValues.ULV]).toArray()).setMaxGlobalLimited(2).setPreviewCount(1)))
+            .where('C', Predicates.blocks('kubejs:wrought_iron_firebox'))
+			.where(' ', Predicates.any())
+			.build())
+		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/mana_infuser");*/
 });
