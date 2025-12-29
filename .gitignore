@@ -23,3 +23,4 @@ config/oculus.properties
 
 # Keep .gitignore itself
 !.gitignore
+!CONTRIBUTING.md
