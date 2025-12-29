@@ -52,7 +52,7 @@ This repository uses the following branching strategy:
      - Successful game launch without errors or crashes.
      - Running `/kubejs reload` to verify there are no script errors.
      - Ensuring that any changes to recipes or scripts display correctly in JEI/EMI.
-     - Verification that the code adheres to the coding standards: -->
+     - Verification that the code adheres to the coding standards:
        - Code has been formatted using `npm run format`.
        - Linting has been executed and passed using `npm run lint`.
 
@@ -60,7 +60,7 @@ This repository uses the following branching strategy:
 
 ## Code Style
 
-Consistent formatting and linting rules are enforced:-->
+Consistent formatting and linting rules are enforced:
 
 1. Run `npm install` to install dependencies.
 2. Format your code by running:
