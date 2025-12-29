@@ -38,6 +38,7 @@ kubejs/probe
 !.vscode/extensions.json
 !.vscode/forgeborn.code-workspace
 !.vscode/probe.code-snippets
+
 # -- Config specific junk --
 config/SpecialMobs/
 config/oculus.properties
