@@ -81,7 +81,7 @@ Before submitting your pull request:
 1. Test the game to ensure it launches without any issues.
 2. Run `/kubejs reload` to check for scripting errors.
 3. Verify any changes to recipes/scripts in JEI/EMI.
-4. Run `npm run format`, and `npm run lint` in the `./kubejs` directory to check for any issues and to autoformat the script
+4. Run `npm run format`, and `npm run lint` in the `./kubejs` directory to check for any issues and to autoformat the script.
 
 ---
 
