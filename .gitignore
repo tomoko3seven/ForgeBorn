@@ -35,11 +35,14 @@ kubejs/probe
 # -- VS Code specific junk (Keep settings, ignore local user state) --
 .vscode/*
 !.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
 !.vscode/extensions.json
-
+!.vscode/forgeborn.code-workspace
+!.vscode/probe.code-snippets
 # -- Config specific junk --
 config/SpecialMobs/
 config/oculus.properties
 config/legendarytooltips-common.toml
+config/c2me.toml
+config/embeddium-fingerprint.json
+config/embeddium-options.json
+config/jei/
