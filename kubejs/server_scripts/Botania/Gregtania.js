@@ -209,6 +209,11 @@ ServerEvents.recipes((event) => {
             'gtceu:lazurite_dust',
             400,
         ],
+        [
+            'botania:manasteel_block',
+            'gtceu:blue_alloy_block',
+            27000,
+        ],
     ];
 
     infusionRecipes.forEach((recipe) => {
@@ -268,27 +273,6 @@ ServerEvents.recipes((event) => {
         .outputFluids('kubejs:dense_mana 100')
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(120);
-
-    // GT Mana Infuser (Manasteel)
-    event.recipes.gtceu
-        .mana_infuser('manasteel_ingot_best')
-        .itemInputs('gtceu:blue_alloy_ingot')
-        .itemOutputs('botania:manasteel_ingot')
-        .inputFluids(Fluid.of('kubejs:dense_mana', 300))
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.botania.mana_infusion(
-        'botania:manasteel_ingot',
-        'gtceu:blue_alloy_ingot',
-        2700 * 10
-    );
-    event.recipes.gtceu
-        .mana_infuser('manasteel_block_best')
-        .itemInputs('gtceu:blue_alloy_block')
-        .itemOutputs('botania:manasteel_block')
-        .inputFluids(Fluid.of('kubejs:dense_mana', 2700))
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.MV]);
 
     // GT Runic Assembler
     event.recipes.gtceu
