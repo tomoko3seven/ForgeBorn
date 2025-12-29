@@ -1,18 +1,20 @@
-Const $GTRecipe = Java.loadClass("com.gregtech.gtceu.api.recipe.GTRecipe")
-Const $GTRecipe = Java.loadClass("com.gregtech.gtceu.api.machine.MetaMachine")
-Const $ContentModifier = Java.loadClass("com.gregtech.gtxeu.api.recipe.content.ContentModifier")
+/*const $GTRecipe = Java.loadClass("com.gregtech.gtceu.api.recipe.GTRecipe");
+const $MetaMachine = Java.loadClass("com.gregtech.gtceu.api.machine.MetaMachine");
+const $ContentModifier = Java.loadClass("com.gregtech.gtceu.api.recipe.content.ContentModifier");
+const $ModifierFunction = Java.loadClass("com.gregtech.gtceu.api.recipe.modifier.ModifierFunction");
 
 function DefaultParallels(machine, recipe, parallelAmount) {
-    if (!(machine instanceof $MetaMachine)) return ModifierFunction.NULL
-    if (!(recipe instanceof $GTRecipe)) return ModifierFunction.NULL
+    if (!(machine instanceof $MetaMachine)) return $ModifierFunction.IDENTITY;
+    if (!(recipe instanceof $GTRecipe)) return $ModifierFunction.IDENTITY;
 
-    var parallelModifier = ModifierFunction.builder()
-        .modifyAllContents($ContentModifier.multiplier(parallelAmount)) 
+    var parallelModifier = $ModifierFunction.builder()
+        .modifyAllContents($ContentModifier.multiplier(parallelAmount))
         .parallels(parallelAmount)
         .build();
 
-    return parallelModifier
-}
+    return parallelModifier;
+}*/
+
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         event.create('extraterrestial_agglomeration')
@@ -328,7 +330,7 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/assembler")
 
 
-event.create('bending_box', 'multiblock')
+/*event.create('bending_box', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType(GTRecipeTypes.BENDER_RECIPES)
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => DefaultParallels(machine,recipe,4)])
@@ -346,12 +348,5 @@ event.create('bending_box', 'multiblock')
 			.where(' ', Predicates.any())
 			.build())
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/assembler")
-
-});
-GTCEuServerEvents.recipeModifiers(event => {
-    event.registerMachine('gtceu:machine', (machine, recipe, params) => {
-        // Force 16 parallel sets if resources allow
-        // params.oc and params.ebi handle the overclocking logic
-        return GTRecipeModifiers.fastParallel(machine, recipe, 4, false); 
-    });
+*/
 });
