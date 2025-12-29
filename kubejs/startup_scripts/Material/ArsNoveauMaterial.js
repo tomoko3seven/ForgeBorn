@@ -1,5 +1,6 @@
-GTCEuStartupEvents.registry('gtceu:material', event => {
-event.create('sourcemetall')
+GTCEuStartupEvents.registry('gtceu:material', (event) => {
+    event
+        .create('sourcemetall')
         .color(0xb25fe0)
         .ingot()
 
@@ -12,14 +13,13 @@ event.create('sourcemetall')
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING,
-        )
+            GTMaterialFlags.NO_ORE_SMELTING
+        );
 
-event.create('archwood')
+    event
+        .create('archwood')
         .color(0x858486)
         .iconSet(GTMaterialIconSet.WOOD)
         .dust()
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-        )
-})
+        .flags(GTMaterialFlags.GENERATE_PLATE);
+});

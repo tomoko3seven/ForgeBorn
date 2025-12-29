@@ -1,18 +1,17 @@
-let UtilsJS = Java.loadClass("dev.latvian.mods.kubejs.util.UtilsJS")
+let UtilsJS = Java.loadClass('dev.latvian.mods.kubejs.util.UtilsJS');
 
-GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
+GTCEuStartupEvents.registry('gtceu:tag_prefix', (e) => {
     function createStoneTypeOre(type, properties) {
-        if (properties === undefined)
-            properties = {}
+        if (properties === undefined) properties = {};
 
         if (properties.baseModel === undefined)
-            properties.baseModel = type.namespace + ":block/" + type.path
+            properties.baseModel = type.namespace + ':block/' + type.path;
 
-        if (properties.material === undefined)
-            properties.material = null
+        if (properties.material === undefined) properties.material = null;
 
         if (properties.blockState === undefined)
-            properties.blockState = (() => Block.getBlock(type).defaultBlockState())
+            properties.blockState = () =>
+                Block.getBlock(type).defaultBlockState();
 
         e.create(type.path, 'ore')
             .stateSupplier(properties.blockState)
@@ -20,14 +19,14 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
             .materialSupplier(properties.material)
             .unificationEnabled(true)
             .materialIconType(GTMaterialIconType.ore)
-            .miningToolTag("mineable/pickaxe")
-            .generationCondition(ItemGenerationCondition.hasOreProperty)
+            .miningToolTag('mineable/pickaxe')
+            .generationCondition(ItemGenerationCondition.hasOreProperty);
     }
 
     //Undergarden
-    createStoneTypeOre('undergarden:depthrock')
-    createStoneTypeOre('undergarden:shiverstone')
-    createStoneTypeOre('undergarden:sediment')
+    createStoneTypeOre('undergarden:depthrock');
+    createStoneTypeOre('undergarden:shiverstone');
+    createStoneTypeOre('undergarden:sediment');
 
     //Ad Astra
     /*createStoneTypeOre('ad_astra:moon_stone')
@@ -35,4 +34,4 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
     createStoneTypeOre('ad_astra:venus_stone')
     createStoneTypeOre('ad_astra:mercury_stone')
     createStoneTypeOre('ad_astra:glacio_stone')*/
-})
+});

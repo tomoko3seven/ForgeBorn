@@ -1,3 +1,3 @@
-WorldgenEvents.add(event => {
-  console.log(Object.keys(event));
+WorldgenEvents.add((event) => {
+    console.log(Object.keys(event));
 });

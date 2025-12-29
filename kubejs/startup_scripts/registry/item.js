@@ -129,6 +129,8 @@ StartupEvents.registry('item', (event) => {
     event.create('livingrock_wafer').maxStackSize(64);
     event.create('mana_multithreaded_computation_wafer').maxStackSize(64);
     event.create('mmc_chip').maxStackSize(64);
+    event.create('livingrock_circuit_board').maxStackSize(64);
+    event.create('mana_infused_livingrock_circuit_board').maxStackSize(64);
 
     event.create('muspelheim_essence').maxStackSize(64);
     event.create('niflheim_essence').maxStackSize(64);
@@ -149,11 +151,6 @@ StartupEvents.registry('item', (event) => {
     event.create('magebloom_fiber_cloth').maxStackSize(64);
     event.create('reinforced_manabloom_plating').maxStackSize(64);
     event.create('sourcegem_dust').maxStackSize(64);
-
-    //Malum
-
-    event.create('livingrock_circuit_board').maxStackSize(64);
-    event.create('mana_infused_livingrock_circuit_board').maxStackSize(64);
 
     //Nature`s Aura
     event.create('token_of_light').maxStackSize(64);
@@ -191,16 +188,12 @@ StartupEvents.registry('item', (event) => {
     }
 
     function Unit(theme) {
-        event
-            .create(`${theme}_processing_unit`)
-            .textureJson({
-                layer0: `kubejs:item/circuits/${theme}_processing_unit`,
-            });
-        event
-            .create(`${theme}_circuit_board`)
-            .textureJson({
-                layer0: `kubejs:item/circuits/${theme}_circuit_board`,
-            });
+        event.create(`${theme}_processing_unit`).textureJson({
+            layer0: `kubejs:item/circuits/${theme}_processing_unit`,
+        });
+        event.create(`${theme}_circuit_board`).textureJson({
+            layer0: `kubejs:item/circuits/${theme}_circuit_board`,
+        });
     }
 
     Unit('ancient');
