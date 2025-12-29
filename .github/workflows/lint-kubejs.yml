@@ -1,0 +1,17 @@
+# CREDIT MoniLabs for this workflow
+name: Lint KubeJS
+on:
+  pull_request:
+    paths: 
+      - 'kubejs/**'
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'kubejs/**'
+
+jobs:
+  lint:
+    uses: ./.github/workflows/eslint.yml
+    with:
+      folder: 'kubejs'

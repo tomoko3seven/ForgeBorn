@@ -1,0 +1,12 @@
+{
+  "eslint.workingDirectories": [
+    "./kubejs"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": false, 
+  "eslint.validate": [
+    "javascript"
+  ] 
+}
