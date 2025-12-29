@@ -52,20 +52,16 @@ This repository uses the following branching strategy:
      - Successful game launch without errors or crashes.
      - Running `/kubejs reload` to verify there are no script errors.
      - Ensuring that any changes to recipes or scripts display correctly in JEI/EMI.
-       <!-- - Verification that the code adheres to the coding standards: -->
-         <!-- Uncomment these lines once ESLint and Prettier are implemented -->
-         <!--
-        - Code has been formatted using `npm run format`.
-        - Linting has been executed and passed using `npm run lint`.
-       -->
+     - Verification that the code adheres to the coding standards: -->
+       - Code has been formatted using `npm run format`.
+       - Linting has been executed and passed using `npm run lint`.
 
 ---
 
-<!--## Code Style
-Consistent formatting and linting rules are enforced:-->
-<!-- Uncomment these instructions once ESLint and Prettier are implemented -->
+## Code Style
 
-<!--
+Consistent formatting and linting rules are enforced:-->
+
 1. Run `npm install` to install dependencies.
 2. Format your code by running:
    ```bash
@@ -75,7 +71,6 @@ Consistent formatting and linting rules are enforced:-->
    ```bash
    npm run lint
    ```
--->
 
 ---
 
@@ -86,7 +81,7 @@ Before submitting your pull request:
 1. Test the game to ensure it launches without any issues.
 2. Run `/kubejs reload` to check for scripting errors.
 3. Verify any changes to recipes/scripts in JEI/EMI.
-<!--4. Run `npm run format`, and `npm run lint` in the `./kubejs` directory to check for any issues and to autoformat the script-->
+4. Run `npm run format`, and `npm run lint` in the `./kubejs` directory to check for any issues and to autoformat the script
 
 ---
 
