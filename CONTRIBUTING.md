@@ -96,7 +96,7 @@ Before submitting your pull request:
 
 ### Setup
 
-1. `probejs` data should be placed in: `kubejs/probe`
+1. `probejs` data should be moved to `kubejs/probe` in the repository after you generate it.
 
 ### Running ProbeJS
 
