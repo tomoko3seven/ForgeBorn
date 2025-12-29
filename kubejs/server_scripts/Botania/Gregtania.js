@@ -232,7 +232,7 @@ ServerEvents.recipes((event) => {
         if (json.has('catalyst')) return;
 
         let outputItem = Item.of(json.get('output'));
-        if (outputItem.id == 'botania:manasteel_block') return;
+        if (outputItem.id === 'botania:manasteel_block') return;
 
         if (recipe.getId().includes('kubejs')) return;
 

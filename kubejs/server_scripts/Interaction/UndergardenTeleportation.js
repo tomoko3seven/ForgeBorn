@@ -38,7 +38,7 @@ PlayerEvents.tick((event) => {
     if (data.teleporting) return;
 
     // === Undergarden ===
-    if (dim == OVERWORLD && pos.y <= -63 && data.standTicks >= STAND_TIME) {
+    if (dim === OVERWORLD && pos.y <= -63 && data.standTicks >= STAND_TIME) {
         data.teleporting = true;
         player.sendSystemMessage(
             Text.of('§6You feel strangely... Teleporation after 5 seconds!')
@@ -71,7 +71,7 @@ PlayerEvents.tick((event) => {
 
     // === Overworld ===
     if (
-        dim == UNDERGARDEN &&
+        dim === UNDERGARDEN &&
         pos.y >= CEILING_Y &&
         data.standTicks >= STAND_TIME
     ) {

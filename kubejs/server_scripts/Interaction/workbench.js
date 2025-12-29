@@ -13,9 +13,9 @@ BlockEvents.rightClicked((event) => {
 
     block.set('minecraft:crafting_table');
 
-    try {
-        item.damage(1, player);
-    } catch (e) {}
+    // try {
+    item.damage(1, player);
+    // } catch (e) {}
 
     event.cancel();
 });

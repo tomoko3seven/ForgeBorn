@@ -191,16 +191,12 @@ StartupEvents.registry('item', (event) => {
     }
 
     function Unit(theme) {
-        event
-            .create(`${theme}_processing_unit`)
-            .textureJson({
-                layer0: `kubejs:item/circuits/${theme}_processing_unit`,
-            });
-        event
-            .create(`${theme}_circuit_board`)
-            .textureJson({
-                layer0: `kubejs:item/circuits/${theme}_circuit_board`,
-            });
+        event.create(`${theme}_processing_unit`).textureJson({
+            layer0: `kubejs:item/circuits/${theme}_processing_unit`,
+        });
+        event.create(`${theme}_circuit_board`).textureJson({
+            layer0: `kubejs:item/circuits/${theme}_circuit_board`,
+        });
     }
 
     Unit('ancient');
