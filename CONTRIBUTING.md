@@ -4,17 +4,11 @@ Thank you for your interest in contributing to ForgeBorn. This guide outlines th
 
 ---
 
-## Code of Conduct
-
-By participating in this project, you agree to adhere to the [Code of Conduct](CODE_OF_CONDUCT.md) of the repository.
-
----
-
 ## Reporting Issues
 
 When reporting issues:
 
-1. Provide detailed information, including logs via [Pastebin](https://pastebin.com/) or [mclo.gs](https://mclo.gs).
+1. Provide detailed information, including logs via [mclo.gs](https://mclo.gs).
 2. Ensure the issue is reproducible using the latest version of the modpack.
 
 ---
@@ -58,14 +52,12 @@ This repository uses the following branching strategy:
      - Successful game launch without errors or crashes.
      - Running `/kubejs reload` to verify there are no script errors.
      - Ensuring that any changes to recipes or scripts display correctly in JEI/REI.
-   - Verification that the code adheres to the coding standards:
-     <!-- Uncomment these lines once ESLint and Prettier are implemented -->
-     <!--
-     - Code has been formatted using `npm run format`.
-     - Linting has been executed and passed using `npm run lint`.
-     -->
-
-5. Reviewers will guide the process of merging your contributions.
+       <!-- - Verification that the code adheres to the coding standards: -->
+         <!-- Uncomment these lines once ESLint and Prettier are implemented -->
+         <!--
+        - Code has been formatted using `npm run format`.
+        - Linting has been executed and passed using `npm run lint`.
+       -->
 
 ---
 
@@ -104,10 +96,7 @@ Before submitting your pull request:
 
 ### Setup
 
-1. `probejs` data should be placed in:
-   ```
-   kubejs/probe
-   ```
+1. `probejs` data should be placed in: `kubejs/probe`
 
 ### Running ProbeJS
 
