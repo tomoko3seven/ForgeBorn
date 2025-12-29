@@ -14,6 +14,10 @@ permissions:
 jobs:
   lint-folder:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.folder }} # This sets the default folder for all 'run' steps
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -22,12 +26,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
           cache-dependency-path: ${{ inputs.folder }}/package-lock.json
 
-      - name: Install & Lint
-        run: |
-          cd ${{ github.workspace }}/${{ inputs.folder }}
-          npm ci
-          npx eslint .
-        shell: bash
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npx eslint .

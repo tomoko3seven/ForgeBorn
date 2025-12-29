@@ -2,16 +2,16 @@
 name: Lint KubeJS
 on:
   pull_request:
-    paths: 
-      - 'kubejs/**'
+    paths:
+      - "kubejs/**"
   push:
     branches:
-      - '**'
+      - "**"
     paths:
-      - 'kubejs/**'
+      - "kubejs/**"
 
 jobs:
   lint:
     uses: ./.github/workflows/eslint.yml
     with:
-      folder: 'kubejs'
+      folder: "kubejs"
