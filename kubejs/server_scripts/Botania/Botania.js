@@ -7,6 +7,7 @@ ServerEvents.recipes((event) => {
     // Removals
     // ---------------------------------------------------------
     event.remove({ output: 'extrabotany:walking_cane' });
+    event.remove({ output: 'botania:terra_plate' });
     event.remove({ output: 'botania:mana_pool' });
     event.remove({ output: 'botania:mana_spreader' });
     event.remove({ output: 'botania:diluted_pool' });
