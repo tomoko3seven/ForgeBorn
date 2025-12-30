@@ -1,6 +1,23 @@
 GTCEuStartupEvents.registry('gtceu:material', (event) => {
     //////////
+    // AE2
+    event
+        .create('charged_certus_quartz')
+        .gem()
+        .dust()
+        .color(0x9fd5e8)
+        .iconSet(GTMaterialIconSet.CERTUS)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('certus_quartz');
 
+    event
+        .create('fluix')
+        .gem()
+        .dust()
+        .color(0x7f5bb3)
+        .iconSet(GTMaterialIconSet.CERTUS)
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .components('charged_certus_quartz', 'redstone', 'nether_quartz');
     //ForgeBorn
     event
         .create('cobblestone')
@@ -254,6 +271,199 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
             GTMaterialFlags.NO_ORE_SMELTING
         );
 
+    //Actually Additions
+    event
+        .create('restonia')
+        .gem()
+        .color(0xa60000)
+        .iconSet(GTMaterialIconSet.RUBY)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.plate,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('enori')
+        .gem()
+        .color(0xede6ff)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.plate,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('void')
+        .gem()
+        .color(0x0f0f0f)
+        .iconSet(GTMaterialIconSet.ROUGH)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.plate,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('palis')
+        .gem()
+        .color(0x1c1c89)
+        .iconSet(GTMaterialIconSet.LAPIS)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.plate,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('diamatine')
+        .gem()
+        .color(0x8b8df3)
+        .iconSet(GTMaterialIconSet.FINE)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.plate,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('emeradic')
+        .gem()
+        .color(0x09e103)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.plate,
+            TagPrefix.rod,
+        ]);
+    //Actually Additions EXTRA
+    event
+        .create('restonia_empowered')
+        .gem()
+        .fluid()
+        .color(0xa60000)
+        .iconSet(GTMaterialIconSet.RUBY)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('enori_empowered')
+        .gem()
+        .fluid()
+        .color(0xede6ff)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('void_empowered')
+        .gem()
+        .fluid()
+        .color(0x0f0f0f)
+        .iconSet(GTMaterialIconSet.ROUGH)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('palis_empowered')
+        .gem()
+        .fluid()
+        .color(0x1c1c89)
+        .iconSet(GTMaterialIconSet.LAPIS)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('diamatine_empowered')
+        .gem()
+        .fluid()
+        .color(0x8b8df3)
+        .iconSet(GTMaterialIconSet.FINE)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ]);
+
+    event
+        .create('emeradic_empowered')
+        .gem()
+        .fluid()
+        .color(0x09e103)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ]);
+    //Botania (MOVE LATER)
     event
         .create('managold')
         .color(0xd6b46e)
@@ -384,4 +594,21 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
                 GTMaterialFlags.NO_ORE_SMELTING
             );
     });
+
+    //GregTech
+    event
+        .create('sunnarium')
+        .dust()
+        .color(0xddd692)
+        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE);
+
+    event
+        .create('enriched_sunnarium')
+        .dust()
+        .color(0xacffc2)
+        .flags(
+            GTMaterialFlags.PHOSPHORESCENT,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_DENSE
+        );
 });
