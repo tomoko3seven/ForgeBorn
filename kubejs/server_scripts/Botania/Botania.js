@@ -116,6 +116,19 @@ ServerEvents.recipes((event) => {
     // Standard Crafting (Apothecary, Spreader, Etc)
     // ---------------------------------------------------------
 
+    const spark_augments = [
+        'botania:spark_upgrade_dispersive',
+        'botania:spark_upgrade_dominant',
+        'botania:spark_upgrade_recessive',
+        'botania:spark_upgrade_isolated',
+    ];
+    spark_augments.forEach((augment) => {
+        event.replaceInput(
+            { id: augment },
+            'botania:manasteel_ingot',
+            '#forge:plates/manasteel'
+        );
+    });
     // Pure Daisy
     event.recipes.botania.pure_daisy(
         'kubejs:contradiction_stone',
