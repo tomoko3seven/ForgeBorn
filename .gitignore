@@ -51,3 +51,4 @@ config/jei/
 # Keep .gitignore itself
 !.gitignore
 !CONTRIBUTING.md
+config/ae2/client.json
