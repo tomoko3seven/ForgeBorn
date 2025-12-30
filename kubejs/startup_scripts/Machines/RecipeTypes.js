@@ -2,6 +2,7 @@ const $IO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO');
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
     // Multiblock Machines Recipes
+    //Gregtania
     event
         .create('mana_pulse_infuser')
         .category('forgeborn')
@@ -13,10 +14,20 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             FillDirection.LEFT_TO_RIGHT
         )
         .setSound(GTSoundEntries.ARC);
+    //GregTech
+    event
+        .create('bloomery')
+        .category('forgeborn')
+        .setMaxIOSize(2, 1, 0, 0)
+        .setProgressBar(
+            GuiTextures.PROGRESS_BAR_ARROW,
+            FillDirection.LEFT_TO_RIGHT
+        )
+        .setSound(GTSoundEntries.FURNACE);
     event
         .create('primitive_drilling')
         .category('forgeborn')
-        .setMaxIOSize(0, 20, 1, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setMaxIOSize(0, 20, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
         .setEUIO('in')
         .setProgressBar(
@@ -24,6 +35,24 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             FillDirection.LEFT_TO_RIGHT
         )
         .setSound(GTSoundEntries.MINER);
+    event
+        .create('rail_assembly')
+        .category('forgeborn')
+        .setMaxIOSize(3, 1, 1, 0)
+        .setProgressBar(
+            GuiTextures.PROGRESS_BAR_ARROW,
+            FillDirection.LEFT_TO_RIGHT
+        )
+        .setSound(GTSoundEntries.ASSEMBLER);
+    event
+        .create('atomic_reconstruction')
+        .category('forgeborn')
+        .setMaxIOSize(1, 1, 0, 0)
+        .setProgressBar(
+            GuiTextures.PROGRESS_BAR_ARROW,
+            FillDirection.LEFT_TO_RIGHT
+        )
+        .setSound(GTSoundEntries.REPLICATOR);
 
     // Simple-Machines Recipes
     event
