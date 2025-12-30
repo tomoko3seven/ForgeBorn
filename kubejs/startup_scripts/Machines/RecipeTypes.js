@@ -12,7 +12,18 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             GuiTextures.PROGRESS_BAR_ARROW,
             FillDirection.LEFT_TO_RIGHT
         )
-        .setSound(GTSoundEntries.ELECTROLYZER);
+        .setSound(GTSoundEntries.ARC);
+    event
+        .create('primitive_drilling')
+        .category('forgeborn')
+        .setMaxIOSize(0, 20, 1, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
+        .setEUIO('in')
+        .setProgressBar(
+            GuiTextures.PROGRESS_BAR_ARROW,
+            FillDirection.LEFT_TO_RIGHT
+        )
+        .setSound(GTSoundEntries.MINER);
 
     // Simple-Machines Recipes
     event
@@ -49,7 +60,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             GuiTextures.PROGRESS_BAR_ARROW,
             FillDirection.LEFT_TO_RIGHT
         )
-        .setSound(GTSoundEntries.ELECTROLYZER);
+        .setSound(GTSoundEntries.ASSEMBLER);
 
     event
         .create('squeezer')
@@ -73,7 +84,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             GuiTextures.PROGRESS_BAR_ARROW,
             FillDirection.LEFT_TO_RIGHT
         )
-        .setSound(GTSoundEntries.REPLICATOR);
+        .setSound(GTSoundEntries.MIXER);
 
     event
         .create('crystallizer')
