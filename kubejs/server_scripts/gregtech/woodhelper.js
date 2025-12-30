@@ -226,7 +226,7 @@ ServerEvents.recipes((event) => {
                             s: '#forge:tools/screwdrivers',
                         }
                     )
-                    .id(`kubejs:shaped/door_${uniqueId}_${material}`);
+                    .id(`kubejs:shaped/trapdoor_${uniqueId}_${material}`);
                 greg.assembler(
                     `kubejs:assembler/${material}_trapdoor_${uniqueId}_${material}`
                 )
