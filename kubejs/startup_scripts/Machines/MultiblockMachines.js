@@ -78,6 +78,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             FillDirection.LEFT_TO_RIGHT
         )
         .setSound(GTSoundEntries.CHEMICAL);
+
+    event
+        .create('blastery')
+        .category('forgeborn')
+        .setMaxIOSize(2, 1, 0, 0)
+        .setProgressBar(
+            GuiTextures.PROGRESS_BAR_ARROW,
+            FillDirection.LEFT_TO_RIGHT
+        )
+        .setSound(GTSoundEntries.FURNACE);        
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
@@ -383,4 +393,27 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
 			.where(' ', Predicates.any())
 			.build())
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/mana_infuser");*/
+    event.create('blastery', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('blastery')
+        .appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+            .aisle("A BBB A","A BBB A","B  B  B","       ","       ","       ","       ","       ","       ")
+            .aisle(" BBBBB "," BBBBB "," CCCCC "," CCCCC ","  CCC  ","  CCC  ","   C   ","   C   ","  CCC  ")
+            .aisle("BBBBBBB","BBCCCBB"," C   C "," C   C "," C   C "," C   C ","  C C  ","  C C  "," C   C ")
+            .aisle("BBBBBBB","BBCCCBB","BC   CB"," C   C "," C   C "," C   C "," C   C "," C   C "," C   C ")
+            .aisle("BBBBBBB","BBCCCBB"," C   C "," C   C "," C   C "," C   C ","  C C  ","  C C  "," C   C ")
+            .aisle(" BBBBB "," BBBBB "," CCCCC "," CCDCC ","  CCC  ","  CCC  ","   C   ","   C   ","  CCC  ")
+            .aisle("A BBB A","A BBB A","B  B  B","       ","       ","       ","       ","       ","       ")
+			.where('D', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks('gtceu:firebricks'))
+            .where('B', Predicates.blocks('kubejs:solid_wrought_iron_casing')
+            	.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(6).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.blocks(PartAbility.INPUT_ENERGY.getBlocks([GTValues.ULV]).toArray()).setMaxGlobalLimited(2).setPreviewCount(1)))
+            .where('A', (Predicates.blocks('gtceu:steel_frame')))
+			.where(' ', Predicates.any())
+			.build())
+		.workableCasingModel("gtceu:block/casings/solid/machine_primitive_bricks", "gtceu:block/multiblock/blast_furnace")
+
 });
