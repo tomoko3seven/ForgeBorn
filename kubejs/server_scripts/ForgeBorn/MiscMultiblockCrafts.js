@@ -1,11 +1,12 @@
 ServerEvents.recipes((event) => {
+    //Lava Furnace
     event.recipes.gtceu
         .lava_furnace()
         .itemInputs('#forge:normal_stone')
         .outputFluids('minecraft:lava 1000')
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(20 * 10);
-
+    //Primitive Drilling - Earth
     event.recipes.gtceu
         .primitive_drilling(`drilling_earth`)
         .perTick(true)
@@ -32,9 +33,9 @@ ServerEvents.recipes((event) => {
         .itemOutputsRanged('gtceu:raw_lepidolite', 1, 3)
         .itemOutputsRanged('gtceu:raw_spodumene', 1, 3)
         .itemOutputsRanged('gtceu:raw_cinnabar', 1, 3)
-        .itemOutputsRanged('gtceu:raw_sulfur', 1, 3)
         .itemOutputsRanged('gtceu:raw_apatite', 1, 3)
         .itemOutputsRanged('gtceu:raw_sapphire', 1, 3)
-        .duration(20 * 10)
+        .itemOutputsRanged('gtceu:raw_crystallyne', 1, 3)
+        .duration(20 * 40)
         .EUt(GTValues.VA[GTValues.MV], 4);
 });
