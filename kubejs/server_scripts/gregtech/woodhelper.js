@@ -317,7 +317,7 @@ ServerEvents.recipes((event) => {
             }
         );
 
-        greg.assembler(`kubekjs:assembler/pressure_plate_${uniqueId}`)
+        greg.assembler(`kubejs:assembler/pressure_plate_${uniqueId}`)
             .itemInputs(`2x ${slabs[0]}`, 'gtceu:iron_spring')
             .circuit(7)
             .duration(100)
