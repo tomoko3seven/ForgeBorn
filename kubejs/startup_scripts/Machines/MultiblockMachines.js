@@ -416,4 +416,4 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
 			.build())
 		.workableCasingModel("gtceu:block/casings/solid/machine_primitive_bricks", "gtceu:block/multiblock/blast_furnace")
 
-});
+    });
