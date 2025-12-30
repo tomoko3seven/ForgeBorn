@@ -82,7 +82,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
 
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     // prettier-ignore
-    event.create('gaia_garden', 'multiblock')
+    /*event.create('gaia_garden', 'multiblock')
     .rotationState(RotationState.NON_Y_AXIS)
     .recipeType(['extraterrestial_agglomeration', "runic_assembler"])
     .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
@@ -130,7 +130,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     .build()
     )
     .workableCasingModel("kubejs:block/casings/terrasteel_livingwood/terrasteel_livingwood_casing", "gtceu:block/multiblock/generator/large_gas_turbine")
-
+*/
     // prettier-ignore
     event.create('mana_pulse_infuser', 'multiblock')
     .rotationState(RotationState.NON_Y_AXIS)
