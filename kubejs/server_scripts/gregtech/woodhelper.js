@@ -228,7 +228,7 @@ ServerEvents.recipes((event) => {
                     )
                     .id(`kubejs:shaped/trapdoor_${uniqueId}_${material}`);
                 greg.assembler(
-                    `kubejs:assembler/${material}_trapdoor_${uniqueId}_${material}`
+                    `kubejs:assembler/trapdoor_${material}_${uniqueId}`
                 )
                     .itemInputs(`2x ${plankId}`)
                     .inputFluids(Fluid.of(`gtceu:${material}`, 16))
