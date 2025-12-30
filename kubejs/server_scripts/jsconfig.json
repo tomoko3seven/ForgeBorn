@@ -6,15 +6,15 @@
             "ES5",
             "ES2015"
         ],
-        "rootDir": "./src",
+        "rootDir": ".",
         "typeRoots": [
-            "../../.probe/server/probe-types"
+            "./probe"
         ],
-        "baseUrl": "../../.probe/server/probe-types",
+        "baseUrl": "./probe",
         "skipLibCheck": true
     },
     "include": [
-        "./src/**/*",
-        null
+        "**/*.js",
+        "**/*.d.ts"
     ]
 }

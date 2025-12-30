@@ -1,20 +1,19 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "ES2015",
-        "lib": [
-            "ES5",
-            "ES2015"
-        ],
-        "rootDir": "./src",
-        "typeRoots": [
-            "../../.probe/startup/probe-types"
-        ],
-        "baseUrl": "../../.probe/startup/probe-types",
-        "skipLibCheck": true
+        "target": "es2020",
+        "module": "es2020",
+        "allowJs": true,
+        "checkJs": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["probe/generated/*"]
+        }
     },
     "include": [
-        "./src/**/*",
-        null
+        "server_scripts/**/*",
+        "client_scripts/**/*",
+        "startup_scripts/**/*",
+        "probe/generated/**/*"
     ]
 }
