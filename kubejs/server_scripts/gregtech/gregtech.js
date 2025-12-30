@@ -269,6 +269,7 @@ ServerEvents.recipes((event) => {
 
     // Removals
     event.remove({ output: 'gtceu:resin_circuit_board' });
+    event.remove({ output: 'gtceu:ulv_voltage_coil' });
     event.remove({ output: 'gtceu:resin_printed_circuit_board' });
     event.remove({ output: 'gtceu:resistor' });
     event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' });
@@ -384,6 +385,19 @@ ServerEvents.recipes((event) => {
         {
             A: 'gtceu:wrought_iron_plate',
             B: '#gtceu:tools/crafting_wrenches',
+        }
+    );
+
+    event.shaped(
+        'gtceu:ulv_voltage_coil',
+        [
+            'AAA',
+            'ABA',
+            'AAA',
+        ],
+        {
+            A: '#forge:fine_wires/lead',
+            B: '#forge:rods/magnetic_iron',
         }
     );
 
