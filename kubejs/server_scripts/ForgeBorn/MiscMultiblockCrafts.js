@@ -36,6 +36,6 @@ ServerEvents.recipes((event) => {
         .itemOutputsRanged('gtceu:raw_apatite', 1, 3)
         .itemOutputsRanged('gtceu:raw_sapphire', 1, 3)
         .itemOutputsRanged('gtceu:raw_crystallyne', 1, 3)
-        .duration(20 * 40)
+        .duration(20 * 50)
         .EUt(GTValues.VA[GTValues.MV], 4);
 });
