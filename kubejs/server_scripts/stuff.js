@@ -45,6 +45,74 @@ ServerEvents.recipes((event) => {
     );
     //BULDING GADGETS
 
+    //Building Wands
+    event.remove({ output: 'constructionwand:iron_wand' });
+    event.shaped(
+        'constructionwand:iron_wand',
+        [
+            '  P',
+            ' S ',
+            'S  ',
+        ],
+        {
+            P: '#forge:plates/iron',
+            S: '#forge:rods/treated_wood',
+        }
+    );
+    event.remove({ output: 'constructionwand:diamond_wand' });
+    event.shaped(
+        'constructionwand:diamond_wand',
+        [
+            '  P',
+            ' S ',
+            'S  ',
+        ],
+        {
+            P: '#forge:plates/diamond',
+            S: '#forge:rods/treated_wood',
+        }
+    );
+    event.remove({ output: 'constructionwand:infinity_wand' });
+    event.shaped(
+        'constructionwand:infinity_wand',
+        [
+            '  P',
+            ' S ',
+            'S  ',
+        ],
+        {
+            P: 'malum:soul_stained_steel_plating',
+            S: '#forge:rods/stainless_steel',
+        }
+    );
+    event.remove({ output: 'constructionwand:core_angel' });
+    event.shaped(
+        'constructionwand:core_angel',
+        [
+            'PFP',
+            'FRF',
+            'PFP',
+        ],
+        {
+            P: '#forge:plates/managold',
+            F: '#forge:feathers',
+            R: 'kubejs:wind_tablet',
+        }
+    );
+    event.remove({ output: 'constructionwand:core_angel' });
+    event.shaped(
+        'constructionwand:core_angel',
+        [
+            'PFP',
+            'FRF',
+            'PFP',
+        ],
+        {
+            P: '#forge:plates/managold',
+            F: '#forge:feathers',
+            R: 'kubejs:wind_tablet',
+        }
+    );
     //Backpacks
     event.remove({ output: 'usefulbackpacks:backpack_small' });
     event.shaped(
