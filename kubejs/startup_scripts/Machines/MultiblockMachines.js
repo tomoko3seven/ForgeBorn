@@ -87,7 +87,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             GuiTextures.PROGRESS_BAR_ARROW,
             FillDirection.LEFT_TO_RIGHT
         )
-        .setSound(GTSoundEntries.FURNACE);        
+        .setSound(GTSoundEntries.FURNACE);
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', (event) => {
@@ -403,8 +403,8 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
             .aisle("BBBBBBB","BBCCCBB"," C   C "," C   C "," C   C "," C   C ","  C C  ","  C C  "," C   C ")
             .aisle("BBBBBBB","BBCCCBB","BC   CB"," C   C "," C   C "," C   C "," C   C "," C   C "," C   C ")
             .aisle("BBBBBBB","BBCCCBB"," C   C "," C   C "," C   C "," C   C ","  C C  ","  C C  "," C   C ")
-            .aisle(" BBBBB "," BBBBB "," CCCCC "," CCDCC ","  CCC  ","  CCC  ","   C   ","   C   ","  CCC  ")
-            .aisle("A BBB A","A BBB A","B  B  B","       ","       ","       ","       ","       ","       ")
+            .aisle(" BBBBB "," BBBBB "," CCCCC "," CCCCC ","  CCC  ","  CCC  ","   C   ","   C   ","  CCC  ")
+            .aisle("A BBB A","A BDB A","B  B  B","       ","       ","       ","       ","       ","       ")
 			.where('D', Predicates.controller(Predicates.blocks(definition.get())))
 			.where('C', Predicates.blocks('gtceu:firebricks'))
             .where('B', Predicates.blocks('kubejs:solid_wrought_iron_casing')
@@ -415,5 +415,4 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
 			.where(' ', Predicates.any())
 			.build())
 		.workableCasingModel("gtceu:block/casings/solid/machine_primitive_bricks", "gtceu:block/multiblock/blast_furnace")
-
-    });
+});
