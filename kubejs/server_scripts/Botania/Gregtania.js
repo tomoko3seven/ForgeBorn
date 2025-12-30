@@ -261,7 +261,6 @@ ServerEvents.recipes((event) => {
             .EUt(GTValues.VA[GTValues.MV])
             .duration(20);
     });
-
     // ---------------------------------------------------------
     // Fluid & GT Machine Recipes
     // ---------------------------------------------------------
