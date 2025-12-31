@@ -1,4 +1,4 @@
-const $IO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO');
+// const $IO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO');
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
     // Multiblock Machines Recipes
