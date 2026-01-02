@@ -1,3 +1,11 @@
+GTCEuStartupEvents.registry('gtceu:material_icon_set', (event) => {
+    event.create('godium').parent(GTMaterialIconSet.SHINY); //Placeholder
+    event.create('sculk_alloy').parent(GTMaterialIconSet.DULL); //Placeholder
+    event.create('infinity').parent(GTMaterialIconSet.SHINY);
+
+    event.create('enori').parent(GTMaterialIconSet.GEM_VERTICAL);
+});
+
 GTCEuStartupEvents.registry('gtceu:material', (event) => {
     //////////
     // AE2
@@ -292,7 +300,7 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
         .create('enori')
         .gem()
         .color(0xede6ff)
-        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .iconSet('enori')
         .flags(GTMaterialFlags.GENERATE_GEAR)
         .ignoredTagPrefixes([
             TagPrefix.dust,
@@ -610,5 +618,20 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
             GTMaterialFlags.PHOSPHORESCENT,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_DENSE
+        );
+    //Avaritia
+    event
+        .create('infinity')
+        .color(0x000000)
+        .ingot()
+        .iconSet('infinity')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
         );
 });
