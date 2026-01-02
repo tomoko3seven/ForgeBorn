@@ -110,6 +110,12 @@ StartupEvents.registry('item', (event) => {
         .tooltip([
             '§aLV Botanical Circuit',
         ]);
+    event
+        .create('good_botanical_circuit')
+        .tooltip('§8Could be used to REFACTOR our planet')
+        .tooltip([
+            '§aMV Botanical Circuit',
+        ]);
 
     event.create('sulfuric_mushroom');
     event.create('no_name');
