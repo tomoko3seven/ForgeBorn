@@ -53,8 +53,27 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             FillDirection.LEFT_TO_RIGHT
         )
         .setSound(GTSoundEntries.REPLICATOR);
+    event
+        .create('tree_simulator')
+        .category('forgeborn')
+        .setMaxIOSize(1, 1, 1, 0)
+        .setProgressBar(
+            GuiTextures.PROGRESS_BAR_ARROW,
+            FillDirection.LEFT_TO_RIGHT
+        )
+        .setSound(GTSoundEntries.CHEMICAL);
+    event
+        .create('crystal_chamber')
+        .category('forgeborn')
+        .setMaxIOSize(1, 1, 1, 0)
+        .setProgressBar(
+            GuiTextures.PROGRESS_BAR_ARROW,
+            FillDirection.LEFT_TO_RIGHT
+        )
+        .setSound(GTSoundEntries.CHEMICAL);
 
     // Simple-Machines Recipes
+    //Gregtania
     event
         .create('mana_infuser')
         .category('forgeborn')
@@ -90,7 +109,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             FillDirection.LEFT_TO_RIGHT
         )
         .setSound(GTSoundEntries.ASSEMBLER);
-
+    //Forestry
     event
         .create('squeezer')
         .category('forgeborn')
@@ -102,7 +121,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             FillDirection.LEFT_TO_RIGHT
         )
         .setSound(GTSoundEntries.CENTRIFUGE);
-
+    //GregTech
     event
         .create('culinary_assembler')
         .category('forgeborn')
