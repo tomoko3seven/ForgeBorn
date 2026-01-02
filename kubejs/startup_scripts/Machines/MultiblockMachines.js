@@ -397,7 +397,6 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
             .where("C", Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
 		.workableCasingModel("gtceu:block/casings/solid/solid_wrought_iron_casing", "gtceu:block/multiblock/imposion_compressor")
-        .tooltip("kubejs.multiblock.rail_assembler.tooltip");
     // prettier-ignore
     event.create('atomic_reconstructor', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
