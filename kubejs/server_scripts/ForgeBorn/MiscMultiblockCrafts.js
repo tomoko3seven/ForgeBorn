@@ -247,19 +247,20 @@ ServerEvents.recipes((event) => {
     }
     //Atomic Reconstruction
     //prettier-ignore
-    const alloys = [
+    const reconstruction = [
         { input: 'minecraft:redstone_block', output: 'gtceu:restonia_block', duration: 5 },
-        { input: 'gtceu:raw_lapis_block', output: 'gtceu:palis_block', duration: 5 },
-        { input: 'vibrant_alloy', output: 0x7cff00, duration: 5 },
-        { input: 'redstone_alloy', output: 0xb00000, duration: 5 },
-        { input: 'conductive_alloy', output: 0x6b6b6b, duration: 5 },
-        { input: 'pulsating_alloy', output: 0x00ff9c, duration: 5 },
-        { input: 'soularium', output: 0x4b2a1f, duration: 5 },
+        { input: 'minecraft:lapis_block', output: 'gtceu:palis_block', duration: 5 },
+        { input: 'minecraft:iron_block', output: 'gtceu:enori_block', duration: 8 },
+        { input: 'minecraft:coal_block', output: 'gtceu:void_block', duration: 8 },
+        { input: 'minecraft:diamond_block', output: 'gtceu:diamatine_block', duration: 10 },
+        { input: 'minecraft:emerald_block', output: 'gtceu:emeradic_block', duration: 12 },
     ];
-    event.recipes.gtceu
-        .atomic_reconstruction()
-        .itemInputs('minecraft:redstone_block')
-        .itemOutputs('gtceu:restonia_block')
-        .duration(20 * 5)
-        .EUt(GTValues.VA[GTValues.MV], 2);
+    reconstruction.forEach((recipe) => {
+        event.recipes.gtceu
+            .atomic_reconstruction()
+            .itemInputs(recipe.input)
+            .itemOutputs(recipe.output)
+            .duration(20 * recipe.duration)
+            .EUt(GTValues.VA[GTValues.MV], 2);
+    });
 });
