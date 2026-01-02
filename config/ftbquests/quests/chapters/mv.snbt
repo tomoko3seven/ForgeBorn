@@ -614,9 +614,9 @@
 			id: "67D2BF02EF4B3920"
 			shape: "diamond"
 			tasks: [{
-				id: "594F14FB9ECC7881"
-				title: "Tree Growth Simulator"
-				type: "custom"
+				id: "613F23CBBB19E84E"
+				item: "gtca:green_house"
+				type: "item"
 			}]
 			x: 3.5d
 			y: 9.0d
