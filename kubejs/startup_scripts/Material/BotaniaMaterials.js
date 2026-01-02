@@ -131,12 +131,26 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
     event
         .create('annealed_manasteel')
         .ingot()
-        .liquid()
         .color(0xa8ddff)
         .components('manasteel')
         .element(GTElements.get('manasteel'))
-        .cableProperties(GTValues.V[GTValues.MV], 2, 3, false)
         .iconSet(GTMaterialIconSet.getByName('mana'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+        );
+    event
+        .create('mana_alloy')
+        .ingot()
+        .color(0xff6adf)
+        .iconSet(GTMaterialIconSet.DULL)
+        .cableProperties(GTValues.V[GTValues.MV], 2, 3, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
