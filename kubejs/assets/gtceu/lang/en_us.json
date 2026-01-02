@@ -7,6 +7,8 @@
     "block.gtceu.lava_furnace": "Lava Furnace",
     "block.gtceu.electric_cloche": "Electric Cloche",
     "block.gtceu.cognitium_solidifier": "Cognitium Solidifier",
+    "block.gtceu.industrial_bloomery": "Industrial Bloomery",
+    "block.gtceu.atomic_reconstructor": "Atomic Reconstructor",
 
     "kubejs.multiblock.rail_assembler.tooltip": "Assembles rails for minecarts and trains more efficiently.",
 
@@ -14,8 +16,12 @@
     "gtceu.gaia_garden": "Garden Of Gaia",
     "gtceu.mana_infuser": "Mana Infusion",
     "gtceu.mana_pulse_infuser": "Mana-Pulse Infusion",
+    
     "gtceu.laser_welder": "Laser Welding",
     "gtceu.crystallizer": "Crystallizing",
+    "gtceu.bloomery": "Bloomery",
+    "gtceu.atomic_reconstruction": "Atomic Reconstruction",
+    
     "gtceu.botanical_purification_chamber": "Botanical Purification",
     "gtceu.runic_assembler": "Runic Assembling",
     "gtceu.culinary_assembler": "Culinary Assembling",
