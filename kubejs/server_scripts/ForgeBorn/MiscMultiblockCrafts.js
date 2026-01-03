@@ -41,7 +41,6 @@ ServerEvents.recipes((event) => {
     // Industrial Bloomery
     let greg = event.recipes.gtceu;
 
-    // Define constants
     let IRON_INGOTS = 36;
     let IRON_BLOCKS = 4;
     let WROUGHT_IRON_INGOTS = 36;
@@ -59,25 +58,27 @@ ServerEvents.recipes((event) => {
 
     let eu = 8;
 
-    // Durations in ticks (1s = 20t)
+    let LAVA_AMOUNT = 1000; 
+    let LAVA_DURATION = 1200; 
+
     let DURATIONS = {
         coal: {
-            iron_ingot: 1800, // 90s
-            iron_block: 1800, // 90s (same as ingot)
-            wrought_ingot: 800, // 40s
-            wrought_block: 800, // 40s (same as ingot)
+            iron_ingot: 1800, 
+            iron_block: 1800, 
+            wrought_ingot: 800, 
+            wrought_block: 800, 
         },
         charcoal: {
-            iron_ingot: 1800, // 90s
-            iron_block: 1800, // 90s (same as ingot)
-            wrought_ingot: 800, // 40s
-            wrought_block: 800, // 40s (same as ingot)
+            iron_ingot: 1800, 
+            iron_block: 1800,
+            wrought_ingot: 800, 
+            wrought_block: 800, 
         },
         coke: {
-            iron_ingot: 1500, // 75s
-            iron_block: 1500, // 75s (same as ingot)
-            wrought_ingot: 600, // 30s
-            wrought_block: 600, // 30s (same as ingot)
+            iron_ingot: 1500, 
+            iron_block: 1500,
+            wrought_ingot: 600,
+            wrought_block: 600,
         },
     };
 
@@ -105,7 +106,25 @@ ServerEvents.recipes((event) => {
         },
     };
 
-    // Get fuel type keys for iteration
+    // --- LAVA RECIPES: Iron to Wrought Iron ---
+    // Iron Ingots to Wrought Iron Ingots
+    greg.bloomery('kubejs:iron_ingot_to_wrought_iron_ingot')
+        .itemInputs(`${IRON_INGOTS}x minecraft:iron_ingot`)
+        .inputFluids(Fluid.of('minecraft:lava', LAVA_AMOUNT))
+        .itemOutputs(`${WROUGHT_IRON_INGOTS}x gtceu:wrought_iron_ingot`)
+        .duration(LAVA_DURATION)
+        .EUt(eu)
+        .circuit(1)
+
+    // Iron Blocks to Wrought Iron Blocks
+    greg.bloomery('kubejs:iron_block_to_wrought_iron_block')
+        .itemInputs(`${IRON_BLOCKS}x minecraft:iron_block`)
+        .inputFluids(Fluid.of('minecraft:lava', LAVA_AMOUNT))
+        .itemOutputs(`${WROUGHT_IRON_BLOCKS}x gtceu:wrought_iron_block`)
+        .duration(LAVA_DURATION)
+        .EUt(eu)
+        .circuit(1);
+
     let fuelKeys = Object.keys(FUEL_TYPES);
 
     for (let k = 0; k < fuelKeys.length; k++) {
