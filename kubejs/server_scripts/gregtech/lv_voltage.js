@@ -16,6 +16,18 @@ ServerEvents.recipes((event) => {
             C: 'gtceu:nickel_single_wire',
         }
     );
+    event.recipes.gtceu
+        .assembler('efb')
+        .itemInputs(
+            'gtceu:heatproof_machine_casing',
+            '6x kubejs:basic_mechanical_parts',
+            '3x #gtceu:circuits/lv',
+            '2x gtceu:lv_alloy_smelter',
+            '12x gtceu:tin_single_cable'
+        )
+        .itemOutputs('gtceu:electric_blast_furnace')
+        .EUt(32)
+        .duration(20 * 15);
 
     event.recipes.extendedcrafting
         .shaped_table(
