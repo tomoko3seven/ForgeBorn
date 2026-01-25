@@ -1337,6 +1337,19 @@
 			x: 11.9d
 			y: 10.5d
 		}
+		{
+			dependencies: ["5B7BC416799EA7AC"]
+			id: "7DE54B6A1B9CF2C5"
+			shape: "octagon"
+			tasks: [{
+				id: "6F8F886D42EFB644"
+				item: "gtceu:industrial_bloomery"
+				type: "item"
+			}]
+			title: "Better Steel and Wrought Iron"
+			x: 4.0d
+			y: -4.0d
+		}
 	]
 	title: "Hi, Electricity!"
 }
