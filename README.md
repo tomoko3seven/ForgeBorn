@@ -55,4 +55,5 @@ Currently very unfinished, but join our discord to help me improve my pack!
 
 # Inspiration
 The modpack was inspired by Cosmic Frontiers and contains similar gameplay elements!
+
 https://www.curseforge.com/minecraft/modpacks/cosmic-frontiers
