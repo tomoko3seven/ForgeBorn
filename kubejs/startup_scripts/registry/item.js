@@ -82,6 +82,8 @@ StartupEvents.registry('item', (event) => {
     event.create('rope');
     event.create('blank_upgrade');
 
+    event.create('crushed_blue_moss');
+    event.create('blue_moss_cellulose_pulp');
     event.create('blue_moss_substrate');
     //Industrial
     event.create('basic_mechanical_parts');

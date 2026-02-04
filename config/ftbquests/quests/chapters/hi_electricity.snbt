@@ -806,7 +806,7 @@
 			tasks: [{
 				count: 16L
 				id: "39FEE0584474D994"
-				item: { Count: 16, id: "gtceu:ditchbulb_resin_plate" }
+				item: "kubejs:blue_moss_substrate"
 				type: "item"
 			}]
 			x: -8.5d
@@ -1306,6 +1306,17 @@
 			}]
 			x: -1.5d
 			y: 11.0d
+		}
+		{
+			dependencies: ["03B56ECF5AA7CF3E"]
+			id: "39FFA422E6794D6E"
+			tasks: [{
+				id: "24F255AE5D7B61C3"
+				item: "undergarden:blue_mogmoss"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -7.0d
 		}
 	]
 	title: "Hi, Electricity!"
