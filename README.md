@@ -1,8 +1,8 @@
 <img width="850" height="141" alt="forgeborn(1)" src="https://github.com/user-attachments/assets/268ec260-67f3-4229-8c1f-188b40b44044" />
 
 A WIP GregTech modpack. /n
-https://www.curseforge.com/minecraft/modpacks/forgeborn
 GregTech, Botania, Ars Noveau, Malum, Custom Content.
+https://www.curseforge.com/minecraft/modpacks/forgeborn
 
 # **Hardcore modpack, that will leave you satisfied.**
 is a hardcore technology-focused modpack where GregTech is tightly interwoven with magic, research, and slow, deliberate progression.
