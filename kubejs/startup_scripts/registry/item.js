@@ -81,6 +81,8 @@ StartupEvents.registry('item', (event) => {
     event.create('coin');
     event.create('rope');
     event.create('blank_upgrade');
+
+    event.create('blue_moss_substrate');
     //Industrial
     event.create('basic_mechanical_parts');
 

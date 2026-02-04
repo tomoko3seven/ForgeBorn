@@ -166,6 +166,18 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
         );
+    event
+        .create('cloggrumite')
+        .color(0x8d775f)
+        .ingot()
+
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        );
 
     event
         .create('aethersteel')

@@ -11,16 +11,16 @@
 			image: "gtceu:block/casings/voltage/lv/bottom"
 			rotation: 45.0d
 			width: 2.4d
-			x: -0.9547619047618952d
-			y: 11.029761904761905d
+			x: -3.930952380952391d
+			y: 10.99702380952381d
 		}
 		{
 			height: 2.4d
 			image: "gtceu:block/casings/voltage/lv/bottom"
 			rotation: 0.0d
 			width: 2.4d
-			x: -0.9547619047618952d
-			y: 11.029761904761905d
+			x: -3.88333333333334d
+			y: 11.044642857142868d
 		}
 		{
 			height: 2.0d
@@ -320,11 +320,7 @@
 		{
 			dependencies: [
 				"34FC06C0C9D594AA"
-				"211C76A29D02D027"
-				"4F2FE067C6D7A8DB"
-				"302EF65C05218BB4"
-				"7BB3610D75E30813"
-				"5A372D32DFCA06C4"
+				"04E723EB33963031"
 			]
 			description: ["Use the Seal to become worthy of entering the Nether."]
 			id: "4E1C035012ADA7CA"
@@ -396,7 +392,7 @@
 				type: "item"
 			}]
 			x: 9.91904761904762d
-			y: 4.023809523809518d
+			y: 2.5238095238095184d
 		}
 		{
 			dependencies: ["1567303A505B75C2"]
@@ -407,7 +403,7 @@
 				type: "item"
 			}]
 			x: 11.919047619047612d
-			y: 4.023809523809518d
+			y: 2.5238095238095184d
 		}
 		{
 			dependencies: ["039A1E011CF022FD"]
@@ -795,55 +791,17 @@
 		}
 		{
 			dependencies: ["03B56ECF5AA7CF3E"]
-			id: "035D8AA73E48143F"
-			shape: "hexagon"
-			size: 1.4d
-			tasks: [{
-				id: "4AB08CCCF74BD619"
-				item: "undergarden:ditchbulb"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -5.5d
-		}
-		{
-			id: "096DA994D539DD93"
-			shape: "circle"
-			tasks: [{
-				id: "6FD911A01C9A997F"
-				item: "gtceu:raw_rubber_dust"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["035D8AA73E48143F"]
 			id: "16CDEF2DD759F160"
 			tasks: [{
 				id: "3258F9245FBDBAC2"
 				item: "undergarden:ditchbulb_paste"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"096DA994D539DD93"
-				"16CDEF2DD759F160"
-			]
-			id: "7D414D4621FF2BC2"
-			tasks: [{
-				id: "59FE57230D63359B"
-				item: "gtceu:ditchbulb_resin_ingot"
-				type: "item"
-			}]
 			x: -8.5d
 			y: -3.5d
 		}
 		{
-			dependencies: ["7D414D4621FF2BC2"]
+			dependencies: ["16CDEF2DD759F160"]
 			id: "055E5B9F67AEC28D"
 			tasks: [{
 				count: 16L
@@ -980,7 +938,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["49FCC2EDF68DCD61"]
+			dependencies: [
+				"4EDF39C88BD5349C"
+				"017D4588A06D1F22"
+			]
 			id: "526F303AF9F9CE89"
 			rewards: [{
 				id: "2BCCF116605F6EAE"
@@ -994,8 +955,8 @@
 				item: "gtceu:lv_machine_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 11.0d
+			x: -3.930952380952391d
+			y: 11.044642857142868d
 		}
 		{
 			dependencies: ["1169EBFFA83FE0C3"]
@@ -1072,7 +1033,7 @@
 				type: "checkmark"
 			}]
 			title: "Uhh... We didn't have this before."
-			x: -6.5d
+			x: -8.5d
 			y: -7.0d
 		}
 		{
@@ -1118,8 +1079,8 @@
 				item: "gtceu:ulv_centrifuge"
 				type: "item"
 			}]
-			x: -2.1853741496598573d
-			y: -0.9818027210884352d
+			x: -2.1690476190476247d
+			y: -0.9958333333333371d
 		}
 		{
 			dependencies: ["221E0F816FB19AC7"]
@@ -1176,53 +1137,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["0593F704E467025C"]
-			id: "211C76A29D02D027"
-			shape: "diamond"
-			tasks: [{
-				id: "4297F3CB66A97A3F"
-				item: "nether_remastered:seal_piece_1"
-				type: "item"
-			}]
-			x: 9.9d
-			y: 5.799999999999999d
-		}
-		{
-			dependencies: ["21C2D598C265D706"]
-			id: "7BB3610D75E30813"
-			shape: "diamond"
-			tasks: [{
-				id: "27FFD75AE8F76109"
-				item: "nether_remastered:seal_piece_2"
-				type: "item"
-			}]
-			x: 11.9d
-			y: 5.800000000000001d
-		}
-		{
-			id: "302EF65C05218BB4"
-			shape: "diamond"
-			tasks: [{
-				id: "40CCF1FA795D564A"
-				item: "nether_remastered:seal_piece_3"
-				type: "item"
-			}]
-			x: 9.9d
-			y: 9.1d
-		}
-		{
-			dependencies: ["36E10C0E5108CAFF"]
-			id: "4F2FE067C6D7A8DB"
-			shape: "diamond"
-			tasks: [{
-				id: "32BADB2383DE146B"
-				item: "nether_remastered:seal_piece_4"
-				type: "item"
-			}]
-			x: 11.9d
-			y: 9.1d
-		}
-		{
 			dependencies: ["3884187493BA916A"]
 			description: ["Create this book and learn the new mod!"]
 			id: "3AE3AD4D597D8061"
@@ -1239,19 +1153,6 @@
 			}]
 			x: 2.0d
 			y: -7.5d
-		}
-		{
-			dependencies: ["310B08BB2DFC4D6F"]
-			hide_dependency_lines: true
-			id: "5A372D32DFCA06C4"
-			shape: "circle"
-			tasks: [{
-				id: "045699D0831DB0CE"
-				item: "minecraft:cake"
-				type: "item"
-			}]
-			x: 13.4d
-			y: 7.5d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1273,17 +1174,19 @@
 				"1884E5AFBD01BF8C"
 				"73BB7E056D47B7AE"
 				"2BE78B06353657CF"
+				"49FCC2EDF68DCD61"
 			]
 			id: "12A8386B33D62B5D"
 			shape: "circle"
+			size: 2.0d
 			tasks: [{
 				id: "285FC1F0E7F72720"
 				title: "They have no use right now..."
 				type: "checkmark"
 			}]
 			title: "Advanced Materials"
-			x: 2.819047619047616d
-			y: 10.739285714285721d
+			x: 2.1d
+			y: 11.0d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1328,16 +1231,6 @@
 			y: -1.9999999999999991d
 		}
 		{
-			id: "36E10C0E5108CAFF"
-			tasks: [{
-				id: "4BC3DFDD749C5ED1"
-				item: "legendarysurvivaloverhaul:sun_fern_gold_leaf"
-				type: "item"
-			}]
-			x: 11.9d
-			y: 10.5d
-		}
-		{
 			dependencies: ["5B7BC416799EA7AC"]
 			id: "7DE54B6A1B9CF2C5"
 			shape: "octagon"
@@ -1349,6 +1242,70 @@
 			title: "Better Steel and Wrought Iron"
 			x: 4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["0593F704E467025C"]
+			id: "55236B3D2827E305"
+			shape: "hexagon"
+			tasks: [{
+				count: 3L
+				id: "2B83EC5BDA4F209C"
+				item: { Count: 3, id: "minecraft:wither_skeleton_skull" }
+				type: "item"
+			}]
+			x: 9.92142857142857d
+			y: 4.9613095238095255d
+		}
+		{
+			dependencies: ["21C2D598C265D706"]
+			id: "1E47C8F008F48B23"
+			shape: "hexagon"
+			tasks: [{
+				count: 4L
+				id: "31171D5FAB2132CE"
+				item: { Count: 4, id: "minecraft:soul_sand" }
+				type: "item"
+			}]
+			x: 11.92142857142857d
+			y: 4.9613095238095255d
+		}
+		{
+			dependencies: [
+				"1E47C8F008F48B23"
+				"55236B3D2827E305"
+			]
+			id: "04E723EB33963031"
+			shape: "heart"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "2B043C16DA893FDF"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.892857142857139d
+			y: 6.075595238095232d
+		}
+		{
+			dependencies: ["49FCC2EDF68DCD61"]
+			id: "50EDD490677F8101"
+			tasks: [{
+				id: "03D8BC61A782833F"
+				title: "mixer"
+				type: "custom"
+			}]
+			x: 0.00833333333334707d
+			y: 10.96875d
+		}
+		{
+			dependencies: ["50EDD490677F8101"]
+			id: "017D4588A06D1F22"
+			tasks: [{
+				id: "3E021FE0FDA31C05"
+				item: { Count: 4, id: "gtceu:cloggrumite_dust" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 11.0d
 		}
 	]
 	title: "Hi, Electricity!"
