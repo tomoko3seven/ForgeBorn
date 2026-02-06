@@ -43,6 +43,12 @@ StartupEvents.registry('block', (event) => {
             'Solid Wrought Iron Casing',
         ],
         [
+            'heat_and_pressure_resistant_machine',
+            'metal',
+            'pickaxe',
+            'Heat and Pressure Resistant Machine Casing',
+        ],
+        [
             'manasteel_livingrock',
             'metal',
             'pickaxe',
