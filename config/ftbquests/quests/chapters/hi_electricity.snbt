@@ -11,16 +11,16 @@
 			image: "gtceu:block/casings/voltage/lv/bottom"
 			rotation: 45.0d
 			width: 2.4d
-			x: -3.930952380952391d
-			y: 10.89702380952381d
+			x: -3.8964285714285722d
+			y: 12.323511904761908d
 		}
 		{
 			height: 2.4d
 			image: "gtceu:block/casings/voltage/lv/bottom"
 			rotation: 0.0d
 			width: 2.4d
-			x: -3.88333333333334d
-			y: 10.944642857142869d
+			x: -3.8488095238095212d
+			y: 12.371130952380966d
 		}
 		{
 			height: 2.0d
@@ -90,7 +90,7 @@
 				optional_task: true
 				type: "item"
 			}]
-			x: 1.0d
+			x: -1.0d
 			y: -4.5d
 		}
 		{
@@ -958,8 +958,8 @@
 				item: "gtceu:lv_machine_casing"
 				type: "item"
 			}]
-			x: -3.9309523809523905d
-			y: 10.944642857142869d
+			x: -3.896428571428572d
+			y: 12.371130952380966d
 		}
 		{
 			dependencies: ["1169EBFFA83FE0C3"]
@@ -1296,8 +1296,8 @@
 				item: "gtceu:ulv_mixer"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 11.0d
+			x: 0.03452380952381873d
+			y: 12.426488095238097d
 		}
 		{
 			dependencies: ["50EDD490677F8101"]
@@ -1307,8 +1307,8 @@
 				item: { Count: 4, id: "gtceu:cloggrumite_dust" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 11.0d
+			x: -1.4654761904761813d
+			y: 12.426488095238097d
 		}
 		{
 			dependencies: ["03B56ECF5AA7CF3E"]
@@ -1342,6 +1342,19 @@
 			}]
 			x: -6.5d
 			y: -5.200000000000001d
+		}
+		{
+			dependencies: ["5B7BC416799EA7AC"]
+			id: "4BB4D52F9F7EB9E3"
+			shape: "heart"
+			size: 1.4d
+			tasks: [{
+				id: "20E3A6B98D95703F"
+				item: "gtceu:primitive_drilling_station"
+				type: "item"
+			}]
+			x: 2.0950680272108997d
+			y: -4.178188775510193d
 		}
 	]
 	title: "Hi, Electricity!"
