@@ -157,6 +157,15 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
                 .workableTieredHullModel('gtceu:block/machines/packer')
         );
     event
+        .create('mixer', 'simple')
+        .tiers(GTValues.ULV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(GTValues.VLVH[tier] + ' Mixer')
+                .recipeType('mixer')
+                .workableTieredHullModel('gtceu:block/machines/mixer')
+        );
+    event
         .create('distillery', 'simple')
         .tiers(GTValues.ULV)
         .definition((tier, builder) =>

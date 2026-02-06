@@ -277,6 +277,28 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'gtceu:ulv_machine_casing' });
 
     // Components: Circuit Boards
+    event.recipes.gtceu
+        .macerator('kubejs:crushed_blue_moss')
+        .itemInputs('undergarden:blue_mogmoss')
+        .itemOutputs('kubejs:crushed_blue_moss')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(20 * 4);
+    event.recipes.gtceu
+        .chemical_reactor('kubejs:blue_moss_cellulose_pulp')
+        .itemInputs('kubejs:crushed_blue_moss', 'gtceu:sodium_hydroxide_dust')
+        .inputFluids('minecraft:water 250')
+        .itemOutputs('kubejs:blue_moss_cellulose_pulp')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(20 * 3);
+    event.recipes.gtceu
+        .alloy_smelter('kubejs:blue_moss_substrate')
+        .itemInputs(
+            'kubejs:blue_moss_cellulose_pulp',
+            'undergarden:ditchbulb_paste'
+        )
+        .itemOutputs('kubejs:blue_moss_substrate')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(20 * 2);
     event.shaped(
         '2x gtceu:resin_circuit_board',
         [
@@ -285,7 +307,7 @@ ServerEvents.recipes((event) => {
             ' R ',
         ],
         {
-            R: 'gtceu:ditchbulb_resin_plate',
+            R: 'kubejs:blue_moss_substrate',
             C: 'gtceu:wood_plate',
         }
     );
@@ -298,7 +320,7 @@ ServerEvents.recipes((event) => {
             'RRR',
         ],
         {
-            R: 'gtceu:ditchbulb_resin_plate',
+            R: 'kubejs:blue_moss_substrate',
             C: 'gtceu:wood_plate',
         }
     );
@@ -508,6 +530,17 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'gtceu:lv_mixer' });
     event.remove({ output: 'gtceu:diode' });
 
+    event.recipes.gtceu
+        .mixer('cloggrumite_dust')
+        .itemInputs(
+            '5x gtceu:cloggrum_dust',
+            'gtceu:vanadium_magnetite_dust',
+            'gtceu:nickel_dust'
+        )
+        .itemOutputs('7x gtceu:cloggrumite_dust')
+        .EUt(10)
+        .duration(20 * 7.5);
+
     // Casings & Hulls
     event.shaped(
         'gtceu:lv_machine_casing',
@@ -518,7 +551,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             W: '#forge:tools/wrenches',
-            S: 'gtceu:cloggrumsteel_plate',
+            S: 'gtceu:cloggrumite_plate',
             P: '#forge:plates/steel',
         }
     );
@@ -532,7 +565,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             T: 'gtceu:steel_plate',
-            S: 'gtceu:cloggrumsteel_plate',
+            S: 'gtceu:cloggrumite_plate',
             C: 'gtceu:lv_machine_casing',
             A: 'gtceu:tin_single_cable',
         }
@@ -547,7 +580,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             W: 'gtceu:polyethylene_large_fluid_pipe',
-            S: 'gtceu:cloggrumsteel_plate',
+            S: 'gtceu:cloggrumite_plate',
             P: '#forge:double_plates/steel',
         }
     );

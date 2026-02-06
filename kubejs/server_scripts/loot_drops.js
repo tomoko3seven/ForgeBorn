@@ -25,6 +25,10 @@ LootJS.modifiers((event) => {
         .addEntityLootModifier('minecraft:wither')
         .killedByPlayer()
         .addLoot('kubejs:wither_heart');
+    event
+        .addEntityLootModifier('minecraft:wither')
+        .killedByPlayer()
+        .addLoot('nether_remastered:seal_of_the_underworld_item');
 
     event
         .addLootTypeModifier(LootType.ENTITY)

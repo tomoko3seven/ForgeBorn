@@ -12,7 +12,7 @@
 			rotation: 45.0d
 			width: 2.4d
 			x: -3.930952380952391d
-			y: 10.99702380952381d
+			y: 10.89702380952381d
 		}
 		{
 			height: 2.4d
@@ -20,7 +20,7 @@
 			rotation: 0.0d
 			width: 2.4d
 			x: -3.88333333333334d
-			y: 11.044642857142868d
+			y: 10.944642857142869d
 		}
 		{
 			height: 2.0d
@@ -505,7 +505,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
@@ -801,7 +801,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["16CDEF2DD759F160"]
+			dependencies: [
+				"16CDEF2DD759F160"
+				"73DF57DF3AB791C5"
+			]
 			id: "055E5B9F67AEC28D"
 			tasks: [{
 				count: 16L
@@ -955,8 +958,8 @@
 				item: "gtceu:lv_machine_casing"
 				type: "item"
 			}]
-			x: -3.930952380952391d
-			y: 11.044642857142868d
+			x: -3.9309523809523905d
+			y: 10.944642857142869d
 		}
 		{
 			dependencies: ["1169EBFFA83FE0C3"]
@@ -1289,12 +1292,12 @@
 			dependencies: ["49FCC2EDF68DCD61"]
 			id: "50EDD490677F8101"
 			tasks: [{
-				id: "03D8BC61A782833F"
-				title: "mixer"
-				type: "custom"
+				id: "461F9049C8E9C198"
+				item: "gtceu:ulv_mixer"
+				type: "item"
 			}]
-			x: 0.00833333333334707d
-			y: 10.96875d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["50EDD490677F8101"]
@@ -1317,6 +1320,28 @@
 			}]
 			x: -6.5d
 			y: -7.0d
+		}
+		{
+			dependencies: ["111E21750DF82BF0"]
+			id: "73DF57DF3AB791C5"
+			tasks: [{
+				id: "1D1F2F82F518A32C"
+				item: "kubejs:blue_moss_cellulose_pulp"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["39FFA422E6794D6E"]
+			id: "111E21750DF82BF0"
+			tasks: [{
+				id: "6C0749225943B220"
+				item: "kubejs:crushed_blue_moss"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.200000000000001d
 		}
 	]
 	title: "Hi, Electricity!"
