@@ -307,4 +307,23 @@ ServerEvents.recipes((event) => {
         .itemOutputs('4x gtceu:livingwood_plate')
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(120);
+    //Mana Tube
+    event.recipes.gtceu
+        .macerator('kubejs:managlass_dust')
+        .itemInputs('botania:mana_glass')
+        .itemOutputs('kubejs:managlass_dust')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(25 * 3);
+    event.recipes.gtceu
+        .forming_press('kubejs:managlass_tube_press')
+        .itemInputs('kubejs:managlass_dust', 'gtceu:ball_casting_mold')
+        .itemOutputs('kubejs:managlass_tube')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(45);
+    event.recipes.gtceu
+        .alloy_smelter('kubejs:managlass_tube_alloy_smelter')
+        .itemInputs('kubejs:managlass_dust', 'gtceu:ball_casting_mold')
+        .itemOutputs('kubejs:managlass_tube')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(45);
 });
