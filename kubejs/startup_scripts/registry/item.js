@@ -92,6 +92,8 @@ StartupEvents.registry('item', (event) => {
 
     event.create('manaweave_thread');
     event.create('manasteel_gear_bundle');
+
+    event.create('managlass_dust');
     event.create('managlass_tube');
     event.create('botanical_thermionic_valve');
     event.create('cursed_cloth');
