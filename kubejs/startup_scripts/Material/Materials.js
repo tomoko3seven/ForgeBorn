@@ -196,6 +196,67 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
         );
 
     event
+        .create('profundium')
+        .color(0x0b1c2d)
+        .ingot()
+
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        );
+    event
+        .create('frigidium')
+        .color(0xbfe9f5)
+        .ingot()
+
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        );
+    event
+        .create('spiritium')
+        .color(0x7a6cff)
+        .ingot()
+
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        );
+    event
+        .create('exordium')
+        .color(0xffb300)
+        .ingot()
+
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        );
+
+    event
         .create('firestone')
         .color(0xd84a1b)
         .ingot()
