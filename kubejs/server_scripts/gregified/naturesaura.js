@@ -65,6 +65,42 @@ ServerEvents.recipes((event) => {
     // Natural Altar (output，input，aura-optional，time-optional, catalyst-optional)
     /*naturesaura.altar('forgeborncore:infusediron_ingot', 'minecraft:iron_ingot', 500, 50)
     naturesaura.altar('forgeborncore:taintedgold_ingot', 'minecraft:gold_ingot', 800, 10)*/
+    naturesaura.tree_ritual(
+        'minecraft:skeleton_skull',
+        [
+            'minecraft:bone',
+            'minecraft:bone',
+            'minecraft:bone',
+            'minecraft:bone',
+            'minecraft:bone',
+            'minecraft:bone',
+            'minecraft:bone',
+            'minecraft:bone',
+        ],
+        'oak_sapling',
+        60
+    );
+    naturesaura.tree_ritual(
+        'minecraft:wither_skeleton_skull',
+        [
+            'tconstruct:necrotic_bone',
+            'tconstruct:necrotic_bone',
+            'tconstruct:necrotic_bone',
+            'tconstruct:necrotic_bone',
+            'tconstruct:necrotic_bone',
+            'tconstruct:necrotic_bone',
+            'tconstruct:necrotic_bone',
+            'tconstruct:necrotic_bone',
+        ],
+        'oak_sapling',
+        60
+    );
+    naturesaura.altar(
+        'minecraft:wither_skeleton_skull',
+        'minecraft:skeleton_skull',
+        500,
+        50
+    );
 
     // Altar of Birthing (entity，input，aura-optional，t ime-optional)
     //naturesaura.animal_spawner('creeper', ['gunpowder', 'green_dye'], 10000, 120)
@@ -135,5 +171,36 @@ ServerEvents.recipes((event) => {
         ],
         'oak_sapling',
         30
+    );
+    //Transmutation
+    naturesaura.tree_ritual(
+        'kubejs:transmutation_core',
+        [
+            'naturesaura:infused_stone',
+            'naturesaura:infused_stone',
+            'kubejs:lurking_soul',
+            'kubejs:omnipetal',
+            'kubejs:omnipetal',
+            'kubejs:lurking_soul',
+            'naturesaura:infused_stone',
+            'naturesaura:infused_stone',
+        ],
+        'oak_sapling',
+        60
+    );
+    naturesaura.tree_ritual(
+        'naturesaura:conversion_catalyst',
+        [
+            'naturesaura:infused_stone',
+            'minecraft:birch_sapling',
+            'kubejs:lurking_soul',
+            'kubejs:transmutation_core',
+            'minecraft:egg',
+            'kubejs:lurking_soul',
+            'minecraft:dark_oak_sapling',
+            'naturesaura:gold_brick',
+        ],
+        'oak_sapling',
+        60
     );
 });
