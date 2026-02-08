@@ -469,8 +469,8 @@
 				title: "WIP!"
 				type: "checkmark"
 			}]
-			x: -10.5d
-			y: -10.5d
+			x: 14.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["43014E117DC60F1D"]
@@ -632,6 +632,503 @@
 			}]
 			x: 3.0d
 			y: 8.5d
+		}
+		{
+			dependencies: ["0776CF6EA514B6C7"]
+			id: "6BE72AE6E3B7855C"
+			shape: "circle"
+			tasks: [{
+				id: "30059ACD44F78C86"
+				title: "wafers"
+				type: "custom"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["36ECF91FB7F5FF53"]
+			id: "179BAFB4F5D17DED"
+			tasks: [{
+				id: "4D8BCB0386D65A79"
+				title: "Warmth Tablet"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["36ECF91FB7F5FF53"]
+			id: "0F3F8CFF48252F96"
+			tasks: [{
+				id: "6CF3793F6C860E61"
+				title: "Comfort Tablet"
+				type: "custom"
+			}]
+			x: -1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["24CE3CC689A2BE77"]
+			id: "6F6B4C43E7B97F51"
+			tasks: [{
+				id: "72E962290273A06A"
+				title: "Cosiness Tablet"
+				type: "custom"
+			}]
+			x: 1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["24CE3CC689A2BE77"]
+			id: "529E3346AEC83AF6"
+			tasks: [{
+				id: "2339493CD1A70B9B"
+				title: "Rain Tablet"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["1FB65FF82188E55C"]
+			id: "2A975E3E62A8C415"
+			tasks: [{
+				id: "637D46223588D6E0"
+				title: "Coldness Tablet"
+				type: "custom"
+			}]
+			x: 3.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1FB65FF82188E55C"]
+			id: "58D93C13EE52A761"
+			tasks: [{
+				id: "24B809628CE9FB50"
+				title: "Hunger Tablet"
+				type: "custom"
+			}]
+			x: 4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["47665C0C7A7BFADF"]
+			id: "5BDFD47A40A47AC8"
+			tasks: [{
+				id: "4304074471A39FAE"
+				title: "Recovery Tablet"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["47665C0C7A7BFADF"]
+			id: "53A4E42BACC8EF18"
+			tasks: [{
+				id: "1A17E460C55BB5FF"
+				title: "Revival Tablet"
+				type: "custom"
+			}]
+			x: -4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["46EA1E76AE0326FA"]
+			id: "1B3FBF5BBC6B6FAE"
+			shape: "heart"
+			size: 1.5d
+			tasks: [{
+				id: "5F28CF0D1BA62CB3"
+				title: "Nether Drilling Station"
+				type: "custom"
+			}]
+			x: -8.75d
+			y: -12.450000000000001d
+		}
+		{
+			dependencies: ["2A975E3E62A8C415"]
+			id: "62E855AE818AB3DC"
+			shape: "circle"
+			tasks: [{
+				id: "51BF67364A809DB4"
+				item: "legendarysurvivaloverhaul:cooling_coat_2"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["179BAFB4F5D17DED"]
+			id: "548D6B03725EAE9A"
+			shape: "circle"
+			tasks: [{
+				id: "0F1574F91947B8EC"
+				item: "legendarysurvivaloverhaul:heating_coat_2"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["58D93C13EE52A761"]
+			id: "3972D2A1EEDAD621"
+			shape: "circle"
+			tasks: [{
+				id: "0FBB6D8C3B3905D5"
+				title: "Industrial Kitchen"
+				type: "custom"
+			}]
+			x: 5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["529E3346AEC83AF6"]
+			id: "4A2192223235EDCE"
+			shape: "circle"
+			tasks: [{
+				id: "16B79153F04254B0"
+				item: "botania:teru_teru_bozu"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["6F6B4C43E7B97F51"]
+			id: "4196FD70ACCFD1AC"
+			shape: "circle"
+			tasks: [{
+				id: "30D39E3E9E214393"
+				item: "botania:holy_cloak"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["6F6B4C43E7B97F51"]
+			id: "39229C453904A281"
+			shape: "circle"
+			tasks: [{
+				id: "1CCB76745E8C0F74"
+				item: "botania:unholy_cloak"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["6F6B4C43E7B97F51"]
+			id: "3BC2A5AC7C30E3F6"
+			shape: "circle"
+			tasks: [{
+				id: "49A2209753ABC558"
+				item: "botania:balance_cloak"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["6F6B4C43E7B97F51"]
+			id: "0913806301861F4D"
+			shape: "circle"
+			tasks: [{
+				id: "3E0319C317AAC0B9"
+				item: "botania:invisibility_cloak"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["61CCA1226206DA3C"]
+			id: "0DD0AEB201835F82"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "384025C89799655A"
+				title: "Terrasteel"
+				type: "custom"
+			}]
+			title: "Chlorophyte Dust"
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["0F3F8CFF48252F96"]
+			id: "26C531E410A523C9"
+			shape: "circle"
+			tasks: [{
+				id: "57A708611647C7AC"
+				item: "botania:travel_belt"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0F3F8CFF48252F96"]
+			id: "510B5BB2AB1D6438"
+			shape: "circle"
+			tasks: [{
+				id: "5FAD5A5CC407DD79"
+				item: "botania:super_travel_belt"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0F3F8CFF48252F96"]
+			id: "1F79B14DBB80373F"
+			shape: "circle"
+			tasks: [{
+				id: "2DF8D3EBF9278B9B"
+				item: "botania:speed_up_belt"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0F3F8CFF48252F96"]
+			id: "4A6BBF538F3C305E"
+			shape: "circle"
+			tasks: [{
+				id: "5BDB64AE56671F61"
+				item: {
+					Count: 1
+					id: "botania:knockback_belt"
+					tag: {
+						baubleUUID: [I;
+							444090176
+							672809270
+							-1343604334
+							329885864
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["5BDFD47A40A47AC8"]
+			id: "23993CC2AEE20E12"
+			shape: "circle"
+			tasks: [{
+				id: "58A59E29B37FC33B"
+				title: "Healer Assistant 2000T"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["53A4E42BACC8EF18"]
+			id: "02B80BAEA5D5CDDD"
+			shape: "circle"
+			tasks: [{
+				id: "392C6B01FF2535CB"
+				title: "Mana-Totem"
+				type: "custom"
+			}]
+			x: -5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0DD0AEB201835F82"]
+			id: "22287674337CF5A9"
+			tasks: [{
+				id: "44B728F0F1B0CB05"
+				title: "chlorophyte raw solution"
+				type: "custom"
+			}]
+			x: -1.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["22287674337CF5A9"]
+			id: "79882AA4C3C57B7C"
+			tasks: [{
+				id: "1352EB578029AE85"
+				title: "livingmetal"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: -16.0d
+		}
+		{
+			id: "7537BDE856E3CB7C"
+			shape: "circle"
+			tasks: [{
+				id: "14219D02CB965C74"
+				title: "boiling mana"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["7537BDE856E3CB7C"]
+			id: "4E699E377E243A4C"
+			tasks: [{
+				id: "30319D09ECD1BC9A"
+				title: "Mana Vapor"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["4E699E377E243A4C"]
+			id: "6457354B4EAB3884"
+			shape: "hexagon"
+			tasks: [{
+				id: "63CA33CAD3D8E2CB"
+				item: "kubejs:pure_mana_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["79882AA4C3C57B7C"]
+			id: "2D900CD726B04617"
+			tasks: [{
+				id: "0C136B59AF204CD7"
+				title: "&"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"6457354B4EAB3884"
+				"2D900CD726B04617"
+			]
+			id: "4ACE9AA950691E63"
+			tasks: [{
+				id: "35FC757820CED84F"
+				title: "raw terrasteel"
+				type: "custom"
+			}]
+			x: -6.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["4ACE9AA950691E63"]
+			id: "683131948BE30C91"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4C8E9E9FD8723326"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["683131948BE30C91"]
+			id: "723C5AC75566D611"
+			tasks: [{
+				id: "1F10B858DF0A9972"
+				item: "kubejs:terrasteel_livingwood_casing"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["723C5AC75566D611"]
+			id: "6AFAD0086ABF83E3"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3FB9AB344711D48C"
+				title: "Essence Disolver"
+				type: "custom"
+			}]
+			x: -12.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["6AFAD0086ABF83E3"]
+			id: "7FA099C556F44606"
+			tasks: [{
+				id: "25D1586B5882E02B"
+				title: "unknown essence"
+				type: "custom"
+			}]
+			x: -12.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["7FA099C556F44606"]
+			id: "361D8E0118A7B963"
+			tasks: [{
+				id: "43901FDD24705632"
+				title: "Raw Water Essence"
+				type: "custom"
+			}]
+			x: -12.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["7FA099C556F44606"]
+			id: "0EE44A8C888B27EA"
+			tasks: [{
+				id: "7C24F0583ADFF226"
+				title: "Raw Wind Essence"
+				type: "custom"
+			}]
+			x: -11.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["7FA099C556F44606"]
+			id: "46EA1E76AE0326FA"
+			tasks: [{
+				id: "7FBEF46B15B8C4D6"
+				title: "Raw Fire Essence"
+				type: "custom"
+			}]
+			x: -10.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["7FA099C556F44606"]
+			id: "42C8693FD5F2C7FA"
+			tasks: [{
+				id: "658CCB1F08CF7CD7"
+				title: "Raw Earth Essence"
+				type: "custom"
+			}]
+			x: -13.5d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"46EA1E76AE0326FA"
+				"361D8E0118A7B963"
+				"0EE44A8C888B27EA"
+				"42C8693FD5F2C7FA"
+			]
+			id: "4F575DAFA0B3B08B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "166D681E6F2F1658"
+				title: "Essence Distillation and Purification Station"
+				type: "custom"
+			}]
+			x: -12.0d
+			y: -11.0d
 		}
 	]
 	title: "&bMedium Voltage"

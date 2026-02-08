@@ -1,0 +1,122 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "useful_items"
+	group: "288DA1F92F7C0A7A"
+	icon: "botania:teru_teru_bozu"
+	id: "2209A36D3327C4BD"
+	images: [
+		{
+			height: 1.0d
+			image: "gui:textures/lv_age.png"
+			rotation: 0.0d
+			width: 1.7d
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "gui:textures/ulv_age.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "gui:textures/steam_age.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.0d
+			y: -8.0d
+		}
+	]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "66FFB5252EEF2A5C"
+			tasks: [{
+				id: "20F23F4F844F59BD"
+				title: "LV Done!"
+				type: "checkmark"
+			}]
+			title: "LV"
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			id: "4D1B1DF3D2294677"
+			tasks: [{
+				id: "76BEF39E65D2FD7E"
+				title: "ULV"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			id: "0DCB161BC77CAA47"
+			tasks: [{
+				id: "190E62F30DB2BA22"
+				title: "MV"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			id: "4A91B5A1AF5BC09A"
+			tasks: [{
+				id: "0F28C0F77E7E936F"
+				title: "Steam"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["66FFB5252EEF2A5C"]
+			id: "7F65EC7166CB2E1A"
+			shape: "circle"
+			tasks: [{
+				id: "0EC1F19F08096BDE"
+				item: {
+					Count: 1
+					id: "travelersboots:travelers_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4A91B5A1AF5BC09A"]
+			id: "22CBAD5CF500EC59"
+			shape: "circle"
+			tasks: [{
+				id: "7276BC79E045575A"
+				item: "extrabotany:walking_cane"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4A91B5A1AF5BC09A"]
+			id: "4C6F8088160AF14C"
+			shape: "circle"
+			tasks: [{
+				id: "13669EB59DB429B9"
+				item: "usefulbackpacks:backpack_small"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+	]
+	title: "Useful Items"
+}

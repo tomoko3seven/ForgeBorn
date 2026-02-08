@@ -1112,7 +1112,9 @@
 		{
 			dependencies: ["60CC6B0FFB125162"]
 			description: ["Used in Ars Nouveau recipes. I recommend crafting this metal as frequently as Manasteel."]
+			hide_dependency_lines: true
 			id: "747104184C6255A9"
+			optional: true
 			shape: "circle"
 			size: 0.8d
 			tasks: [{
@@ -1247,7 +1249,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["0593F704E467025C"]
+			dependencies: [
+				"0593F704E467025C"
+				"394471D30B95C15F"
+			]
 			id: "55236B3D2827E305"
 			shape: "hexagon"
 			tasks: [{
@@ -1260,7 +1265,10 @@
 			y: 4.9613095238095255d
 		}
 		{
-			dependencies: ["21C2D598C265D706"]
+			dependencies: [
+				"21C2D598C265D706"
+				"394471D30B95C15F"
+			]
 			id: "1E47C8F008F48B23"
 			shape: "hexagon"
 			tasks: [{
@@ -1322,7 +1330,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["111E21750DF82BF0"]
+			dependencies: [
+				"111E21750DF82BF0"
+				"6EF72FE4C3597EFB"
+			]
 			id: "73DF57DF3AB791C5"
 			tasks: [{
 				id: "1D1F2F82F518A32C"
@@ -1355,6 +1366,33 @@
 			}]
 			x: 2.0950680272108997d
 			y: -4.178188775510193d
+		}
+		{
+			dependencies: [
+				"1567303A505B75C2"
+				"7E27C475FE68D0FD"
+			]
+			id: "44944439B25243D2"
+			shape: "circle"
+			tasks: [{
+				id: "62BC0775C164F4D2"
+				item: "kubejs:transmutation_core"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -0.8d
+		}
+		{
+			dependencies: ["44944439B25243D2"]
+			id: "394471D30B95C15F"
+			shape: "circle"
+			tasks: [{
+				id: "7D6E37FF94732E8D"
+				item: "naturesaura:conversion_catalyst"
+				type: "item"
+			}]
+			x: 14.001530612244906d
+			y: 4.955463435374156d
 		}
 	]
 	title: "Hi, Electricity!"
