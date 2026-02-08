@@ -77,6 +77,7 @@ StartupEvents.registry('item', (event) => {
     event.create('greg_icon');
     event.create('lurking_soul');
     event.create('omnipetal');
+    event.create('transmutation_core');
     event.create('cloth');
     event.create('coin');
     event.create('rope');
@@ -100,6 +101,12 @@ StartupEvents.registry('item', (event) => {
     event.create('enchanted_fabric');
     event.create('basic_nature_catalyst');
     event.create('obsidian_skull').maxStackSize(1);
+    //AE2
+    /*event.create('logic_processor');
+    event.create('calculation_processor');
+    event.create('engineering_processor');
+    event.create('advanced_processor');
+    event.create('quantum_processor');*/
 
     event
         .create('air_bottle')
