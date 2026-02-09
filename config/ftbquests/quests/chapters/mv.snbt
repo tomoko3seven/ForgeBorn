@@ -848,9 +848,9 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "384025C89799655A"
-				title: "Terrasteel"
-				type: "custom"
+				id: "588203547DD36DA6"
+				item: "kubejs:chlorophyte_dust"
+				type: "item"
 			}]
 			title: "Chlorophyte Dust"
 			x: 0.0d

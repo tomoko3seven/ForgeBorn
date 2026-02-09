@@ -200,11 +200,6 @@ ServerEvents.recipes((event) => {
             1250,
         ],
         [
-            'botania:mana_string',
-            'farmersdelight:rope',
-            1250,
-        ],
-        [
             'botania:manasteel_ingot',
             'gtceu:blue_alloy_ingot',
             3000,

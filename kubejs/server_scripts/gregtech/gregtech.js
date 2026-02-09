@@ -310,7 +310,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'gtceu:ulv_machine_casing' });
 
     event.recipes.gtceu
-        .assembler('gtceu:cobblestone_bricks')
+        .assembler('kubejs:assembler/cobblestone_bricks')
         .itemInputs('4x minecraft:cobblestone', 'minecraft:clay_ball')
         .itemOutputs('4x twigs:cobblestone_bricks')
         .EUt(GTValues.VA[GTValues.ULV])
