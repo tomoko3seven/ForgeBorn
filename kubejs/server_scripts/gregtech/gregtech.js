@@ -81,6 +81,12 @@ ServerEvents.recipes((event) => {
         .circuit(3)
         .EUt(GTValues.VA[GTValues.LV])
         .duration(50);
+    event.recipes.gtceu
+        .alloy_smelter('gtceu:alloy_smelter/glass_with_sand_form')
+        .itemInputs('2x gtceu:glass_dust', 'tconstruct:blank_sand_cast')
+        .itemOutputs('minecraft:glass')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(20 * 7);
 
     event.shaped(
         'gtceu:steel_brick_casing',
