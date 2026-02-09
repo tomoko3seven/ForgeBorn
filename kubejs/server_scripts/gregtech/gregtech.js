@@ -4,6 +4,33 @@ ServerEvents.recipes((event) => {
     // ==========================================
 
     // Removals
+    //prettier-ignore
+    event.remove({ id: 'gtceu:primitive_blast_furnace/steel_from_coal_dust' });
+    event.remove({ id: 'gtceu:primitive_blast_furnace/steel_from_coke_dust' });
+    event.remove({ id: 'gtceu:primitive_blast_furnace/steel_from_coke_gem' });
+    event.remove({ id: 'gtceu:primitive_blast_furnace/steel_from_coal_gem' });
+    event.remove({
+        id: 'gtceu:primitive_blast_furnace/steel_from_charcoal_dust',
+    });
+    event.remove({
+        id: 'gtceu:primitive_blast_furnace/steel_from_charcoal_dust',
+    });
+    event.remove({
+        id: 'gtceu:primitive_blast_furnace/steel_from_charcoal_gem',
+    });
+
+    event.remove({ input: 'gtceu:tiny_cobblestone_dust' });
+    event.remove({ input: 'gtceu:small_cobblestone_dust' });
+    event.remove({ input: 'gtceu:cobblestone_nugget' });
+    event.remove({ input: 'gtceu:cobblestone_dust' });
+    event.remove({ input: 'gtceu:cobblestone_block' });
+    event.remove({ output: 'gtceu:tiny_cobblestone_dust' });
+    event.remove({ output: 'gtceu:small_cobblestone_dust' });
+    event.remove({ output: 'gtceu:cobblestone_nugget' });
+    event.remove({ output: 'gtceu:cobblestone_dust' });
+    event.remove({ output: 'gtceu:cobblestone_block' });
+
+    event.remove({ output: 'gtceu:steel_brick_casing' });
     event.remove({ output: 'gtceu:lp_steam_extractor' });
     event.remove({ id: 'gtceu:shaped/bronze_bricks_hull' });
     event.remove({ id: 'gtceu:shaped/bronze_hull' });
@@ -282,6 +309,13 @@ ServerEvents.recipes((event) => {
     event.remove({ id: 'gtceu:shaped/vacuum_tube' });
     event.remove({ output: 'gtceu:ulv_machine_casing' });
 
+    event.recipes.gtceu
+        .assembler('gtceu:cobblestone_bricks')
+        .itemInputs('4x minecraft:cobblestone', 'minecraft:clay_ball')
+        .itemOutputs('4x twigs:cobblestone_bricks')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(20 * 2);
+
     // Components: Circuit Boards
     event.recipes.gtceu
         .macerator('kubejs:crushed_blue_moss')
@@ -430,7 +464,7 @@ ServerEvents.recipes((event) => {
     );
 
     event.recipes.gtceu
-        .assembler('ulv_casink')
+        .assembler('ulv_casing')
         .itemInputs('8x gtceu:wrought_iron_plate')
         .circuit(6)
         .itemOutputs('gtceu:ulv_machine_casing')
@@ -614,7 +648,7 @@ ServerEvents.recipes((event) => {
         .itemInputs('#minecraft:planks')
         .circuit(1)
         .inputFluids('minecraft:water 144')
-        .itemOutputs('4x gtceu:wood_plate')
+        .itemOutputs('6x gtceu:wood_plate')
         .EUt(10)
         .duration(20 * 4.5);
 
@@ -623,7 +657,7 @@ ServerEvents.recipes((event) => {
         .itemInputs('gtceu:treated_wood_planks')
         .circuit(2)
         .inputFluids('minecraft:water 144')
-        .itemOutputs('4x gtceu:treated_wood_plate')
+        .itemOutputs('6x gtceu:treated_wood_plate')
         .EUt(10)
         .duration(20 * 4.5);
 
@@ -632,7 +666,23 @@ ServerEvents.recipes((event) => {
         .itemInputs('ars_nouveau:archwood_planks')
         .circuit(3)
         .inputFluids('minecraft:water 144')
-        .itemOutputs('4x gtceu:archwood_plate')
+        .itemOutputs('6x gtceu:archwood_plate')
+        .EUt(28)
+        .duration(20 * 4.5);
+    event.recipes.gtceu
+        .sawmill('livingwood_planks')
+        .itemInputs('botania:livingwood')
+        .circuit(3)
+        .inputFluids('minecraft:water 144')
+        .itemOutputs('6x gtceu:livingwood_plate')
+        .EUt(28)
+        .duration(20 * 4.5);
+    event.recipes.gtceu
+        .sawmill('dreamwood_planks')
+        .itemInputs('botania:dreamwood_planks')
+        .circuit(3)
+        .inputFluids('minecraft:water 144')
+        .itemOutputs('6x gtceu:dreamwood_plate')
         .EUt(28)
         .duration(20 * 4.5);
 
