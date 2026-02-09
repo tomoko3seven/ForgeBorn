@@ -2,9 +2,9 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'tconstruct:seared_brick' });
     event.remove({ output: 'tconstruct:smeltery_controller' });
 
-    event.smelting('tconstruct:seared_brick', 'kubejs:seared_bricks_raw');
+    //event.smelting('tconstruct:seared_brick', 'kubejs:seared_bricks_raw');
 
-    event.shaped(
+    /*event.shaped(
         '8x kubejs:seared_bricks_raw',
         [
             'GGG',
@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
             G: 'tconstruct:grout',
             B: 'gtceu:brick_wooden_form',
         }
-    );
+    );*/
     event.shaped(
         'tconstruct:smeltery_controller',
         [
