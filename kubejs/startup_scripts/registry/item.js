@@ -159,14 +159,25 @@ StartupEvents.registry('item', (event) => {
     event
         .create('pure_mana_dust')
         .maxStackSize(64) /*.texture(`kubejs:item/botania/manadiamond_dust`)*/;
+    event.create('chlorophyte_dust');
+    event.create('raw_terrasteel_crystal');
 
     //------Tablets------
     event.create('infernal_tablet');
-
+    //T1 Tablets
     event.create('earth_tablet');
     event.create('fire_tablet');
     event.create('water_tablet');
     event.create('wind_tablet');
+    //T2 Tablets
+    event.create('revival_tablet');
+    event.create('recovery_tablet');
+    event.create('warmth_tablet');
+    event.create('comfort_tablet');
+    event.create('cosiness_tablet');
+    event.create('rain_tablet');
+    event.create('coldness_tablet');
+    event.create('hunger_tablet');
 
     //Ars Noveau
     event.create('magebloom_fiber_cloth').maxStackSize(64);

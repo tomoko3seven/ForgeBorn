@@ -649,9 +649,9 @@
 			dependencies: ["36ECF91FB7F5FF53"]
 			id: "179BAFB4F5D17DED"
 			tasks: [{
-				id: "4D8BCB0386D65A79"
-				title: "Warmth Tablet"
-				type: "custom"
+				id: "0F9ED42D1964CAEA"
+				item: "kubejs:warmth_tablet"
+				type: "item"
 			}]
 			x: -2.0d
 			y: -13.0d
@@ -660,9 +660,9 @@
 			dependencies: ["36ECF91FB7F5FF53"]
 			id: "0F3F8CFF48252F96"
 			tasks: [{
-				id: "6CF3793F6C860E61"
-				title: "Comfort Tablet"
-				type: "custom"
+				id: "48854D243B3BA7FB"
+				item: "kubejs:comfort_tablet"
+				type: "item"
 			}]
 			x: -1.0d
 			y: -14.0d
@@ -671,9 +671,9 @@
 			dependencies: ["24CE3CC689A2BE77"]
 			id: "6F6B4C43E7B97F51"
 			tasks: [{
-				id: "72E962290273A06A"
-				title: "Cosiness Tablet"
-				type: "custom"
+				id: "37FBDB6E396AF15D"
+				item: "kubejs:cosiness_tablet"
+				type: "item"
 			}]
 			x: 1.0d
 			y: -14.0d
@@ -682,9 +682,9 @@
 			dependencies: ["24CE3CC689A2BE77"]
 			id: "529E3346AEC83AF6"
 			tasks: [{
-				id: "2339493CD1A70B9B"
-				title: "Rain Tablet"
-				type: "custom"
+				id: "2771D2AC9D80413E"
+				item: "kubejs:rain_tablet"
+				type: "item"
 			}]
 			x: 2.0d
 			y: -13.0d
@@ -693,9 +693,9 @@
 			dependencies: ["1FB65FF82188E55C"]
 			id: "2A975E3E62A8C415"
 			tasks: [{
-				id: "637D46223588D6E0"
-				title: "Coldness Tablet"
-				type: "custom"
+				id: "2E342F4CD656364E"
+				item: "kubejs:coldness_tablet"
+				type: "item"
 			}]
 			x: 3.5d
 			y: -11.0d
@@ -704,9 +704,9 @@
 			dependencies: ["1FB65FF82188E55C"]
 			id: "58D93C13EE52A761"
 			tasks: [{
-				id: "24B809628CE9FB50"
-				title: "Hunger Tablet"
-				type: "custom"
+				id: "6A948D7ACA95589D"
+				item: "kubejs:hunger_tablet"
+				type: "item"
 			}]
 			x: 4.0d
 			y: -9.5d
@@ -715,9 +715,9 @@
 			dependencies: ["47665C0C7A7BFADF"]
 			id: "5BDFD47A40A47AC8"
 			tasks: [{
-				id: "4304074471A39FAE"
-				title: "Recovery Tablet"
-				type: "custom"
+				id: "249F5379E372B4A3"
+				item: "kubejs:recovery_tablet"
+				type: "item"
 			}]
 			x: -3.0d
 			y: -11.0d
@@ -726,9 +726,9 @@
 			dependencies: ["47665C0C7A7BFADF"]
 			id: "53A4E42BACC8EF18"
 			tasks: [{
-				id: "1A17E460C55BB5FF"
-				title: "Revival Tablet"
-				type: "custom"
+				id: "404EBEBCAF5AE565"
+				item: "kubejs:revival_tablet"
+				type: "item"
 			}]
 			x: -4.0d
 			y: -9.5d

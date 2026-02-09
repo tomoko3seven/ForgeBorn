@@ -1110,23 +1110,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["60CC6B0FFB125162"]
-			description: ["Used in Ars Nouveau recipes. I recommend crafting this metal as frequently as Manasteel."]
-			hide_dependency_lines: true
-			id: "747104184C6255A9"
-			optional: true
-			shape: "circle"
-			size: 0.8d
-			tasks: [{
-				id: "1DD637DEF12DF1F0"
-				item: "gtceu:managold_ingot"
-				type: "item"
-			}]
-			title: "First Step into Ars Noveau"
-			x: 1.0248299319727963d
-			y: -0.7428571428571473d
-		}
-		{
 			dependencies: ["310B08BB2DFC4D6F"]
 			description: ["Using Tinkers' Construct, you will be able to mine Obsidian."]
 			hide_dependency_lines: true
