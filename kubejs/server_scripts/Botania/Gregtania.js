@@ -196,7 +196,12 @@ ServerEvents.recipes((event) => {
         ],
         [
             'botania:mana_string',
-            'ars_nouveau:magebloom_fiber',
+            'kubejs:rope',
+            1250,
+        ],
+        [
+            'botania:mana_string',
+            'farmersdelight:rope',
             1250,
         ],
         [
