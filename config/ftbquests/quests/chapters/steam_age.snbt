@@ -27,8 +27,8 @@
 			image: "gui:textures/steam_age.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: -1.8341666666666683d
-			y: 1.7333333333333272d
+			x: -3.9170833333333306d
+			y: 1.5428571428571445d
 		}
 	]
 	order_index: 1
@@ -50,7 +50,7 @@
 				type: "checkmark"
 			}]
 			title: "Hi, hot gas water!"
-			x: -1.9302380952381029d
+			x: -3.930238095238103d
 			y: -0.4285714285714306d
 		}
 		{
@@ -89,8 +89,8 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.0d
+			x: -2.5d
+			y: 4.000000000000001d
 		}
 		{
 			dependencies: ["22801BC8E559BC55"]
@@ -102,11 +102,14 @@
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: 9.299999999999997d
-			y: -2.0d
+			x: 8.94147826318029d
+			y: -3.4702380952381064d
 		}
 		{
-			dependencies: ["22801BC8E559BC55"]
+			dependencies: [
+				"22801BC8E559BC55"
+				"28200BE4C7149A8E"
+			]
 			description: ["Allows you to create plates more efficiently: 3 Ingots yield 2 Plates."]
 			id: "54ACE3A0AC660A50"
 			shape: "hexagon"
@@ -115,8 +118,8 @@
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 6.799999999999997d
-			y: -3.5d
+			x: 6.646240167942196d
+			y: -3.4845238095238216d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -142,11 +145,11 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: 8.799999999999997d
-			y: -3.5d
+			x: 9.26528778698981d
+			y: -2.008333333333347d
 		}
 		{
-			dependencies: ["68D6CBA3B0836C88"]
+			dependencies: ["7086A802F1457933"]
 			description: ["A steam-powered multi-block furnace. It smelts items quickly and processes up to 4 items simultaneously."]
 			id: "1F8932F343B91A7C"
 			shape: "octagon"
@@ -156,8 +159,8 @@
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: 4.539946853741508d
-			y: -2.284693877551007d
+			x: 4.4399468537415085d
+			y: -6.484693877551007d
 		}
 		{
 			dependencies: [
@@ -208,8 +211,8 @@
 				item: "gtceu:primitive_blast_furnace"
 				type: "item"
 			}]
-			x: 14.88287680697277d
-			y: -1.5370748299320007d
+			x: 14.955763977466013d
+			y: -3.4845238095238216d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -224,8 +227,8 @@
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: -1.0d
+			y: 4.000000000000001d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -240,8 +243,8 @@
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 0.5d
+			y: 4.000000000000001d
 		}
 		{
 			dependencies: ["1B627DEC9EB7A6D4"]
@@ -253,8 +256,8 @@
 				item: "gtceu:hp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.5d
+			x: -1.0d
+			y: 5.4999999999999964d
 		}
 		{
 			dependencies: ["43067C07F1CF53D8"]
@@ -266,8 +269,8 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.5d
+			x: -2.5d
+			y: 5.4999999999999964d
 		}
 		{
 			dependencies: ["353C34E5559C0D6C"]
@@ -280,8 +283,8 @@
 				item: "gtceu:hp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 4.5d
+			x: 0.5d
+			y: 5.4999999999999964d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -293,7 +296,7 @@
 				item: "gtceu:bronze_normal_fluid_pipe"
 				type: "item"
 			}]
-			x: 0.3685182823129409d
+			x: -1.031481717687059d
 			y: -1.9275510204081527d
 		}
 		{
@@ -308,7 +311,7 @@
 				title: "Potin "
 				type: "checkmark"
 			}]
-			x: 0.3685182823129409d
+			x: -1.031481717687059d
 			y: -3.4632653061224445d
 		}
 		{
@@ -325,7 +328,7 @@
 			y: -2.5704081632652986d
 		}
 		{
-			dependencies: ["41298DA7145EE9D4"]
+			dependencies: ["38A022BA620F25B0"]
 			id: "1D66BF00AD04DB6F"
 			shape: "octagon"
 			size: 2.0d
@@ -335,14 +338,11 @@
 				item: { Count: 32, id: "gtceu:steel_ingot" }
 				type: "item"
 			}]
-			x: 14.835257759353725d
-			y: 0.891496598639421d
+			x: 14.920049691751721d
+			y: 2.9690476190476147d
 		}
 		{
-			dependencies: [
-				"41298DA7145EE9D4"
-				"1D66BF00AD04DB6F"
-			]
+			dependencies: ["41298DA7145EE9D4"]
 			description: ["I recommend building several of these furnaces immediately to speed up Steel production. Remember, wall sharing is enabled."]
 			id: "288B39E91190E173"
 			optional: true
@@ -352,8 +352,8 @@
 				title: "MORE STEEL!"
 				type: "checkmark"
 			}]
-			x: 16.44001966411565d
-			y: -1.5285714285714243d
+			x: 16.43053571428574d
+			y: -3.4819727891156242d
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
@@ -381,7 +381,7 @@
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 0.39119047619046654d
+			x: -1.0088095238095334d
 			y: -0.3928571428571459d
 		}
 		{
@@ -390,9 +390,9 @@
 			shape: "hexagon"
 			size: 1.4d
 			tasks: [{
-				count: 8L
+				count: 4L
 				id: "54342951F3977E45"
-				item: { Count: 8, id: "minecraft:piston" }
+				item: "minecraft:piston"
 				type: "item"
 			}]
 			x: 7.782803996598652d
@@ -459,8 +459,8 @@
 				item: "gtceu:concrete_bucket"
 				type: "item"
 			}]
-			x: 12.180329838966822d
-			y: -2.000425170068027d
+			x: 12.118630952380961d
+			y: -1.9571428571428697d
 		}
 		{
 			dependencies: [
@@ -504,7 +504,7 @@
 				type: "item"
 			}]
 			x: 9.943278725552695d
-			y: 3.2005102040816302d
+			y: 4.000510204081631d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -515,8 +515,8 @@
 				item: "gtceu:hp_steam_extractor"
 				type: "item"
 			}]
-			x: 5.399999999999997d
-			y: 3.0000000000000013d
+			x: 2.0d
+			y: 4.000000000000001d
 		}
 		{
 			dependencies: [
@@ -530,8 +530,8 @@
 				item: "gtceu:raw_rubber_dust"
 				type: "item"
 			}]
-			x: 9.900421582695541d
-			y: 4.871938775510204d
+			x: 4.0d
+			y: 4.000000000000001d
 		}
 		{
 			dependencies: ["4E90911EBD418378"]
@@ -543,8 +543,8 @@
 				item: "gtceu:sticky_resin"
 				type: "item"
 			}]
-			x: 5.400421582695548d
-			y: 4.836224489795918d
+			x: 4.0d
+			y: 5.4999999999999964d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -556,8 +556,8 @@
 				item: "gtceu:rubber_sapling"
 				type: "item"
 			}]
-			x: 5.4d
-			y: 6.299999999999994d
+			x: 2.0d
+			y: 5.4999999999999964d
 		}
 		{
 			description: [
@@ -579,14 +579,11 @@
 					type: "item"
 				}
 			]
-			x: 11.800421582695535d
-			y: 3.236224489795929d
+			x: 9.94005952380953d
+			y: 5.542857142857134d
 		}
 		{
-			dependencies: [
-				"5673A00D1E6CC930"
-				"1D66BF00AD04DB6F"
-			]
+			dependencies: ["5673A00D1E6CC930"]
 			description: ["Needs no explanation. Can be upgraded and dyed."]
 			id: "6E36E7EBAFBCB686"
 			shape: "circle"
@@ -595,10 +592,14 @@
 				item: "usefulbackpacks:backpack_small"
 				type: "item"
 			}]
-			x: 14.78488095238096d
-			y: 4.832908163265309d
+			x: 13.435337478741515d
+			y: 5.5608843537415105d
 		}
 		{
+			dependencies: [
+				"35610B562243BC08"
+				"2FC3FD82DD09F249"
+			]
 			id: "5673A00D1E6CC930"
 			shape: "circle"
 			tasks: [{
@@ -607,10 +608,10 @@
 				type: "item"
 			}]
 			x: 11.784880952380952d
-			y: 4.868622448979593d
+			y: 5.568622448979591d
 		}
 		{
-			dependencies: ["03DBF1961AE21C76"]
+			dependencies: ["02E8A60664368ED7"]
 			description: ["Just like in real life, a Vacuum Tube needs... a vacuum. You will unlock more efficient recipes for these later."]
 			id: "3906BB5555D181F2"
 			shape: "circle"
@@ -619,8 +620,8 @@
 				item: "kubejs:not_vacuum_tube"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.5d
+			x: 7.211488095238106d
+			y: 1.5071428571428527d
 		}
 		{
 			dependencies: ["3906BB5555D181F2"]
@@ -633,7 +634,7 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.6d
 			y: 1.5d
 		}
 		{
@@ -653,11 +654,11 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 2.5d
+			x: 16.584791932397998d
+			y: 4.577551020408194d
 		}
 		{
-			dependencies: ["68D6CBA3B0836C88"]
+			dependencies: ["7086A802F1457933"]
 			id: "5911B5A496A0C2B6"
 			shape: "octagon"
 			tasks: [{
@@ -665,11 +666,11 @@
 				item: "gtceu:steam_grinder"
 				type: "item"
 			}]
-			x: 3.5999999999999996d
-			y: -1.5d
+			x: 3.5d
+			y: -5.7d
 		}
 		{
-			dependencies: ["68D6CBA3B0836C88"]
+			dependencies: ["7086A802F1457933"]
 			id: "538B15079F0C05CB"
 			shape: "octagon"
 			tasks: [{
@@ -677,11 +678,11 @@
 				item: "steamadditions:steam_separator"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 6.4d
+			y: -5.7d
 		}
 		{
-			dependencies: ["68D6CBA3B0836C88"]
+			dependencies: ["7086A802F1457933"]
 			id: "3EE4B77E9AA5F07F"
 			shape: "octagon"
 			size: 1.2d
@@ -690,8 +691,8 @@
 				item: "steamadditions:steam_foundry"
 				type: "item"
 			}]
-			x: 5.700000000000001d
-			y: -2.3d
+			x: 5.600000000000001d
+			y: -6.5d
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
@@ -702,8 +703,8 @@
 				item: "tconstruct:blank_sand_cast"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.5d
+			x: 3.9d
+			y: 1.5000000000000004d
 		}
 		{
 			dependencies: ["30BF65A6563283AC"]
@@ -714,8 +715,129 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.5d
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"293DE93723EE3C5C"
+				"6DEE2335B62CFF24"
+			]
+			id: "02E8A60664368ED7"
+			shape: "circle"
+			tasks: [{
+				id: "5AC12FB6DCB8B77D"
+				item: "gtceu:glass_tube"
+				type: "item"
+			}]
+			x: 6.1d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68D6CBA3B0836C88"]
+			id: "7086A802F1457933"
+			shape: "circle"
+			tasks: [{
+				id: "60B41EAD9614C487"
+				title: "Multiblocks"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["293DE93723EE3C5C"]
+			id: "3026FDD7B5B7AD61"
+			shape: "circle"
+			tasks: [{
+				id: "1B7CE29A45866E70"
+				item: "tconstruct:seared_fuel_tank"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["41298DA7145EE9D4"]
+			id: "38A022BA620F25B0"
+			shape: "circle"
+			tasks: [{
+				count: 32L
+				id: "06532220C7869861"
+				item: { Count: 32, id: "gtceu:wrought_iron_ingot" }
+				type: "item"
+			}]
+			x: 14.955763977466013d
+			y: -0.3416666666666828d
+		}
+		{
+			dependencies: ["1D66BF00AD04DB6F"]
+			id: "6A64E28187844BBB"
+			shape: "circle"
+			tasks: [{
+				id: "6CE7654D094ED162"
+				item: "gtceu:charcoal_pile_igniter"
+				type: "item"
+			}]
+			x: 16.592897002551055d
+			y: 2.944047619047609d
+		}
+		{
+			dependencies: ["1D66BF00AD04DB6F"]
+			id: "6DEE2335B62CFF24"
+			shape: "circle"
+			tasks: [{
+				id: "4DEB9012EA3048A9"
+				item: "gtceu:ball_casting_mold"
+				type: "item"
+			}]
+			x: 6.098621120323159d
+			y: 2.9797619047618937d
+		}
+		{
+			id: "2FC3FD82DD09F249"
+			shape: "circle"
+			tasks: [{
+				id: "56A6BFD932CE0E3D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:salt"
+					}
+				}
+				type: "item"
+			}]
+			x: 11.812906834608867d
+			y: 4.015476190476178d
+		}
+		{
+			dependencies: [
+				"6E36E7EBAFBCB686"
+				"1D66BF00AD04DB6F"
+			]
+			id: "648FEDC747A48184"
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "4F52700516A0D38F"
+				item: "usefulbackpacks:backpack_medium"
+				type: "item"
+			}]
+			x: 14.920049691751721d
+			y: 5.551190476190456d
+		}
+		{
+			dependencies: ["21B69724512B0BFF"]
+			id: "28200BE4C7149A8E"
+			shape: "circle"
+			tasks: [{
+				id: "7E62A2E9643B028E"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: 7.765287786989809d
+			y: -3.4845238095238216d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
