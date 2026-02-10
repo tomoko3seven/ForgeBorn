@@ -93,18 +93,12 @@ ServerEvents.recipes((event) => {
         )
         .damageIngredient('minecraft:shears');
 
-    event.shaped(
-        'kubejs:tanned_leather',
-        [
-            ' S ',
-            'SLS',
-            ' S ',
-        ],
-        {
-            L: 'minecraft:leather',
-            S: 'minecraft:string',
-        }
-    );
+    event.shapeless('kubejs:tanned_leather', [
+        'minecraft:leather',
+        'kubejs:sulfur_chunk',
+        '#forge:salts',
+        'minecraft:water_bucket',
+    ]);
 
     event.recipes.farmersdelight.cutting(
         'kubejs:sulfuric_mushroom',
