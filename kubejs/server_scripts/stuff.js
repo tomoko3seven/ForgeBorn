@@ -99,20 +99,6 @@ ServerEvents.recipes((event) => {
             R: 'kubejs:wind_tablet',
         }
     );
-    event.remove({ output: 'constructionwand:core_angel' });
-    event.shaped(
-        'constructionwand:core_angel',
-        [
-            'PFP',
-            'FRF',
-            'PFP',
-        ],
-        {
-            P: '#forge:plates/managold',
-            F: '#forge:feathers',
-            R: 'kubejs:wind_tablet',
-        }
-    );
     //Backpacks
     event.remove({ output: 'usefulbackpacks:backpack_small' });
     event.shaped(
@@ -129,20 +115,22 @@ ServerEvents.recipes((event) => {
             S: 'minecraft:string',
         }
     );
+    event.remove({ output: 'usefulbackpacks:backpack_medium' });
     event.shaped(
         'usefulbackpacks:backpack_medium',
         [
-            'RIR',
-            'LSL',
-            'LLL',
+            'RLR',
+            'CSC',
+            'RLR',
         ],
         {
-            R: 'kubejs:rope',
-            I: 'gtceu:iron_ring',
+            R: 'gtceu:steel_ring',
+            C: 'minecraft:chest',
             L: 'kubejs:tanned_leather',
             S: 'usefulbackpacks:backpack_small',
         }
     );
+    event.remove({ output: 'usefulbackpacks:backpack_large' });
     event.shaped(
         'usefulbackpacks:backpack_large',
         [
