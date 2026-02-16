@@ -96,6 +96,57 @@ ServerEvents.recipes((event) => {
             A: 'minecraft:glass_pane',
         }
     );
+    //Coats
+    //Tier 1
+    event.remove({ output: 'legendarysurvivaloverhaul:cooling_coat_1' });
+    event.remove({ output: 'legendarysurvivaloverhaul:heating_coat_1' });
+    event.remove({ output: 'legendarysurvivaloverhaul:thermal_coat_1' });
+
+    event.remove({ output: 'legendarysurvivaloverhaul:cooling_coat_2' });
+    event.remove({ output: 'legendarysurvivaloverhaul:heating_coat_2' });
+    event.remove({ output: 'legendarysurvivaloverhaul:thermal_coat_2' });
+
+    event.remove({ output: 'legendarysurvivaloverhaul:cooling_coat_3' });
+    event.remove({ output: 'legendarysurvivaloverhaul:heating_coat_3' });
+    event.remove({ output: 'legendarysurvivaloverhaul:thermal_coat_3' });
+
+    event.shaped(
+        'legendarysurvivaloverhaul:cooling_coat_1',
+        [
+            ' PR',
+            'PRS',
+            'RSS',
+        ],
+        {
+            R: '#forge:rods/froststeel',
+            P: '#forge:plates/iron',
+            S: 'legendarysurvivaloverhaul:cold_string',
+        }
+    );
+    event.shaped(
+        'legendarysurvivaloverhaul:heating_coat_1',
+        [
+            ' PR',
+            'PRS',
+            'RSS',
+        ],
+        {
+            R: '#forge:rods/livingwood',
+            P: '#forge:plates/gold',
+            S: 'legendarysurvivaloverhaul:warm_string',
+        }
+    );
+    event.recipes.botania.runic_altar(
+        'legendarysurvivaloverhaul:thermal_coat_1',
+        [
+            'legendarysurvivaloverhaul:cooling_coat_1',
+            'legendarysurvivaloverhaul:heating_coat_1',
+            '#forge:nuggets/bronze',
+            '#forge:nuggets/bronze',
+        ],
+        1000
+    );
+    //Tier 2
 
     event.shapeless('legendarysurvivaloverhaul:plaster', [
         'kubejs:wool_clutch',

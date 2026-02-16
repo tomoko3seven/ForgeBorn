@@ -31,7 +31,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["178321392340A155"]
@@ -43,7 +43,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["178321392340A155"]
@@ -51,8 +51,8 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				id: "67FC256D91AA85CC"
-				item: "gtceu:agglomeration_plate"
+				id: "398EE590B87320DA"
+				item: "kubejs:manasteel_livingrock_casing"
 				type: "item"
 			}]
 			title: "AGGLOMERATION!"
@@ -69,7 +69,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["61CCA1226206DA3C"]

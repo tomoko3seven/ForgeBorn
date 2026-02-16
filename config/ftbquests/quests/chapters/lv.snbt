@@ -84,8 +84,8 @@
 				item: "functionalstorage:storage_controller"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -7.0d
+			x: 9.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -95,8 +95,8 @@
 				item: "toms_storage:ts.storage_terminal"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -6.0d
+			x: 9.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -111,8 +111,8 @@
 				title: "First \"Digital\" Storage"
 				type: "checkmark"
 			}]
-			x: 9.0d
-			y: -7.0d
+			x: 10.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["443ADA5BA384C78C"]
@@ -149,20 +149,6 @@
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
-			icon: "gtceu:lv_energy_input_hatch"
-			id: "6D99600BC5801200"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "56A4685FC2E0CDDE"
-				item: "gtceu:lv_energy_input_hatch"
-				type: "item"
-			}]
-			x: 10.2d
-			y: -5.0d
-		}
-		{
-			dependencies: ["22B0D4002FE6E8C2"]
 			id: "3F4056CDD3721F21"
 			shape: "circle"
 			tasks: [{
@@ -170,8 +156,8 @@
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -6.0d
+			x: 10.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["61DC26C52C32EA88"]
@@ -347,12 +333,13 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -6.5d
+			y: -9.5d
 		}
 		{
 			dependencies: [
 				"71C1522D64B4EBA8"
 				"3745EF14D98B4EDA"
+				"17033CB2A4C48A3F"
 			]
 			id: "30D87588E7B344C5"
 			shape: "hexagon"
@@ -374,7 +361,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -5.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["641A75A9A7BF3A46"]
@@ -385,8 +372,8 @@
 				item: "kubejs:dense_mana_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: 1.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -1162,6 +1149,64 @@
 			}]
 			x: 17.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["48F84CA632784C94"]
+			id: "0CAF9E2ECA74F7FF"
+			shape: "circle"
+			tasks: [{
+				id: "28F75EB5047B73E7"
+				item: "kubejs:managlass_tube"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0CAF9E2ECA74F7FF"]
+			id: "17033CB2A4C48A3F"
+			tasks: [{
+				id: "46A465FFBE34AF43"
+				item: "kubejs:botanical_thermionic_valve"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["76BA1804CD874BBF"]
+			id: "48F84CA632784C94"
+			shape: "circle"
+			tasks: [{
+				id: "3CB6229FC98FAAC0"
+				item: "kubejs:managlass_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			id: "76BA1804CD874BBF"
+			shape: "circle"
+			tasks: [{
+				id: "187BA8F2695BB55D"
+				item: "botania:mana_glass"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45FAEFAEEC4343B9"]
+			id: "2390276867267AE8"
+			shape: "circle"
+			tasks: [{
+				id: "7D354B3FBCC713FA"
+				item: "legendarysurvivaloverhaul:large_canteen"
+				type: "item"
+			}]
+			x: -0.8154761904761898d
+			y: 2.785714285714292d
 		}
 	]
 	title: "Low Voltage"

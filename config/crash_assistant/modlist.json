@@ -114,11 +114,6 @@
     "modId": "buildinggadgets2",
     "version": "1.0.8"
   },
-  "cc-tweaked-1.20.1-forge-1.113.1.jar": {
-    "jarName": "cc-tweaked-1.20.1-forge-1.113.1.jar",
-    "modId": "computercraft",
-    "version": "1.113.1"
-  },
   "certain_questing_additions-neoforge-1.1.3+mc1.21.1.jar": {
     "jarName": "certain_questing_additions-neoforge-1.1.3+mc1.21.1.jar",
     "modId": "certain_questing_additions",
@@ -169,6 +164,11 @@
     "modId": "controlling",
     "version": "12.0.2"
   },
+  "copycats-3.0.4+mc.1.20.1-forge.jar": {
+    "jarName": "copycats-3.0.4+mc.1.20.1-forge.jar",
+    "modId": "copycats",
+    "version": "3.0.4+mc.1.20.1-forge"
+  },
   "Corgilib-Forge-1.20.1-4.0.3.4.jar": {
     "jarName": "Corgilib-Forge-1.20.1-4.0.3.4.jar",
     "modId": "corgilib",
@@ -183,6 +183,21 @@
     "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.10.jar",
     "modId": "crash_assistant",
     "version": "1.10.10"
+  },
+  "create-1.20.1-6.0.8.jar": {
+    "jarName": "create-1.20.1-6.0.8.jar",
+    "modId": "create",
+    "version": "6.0.8"
+  },
+  "createcontraptionterminals-1.20-1.2.0.jar": {
+    "jarName": "createcontraptionterminals-1.20-1.2.0.jar",
+    "modId": "createcontraptionterminals",
+    "version": "1.2.0"
+  },
+  "createthreadedtrains-forge-1.20.1-1.0.0.jar": {
+    "jarName": "createthreadedtrains-forge-1.20.1-1.0.0.jar",
+    "modId": "createthreadedtrains",
+    "version": "1.20.1-1.0.0"
   },
   "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar": {
     "jarName": "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar",
@@ -273,6 +288,11 @@
     "jarName": "EpheroLib-1.20.1-FORGE-1.2.0.jar",
     "modId": "epherolib",
     "version": "0.1.2"
+  },
+  "escalated-1.2.1-create.6.0.8-mc.1.20.1-forge.jar": {
+    "jarName": "escalated-1.2.1-create.6.0.8-mc.1.20.1-forge.jar",
+    "modId": "escalated",
+    "version": "1.2.1"
   },
   "eventwrapper-forge-1.20.1-1.1.3.jar": {
     "jarName": "eventwrapper-forge-1.20.1-1.1.3.jar",
@@ -444,6 +464,11 @@
     "modId": "immersive_machinery",
     "version": "0.2.0+1.20.1"
   },
+  "infernalmobs-1.20.1.11.jar": {
+    "jarName": "infernalmobs-1.20.1.11.jar",
+    "modId": "infernalmobs",
+    "version": "1.20.1.11"
+  },
   "inventoryessentials-forge-1.20.1-8.2.14.jar": {
     "jarName": "inventoryessentials-forge-1.20.1-8.2.14.jar",
     "modId": "inventoryessentials",
@@ -491,6 +516,11 @@
   },
   "kotlinforforge-4.11.0-all.jar": {
     "jarName": "kotlinforforge-4.11.0-all.jar"
+  },
+  "kubejs-create-forge-2001.3.0-build.8.jar": {
+    "jarName": "kubejs-create-forge-2001.3.0-build.8.jar",
+    "modId": "kubejs_create",
+    "version": "2001.3.0-build.8"
   },
   "kubejs-forge-2001.6.5-build.16.jar": {
     "jarName": "kubejs-forge-2001.6.5-build.16.jar",
@@ -592,11 +622,6 @@
     "modId": "mousetweaks",
     "version": "2.25.1"
   },
-  "MythicBotany-1.20.1-4.0.4.jar": {
-    "jarName": "MythicBotany-1.20.1-4.0.4.jar",
-    "modId": "mythicbotany",
-    "version": "1.20.1-4.0.4"
-  },
   "NaturesAura-39.4.jar": {
     "jarName": "NaturesAura-39.4.jar",
     "modId": "naturesaura",
@@ -626,11 +651,6 @@
     "jarName": "notenoughanimations-forge-1.10.1-mc1.20.1.jar",
     "modId": "notenoughanimations",
     "version": "1.10.1"
-  },
-  "oceanicrealms-1.0.6.4-hotfix.jar": {
-    "jarName": "oceanicrealms-1.0.6.4-hotfix.jar",
-    "modId": "oceanicrealms",
-    "version": "1.0.6"
   },
   "OctoLib-FORGE-0.5.0.1+1.20.1.jar": {
     "jarName": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
@@ -702,11 +722,6 @@
     "modId": "avaritia",
     "version": "1.3.9.1"
   },
-  "RegionsUnexploredForge-0.5.6+1.20.1.jar": {
-    "jarName": "RegionsUnexploredForge-0.5.6+1.20.1.jar",
-    "modId": "regions_unexplored",
-    "version": "0.5.6"
-  },
   "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
     "jarName": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
     "modId": "resourcefulconfig",
@@ -726,11 +741,6 @@
     "jarName": "rubberdrawers-1.1.jar",
     "modId": "rubberdrawers",
     "version": "1.1"
-  },
-  "RUExpansion-1.0.1+1.20.1.jar": {
-    "jarName": "RUExpansion-1.0.1+1.20.1.jar",
-    "modId": "ru_expansion",
-    "version": "1.0.1"
   },
   "Searchables-forge-1.20.1-1.0.3.jar": {
     "jarName": "Searchables-forge-1.20.1-1.0.3.jar",
@@ -792,6 +802,11 @@
     "modId": "sgjourney",
     "version": "0.6.42"
   },
+  "Steam_Rails-1.6.15-beta+forge-mc1.20.1.jar": {
+    "jarName": "Steam_Rails-1.6.15-beta+forge-mc1.20.1.jar",
+    "modId": "railways",
+    "version": "1.6.15-beta+forge-mc1.20.1"
+  },
   "steamadditions-1.5.1.jar": {
     "jarName": "steamadditions-1.5.1.jar",
     "modId": "steamadditions",
@@ -836,6 +851,11 @@
     "jarName": "The_Undergarden-1.20.1-0.8.14.jar",
     "modId": "undergarden",
     "version": "0.8.14"
+  },
+  "tide-forge-1.20.1-2.0.3.jar": {
+    "jarName": "tide-forge-1.20.1-2.0.3.jar",
+    "modId": "tide",
+    "version": "2.0.3"
   },
   "titanium-1.20.1-3.8.32.jar": {
     "jarName": "titanium-1.20.1-3.8.32.jar",
@@ -906,6 +926,11 @@
     "jarName": "vintagedelight-0.1.6(1).jar",
     "modId": "vintagedelight",
     "version": "0.1.6"
+  },
+  "WWOO-FABRIC+FORGE+QUILT-2.0.0.jar": {
+    "jarName": "WWOO-FABRIC+FORGE+QUILT-2.0.0.jar",
+    "modId": "wwoo_forge",
+    "version": "2.0.0"
   },
   "xtonesreworked-1.0.4-F_1.20.1-47.2.0.jar": {
     "jarName": "xtonesreworked-1.0.4-F_1.20.1-47.2.0.jar",

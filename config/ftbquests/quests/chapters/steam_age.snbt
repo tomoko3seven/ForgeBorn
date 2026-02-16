@@ -560,6 +560,7 @@
 			y: 5.4999999999999964d
 		}
 		{
+			dependencies: ["46E9664F5053BF68"]
 			description: [
 				"Currently, to obtain Sulfur Mushrooms, you must kill mobs; every mob has a low chance to drop them. Cut the mushrooms on a Cutting Board to get Sulfur Chunks."
 				""
@@ -838,6 +839,32 @@
 			}]
 			x: 7.765287786989809d
 			y: -3.4845238095238216d
+		}
+		{
+			id: "46E9664F5053BF68"
+			shape: "circle"
+			tasks: [
+				{
+					id: "084A3CCD686045DA"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "5E226296197123FD"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					title: "Any Knife"
+					type: "item"
+				}
+			]
+			title: "Chop Chop"
+			x: 8.547430644132682d
+			y: 5.536904761904744d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

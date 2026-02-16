@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
         }
     );
     event.remove({ output: 'naturesaura:calling_spirit' });
-    event.shaped(
+    /*event.shaped(
         '3x naturesaura:calling_spirit',
         [
             ' I ',
@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
                 '{stored_type:"naturesaura:overworld"}'
             ),
         }
-    );
+    );*/
 
     // Natural Altar (output，input，aura-optional，time-optional, catalyst-optional)
     /*naturesaura.altar('forgeborncore:infusediron_ingot', 'minecraft:iron_ingot', 500, 50)

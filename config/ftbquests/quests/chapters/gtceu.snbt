@@ -915,6 +915,18 @@
 			x: -0.37474489795922494d
 			y: -0.2121598639455229d
 		}
+		{
+			dependencies: ["7E1A7E5E5EE9A90B"]
+			id: "5E96E5CBB0BCD07A"
+			shape: "circle"
+			tasks: [{
+				id: "37AE17295945CBCB"
+				item: "legendarysurvivaloverhaul:canteen"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
 	]
 	title: "First Days of Caveman"
 }
