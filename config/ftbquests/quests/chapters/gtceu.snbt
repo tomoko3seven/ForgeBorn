@@ -198,7 +198,10 @@
 			y: -1.6307823129252057d
 		}
 		{
-			dependencies: ["3A4B35AA64F60096"]
+			dependencies: [
+				"60ECB1BE4EC30A0C"
+				"3A4B35AA64F60096"
+			]
 			description: ["I advise you to chunk-load your base and continuously mine for Copper and Tin. Stockpiling Bronze now will make the next stage much less painful."]
 			id: "73FB99F48CD69B25"
 			rewards: [{
@@ -215,8 +218,8 @@
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
-			x: -1.6600765306122813d
-			y: 0.5824829931972957d
+			x: -1.1117346938775512d
+			y: -0.48426870748298967d
 		}
 		{
 			dependencies: ["21DC8ECCCE15351E"]
@@ -246,8 +249,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.8971513605442283d
-			y: -1.6484693877550995d
+			x: -0.8872448979591852d
+			y: -1.6271258503401356d
 		}
 		{
 			dependencies: ["5D617C14AF5E2ABB"]
@@ -273,8 +276,8 @@
 					type: "item"
 				}
 			]
-			x: -1.717219387755124d
-			y: -0.8270408163265159d
+			x: 0.5181972789115648d
+			y: -1.6420918367346857d
 		}
 		{
 			dependencies: ["4D45BC7F9DD88068"]
@@ -324,8 +327,8 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -3.5172193877551443d
-			y: -0.03656462585032472d
+			x: -2.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["661E54379A9CDCEE"]
@@ -343,8 +346,8 @@
 				type: "checkmark"
 			}]
 			title: "Best source of fuel"
-			x: -3.0d
-			y: 1.5d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["661E54379A9CDCEE"]
@@ -358,8 +361,8 @@
 				type: "checkmark"
 			}]
 			title: "BLOW UP - Radiohead"
-			x: -4.100000000000001d
-			y: 1.5d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
@@ -912,8 +915,8 @@
 				type: "item"
 			}]
 			title: "Advice For Getting Resources"
-			x: -0.37474489795922494d
-			y: -0.2121598639455229d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
@@ -926,6 +929,19 @@
 			}]
 			x: -4.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["3A2F8256E86DC5F3"]
+			id: "60ECB1BE4EC30A0C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0D9243555A46E690"
+				title: "Kiln"
+				type: "custom"
+			}]
+			x: -3.4818027210884352d
+			y: -0.4706632653061149d
 		}
 	]
 	title: "First Days of Caveman"

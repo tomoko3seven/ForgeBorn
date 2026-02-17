@@ -18,9 +18,9 @@ ServerEvents.recipes((event) => {
     event.shaped(
         Item.of('kubejs:rope'),
         [
+            '  S',
             ' S ',
-            ' S ',
-            ' S ',
+            'S  ',
         ],
         {
             S: 'minecraft:string',
