@@ -10,8 +10,8 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.runic_altar(
         'torchmaster:megatorch',
         [
-            'regions_unexplored:brimwood_log',
-            'regions_unexplored:brimwood_log',
+            'minecraft:cherry_log',
+            'minecraft:cherry_log',
             'extendedcrafting:luminessence_block',
             'gtceu:rose_gold_block',
             'gtceu:rose_gold_block',

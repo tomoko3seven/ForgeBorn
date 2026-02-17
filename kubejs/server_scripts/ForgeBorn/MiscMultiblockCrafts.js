@@ -1,8 +1,8 @@
-ServerEvents.recipes((event) => {
+/*ServerEvents.recipes((event) => {
     //Lava Furnace
     event.recipes.gtceu
         .lava_furnace()
-        .itemInputs('#forge:normal_stone')
+        .itemInputs('minecraft:cobblestone')
         .outputFluids('minecraft:lava 1000')
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(20 * 10);
@@ -263,4 +263,4 @@ ServerEvents.recipes((event) => {
             .duration(20 * recipe.duration)
             .EUt(GTValues.VA[GTValues.MV], 2);
     });
-});
+});*/
