@@ -124,9 +124,10 @@
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				id: "5A6A3B68CB581932"
-				item: "kubejs:undergarden_dim"
-				type: "item"
+				dimension: "undergarden:undergarden"
+				icon: "kubejs:undergarden_dim"
+				id: "20BF70F18D4625C0"
+				type: "dimension"
 			}]
 			title: "Fall through Bedrock."
 			x: -10.499999999999998d
