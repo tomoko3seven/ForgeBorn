@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
     event.remove({ mod: 'ironfurnaces' });
-    event.remove({ id: 'tconstruct:common/basalt_blast_furnace' });
+    /*event.remove({ id: 'tconstruct:common/basalt_blast_furnace' });
     function furnaceCrafting(u, o, a, b, c) {
         event.shaped(
             o,
@@ -127,5 +127,5 @@ ServerEvents.recipes((event) => {
         'gtceu:coke_gem',
         'gtceu:creosote_bucket',
         'ironfurnaces:augment_fuel'
-    );
+    );*/
 });

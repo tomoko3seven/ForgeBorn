@@ -38,8 +38,8 @@ ServerEvents.recipes((event) => {
         .itemInputs('kubejs:livingrock_circuit_board')
         .itemOutputs('kubejs:mana_infused_livingrock_circuit_board')
         .inputFluids('kubejs:dense_mana 300')
+        .EUt(GTValues.VA[GTValues.MV])
         .duration(20)
-        .EUt(GTValues.VA[GTValues.MV]);
 
     // Mana Chip (ULV)
     event.recipes.gtceu

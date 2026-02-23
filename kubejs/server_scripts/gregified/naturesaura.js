@@ -1,4 +1,4 @@
-/*ServerEvents.recipes((event) => {
+ServerEvents.recipes((event) => {
     const { naturesaura } = event.recipes;
     event.remove({ output: 'naturesaura:infused_iron' });
     event.remove({ output: 'naturesaura:tainted_gold' });
@@ -40,7 +40,7 @@
         }
     );
     event.remove({ output: 'naturesaura:calling_spirit' });
-    /*event.shaped(
+    event.shaped(
         '3x naturesaura:calling_spirit',
         [
             ' I ',
@@ -60,12 +60,12 @@
                 '{stored_type:"naturesaura:overworld"}'
             ),
         }
-    );*/
+    );
 
     // Natural Altar (output，input，aura-optional，time-optional, catalyst-optional)
-    /*naturesaura.altar('forgeborncore:infusediron_ingot', 'minecraft:iron_ingot', 500, 50)
-    naturesaura.altar('forgeborncore:taintedgold_ingot', 'minecraft:gold_ingot', 800, 10)*/
-    /*naturesaura.tree_ritual(
+    //naturesaura.altar('forgeborncore:infusediron_ingot', 'minecraft:iron_ingot', 500, 50)
+    //naturesaura.altar('forgeborncore:taintedgold_ingot', 'minecraft:gold_ingot', 800, 10)
+    naturesaura.tree_ritual(
         'minecraft:skeleton_skull',
         [
             'minecraft:bone',
@@ -100,7 +100,7 @@
         'minecraft:skeleton_skull',
         500,
         50
-    );*/
+    );
 
     // Altar of Birthing (entity，input，aura-optional，t ime-optional)
     //naturesaura.animal_spawner('creeper', ['gunpowder', 'green_dye'], 10000, 120)
@@ -110,7 +110,7 @@
         naturesaura.offering('2x forgeborncore:skyingot_ingot', 'forgeborncore:taintedgold_ingot', 'naturesaura:calling_spirit')*/
 
     // Tree Ritual（output，input，sapling-optional, time-optional）
-    /*event.remove({ output: 'naturesaura:nature_altar' });
+    event.remove({ output: 'naturesaura:nature_altar' });
     naturesaura.tree_ritual(
         'naturesaura:nature_altar',
         [
@@ -203,4 +203,4 @@
         'oak_sapling',
         60
     );
-});*/
+});

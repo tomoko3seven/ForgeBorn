@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_machinery"
+	group: "636E307A32BE4F2F"
+	id: "4E39B2A1A478E545"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "69E65F4028C1F3B4"
+			shape: "circle"
+			tasks: [{
+				id: "05C8954F96FD8EC9"
+				title: "Useful Machines!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69E65F4028C1F3B4"]
+			id: "129946EC10C7BB9A"
+			shape: "circle"
+			tasks: [{
+				id: "37351B47E290F4F5"
+				item: "immersive_machinery:redstone_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["129946EC10C7BB9A"]
+			id: "35EB17139B0C9446"
+			shape: "heart"
+			size: 1.4d
+			tasks: [{
+				id: "40DD952BB5EA3B9B"
+				item: {
+					Count: 1
+					id: "immersive_machinery:bamboo_bee"
+					tag: {
+						ContainerPositions: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["129946EC10C7BB9A"]
+			id: "1893820CAD428435"
+			shape: "heart"
+			size: 1.4d
+			tasks: [{
+				id: "7B6B1B41394FF549"
+				item: "immersive_machinery:redstone_sheep"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["209B76485EFF5AEF"]
+			id: "1BDD5419546ED40D"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "19DD670586EA51A3"
+				item: "immersive_machinery:tunnel_digger"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69E65F4028C1F3B4"]
+			id: "597E9922218612D4"
+			shape: "circle"
+			tasks: [{
+				id: "6AFCD00FFF4D369E"
+				item: "minecraft:conduit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["597E9922218612D4"]
+			id: "26878C5ACE1661D3"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "606D1A6243B406CA"
+				item: "immersive_machinery:copperfin"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69E65F4028C1F3B4"]
+			id: "209B76485EFF5AEF"
+			shape: "circle"
+			tasks: [{
+				id: "4ACCDD21B57DF5F4"
+				item: "immersive_machinery:iron_drill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["209B76485EFF5AEF"]
+			id: "60BDBE4CFE5221BF"
+			shape: "circle"
+			tasks: [{
+				id: "1ACB93D8693E0278"
+				item: "immersive_machinery:diamond_drill"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["60BDBE4CFE5221BF"]
+			id: "5024BAB82AEFFEF1"
+			shape: "circle"
+			tasks: [{
+				id: "615F9B757198111C"
+				item: "immersive_machinery:netherite_drill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+	]
+	title: "Immersive Machinery"
+}

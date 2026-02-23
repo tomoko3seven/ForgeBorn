@@ -445,7 +445,7 @@ ServerEvents.recipes((event) => {
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(20 * 5);
 
-    event.recipes.gtceu
+    /*event.recipes.gtceu
         .extraterrestial_agglomeration('kubejs:test')
         .itemInputs('kubejs:wind_tablet')
         .itemInputs('16x minecraft:wheat_seeds')
@@ -453,7 +453,7 @@ ServerEvents.recipes((event) => {
         .inputFluids('kubejs:dense_mana 100')
         .itemOutputs('4x legendarysurvivaloverhaul:ice_fern_seeds')
         .EUt(GTValues.VA[GTValues.HV])
-        .duration(20 * 5);
+        .duration(20 * 5);*/
 
     event.recipes.gtceu
         .assembler('cobblestone_bricks')

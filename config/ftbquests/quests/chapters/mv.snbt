@@ -30,8 +30,8 @@
 				item: "gtceu:mv_runic_assembler"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.5d
+			x: -1.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["178321392340A155"]
@@ -42,8 +42,8 @@
 				item: "gtceu:mv_mana_infuser"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.5d
+			x: 1.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["178321392340A155"]
@@ -127,8 +127,8 @@
 				item: "buildinggadgets2:gadget_building"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 14.0d
+			x: 22.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4CB1455C2F29A3F1"]
@@ -138,8 +138,8 @@
 				item: "buildinggadgets2:gadget_exchanging"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 14.0d
+			x: 23.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4CB1455C2F29A3F1"]
@@ -153,8 +153,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 14.0d
+			x: 24.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4CB1455C2F29A3F1"]
@@ -175,8 +175,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: 14.0d
+			x: 25.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["43014E117DC60F1D"]
@@ -202,8 +202,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: 12.5d
+			x: 22.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1A7423033F08BBD2"]
@@ -213,8 +213,8 @@
 				item: "functionalstorage:configuration_tool"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 12.5d
+			x: 23.0d
+			y: 5.5d
 		}
 		{
 			hide_dependency_lines: true
@@ -225,8 +225,8 @@
 				title: "Wireless Drawers"
 				type: "checkmark"
 			}]
-			x: 7.5d
-			y: 12.5d
+			x: 21.0d
+			y: 5.5d
 		}
 		{
 			hide_dependency_lines: true
@@ -237,8 +237,8 @@
 				title: "Building Tools"
 				type: "checkmark"
 			}]
-			x: 7.5d
-			y: 14.0d
+			x: 21.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["43014E117DC60F1D"]
@@ -280,15 +280,15 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["7C93AA2D9DDBD3AF"]
 			id: "7B5764F3814C0341"
+			shape: "gear"
 			tasks: [{
 				id: "5862EDBD4BE40874"
 				item: "gtceu:crystallyne_gem"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["05D348654FFA22B1"]
@@ -309,8 +309,8 @@
 				item: "gtceu:crystallyne_dust"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.5d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			id: "5C29EEE07BF005A2"
@@ -320,8 +320,8 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: -6.899999999999999d
-			y: 2.5d
+			x: 0.0d
+			y: 7.999999999999998d
 		}
 		{
 			dependencies: ["5C29EEE07BF005A2"]
@@ -331,8 +331,8 @@
 				item: "gtceu:lumi_acid_bucket"
 				type: "item"
 			}]
-			x: -6.899999999999999d
-			y: 4.5d
+			x: 2.0d
+			y: 7.999999999999998d
 		}
 		{
 			dependencies: [
@@ -345,8 +345,8 @@
 				item: "gtceu:lumicrystalline_slurry_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 6.0d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2A85BBB33F0AC3CE"]
@@ -356,8 +356,8 @@
 				item: "kubejs:lumicrystalline_seed"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 7.5d
+			x: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -370,8 +370,8 @@
 				item: "gtceu:lumicrystalline_gem"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.5d
+			x: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0776CF6EA514B6C7"]
@@ -383,8 +383,8 @@
 				item: "gtceu:lumicrystalltine_alloy_ingot"
 				type: "item"
 			}]
-			x: -9.666666666666671d
-			y: 7.488095238095241d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7C93AA2D9DDBD3AF"]
@@ -411,21 +411,9 @@
 			y: -3.5d
 		}
 		{
-			id: "797B9B69C4015234"
-			shape: "circle"
-			tasks: [{
-				id: "57F603E2B62D5D5A"
-				title: "New buses"
-				type: "checkmark"
-			}]
-			x: -9.699999999999998d
-			y: 2.5d
-		}
-		{
 			dependencies: [
 				"5502EF3E129A1B0E"
 				"4354A3D91C476404"
-				"797B9B69C4015234"
 			]
 			id: "7CFF5DC75B51FD0A"
 			shape: "hexagon"
@@ -446,8 +434,8 @@
 				title: "New Metalls"
 				type: "checkmark"
 			}]
-			x: 7.5d
-			y: 11.0d
+			x: 21.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7AA5CE6E3AB24FF3"]
@@ -457,8 +445,8 @@
 				item: "extendedcrafting:ender_ingot"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 11.0d
+			x: 22.0d
+			y: 4.0d
 		}
 		{
 			description: ["NOT COMPLETED"]
@@ -469,8 +457,8 @@
 				title: "WIP!"
 				type: "checkmark"
 			}]
-			x: 14.0d
-			y: -7.0d
+			x: 10.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["43014E117DC60F1D"]
@@ -480,19 +468,22 @@
 				item: "gtceu:mv_electrolyzer"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["43014E117DC60F1D"]
+			dependencies: [
+				"43014E117DC60F1D"
+				"7D079A955917F6F5"
+			]
 			id: "16C1B4269375B9D3"
 			tasks: [{
 				id: "2370BB41CADCA496"
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["48926DA73000B62B"]
@@ -503,11 +494,14 @@
 				title: "Easy Aluminium!"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 4.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["5F611F850DDDA517"]
+			dependencies: [
+				"5F611F850DDDA517"
+				"2CABE9C3C33734A3"
+			]
 			id: "3A203FF1626504BB"
 			shape: "circle"
 			tasks: [{
@@ -515,8 +509,8 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: 3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -524,27 +518,29 @@
 				"3A203FF1626504BB"
 			]
 			id: "5EDC072ADEA059A3"
+			shape: "circle"
 			tasks: [{
 				id: "7548573BEB680DD9"
 				item: "gtceu:silicon_wafer"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.0d
+			x: 3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
 				"5EDC072ADEA059A3"
-				"13757B5B271A9AA1"
+				"559856E0F473692F"
 			]
 			id: "20DDE40195E70B4D"
+			shape: "circle"
 			tasks: [{
 				id: "16B0D8DE4A6CB0D6"
 				item: "gtceu:ulpic_wafer"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: 7.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -552,42 +548,17 @@
 				"16C1B4269375B9D3"
 			]
 			id: "2A58BCE47C77577C"
+			shape: "hexagon"
 			tasks: [{
 				id: "570D82D8EB5B7E17"
 				item: "gtceu:ulpic_chip"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 9.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["43014E117DC60F1D"]
-			hide_dependency_lines: true
-			id: "13757B5B271A9AA1"
-			shape: "circle"
-			tasks: [{
-				id: "18663CF6A11F1603"
-				item: "gtceu:mv_laser_engraver"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["2A58BCE47C77577C"]
-			id: "4231EC4514D9C4CA"
-			shape: "hexagon"
-			size: 1.3d
-			tasks: [{
-				id: "176A2A765825373B"
-				item: "gtceu:mv_energy_input_hatch"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.199999999999999d
-		}
-		{
-			dependencies: ["6BF9C1C574A21C42"]
+			dependencies: ["17571E5E8FF584E7"]
 			id: "018CA45EB0AD1EAE"
 			shape: "circle"
 			tasks: [{
@@ -595,19 +566,20 @@
 				title: "Vacuum Growth Oven"
 				type: "custom"
 			}]
-			x: -7.5d
-			y: 9.0d
+			x: 9.5d
+			y: 7.0d
 		}
 		{
-			dependencies: ["4231EC4514D9C4CA"]
+			dependencies: ["17571E5E8FF584E7"]
 			id: "6BF9C1C574A21C42"
+			shape: "circle"
 			tasks: [{
 				id: "5AA3315774BC75FA"
 				title: "New Recipes"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 8.999999999999998d
+			x: 11.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6BF9C1C574A21C42"]
@@ -618,8 +590,8 @@
 				item: "gtca:green_house"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 9.0d
+			x: 15.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6BF9C1C574A21C42"]
@@ -630,8 +602,8 @@
 				title: "Compact Growth Chamber"
 				type: "custom"
 			}]
-			x: 3.0d
-			y: 8.5d
+			x: 15.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0776CF6EA514B6C7"]
@@ -642,8 +614,8 @@
 				title: "wafers"
 				type: "custom"
 			}]
-			x: -7.5d
-			y: 6.0d
+			x: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["36ECF91FB7F5FF53"]
@@ -743,8 +715,8 @@
 				title: "Nether Drilling Station"
 				type: "custom"
 			}]
-			x: -8.75d
-			y: -12.450000000000001d
+			x: -8.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["2A975E3E62A8C415"]
@@ -962,6 +934,7 @@
 			y: -16.0d
 		}
 		{
+			dependencies: ["48A5BCC3BA55D012"]
 			id: "7537BDE856E3CB7C"
 			shape: "circle"
 			tasks: [{
@@ -973,8 +946,12 @@
 			y: -17.5d
 		}
 		{
-			dependencies: ["7537BDE856E3CB7C"]
+			dependencies: [
+				"7537BDE856E3CB7C"
+				"71CD010BE909C5AC"
+			]
 			id: "4E699E377E243A4C"
+			shape: "circle"
 			tasks: [{
 				id: "30319D09ECD1BC9A"
 				title: "Mana Vapor"
@@ -1060,6 +1037,7 @@
 		{
 			dependencies: ["6AFAD0086ABF83E3"]
 			id: "7FA099C556F44606"
+			shape: "circle"
 			tasks: [{
 				id: "25D1586B5882E02B"
 				title: "unknown essence"
@@ -1129,6 +1107,650 @@
 			}]
 			x: -12.0d
 			y: -11.0d
+		}
+		{
+			dependencies: ["4B94A52CC6EC267D"]
+			id: "4647686F021B1AE4"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "731153184FAA02F5"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4F575DAFA0B3B08B"]
+			id: "7231470BA3EC28A3"
+			tasks: [{
+				id: "5468D5D6020C8D3F"
+				title: "All essences"
+				type: "custom"
+			}]
+			x: -11.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["43014E117DC60F1D"]
+			id: "2202E109035370EB"
+			shape: "circle"
+			tasks: [{
+				id: "5B0673E2C51F9CF1"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2202E109035370EB"]
+			id: "4B94A52CC6EC267D"
+			shape: "circle"
+			tasks: [{
+				id: "7265CD75EE9DFEA6"
+				item: "gtceu:mv_electric_piston"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2202E109035370EB"
+				"4B94A52CC6EC267D"
+			]
+			id: "645059F139E04241"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "56B2CB1D5E827DA7"
+				item: "gtceu:mv_bender"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3D20F9888F9FB384"]
+			id: "559856E0F473692F"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "6A23C225332E22FC"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: 7.500000000000001d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4B94A52CC6EC267D"]
+			id: "1F6858E5966B7AD6"
+			shape: "circle"
+			tasks: [{
+				id: "022A5AA224EED367"
+				item: "gtceu:mv_robot_arm"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2202E109035370EB"]
+			id: "0EE40516BA207B6A"
+			shape: "circle"
+			tasks: [{
+				id: "035FF190DBAE7794"
+				item: "gtceu:mv_electric_pump"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0EE40516BA207B6A"
+				"4B94A52CC6EC267D"
+				"17571E5E8FF584E7"
+			]
+			id: "7FB45D0D20E30AC1"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5041A31308F4963E"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0EE40516BA207B6A"]
+			id: "35DBEFEF6E46A7E8"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "2247E3E17A6EC59E"
+				item: "gtceu:mv_fluid_regulator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2202E109035370EB"]
+			id: "7D079A955917F6F5"
+			shape: "circle"
+			tasks: [{
+				id: "341C0CF4D76AA918"
+				item: "gtceu:mv_conveyor_module"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1F6858E5966B7AD6"
+				"7D079A955917F6F5"
+			]
+			id: "6DE095A6975AA83F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "207AE3B05ECD240D"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"43014E117DC60F1D"
+				"11B63012EDEF100B"
+			]
+			id: "3D20F9888F9FB384"
+			shape: "circle"
+			tasks: [{
+				id: "6C05B9AD1DDCE410"
+				item: "gtceu:mv_emitter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D20F9888F9FB384"]
+			id: "339617DFF6ABF735"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "17297A1E84399275"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F575DAFA0B3B08B"]
+			id: "74B6A5749D3AE68E"
+			tasks: [{
+				id: "4235367C5B512AE0"
+				title: "Degraded essential mass"
+				type: "custom"
+			}]
+			x: -12.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2A58BCE47C77577C"]
+			id: "17571E5E8FF584E7"
+			shape: "circle"
+			tasks: [{
+				id: "2F5390362866A672"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			id: "5302379EE372BDB6"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "5089F78FD5CF8D44"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"7231470BA3EC28A3"
+				"7CFF5DC75B51FD0A"
+			]
+			id: "4DBBAE8BB22E3FB6"
+			tasks: [{
+				id: "460786C7477FD200"
+				title: "Color Catalyst"
+				type: "custom"
+			}]
+			x: -11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["74B6A5749D3AE68E"]
+			id: "75E1394A5490F4A6"
+			shape: "circle"
+			tasks: [{
+				id: "32B6B6FF66EA416F"
+				title: "Liquid Evil"
+				type: "checkmark"
+			}]
+			title: "Useful in Future"
+			x: -14.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4DBBAE8BB22E3FB6"]
+			id: "7CC8D9C0C4DED9A6"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "6B28FDD9434567E5"
+				title: "Essence Reactor"
+				type: "custom"
+			}]
+			title: "Essence Reactor MK1"
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["178321392340A155"]
+			id: "0F49C3CBDACCBFBE"
+			optional: true
+			shape: "circle"
+			tasks: [
+				{
+					id: "220435314331A84B"
+					item: {
+						Count: 1
+						id: "extrabotany:starry_idol_headgear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "25958167DF424DFD"
+					item: {
+						Count: 1
+						id: "extrabotany:starry_idol_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "548D4CFDEF593029"
+					item: {
+						Count: 1
+						id: "extrabotany:starry_idol_skirt"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "509F19C9C22029F1"
+					item: {
+						Count: 1
+						id: "extrabotany:starry_idol_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["43014E117DC60F1D"]
+			hide_dependency_lines: true
+			id: "2CABE9C3C33734A3"
+			shape: "circle"
+			tasks: [{
+				count: 32L
+				id: "2682BE75F97244A4"
+				item: { Count: 32, id: "gtceu:silicon_dust" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5EDC072ADEA059A3"
+				"559856E0F473692F"
+			]
+			id: "048E208EEB969117"
+			shape: "circle"
+			tasks: [{
+				id: "1F795720A59FDF30"
+				item: "gtceu:cpu_wafer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5EDC072ADEA059A3"
+				"559856E0F473692F"
+			]
+			id: "303DC6ACDB6DE8E4"
+			shape: "circle"
+			tasks: [{
+				id: "730E4803CAA98DDD"
+				item: "gtceu:ram_wafer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"5EDC072ADEA059A3"
+				"559856E0F473692F"
+			]
+			id: "1DD970B55D3461C2"
+			shape: "circle"
+			tasks: [{
+				id: "0EF2107DBE5A2FF1"
+				item: "gtceu:ilc_wafer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["048E208EEB969117"]
+			id: "712DDF5F3D89E241"
+			shape: "hexagon"
+			tasks: [{
+				id: "7F4CE74B114A50E6"
+				item: "gtceu:cpu_chip"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["303DC6ACDB6DE8E4"]
+			id: "3F197BC8AEAB3248"
+			shape: "hexagon"
+			tasks: [{
+				id: "2EC9BA882BB39C53"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1DD970B55D3461C2"]
+			id: "35CF8A4C458F2981"
+			shape: "hexagon"
+			tasks: [{
+				id: "68792682389F6562"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"35CF8A4C458F2981"
+				"3F197BC8AEAB3248"
+				"0A7988B2424D5098"
+			]
+			id: "522C06BDD7BDCA49"
+			shape: "heart"
+			tasks: [{
+				id: "007CCDFA33BA21CA"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"712DDF5F3D89E241"
+				"339617DFF6ABF735"
+				"0A7988B2424D5098"
+				"2C0C1BF5A7C65942"
+			]
+			id: "6989D02A769B49C8"
+			shape: "heart"
+			tasks: [
+				{
+					id: "5162C3EAD28BFAA3"
+					item: "gtceu:microchip_processor"
+					type: "item"
+				}
+				{
+					id: "65B982281CE6133D"
+					item: "gtceu:micro_processor"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"2CABE9C3C33734A3"
+				"0BA41A44AA2D28E2"
+			]
+			id: "76A0F26693BE3765"
+			shape: "hexagon"
+			tasks: [{
+				id: "4ACCAB1C947198D2"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"7D079A955917F6F5"
+				"0EE40516BA207B6A"
+			]
+			hide_dependency_lines: true
+			id: "0BA41A44AA2D28E2"
+			shape: "hexagon"
+			tasks: [{
+				id: "7FF17A1E2CDBF7FA"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["76A0F26693BE3765"]
+			hide_dependent_lines: true
+			id: "0A7988B2424D5098"
+			shape: "circle"
+			tasks: [{
+				id: "162143483180F89B"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6DE095A6975AA83F"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2C0C1BF5A7C65942"
+			shape: "circle"
+			tasks: [{
+				id: "3E347BBA4105B352"
+				item: "gtceu:capacitor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["37A3E40C85AE28B4"]
+			id: "11B63012EDEF100B"
+			shape: "diamond"
+			tasks: [{
+				id: "5B93644B87AB87B1"
+				item: "gtceu:flawless_emerald_gem"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B94A52CC6EC267D"]
+			id: "37A3E40C85AE28B4"
+			tasks: [{
+				id: "0CC8DB2D64082FCE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_sifter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_sifter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Sifter"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["522C06BDD7BDCA49"]
+			id: "5093DF3DB4509B95"
+			shape: "circle"
+			tasks: [{
+				id: "3F8AD7A1BB8E6167"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5093DF3DB4509B95"]
+			id: "6B0F87D55F32EDDC"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "23ACB6AC0C27B78A"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7CC8D9C0C4DED9A6"]
+			id: "0773459A03BEB493"
+			shape: "circle"
+			tasks: [{
+				id: "72211D1B7C60A86D"
+				title: "Dormant Earth Ingot"
+				type: "custom"
+			}]
+			x: -14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CC8D9C0C4DED9A6"]
+			id: "2B67D02F8E96E323"
+			shape: "circle"
+			tasks: [{
+				id: "428E5F13ADF3B842"
+				title: "Dormant Aqua Ingot"
+				type: "custom"
+			}]
+			x: -16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7CC8D9C0C4DED9A6"]
+			id: "312966B88DD44099"
+			shape: "circle"
+			tasks: [{
+				id: "173BE922430F284D"
+				title: "Dormant Fire Ingot"
+				type: "custom"
+			}]
+			x: -16.0d
+			y: 0.8999999999999999d
+		}
+		{
+			dependencies: ["7CC8D9C0C4DED9A6"]
+			id: "6D0DAC1B65C74D85"
+			shape: "circle"
+			tasks: [{
+				id: "4D16E812BCA4533A"
+				title: "Dormant Wind Ingot"
+				type: "custom"
+			}]
+			x: -14.5d
+			y: 2.0d
+		}
+		{
+			id: "71CD010BE909C5AC"
+			tasks: [{
+				id: "1984C0BE27AC0828"
+				title: "dehydrator"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["0EE40516BA207B6A"]
+			hide_dependency_lines: true
+			id: "48A5BCC3BA55D012"
+			tasks: [{
+				id: "54110CBAD7547841"
+				item: "gtceu:mv_fluid_heater"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -18.5d
 		}
 	]
 	title: "&bMedium Voltage"

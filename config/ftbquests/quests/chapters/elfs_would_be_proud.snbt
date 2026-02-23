@@ -94,25 +94,8 @@
 				}
 			}
 			id: "5569E51EFB884F65"
-			rewards: [{
-				id: "42141FC9CF9244F3"
-				item: {
-					Count: 1
-					id: "mythicbotany:alfsteel_pick"
-					tag: {
-						Damage: 0
-						mana: 2147483646
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 2.0d
-			tasks: [{
-				id: "518A0253F58B7115"
-				item: "mythicbotany:mjoellnir"
-				type: "item"
-			}]
 			title: "Alf Shatterer"
 			x: -1.5d
 			y: -3.0d

@@ -1,0 +1,67 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aquaman_not_really"
+	group: "0F9F08EAC5B450D0"
+	id: "0AA50C6E6152DC4F"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "13B141AB0F2E95A9"
+			shape: "circle"
+			tasks: [{
+				id: "7907DB0EF8C92628"
+				title: "Begin the Challenge"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13B141AB0F2E95A9"]
+			id: "7BAA686884CCA0B0"
+			tasks: [{
+				id: "1C8D7AA55893745F"
+				title: "All bobers"
+				type: "custom"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13B141AB0F2E95A9"]
+			id: "2296A66835F97E2B"
+			tasks: [{
+				id: "7BC8A1D19E0C9B5D"
+				title: "All Rare Items"
+				type: "custom"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13B141AB0F2E95A9"]
+			id: "24C180A9A3A0D6CA"
+			tasks: [{
+				id: "6D9FD1A954EE9C1E"
+				title: "All fishes"
+				type: "custom"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13B141AB0F2E95A9"]
+			id: "13DD9A8A35D3DC86"
+			tasks: [{
+				id: "6E07F775C60EE501"
+				title: "Best Equipment"
+				type: "custom"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+	]
+	title: "Aquaman? Not really..."
+}

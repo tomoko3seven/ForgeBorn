@@ -10,7 +10,7 @@
 	quests: [
 		{
 			id: "3581D30254788475"
-			shape: "circle"
+			shape: "hexagon"
 			tasks: [{
 				id: "6368C468B919C2A3"
 				title: "Building Blocks"
@@ -23,6 +23,7 @@
 			dependencies: ["3581D30254788475"]
 			icon: "xtonesreworked:azur_block_4"
 			id: "24FC1A5D84C81142"
+			shape: "circle"
 			tasks: [{
 				id: "4E61E0DB6D927650"
 				title: "Xtones"
@@ -35,6 +36,7 @@
 			dependencies: ["3581D30254788475"]
 			icon: "framedblocks:framed_cube"
 			id: "5FC36BE70A8F57E9"
+			shape: "circle"
 			tasks: [{
 				id: "53076A0D69921EEB"
 				title: "FramedBlocks"
@@ -46,6 +48,7 @@
 		{
 			dependencies: ["3581D30254788475"]
 			id: "7A7A96D967D2ED76"
+			shape: "circle"
 			tasks: [{
 				id: "460F3983DA94434E"
 				title: "Travel Anchorns"
@@ -58,6 +61,7 @@
 			dependencies: ["3581D30254788475"]
 			icon: "computercraft:computer_normal"
 			id: "180ADD6EFB89281C"
+			shape: "circle"
 			tasks: [{
 				id: "3B6ABA7D688BCA0F"
 				title: "ComputerCraft"
@@ -69,6 +73,7 @@
 		{
 			dependencies: ["3581D30254788475"]
 			id: "041F2F5E44BA63AA"
+			shape: "circle"
 			tasks: [{
 				id: "63A4C1E6B96CF2C0"
 				title: "Elevators"
@@ -81,6 +86,7 @@
 			dependencies: ["3581D30254788475"]
 			icon: "elevatorid:elevator_white"
 			id: "43B79E5B485161CF"
+			shape: "circle"
 			tasks: [{
 				id: "180D4261AD3CB62A"
 				title: "Chisel"
@@ -99,6 +105,7 @@
 				}
 			}
 			id: "4E25A387E5966D6D"
+			shape: "circle"
 			tasks: [{
 				id: "669CD27D44AFDC98"
 				title: "Factory Blocks and Supplementaries"
@@ -111,6 +118,7 @@
 			dependencies: ["3581D30254788475"]
 			icon: "biomeswevegone:rose_petal_block"
 			id: "58D1A9C32E4E1493"
+			shape: "circle"
 			tasks: [{
 				id: "6FC7C89CCFF85A73"
 				title: "World Gen. Mods"

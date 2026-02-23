@@ -283,5 +283,5 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
                 .langValue(GTValues.VLVH[tier] + ' Runic Assembler')
                 .recipeType('runic_assembler')
                 .workableTieredHullModel('gtceu:block/machines/runic_assembler')
-        );
+);
 });

@@ -11,24 +11,24 @@
 			image: "gtceu:block/casings/voltage/mv/top"
 			rotation: 45.0d
 			width: 2.5d
-			x: 3.000000000000007d
-			y: 2.7321428571428683d
+			x: -0.2d
+			y: 8.0d
 		}
 		{
 			height: 2.5d
 			image: "gtceu:block/casings/voltage/mv/top"
 			rotation: 0.0d
 			width: 2.5d
-			x: 3.000000000000007d
-			y: 2.7678571428571317d
+			x: -0.2d
+			y: 8.0d
 		}
 		{
 			height: 2.0d
 			image: "gui:textures/lv_age.png"
 			rotation: 0.0d
 			width: 2.5d
-			x: -4.0d
-			y: -5.5d
+			x: 3.5d
+			y: 7.0d
 		}
 	]
 	order_index: 3
@@ -51,101 +51,60 @@
 			y: -5.020238095238071d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: ["103F71A8BA3E3DFF"]
 			id: "044DCDC7FC344A3D"
 			shape: "hexagon"
-			size: 1.2d
+			size: 1.4d
 			tasks: [{
 				id: "1EA2B9C58542C78E"
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: 7.399999999999999d
-			y: -3.0d
-		}
-		{
-			dependencies: ["443ADA5BA384C78C"]
-			id: "1526FE7CE823FD0F"
-			shape: "hexagon"
-			size: 1.4d
-			tasks: [{
-				id: "4E979112E2FE17B2"
-				item: "gtceu:lv_bender"
-				type: "item"
-			}]
 			x: 15.0d
-			y: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
 			id: "59AF246571A318C7"
+			shape: "circle"
 			tasks: [{
 				id: "7FE3060252C28AD2"
 				item: "functionalstorage:storage_controller"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -5.5d
+			x: 4.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: [
+				"7546626B37BEFA4D"
+				"5DA35BCC75E753A6"
+			]
 			id: "536C7E75D8D220D9"
+			optional: true
+			shape: "heart"
+			size: 2.0d
 			tasks: [{
 				id: "4710AC90D67D98E3"
 				item: "toms_storage:ts.storage_terminal"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
-				"536C7E75D8D220D9"
-				"59AF246571A318C7"
-				"3F4056CDD3721F21"
+				"11EDD3891149738B"
+				"6111ABE0A8ED280A"
 			]
-			id: "015EB8AEE050B577"
-			shape: "circle"
-			tasks: [{
-				id: "7905BA20F639D7D2"
-				title: "First \"Digital\" Storage"
-				type: "checkmark"
-			}]
-			x: 10.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["443ADA5BA384C78C"]
-			id: "0291C8CC3079E357"
-			tasks: [{
-				id: "6A464BE6B6AEBDF2"
-				item: "gtceu:lv_macerator"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["443ADA5BA384C78C"]
 			id: "03BB7AF9EDB1CAD2"
 			tasks: [{
 				id: "4932A5627CD2AFFF"
 				item: "gtceu:lv_sifter"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -8.000000000000005d
-		}
-		{
-			dependencies: ["443ADA5BA384C78C"]
-			id: "0F66BF66492E2FDD"
-			tasks: [{
-				id: "31E433B64BEB45EE"
-				item: "gtceu:lv_ore_washer"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -9.500000000000005d
+			x: 2.5d
+			y: -1.6d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -156,8 +115,8 @@
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -4.5d
+			x: 4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["61DC26C52C32EA88"]
@@ -169,8 +128,8 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 5.300000000000001d
-			y: 5.999999999999998d
+			x: 13.2d
+			y: 5.5d
 		}
 		{
 			dependencies: ["30D87588E7B344C5"]
@@ -182,11 +141,14 @@
 				item: "gtceu:lv_botanical_purification_chamber"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -8.0d
+			x: 13.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["443ADA5BA384C78C"]
+			dependencies: [
+				"103F71A8BA3E3DFF"
+				"11EDD3891149738B"
+			]
 			id: "2B266A8C89980F40"
 			shape: "hexagon"
 			size: 1.2d
@@ -195,8 +157,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -10.2d
+			x: 3.5097922991411394d
+			y: -1.613444225719391d
 		}
 		{
 			dependencies: [
@@ -211,32 +173,8 @@
 				item: "gtceu:mv_machine_casing"
 				type: "item"
 			}]
-			x: 3.000000000000014d
-			y: 2.789285714285704d
-		}
-		{
-			dependencies: ["22B0D4002FE6E8C2"]
-			id: "4F5597FCB780CCC0"
-			shape: "circle"
-			tasks: [{
-				id: "357152BFC0D3D5B3"
-				item: "gtceu:prospector.lv"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["22B0D4002FE6E8C2"]
-			id: "443ADA5BA384C78C"
-			shape: "circle"
-			tasks: [{
-				id: "6E94871B16E51CAC"
-				title: "Energy Managment"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: -8.000000000000005d
+			x: -0.2d
+			y: 7.999999999999998d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -249,18 +187,21 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -6.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: [
+				"34FA15081650A153"
+				"11EDD3891149738B"
+			]
 			id: "3BABAEABB3E1970C"
 			tasks: [{
 				id: "1BB476DBE953BB5C"
 				item: "gtceu:lv_laser_engraver"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.5d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -279,8 +220,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -10.0d
+			x: 10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -294,8 +235,8 @@
 				item: "kubejs:mana_multithreaded_computation_wafer"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -8.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -307,8 +248,8 @@
 				item: "kubejs:livingrock_wafer"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -8.0d
+			x: 9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -321,8 +262,8 @@
 				item: "kubejs:mmc_chip"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -8.0d
+			x: 11.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["03A35659AD6C318A"]
@@ -332,8 +273,8 @@
 				item: "kubejs:mana_infused_livingrock_circuit_board"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -9.5d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -349,8 +290,8 @@
 				item: "kubejs:basic_botanical_circuit"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.000000000000002d
+			x: 11.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3B18BBD4D086C198"]
@@ -360,8 +301,8 @@
 				item: "kubejs:livingrock_circuit_board"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -11.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["641A75A9A7BF3A46"]
@@ -372,63 +313,72 @@
 				item: "kubejs:dense_mana_bucket"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -11.0d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: [
+				"103F71A8BA3E3DFF"
+				"3ADB981E80EA9015"
+			]
+			hide_dependency_lines: true
 			id: "3966232A5BC192F5"
 			tasks: [{
 				id: "645550C4205054A3"
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
 			id: "48A8AD78C482DFDC"
+			shape: "circle"
 			tasks: [{
 				id: "49DDDD25FE9F19AC"
 				item: "kubejs:mana-filled_idol"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 6.0d
+			y: 5.4d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: ["60B922B853FA6747"]
 			id: "1712DF73AE54AE90"
 			tasks: [{
 				id: "7540432BF03C751E"
 				item: "gtceu:lv_autoclave"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: [
+				"11EDD3891149738B"
+				"60B922B853FA6747"
+			]
 			id: "2D803B152F4211E8"
 			tasks: [{
 				id: "22CC1247992F7788"
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 1.1d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2D803B152F4211E8"]
 			id: "0FF064D717B3CFD1"
+			shape: "circle"
 			tasks: [{
 				id: "4DC1FF916E405911"
 				item: "gtceu:manasteel_bucket"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: 1.1d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -436,24 +386,26 @@
 				"0FF064D717B3CFD1"
 			]
 			id: "2D7F913C9E120152"
+			shape: "circle"
 			tasks: [{
 				count: 16L
 				id: "0B8C718CDBF9634C"
 				item: { Count: 16, id: "kubejs:mana_infused_fibers" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
+			hide_dependency_lines: true
 			id: "187A9DFE5ADC381F"
 			tasks: [{
 				id: "348DF360D5D61C3D"
 				item: "gtceu:lv_compressor"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.20000000000000004d
 			y: 0.0d
 		}
 		{
@@ -462,13 +414,14 @@
 				"187A9DFE5ADC381F"
 			]
 			id: "19389D6CEDE42191"
+			shape: "circle"
 			tasks: [{
 				id: "70E3FB6D51D48FB1"
 				item: "kubejs:mana_infused_mesh"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -0.20000000000000004d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -478,15 +431,15 @@
 			]
 			id: "06740A1AF43A0BAE"
 			shape: "hexagon"
-			size: 1.7d
+			size: 2.0d
 			tasks: [{
 				count: 16L
 				id: "2ED632D52637FAC5"
 				item: { Count: 16, id: "botania:manaweave_cloth" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: -0.20000000000000004d
+			y: 5.4d
 		}
 		{
 			dependencies: ["06740A1AF43A0BAE"]
@@ -539,8 +492,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.0d
+			x: -3.0d
+			y: 5.4d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -550,8 +503,8 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 9.000000000000002d
-			y: -3.0d
+			x: 16.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -564,8 +517,8 @@
 				item: "gtceu:fine_annealed_manasteel_wire"
 				type: "item"
 			}]
-			x: 7.399999999999999d
-			y: -1.5d
+			x: 15.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -574,14 +527,14 @@
 			]
 			id: "65B0DCA438F200E0"
 			shape: "hexagon"
-			size: 1.4d
+			size: 1.5d
 			tasks: [{
 				id: "09ADA837880E4A95"
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 7.399999999999999d
-			y: 2.7755575615628914E-17d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -597,8 +550,8 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 7.4d
-			y: 6.0d
+			x: 15.0d
+			y: 9.999999999999998d
 		}
 		{
 			dependencies: ["1E4A65C820975D44"]
@@ -608,11 +561,11 @@
 				item: "gtceu:phenolic_circuit_board"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 6.0d
+			x: 16.5d
+			y: 9.999999999999998d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: ["103F71A8BA3E3DFF"]
 			id: "09F7D5DDD83E83D0"
 			tasks: [{
 				id: "0749F6F25C474B02"
@@ -620,7 +573,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["09F7D5DDD83E83D0"]
@@ -631,18 +584,19 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
+			hide_dependency_lines: true
 			id: "585DBF0B9B5F2F85"
 			tasks: [{
 				id: "19A30F2740D17034"
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["585DBF0B9B5F2F85"]
@@ -652,8 +606,8 @@
 				item: "gtceu:gallium_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -667,8 +621,8 @@
 				item: "gtceu:gallium_arsenide_dust"
 				type: "item"
 			}]
-			x: 5.200000000000001d
-			y: 0.0d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -684,8 +638,8 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: 7.4d
-			y: 2.8d
+			x: 15.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3AB9A9532F058B09"]
@@ -695,19 +649,19 @@
 				item: "gtceu:lv_distillery"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -1.5d
+			x: 22.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["1526FE7CE823FD0F"]
+			dependencies: ["0346CD52695B798C"]
 			id: "3AB9A9532F058B09"
 			tasks: [{
 				id: "64E129F359E0D50D"
 				item: "gtceu:cloggrum_spring"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -5.0d
+			x: 22.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["46BA3E3E5E5EC527"]
@@ -725,8 +679,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 13.0d
-			y: -1.5d
+			x: 20.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -739,8 +693,8 @@
 				item: "gtceu:sulfuric_naphtha_bucket"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 0.0d
+			x: 22.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -753,8 +707,8 @@
 				item: "gtceu:naphtha_bucket"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 1.5d
+			x: 22.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["46BA3E3E5E5EC527"]
@@ -765,8 +719,8 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 1.5d
+			x: 20.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["46BA3E3E5E5EC527"]
@@ -777,8 +731,8 @@
 				item: "gtceu:steam_bucket"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 3.0d
+			x: 20.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -791,8 +745,8 @@
 				item: "gtceu:lightly_steam_cracked_naphtha_bucket"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 3.0d
+			x: 22.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["1C8802BE073260A5"]
@@ -802,8 +756,8 @@
 				item: "gtceu:heavy_fuel_bucket"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 4.5d
+			x: 22.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["38ADB457A49D9E24"]
@@ -813,8 +767,8 @@
 				item: "gtceu:phenol_bucket"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 6.0d
+			x: 20.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1B571CF7D23CACBF"]
@@ -824,8 +778,8 @@
 				item: "gtceu:annealed_manasteel_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -1.5d
+			x: 16.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -838,8 +792,8 @@
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -1.5d
+			x: 18.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2F82F1AD04DD386D"]
@@ -849,8 +803,8 @@
 				item: "extendedcrafting:black_iron_slate"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 0.0d
+			x: 18.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["352C335E7CE50055"]
@@ -867,8 +821,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 13.0d
-			y: 0.0d
+			x: 20.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["08B165814261E274"]
@@ -878,8 +832,8 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.5d
+			x: 18.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -892,8 +846,8 @@
 				item: "extendedcrafting:basic_component"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 1.5d
+			x: 16.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["183C7D43064FD7C4"]
@@ -903,8 +857,8 @@
 				item: "extendedcrafting:basic_catalyst"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 2.8d
+			x: 18.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -919,8 +873,8 @@
 				item: "extendedcrafting:basic_table"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 2.8d
+			x: 16.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5735BC230D103658"]
@@ -931,8 +885,8 @@
 				item: "gtceu:hydrogen_sulfide_bucket"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 0.0d
+			x: 24.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["11B16711157E9A83"]
@@ -943,8 +897,8 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 7.5d
+			x: 24.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["11F931C2B54CAF70"]
@@ -955,8 +909,8 @@
 				item: "gtceu:sodium_bisulfate_dust"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 7.5d
+			x: 16.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["5F19300CDB24CB2B"]
@@ -967,8 +921,8 @@
 				item: "gtceu:sodium_persulfate_bucket"
 				type: "item"
 			}]
-			x: 7.4d
-			y: 7.5d
+			x: 15.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -980,8 +934,8 @@
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			x: 5.300000000000001d
-			y: 2.899999999999999d
+			x: 11.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["07C80D5D92DB40FB"]
@@ -991,8 +945,8 @@
 				item: "gtceu:soldering_alloy_bucket"
 				type: "item"
 			}]
-			x: 5.300000000000001d
-			y: 4.5d
+			x: 13.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1006,8 +960,8 @@
 				title: "better circuits"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 11.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["06CB5D3FB82414DB"]
@@ -1018,13 +972,15 @@
 				item: "gtceu:mana_soldering_alloy_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 13.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
-				"26A3BBE1923A86F9"
-				"4E1753D176EF4F0E"
+				"3067C6D55D17F3BB"
+				"50477B8090DFD978"
+				"5BBA9049B00291E1"
+				"3AD00F8BC95BFE12"
 			]
 			id: "5F611F850DDDA517"
 			shape: "hexagon"
@@ -1036,27 +992,28 @@
 					type: "item"
 				}
 				{
+					count: 16L
 					id: "75E3EF8A3AADEF99"
 					item: "gtceu:cupronickel_coil_block"
 					type: "item"
 				}
 			]
-			x: 0.8821428571428527d
-			y: 4.523809523809533d
+			x: 3.1d
+			y: 10.499999999999998d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
 			hide_dependency_lines: true
 			id: "72F6BF1695F1F1C0"
 			shape: "circle"
-			size: 0.7d
+			size: 1.0d
 			tasks: [{
 				id: "6CA8E4475FD3326E"
 				item: "gtceu:sapphire_dust"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.5d
+			x: -4.5d
+			y: 9.6d
 		}
 		{
 			dependencies: ["72F6BF1695F1F1C0"]
@@ -1066,8 +1023,8 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: -3.0d
+			y: 9.6d
 		}
 		{
 			dependencies: [
@@ -1082,8 +1039,8 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 0.9d
-			y: 2.8d
+			x: -0.2d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2897BF847490FB87"]
@@ -1094,45 +1051,8 @@
 				title: "Real chemistry (almost)"
 				type: "checkmark"
 			}]
-			x: 13.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["040A3337C570A3D7"]
-			id: "26A3BBE1923A86F9"
-			shape: "circle"
-			tasks: [{
-				id: "5149B56858F9417B"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["040A3337C570A3D7"]
-			id: "4E1753D176EF4F0E"
-			shape: "circle"
-			tasks: [{
-				id: "760ABB90E360EDB6"
-				item: "gtceu:invar_ingot"
-				type: "item"
-			}]
-			x: 0.30000000000000004d
-			y: 6.5d
-		}
-		{
-			dependencies: ["22B0D4002FE6E8C2"]
-			hide_dependency_lines: true
-			id: "040A3337C570A3D7"
-			shape: "circle"
-			tasks: [{
-				id: "5CA4B4A1DB07A92A"
-				title: "1"
-				type: "checkmark"
-			}]
-			x: 0.9d
-			y: 8.0d
+			x: 20.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0E27E627EAD5AA36"]
@@ -1147,8 +1067,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: 1.5d
+			x: 23.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["48F84CA632784C94"]
@@ -1159,8 +1079,8 @@
 				item: "kubejs:managlass_tube"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: 10.0d
+			y: 4.000000000000002d
 		}
 		{
 			dependencies: ["0CAF9E2ECA74F7FF"]
@@ -1170,8 +1090,8 @@
 				item: "kubejs:botanical_thermionic_valve"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -6.5d
+			x: 11.5d
+			y: 4.000000000000002d
 		}
 		{
 			dependencies: ["76BA1804CD874BBF"]
@@ -1182,10 +1102,12 @@
 				item: "kubejs:managlass_dust"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.0d
+			x: 8.5d
+			y: 4.000000000000002d
 		}
 		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			hide_dependency_lines: true
 			id: "76BA1804CD874BBF"
 			shape: "circle"
 			tasks: [{
@@ -1193,8 +1115,8 @@
 				item: "botania:mana_glass"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: 8.5d
+			y: 5.4d
 		}
 		{
 			dependencies: ["45FAEFAEEC4343B9"]
@@ -1205,8 +1127,288 @@
 				item: "legendarysurvivaloverhaul:large_canteen"
 				type: "item"
 			}]
-			x: -0.8154761904761898d
-			y: 2.785714285714292d
+			x: -3.0d
+			y: 11.1d
+		}
+		{
+			dependencies: ["103F71A8BA3E3DFF"]
+			id: "3ADB981E80EA9015"
+			shape: "circle"
+			tasks: [{
+				id: "63888380553E39A7"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			id: "103F71A8BA3E3DFF"
+			shape: "circle"
+			tasks: [{
+				id: "2CCDC3116971BC6B"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"103F71A8BA3E3DFF"
+				"11EDD3891149738B"
+			]
+			id: "0346CD52695B798C"
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "23B721632FA8CB8C"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["103F71A8BA3E3DFF"]
+			id: "7546626B37BEFA4D"
+			shape: "circle"
+			tasks: [{
+				id: "7253940D134C7E03"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["103F71A8BA3E3DFF"]
+			id: "60B922B853FA6747"
+			shape: "circle"
+			tasks: [{
+				id: "7B123D2CB732A700"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["103F71A8BA3E3DFF"]
+			id: "11EDD3891149738B"
+			shape: "circle"
+			tasks: [{
+				id: "30642CD9BE132E71"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3ADB981E80EA9015"
+				"7546626B37BEFA4D"
+			]
+			id: "5DA35BCC75E753A6"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4DF85AE01EECF6C8"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			hide_dependency_lines: true
+			id: "3067C6D55D17F3BB"
+			shape: "circle"
+			tasks: [{
+				id: "22ABAC4E26AC9EFF"
+				item: "kubejs:basic_mechanical_parts"
+				type: "item"
+			}]
+			x: 3.1d
+			y: 9.0d
+		}
+		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			id: "34FA15081650A153"
+			shape: "circle"
+			tasks: [{
+				id: "02397A90518DB2E9"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			hide_dependency_lines: true
+			id: "6111ABE0A8ED280A"
+			shape: "circle"
+			tasks: [{
+				id: "6CA7A3D023373987"
+				item: "gtceu:item_filter"
+				type: "item"
+			}]
+			x: 1.1d
+			y: -1.6d
+		}
+		{
+			dependencies: ["3ADB981E80EA9015"]
+			id: "0A104B49DD4FD342"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2A46D2C56DC1E995"
+				item: "functionalstorage:pusher_upgrade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ADB981E80EA9015"]
+			id: "7FC5B3AD3560F87A"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "5BD4949B8228EF3F"
+				item: "functionalstorage:puller_upgrade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1C061810F9FE0BE5"]
+			id: "50477B8090DFD978"
+			shape: "circle"
+			tasks: [
+				{
+					count: 128L
+					id: "42EC70C95DB37CC5"
+					item: { Count: 128, id: "gtceu:cupronickel_double_wire" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "56AD2DCFED8F623F"
+					item: { Count: 128, id: "gtceu:bronze_foil" }
+					type: "item"
+				}
+				{
+					id: "5697E36D7DFF78F0"
+					title: "Mica Insulation Foil"
+					type: "custom"
+				}
+			]
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["34BA4B772E85B38C"]
+			id: "5BBA9049B00291E1"
+			shape: "circle"
+			tasks: [
+				{
+					id: "6A87C9BF91A5EF03"
+					item: "gtceu:tin_alloy_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5A66A049FF678690"
+					title: "Done!"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			id: "1C061810F9FE0BE5"
+			shape: "circle"
+			tasks: [{
+				count: 64L
+				id: "4F57769EBE80406D"
+				item: { Count: 64, id: "gtceu:cupronickel_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			id: "3AD00F8BC95BFE12"
+			shape: "circle"
+			tasks: [{
+				count: 64L
+				id: "26D034E6360159B1"
+				item: { Count: 64, id: "gtceu:invar_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"11EDD3891149738B"
+				"60B922B853FA6747"
+			]
+			hide_dependency_lines: true
+			id: "34BA4B772E85B38C"
+			tasks: [{
+				id: "6462ECA4A6C495A0"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["30D87588E7B344C5"]
+			id: "0031DEB7FBE10313"
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "07545C2706BDF22D"
+				title: "Mechanical Apothecry"
+				type: "custom"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["536C7E75D8D220D9"]
+			id: "4FA7EBD729C1A0B5"
+			shape: "octagon"
+			tasks: [{
+				id: "0BE1B4658C4D5BBD"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["22B0D4002FE6E8C2"]
+			id: "4E506EDF54D91562"
+			shape: "circle"
+			tasks: [{
+				id: "736EB2264FA6A2D2"
+				item: "gtceu:lv_squeezer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.0d
 		}
 	]
 	title: "Low Voltage"

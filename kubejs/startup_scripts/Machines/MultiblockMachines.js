@@ -1,5 +1,5 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
-    event
+    /*event
         .create('extraterrestial_agglomeration')
         .category('botania')
         .setEUIO('in')
@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', (event) => {
             GuiTextures.PROGRESS_BAR_ARROW,
             FillDirection.LEFT_TO_RIGHT
         )
-        .setSound(GTSoundEntries.CHEMICAL);
+        .setSound(GTSoundEntries.CHEMICAL);*/
     /*event.create('sbf')
 		.category('multiblock')
 		.setMaxIOSize(3, 3, 1, 0)
@@ -159,26 +159,6 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
     )
     .workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/electrolyzer")
     // prettier-ignore
-    /*event.create('steel_blast_furnace', 'multiblock')
-		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('sbf')
-		.recipeModifiers(GTRecipeModifiers.OC_PERFECT_SUBTICK)
-		.appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
-		.pattern(definition => FactoryBlockPattern.start()
-			.aisle('RRR', 'FFF', 'FFF', 'FFF', 'FFF')
-			.aisle('RFR', 'F F', 'F F', 'F F', 'F F')
-			.aisle('RRR', 'FCF', 'FFF', 'FFF', 'FFF')
-			.where('C', Predicates.controller(Predicates.blocks(definition.get())))
-			.where('F', Predicates.blocks("gtceu:solid_machine_casing")
-				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
-			.where('R', Predicates.blocks('gtceu:steel_firebox_casing'))
-			.where(' ', Predicates.any())
-			.build())	
-		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/primitive_blast_furnace")*/
-
-    // prettier-ignore
     event.create('cognitium_solidifier', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('congnitium_solidification')
@@ -263,51 +243,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
 			.where(' ', Predicates.blocks("minecraft:air"))
 			.build())
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/implosion_compressor")
-    // prettier-ignore
-    /*event.create('high_pressure_mixer', 'multiblock')
-    .rotationState(RotationState.NON_Y_AXIS)
-    .recipeTypes(['mixer'])
-    .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
-    .appearanceBlock(GCYMBlocks.INDUSTRIAL_BRONZE_CASING)
-    .pattern(definition => FactoryBlockPattern.start()
-.aisle("BAAAB", "BAAAB", "CCCCC", "ACCCA", "ACCCA", "ACCCA", "AAAAA")
-.aisle("AAAAA", "AAAAA", "CDDDC", "CAAEC", "CAAAC", "CAAAC", "ACCCA")
-.aisle("AAAAA", "AAAAA", "CDDDC", "CAFAC", "CABAC", "CABAC", "ACCCA")
-.aisle("AAAAA", "AAAAA", "CDDDC", "CEAAC", "CAAAC", "CAAAC", "ACCCA")
-.aisle("BAAAB", "BAAAB", "CCCCC", "ACCCA", "ACGCA", "ACCCA", "AAAAA")
-   .where("A", Predicates.blocks("minecraft:air"))
-   .where("B", Predicates.blocks("gtceu:bronze_frame"))
-   .where("C", Predicates.blocks("gtceu:industrial_steam_casing"))
-   .where("D", Predicates.blocks("gtceu:bronze_brick_casing"))
-   .where("E", Predicates.blocks("gtceu:bronze_gearbox"))
-   .where("F", Predicates.blocks("gtceu:bronze_pipe_casing"))
-   .where("G", Predicates.controller(Predicates.blocks(definition.get())))
-    .build()
-    )
-    .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel", "gtceu:block/multiblock/implosion_compressor")
 // prettier-ignore
-event.create('high_pressure_distillation_apparatus', 'multiblock')
-.rotationState(RotationState.NON_Y_AXIS)
-.recipeTypes(['hpda'])
-.recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
-.appearanceBlock(GCYMBlocks.INDUSTRIAL_BRONZE_CASING)
-.pattern(definition => FactoryBlockPattern.start()
-.aisle("BAAAB", "BAAAB", "CCCCC", "ACCCA", "ACCCA", "ACCCA", "AAAAA")
-.aisle("AAAAA", "AAAAA", "CDDDC", "CAAEC", "CAAAC", "CAAAC", "ACCCA")
-.aisle("AAAAA", "AAAAA", "CDDDC", "CAFAC", "CABAC", "CABAC", "ACCCA")
-.aisle("AAAAA", "AAAAA", "CDDDC", "CEAAC", "CAAAC", "CAAAC", "ACCCA")
-.aisle("BAAAB", "BAAAB", "CCCCC", "ACCCA", "ACGCA", "ACCCA", "AAAAA")
-   .where("A", Predicates.blocks("minecraft:air"))
-   .where("B", Predicates.blocks("gtceu:bronze_frame"))
-   .where("C", Predicates.blocks("gtceu:industrial_steam_casing"))
-   .where("D", Predicates.blocks("gtceu:bronze_brick_casing"))
-   .where("E", Predicates.blocks("gtceu:bronze_gearbox"))
-   .where("F", Predicates.blocks("gtceu:bronze_pipe_casing"))
-   .where("G", Predicates.controller(Predicates.blocks(definition.get())))
-    .build()
-    )
-    .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel", "gtceu:block/multiblock/implosion_compressor")
-    }); // .or(Predicates.blocks(INPUT_ENERGY_HATCH[EV]))*/
     // prettier-ignore
     event.create('primitive_assembler', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
@@ -328,7 +264,7 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
 		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/machines/assembler")
 
     // prettier-ignore
-    event.create('primitive_drilling_station', 'multiblock')
+    /*event.create('primitive_drilling_station', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('primitive_drilling')
 		.appearanceBlock(() => Block.getBlock('kubejs:solid_wrought_iron_casing'))
@@ -355,7 +291,7 @@ event.create('high_pressure_distillation_apparatus', 'multiblock')
             .where("E", Predicates.blocks("minecraft:iron_block"))
             .where("F", Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/implosion_compressor")
+		.workableCasingModel("kubejs:block/casings/solid_wrought_iron/solid_wrought_iron_casing", "gtceu:block/multiblock/implosion_compressor")*/
     // prettier-ignore
     event.create('industrial_bloomery', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)

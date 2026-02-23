@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_steam_n_rails"
+	group: "636E307A32BE4F2F"
+	icon: "railways:handcar"
+	id: "6E1C3D641D0BDED5"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Create: Steam N Rails"
+}
