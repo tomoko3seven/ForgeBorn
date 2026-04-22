@@ -384,10 +384,14 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
-			dependencies: ["7C93AA2D9DDBD3AF"]
+			dependencies: [
+				"7C93AA2D9DDBD3AF"
+				"1DBF2C63A97AAC3B"
+				"356DFF9AAF0B77CE"
+			]
 			id: "5502EF3E129A1B0E"
 			tasks: [{
 				id: "4F5A81499E50F39B"
@@ -615,7 +619,7 @@
 				type: "custom"
 			}]
 			x: 7.5d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["36ECF91FB7F5FF53"]
@@ -914,6 +918,7 @@
 		{
 			dependencies: ["0DD0AEB201835F82"]
 			id: "22287674337CF5A9"
+			shape: "circle"
 			tasks: [{
 				id: "44B728F0F1B0CB05"
 				title: "chlorophyte raw solution"
@@ -925,10 +930,11 @@
 		{
 			dependencies: ["22287674337CF5A9"]
 			id: "79882AA4C3C57B7C"
+			shape: "circle"
 			tasks: [{
-				id: "1352EB578029AE85"
-				title: "livingmetal"
-				type: "custom"
+				id: "2910E29B9C386F01"
+				item: "terramity:gaianite_cluster"
+				type: "item"
 			}]
 			x: -3.0d
 			y: -16.0d
@@ -942,8 +948,8 @@
 				title: "boiling mana"
 				type: "custom"
 			}]
-			x: -3.0d
-			y: -17.5d
+			x: -4.5d
+			y: -18.5d
 		}
 		{
 			dependencies: [
@@ -957,8 +963,8 @@
 				title: "Mana Vapor"
 				type: "custom"
 			}]
-			x: -4.5d
-			y: -17.5d
+			x: -6.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["4E699E377E243A4C"]
@@ -975,6 +981,7 @@
 		{
 			dependencies: ["79882AA4C3C57B7C"]
 			id: "2D900CD726B04617"
+			shape: "circle"
 			tasks: [{
 				id: "0C136B59AF204CD7"
 				title: "&"
@@ -1319,6 +1326,10 @@
 			y: 4.5d
 		}
 		{
+			dependencies: [
+				"3DAD1ADADB5EE74B"
+				"3A4A2D1CF0045799"
+			]
 			id: "5302379EE372BDB6"
 			shape: "gear"
 			size: 3.0d
@@ -1327,8 +1338,8 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 9.5d
+			x: -13.916081349622111d
+			y: 6.984222859610789d
 		}
 		{
 			dependencies: [
@@ -1737,8 +1748,8 @@
 				title: "dehydrator"
 				type: "custom"
 			}]
-			x: -4.5d
-			y: -18.5d
+			x: -6.0d
+			y: -19.5d
 		}
 		{
 			dependencies: ["0EE40516BA207B6A"]
@@ -1749,8 +1760,144 @@
 				item: "gtceu:mv_fluid_heater"
 				type: "item"
 			}]
+			x: -4.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["79882AA4C3C57B7C"]
+			id: "131376921B31F461"
+			shape: "hexagon"
+			tasks: [{
+				id: "3054041D66AB7C70"
+				item: "terramity:virentium_alloy_ingot"
+				type: "item"
+			}]
 			x: -3.0d
-			y: -18.5d
+			y: -17.5d
+		}
+		{
+			id: "1DBF2C63A97AAC3B"
+			shape: "circle"
+			tasks: [{
+				id: "785C304E373874CF"
+				item: "terramity:iridescent_shard"
+				type: "item"
+			}]
+			x: -6.9d
+			y: -1.6999999999999997d
+		}
+		{
+			dependencies: ["6F6B4C43E7B97F51"]
+			id: "6D9E1FF79D2AB443"
+			shape: "circle"
+			tasks: [{
+				id: "2CBB84482D4EFAB6"
+				item: "terramity:honey_necklace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"0773459A03BEB493"
+				"6D0DAC1B65C74D85"
+				"312966B88DD44099"
+				"2B67D02F8E96E323"
+			]
+			id: "79D59EC508CF60C3"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4FBFE296A8DC98CE"
+				title: "boss"
+				type: "custom"
+			}]
+			x: -19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D2890EBD74B3088"]
+			id: "4214287A999C759C"
+			tasks: [{
+				id: "3BCFA34AF56C5C08"
+				title: "plated casing"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4214287A999C759C"]
+			id: "356DFF9AAF0B77CE"
+			tasks: [{
+				id: "0AA2C87272F4660F"
+				title: "warp reflective casing"
+				type: "custom"
+			}]
+			x: -6.9d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7CFF5DC75B51FD0A"]
+			id: "5A055052E0D8A503"
+			tasks: [{
+				id: "59B9C78D6CCAFAFB"
+				title: "dark ingot"
+				type: "custom"
+			}]
+			x: -9.7d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4214287A999C759C"]
+			id: "0B92EF549E1EE5D1"
+			tasks: [{
+				id: "3A83113B4D3A03E6"
+				title: "atomic reconstruction"
+				type: "custom"
+			}]
+			x: -9.700000000000001d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5A055052E0D8A503"]
+			id: "431E4A0E91FEE918"
+			tasks: [{
+				id: "1BF8CBC30B13DA54"
+				title: "dust"
+				type: "custom"
+			}]
+			x: -9.7d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0B92EF549E1EE5D1"
+				"431E4A0E91FEE918"
+			]
+			id: "3DAD1ADADB5EE74B"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "12C11AC9F74CBA94"
+				item: "gtceu:void_gem"
+				type: "item"
+			}]
+			x: -9.7d
+			y: 7.0d
+		}
+		{
+			dependencies: ["79D59EC508CF60C3"]
+			id: "3A4A2D1CF0045799"
+			shape: "circle"
+			tasks: [{
+				id: "2A5CE6C0796DCB67"
+				item: "terramity:spiteful_soul"
+				type: "item"
+			}]
+			x: -19.0d
+			y: 7.0d
 		}
 	]
 	title: "&bMedium Voltage"

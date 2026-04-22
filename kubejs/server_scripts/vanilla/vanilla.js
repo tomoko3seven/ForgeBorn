@@ -1,6 +1,9 @@
 ServerEvents.recipes((event) => {
     const greg = event.recipes.gtceu;
 
+    event.remove({ id: 'farmersdelight:paper_from_tree_bark' });
+    event.remove({ id: 'jei:/create/pressing/sugar_cane' });
+
     event.remove({ id: 'minecraft:blaze_powder' });
     event.remove({ id: 'gtceu:shapeless/blaze_rod_to_powder' });
     event.remove({ id: 'minecraft:ender_eye' });

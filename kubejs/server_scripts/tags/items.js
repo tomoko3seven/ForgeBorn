@@ -21,8 +21,6 @@ ServerEvents.tags('item', (event) => {
         );
         event.remove('forge:rods/' + material, 'ad_astra:' + material + '_rod');
     });
-    // event.remove("forge:ingots/steel", "ad_astra:steel_ingot");
-    // event.remove("forge:ingots/steel", "tconstruct:steel_ingot");
     // event.remove("forge:ingots/tin", "forestry:ingot_tin");
     // event.remove("forge:ingots/bronze", "forestry:ingot_bronze");
 });

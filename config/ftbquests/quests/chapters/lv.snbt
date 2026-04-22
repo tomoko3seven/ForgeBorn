@@ -128,7 +128,7 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 13.2d
+			x: 13.299999999999999d
 			y: 5.5d
 		}
 		{
@@ -281,6 +281,7 @@
 				"71C1522D64B4EBA8"
 				"3745EF14D98B4EDA"
 				"17033CB2A4C48A3F"
+				"415A344B51A38396"
 			]
 			id: "30D87588E7B344C5"
 			shape: "hexagon"
@@ -934,7 +935,7 @@
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 11.5d
 			y: 7.5d
 		}
 		{
@@ -960,11 +961,12 @@
 				title: "better circuits"
 				type: "checkmark"
 			}]
-			x: 11.0d
+			x: 11.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["06CB5D3FB82414DB"]
+			hide_dependent_lines: true
 			id: "415A344B51A38396"
 			shape: "pentagon"
 			tasks: [{

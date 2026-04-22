@@ -4,7 +4,7 @@
 	default_quest_disable_jei: false
 	default_quest_shape: "square"
 	default_reward_team: false
-	detection_delay: 20
+	detection_delay: 40
 	disable_gui: false
 	drop_book_on_death: false
 	drop_loot_crates: false
@@ -12,14 +12,14 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	icon: "kubejs:ancient_key"
-	lock_message: "eSFSDF"
+	lock_message: "Hi"
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600
 		passive: 4000
 	}
 	pause_game: true
-	progression_mode: "default"
+	progression_mode: "linear"
 	show_lock_icons: false
 	title: "&#E54612F&#E65B2Do&#E77049r&#E88464g&#E9997Fe&#E9AE9AB&#EAC3B6o&#EBD7D1r&#ECECECn"
 	version: 13

@@ -7,7 +7,6 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', (event) => {
 });
 
 GTCEuStartupEvents.registry('gtceu:material', (event) => {
-    //////////
     // AE2
     event
         .create('charged_certus_quartz')
@@ -26,6 +25,19 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
         .components('charged_certus_quartz', 'redstone', 'nether_quartz');
+    //Create
+    event
+        .create('andesite_alloy')
+        .color(0x8a8a8a)
+        .iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_GEAR
+        );
     //ForgeBorn
     event
         .create('cobblestone')
@@ -53,8 +65,7 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING,
-            GTMaterialFlags.GENERATE_LENS
+            GTMaterialFlags.NO_ORE_SMELTING
         );
 
     event

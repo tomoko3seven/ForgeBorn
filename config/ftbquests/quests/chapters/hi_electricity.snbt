@@ -1007,25 +1007,6 @@
 			y: 10.6d
 		}
 		{
-			dependencies: ["3884187493BA916A"]
-			description: ["Forestry isn't implemented yet, but you can still do it since it will be OP later."]
-			id: "7A8DD9280DB4EB5B"
-			shape: "circle"
-			tasks: [{
-				id: "1D59F195C80FCC63"
-				item: {
-					Count: 1
-					id: "forestry:scoop"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: -7.5d
-		}
-		{
 			dependencies: ["4AC5E057FBD83372"]
 			description: ["After entering this new layer of the Earth, be careful of the new flora and fauna. They can be friendly, but also very dangerous."]
 			id: "03B56ECF5AA7CF3E"

@@ -5,32 +5,14 @@
 	group: "693226878D58638A"
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
-	images: [
-		{
-			height: 2.0d
-			image: "gtceu:block/casings/voltage/ulv/bottom"
-			rotation: 0.0d
-			width: 2.0d
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			height: 2.0d
-			image: "gtceu:block/casings/voltage/ulv/bottom"
-			rotation: 45.0d
-			width: 2.0d
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			height: 1.0d
-			image: "gui:textures/steam_age.png"
-			rotation: 0.0d
-			width: 4.0d
-			x: -4.0d
-			y: -2.5d
-		}
-	]
+	images: [{
+		height: 1.0d
+		image: "gui:textures/steam_age.png"
+		rotation: 0.0d
+		width: 4.0d
+		x: -4.0d
+		y: -2.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -54,7 +36,6 @@
 			y: -0.4285714285714306d
 		}
 		{
-			dependencies: ["2090574AFF225180"]
 			description: [""]
 			id: "03DBF1961AE21C76"
 			shape: "square"
@@ -73,8 +54,8 @@
 				}
 			]
 			title: "Some Casings"
-			x: 2.010952380952368d
-			y: -0.3905357142857184d
+			x: -1.0d
+			y: -0.4d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -103,7 +84,7 @@
 				type: "item"
 			}]
 			x: 8.94147826318029d
-			y: -3.4702380952381064d
+			y: -8.970238095238106d
 		}
 		{
 			dependencies: [
@@ -119,21 +100,21 @@
 				type: "item"
 			}]
 			x: 6.646240167942196d
-			y: -3.4845238095238216d
+			y: -8.984523809523822d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
 			description: ["Required for early-game alloys, including the most important alloy of this era: Red Alloy."]
 			id: "68D6CBA3B0836C88"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "0036FBF3DB91D515"
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 5.021579506802727d
-			y: -0.38265306122449516d
+			x: 3.9d
+			y: -0.4d
 		}
 		{
 			dependencies: ["22801BC8E559BC55"]
@@ -146,7 +127,7 @@
 				type: "item"
 			}]
 			x: 9.26528778698981d
-			y: -2.008333333333347d
+			y: -7.508333333333347d
 		}
 		{
 			dependencies: ["7086A802F1457933"]
@@ -159,7 +140,7 @@
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.9d
 			y: -5.0d
 		}
 		{
@@ -184,7 +165,7 @@
 				}
 			]
 			x: 10.482803996598657d
-			y: -2.8918367346938703d
+			y: -8.39183673469387d
 		}
 		{
 			dependencies: [
@@ -198,7 +179,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["63105DD121AA63E0"]
@@ -212,7 +193,7 @@
 				type: "item"
 			}]
 			x: 14.926682344812953d
-			y: -1.9821428571428754d
+			y: -7.482142857142875d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -339,7 +320,7 @@
 				type: "item"
 			}]
 			x: 14.920049691751721d
-			y: 2.9690476190476147d
+			y: 9.469047619047615d
 		}
 		{
 			dependencies: ["41298DA7145EE9D4"]
@@ -353,7 +334,7 @@
 				type: "checkmark"
 			}]
 			x: 16.43053571428574d
-			y: -1.9819727891156242d
+			y: -7.481972789115624d
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
@@ -365,24 +346,8 @@
 				item: { Count: 32, id: "gtceu:red_alloy_ingot" }
 				type: "item"
 			}]
-			x: 7.782803996598652d
-			y: -0.3632653061224502d
-		}
-		{
-			dependencies: ["5DD49D500327A0E2"]
-			description: [
-				"Build this and your water problems are solved."
-				""
-				"(It pumps water... wow!)"
-			]
-			id: "2090574AFF225180"
-			tasks: [{
-				id: "1BDA87B36475CD03"
-				item: "gtceu:primitive_pump"
-				type: "item"
-			}]
-			x: -1.0088095238095334d
-			y: -0.3928571428571459d
+			x: 7.5d
+			y: 0.5006802721087809d
 		}
 		{
 			dependencies: ["7873341ED0BEECC5"]
@@ -396,7 +361,7 @@
 				type: "item"
 			}]
 			x: 7.782803996598652d
-			y: -1.9918367346938766d
+			y: -7.491836734693877d
 		}
 		{
 			dependencies: [
@@ -448,8 +413,8 @@
 					type: "item"
 				}
 			]
-			x: 9.907974064625908d
-			y: -0.3639455782312311d
+			x: 9.625170068027256d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6D20A46BE1B8769D"]
@@ -462,7 +427,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -491,7 +456,7 @@
 				}
 			]
 			x: 12.0d
-			y: 4.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -506,13 +471,10 @@
 				type: "item"
 			}]
 			x: 9.943278725552695d
-			y: 4.000510204081631d
+			y: 10.500510204081632d
 		}
 		{
-			dependencies: [
-				"16A4773C7F0FC5E4"
-				"46CF19DF7CCABB5E"
-			]
+			dependencies: ["16A4773C7F0FC5E4"]
 			description: [""]
 			id: "0BFF9D24E70AA90F"
 			tasks: [{
@@ -521,7 +483,7 @@
 				type: "item"
 			}]
 			x: 6.1d
-			y: 4.000000000000001d
+			y: 10.5d
 		}
 		{
 			dependencies: ["4E90911EBD418378"]
@@ -534,7 +496,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 3.9999999999999964d
+			y: 10.499999999999996d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -548,7 +510,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.9999999999999964d
+			y: 10.499999999999996d
 		}
 		{
 			dependencies: ["46E9664F5053BF68"]
@@ -572,7 +534,7 @@
 				}
 			]
 			x: 9.956954453656492d
-			y: 7.055952380952377d
+			y: 13.555952380952377d
 		}
 		{
 			dependencies: ["5673A00D1E6CC930"]
@@ -585,7 +547,7 @@
 				type: "item"
 			}]
 			x: 13.435337478741515d
-			y: 7.0608843537415105d
+			y: 13.56088435374151d
 		}
 		{
 			dependencies: [
@@ -600,7 +562,7 @@
 				type: "item"
 			}]
 			x: 11.824641528486417d
-			y: 7.05595238095237d
+			y: 13.55595238095237d
 		}
 		{
 			dependencies: ["02E8A60664368ED7"]
@@ -613,13 +575,10 @@
 				type: "item"
 			}]
 			x: 7.211488095238106d
-			y: 1.5071428571428527d
+			y: 8.007142857142853d
 		}
 		{
-			dependencies: [
-				"3906BB5555D181F2"
-				"19A32395875582E6"
-			]
+			dependencies: ["3906BB5555D181F2"]
 			description: ["The first ULV circuits. You will need these in large quantities, so stock up."]
 			id: "39205CF2CB1EA09B"
 			shape: "octagon"
@@ -630,7 +589,7 @@
 				type: "item"
 			}]
 			x: 8.6d
-			y: 1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1D66BF00AD04DB6F"]
@@ -650,7 +609,7 @@
 				type: "item"
 			}]
 			x: 16.584791932397998d
-			y: 4.577551020408194d
+			y: 11.077551020408194d
 		}
 		{
 			dependencies: ["7086A802F1457933"]
@@ -661,7 +620,7 @@
 				item: "gtceu:steam_grinder"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.9d
 			y: -5.0d
 		}
 		{
@@ -674,7 +633,7 @@
 				type: "item"
 			}]
 			x: 3.9d
-			y: 1.5000000000000004d
+			y: 8.0d
 		}
 		{
 			dependencies: ["30BF65A6563283AC"]
@@ -686,7 +645,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -701,7 +660,7 @@
 				type: "item"
 			}]
 			x: 6.1d
-			y: 1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
@@ -712,7 +671,7 @@
 				title: "Multiblocks"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 3.9d
 			y: -4.0d
 		}
 		{
@@ -725,13 +684,10 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.0d
+			y: 9.5d
 		}
 		{
-			dependencies: [
-				"41298DA7145EE9D4"
-				"77BE15E2519FBC46"
-			]
+			dependencies: ["41298DA7145EE9D4"]
 			id: "38A022BA620F25B0"
 			shape: "circle"
 			tasks: [{
@@ -741,7 +697,7 @@
 				type: "item"
 			}]
 			x: 14.898110916241535d
-			y: 0.617857142857126d
+			y: -4.882142857142874d
 		}
 		{
 			dependencies: ["1D66BF00AD04DB6F"]
@@ -753,7 +709,7 @@
 				type: "item"
 			}]
 			x: 16.592897002551055d
-			y: 2.944047619047609d
+			y: 9.444047619047609d
 		}
 		{
 			dependencies: ["1D66BF00AD04DB6F"]
@@ -765,7 +721,7 @@
 				type: "item"
 			}]
 			x: 6.098621120323159d
-			y: 2.9797619047618937d
+			y: 9.479761904761894d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -784,7 +740,7 @@
 				type: "item"
 			}]
 			x: 11.879063297193902d
-			y: 8.203571428571413d
+			y: 14.703571428571413d
 		}
 		{
 			dependencies: [
@@ -800,7 +756,7 @@
 				type: "item"
 			}]
 			x: 14.920049691751721d
-			y: 7.051190476190456d
+			y: 13.551190476190456d
 		}
 		{
 			dependencies: ["21B69724512B0BFF"]
@@ -812,7 +768,7 @@
 				type: "item"
 			}]
 			x: 7.765287786989809d
-			y: -3.4845238095238216d
+			y: -8.984523809523822d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -840,7 +796,7 @@
 			]
 			title: "Chop Chop"
 			x: 9.954201576525982d
-			y: 8.212748576483257d
+			y: 14.712748576483257d
 		}
 		{
 			dependencies: ["1D66BF00AD04DB6F"]
@@ -852,7 +808,7 @@
 				type: "item"
 			}]
 			x: 16.6d
-			y: 1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["01160A6CFBB67DF9"]
@@ -870,320 +826,17 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 1.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["5DD49D500327A0E2"]
-			id: "7DA820D1A29A80FB"
-			shape: "circle"
+			id: "6C4A5BA25A12081D"
 			tasks: [{
-				id: "2E956B2E293B3385"
+				id: "7217127A45566BE1"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -3.9d
-			y: 7.1d
-		}
-		{
-			dependencies: ["77D04F9BC4220B2D"]
-			id: "46CF19DF7CCABB5E"
-			shape: "hexagon"
-			size: 1.4d
-			tasks: [{
-				id: "1C337B7950AD0A18"
-				item: "vintage:centrifuge"
-				type: "item"
-			}]
-			x: 6.107374212360632d
-			y: 5.433462218555377d
-		}
-		{
-			dependencies: ["63105DD121AA63E0"]
-			id: "77BE15E2519FBC46"
-			tasks: [{
-				id: "0853F6ED466ED390"
-				title: "Heating Kiln"
-				type: "custom"
-			}]
-			x: 12.0d
-			y: 0.6d
-		}
-		{
-			dependencies: ["7DA820D1A29A80FB"]
-			id: "37255E30326E1548"
-			shape: "hexagon"
-			tasks: [{
-				id: "084514B1BD22027F"
-				item: "create:large_water_wheel"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 7.1d
-		}
-		{
-			dependencies: ["77D04F9BC4220B2D"]
-			id: "19A32395875582E6"
-			shape: "octagon"
-			size: 1.4d
-			tasks: [
-				{
-					id: "7BF4A55C9A0ADAE2"
-					item: "vintage:vacuum_chamber"
-					type: "item"
-				}
-				{
-					id: "1DF6A3D93F953B33"
-					item: "create:basin"
-					type: "item"
-				}
-			]
-			x: 8.6d
-			y: 7.1d
-		}
-		{
-			dependencies: ["5DD49D500327A0E2"]
-			id: "3120254E07EA5688"
-			shape: "circle"
-			tasks: [{
-				id: "4CDDE79907C15AB2"
-				item: "minecraft:paper"
-				type: "item"
-			}]
-			x: -3.9d
-			y: 8.5d
-		}
-		{
-			dependencies: ["3120254E07EA5688"]
-			id: "5E9F06E08E33FDBD"
-			shape: "circle"
-			tasks: [{
-				id: "170440644F861D21"
-				item: {
-					Count: 1
-					id: "create:sand_paper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -2.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["5E9F06E08E33FDBD"]
-			id: "5FFCA7ECA975FC7E"
-			shape: "circle"
-			tasks: [
-				{
-					id: "7B4281C3A0898F42"
-					item: "create:rose_quartz"
-					type: "item"
-				}
-				{
-					id: "283382032916238C"
-					item: "create:polished_rose_quartz"
-					type: "item"
-				}
-			]
-			x: -1.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["5FFCA7ECA975FC7E"]
-			id: "0FC8BB768959B06A"
-			shape: "circle"
-			tasks: [{
-				id: "431DFFDEB436F24D"
-				item: "create:electron_tube"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["5DD49D500327A0E2"]
-			id: "62034C08BB37D7E4"
-			shape: "circle"
-			tasks: [{
-				id: "2CC0864FFB9EF80E"
-				item: "gtceu:brass_ingot"
-				type: "item"
-			}]
-			x: -3.9d
-			y: 10.0d
-		}
-		{
-			dependencies: ["62034C08BB37D7E4"]
-			id: "041E509E701E3285"
-			tasks: [{
-				id: "78AB5A915C49E090"
-				item: "create:brass_hand"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 10.0d
-		}
-		{
-			dependencies: [
-				"041E509E701E3285"
-				"0FC8BB768959B06A"
-			]
-			id: "6390599E4064B8AE"
-			tasks: [{
-				count: 3L
-				id: "482F347C8F85F599"
-				item: { Count: 3, id: "create:deployer" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 8.5d
-		}
-		{
-			dependencies: [
-				"37255E30326E1548"
-				"6390599E4064B8AE"
-			]
-			id: "77D04F9BC4220B2D"
-			tasks: [{
-				id: "173B6DD3FAD21C10"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			x: 6.100000000000001d
-			y: 7.1d
-		}
-		{
-			dependencies: ["77D04F9BC4220B2D"]
-			id: "7FAC41F89B6A83F9"
-			shape: "circle"
-			tasks: [{
-				id: "31209F520ED8AEA9"
-				title: "GT Create Machines"
-				type: "checkmark"
-			}]
-			x: 4.5d
-			y: 8.500000000000005d
-		}
-		{
-			dependencies: ["77D04F9BC4220B2D"]
-			id: "60C67A5E00FC94DC"
-			shape: "circle"
-			tasks: [{
-				id: "330C89148DE282A0"
-				title: "Bigger Steam Multis"
-				type: "checkmark"
-			}]
 			x: 7.5d
-			y: 8.500000000000005d
-		}
-		{
-			dependencies: ["7FAC41F89B6A83F9"]
-			id: "624845630C9A2EC2"
-			shape: "circle"
-			tasks: [{
-				id: "478613106C499140"
-				item: "vintage:spring_coiling_machine"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 9.500000000000005d
-		}
-		{
-			dependencies: ["7FAC41F89B6A83F9"]
-			id: "67A7EF8E64991931"
-			shape: "circle"
-			tasks: [{
-				id: "75D3756DB7BED1DE"
-				item: "vintage:lathe"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 10.500000000000005d
-		}
-		{
-			dependencies: ["7FAC41F89B6A83F9"]
-			id: "04456BEF7343019C"
-			shape: "circle"
-			tasks: [{
-				id: "4B0CFFAB6342B883"
-				item: "create:steam_engine"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 10.500000000000005d
-		}
-		{
-			dependencies: ["7FAC41F89B6A83F9"]
-			id: "0BA8080D8FF5E415"
-			shape: "circle"
-			tasks: [{
-				id: "5710E36E0C083489"
-				item: "create:mechanical_arm"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 9.500000000000005d
-		}
-		{
-			dependencies: ["60C67A5E00FC94DC"]
-			id: "48FD3A7E3B2FA540"
-			shape: "circle"
-			tasks: [{
-				id: "6A5FE9D043491B12"
-				title: "Large Steam Grinder"
-				type: "custom"
-			}]
-			x: 8.0d
-			y: 10.500000000000005d
-		}
-		{
-			dependencies: ["60C67A5E00FC94DC"]
-			id: "2B0F3152BB2BF7F9"
-			shape: "circle"
-			tasks: [{
-				id: "45F10165D3742CBE"
-				title: "Large Alloy Smeltery"
-				type: "custom"
-			}]
-			x: 7.0d
-			y: 10.500000000000005d
-		}
-		{
-			dependencies: ["60C67A5E00FC94DC"]
-			id: "5950D510CAC39744"
-			shape: "circle"
-			tasks: [{
-				id: "3409E8238B5FA45B"
-				title: "Large Steam Furnace"
-				type: "custom"
-			}]
-			x: 6.5d
-			y: 9.500000000000005d
-		}
-		{
-			dependencies: ["60C67A5E00FC94DC"]
-			id: "71591DAFCFD650F9"
-			shape: "circle"
-			tasks: [{
-				id: "441A71DBBE096CA1"
-				title: "Steam Ore Washer"
-				type: "custom"
-			}]
-			x: 8.5d
-			y: 9.500000000000005d
-		}
-		{
-			dependencies: ["04456BEF7343019C"]
-			id: "753AABD5CE898354"
-			shape: "circle"
-			tasks: [{
-				id: "4AD84A95D58C9169"
-				title: "Easy SU"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: 11.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

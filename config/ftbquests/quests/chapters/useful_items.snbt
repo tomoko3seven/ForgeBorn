@@ -141,6 +141,18 @@
 			x: -1.5d
 			y: -6.5d
 		}
+		{
+			dependencies: ["0DCB161BC77CAA47"]
+			id: "307939BE3A990692"
+			shape: "circle"
+			tasks: [{
+				id: "20522F5C8C89BA98"
+				item: "terramity:pearls_of_persephone"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
 	]
 	title: "Useful Items"
 }

@@ -3,6 +3,13 @@
 	default_quest_shape: ""
 	filename: "aquaman_not_really"
 	group: "0F9F08EAC5B450D0"
+	icon: {
+		Count: 1
+		id: "tide:blue_neonfish"
+		tag: {
+			FishLength: 27.5d
+		}
+	}
 	id: "0AA50C6E6152DC4F"
 	order_index: 3
 	quest_links: [ ]

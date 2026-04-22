@@ -1,7 +1,7 @@
 ServerEvents.tags('item', (event) => {
-    /*event.add('#forge:ingots/terra_steel', 'botania:terrasteel_ingot');
-  event.add('#forge:ingots/mana_steel', 'botania:manasteel_ingot');
-  event.add('#forge:ingots/elementium', 'botania:elementium_ingot');*/
+  event.remove("forge:ingots/steel", "ad_astra:steel_ingot");
+  event.remove("forge:ingots/steel", "tconstruct:steel_ingot");
+  event.add('forge:ingots/andesite_alloy', 'create:andesite_alloy');
 });
 
 ServerEvents.tags('block', (event) => {

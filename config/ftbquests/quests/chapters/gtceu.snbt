@@ -36,7 +36,7 @@
 			image: "gui:textures/stone_age.png"
 			rotation: 0.0d
 			width: 7.0d
-			x: -7.5d
+			x: -8.0d
 			y: -6.0d
 		}
 	]
@@ -75,7 +75,7 @@
 				type: "choice"
 			}]
 			shape: "hexagon"
-			size: 1.6d
+			size: 1.0d
 			subtitle: "My generation didn't have this type of technology"
 			tasks: [{
 				count: 2L
@@ -84,8 +84,8 @@
 				type: "item"
 			}]
 			title: "Regular Furnace"
-			x: -4.604081632653051d
-			y: -1.625d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4D45BC7F9DD88068"]
@@ -145,8 +145,8 @@
 				type: "checkmark"
 			}]
 			title: "My advice"
-			x: -5.861437074829958d
-			y: -1.6484693877551067d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
@@ -194,14 +194,11 @@
 				}
 			]
 			title: "Copper and Tin"
-			x: -2.6112244897959256d
-			y: -1.6307823129252057d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"60ECB1BE4EC30A0C"
-				"3A4B35AA64F60096"
-			]
+			dependencies: ["3A4B35AA64F60096"]
 			description: ["I advise you to chunk-load your base and continuously mine for Copper and Tin. Stockpiling Bronze now will make the next stage much less painful."]
 			id: "73FB99F48CD69B25"
 			rewards: [{
@@ -211,15 +208,15 @@
 				type: "random"
 			}]
 			shape: "octagon"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				count: 16L
 				id: "0EF826B3602C9D7A"
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
-			x: -1.1117346938775512d
-			y: -0.48426870748298967d
+			x: -0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["21DC8ECCCE15351E"]
@@ -249,8 +246,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.8872448979591852d
-			y: -1.6271258503401356d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5D617C14AF5E2ABB"]
@@ -263,7 +260,7 @@
 				type: "random"
 			}]
 			shape: "hexagon"
-			size: 1.3d
+			size: 1.0d
 			tasks: [
 				{
 					id: "0BEEA92177941273"
@@ -276,8 +273,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5181972789115648d
-			y: -1.6420918367346857d
+			x: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4D45BC7F9DD88068"]
@@ -327,8 +324,8 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.25d
+			x: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["661E54379A9CDCEE"]
@@ -346,8 +343,8 @@
 				type: "checkmark"
 			}]
 			title: "Best source of fuel"
-			x: -1.0d
-			y: 1.0d
+			x: 0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["661E54379A9CDCEE"]
@@ -361,8 +358,8 @@
 				type: "checkmark"
 			}]
 			title: "BLOW UP - Radiohead"
-			x: -4.0d
-			y: 1.0d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
@@ -463,7 +460,7 @@
 				}
 			]
 			title: "Flint Tools"
-			x: -6.799999999999999d
+			x: -6.5d
 			y: -0.5d
 		}
 		{
@@ -477,15 +474,15 @@
 				type: "random"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				count: 3L
 				id: "2C908975E0CB0F2F"
 				item: { Count: 3, id: "twigs:cobblestone_bricks" }
 				type: "item"
 			}]
-			x: -5.5763605442176996d
-			y: -0.4606292517006978d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2BDB8A9D6652280D"]
@@ -498,8 +495,8 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: -2.5925170068027112d
-			y: -3.62006802721088d
+			x: -3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7D91E90383656163"]
@@ -527,8 +524,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5042942176870895d
-			y: -4.977040816326522d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["73488B39DFE88402"]
@@ -543,7 +540,7 @@
 			}]
 			shape: "circle"
 			tasks: [{
-				icon: "minecraft:white_bed"
+				icon: "minecraft:purple_bed"
 				id: "581DE8EF6EC994F2"
 				item: {
 					Count: 1
@@ -556,8 +553,8 @@
 				type: "item"
 			}]
 			title: "BED TIME!"
-			x: -0.5042942176870895d
-			y: -6.512755102040806d
+			x: -0.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["73488B39DFE88402"]
@@ -577,8 +574,8 @@
 				item: "gtceu:coke_gem"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -5.899999999999999d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -604,7 +601,7 @@
 			}
 			id: "216757436BCABF06"
 			shape: "hexagon"
-			size: 1.4d
+			size: 1.0d
 			tasks: [
 				{
 					id: "1758AB51FD8036A9"
@@ -698,8 +695,8 @@
 					type: "item"
 				}
 			]
-			x: -4.6471513605442425d
-			y: -3.655612244897961d
+			x: -5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
@@ -736,8 +733,8 @@
 					type: "item"
 				}
 			]
-			x: -1.117006802721095d
-			y: -3.6129251700680345d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["610F433CFC55B005"]
@@ -750,8 +747,8 @@
 				item: "gtceu:compressed_coke_clay"
 				type: "item"
 			}]
-			x: 0.06713435374147991d
-			y: -3.6198979591836693d
+			x: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
@@ -828,8 +825,8 @@
 					type: "item"
 				}
 			]
-			x: -2.617049319727908d
-			y: -6.202891156462595d
+			x: -3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
@@ -843,8 +840,8 @@
 				type: "item"
 			}]
 			title: "Better Iron"
-			x: -2.6136904761905093d
-			y: -4.88265306122449d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["616B494E248D88E9"]
@@ -889,7 +886,7 @@
 					type: "item"
 				}
 			]
-			x: -6.799022108843566d
+			x: -6.499022108843567d
 			y: 0.9776360544217582d
 		}
 		{
@@ -915,33 +912,21 @@
 				type: "item"
 			}]
 			title: "Advice For Getting Resources"
-			x: 0.0d
-			y: 0.5d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
 			id: "5E96E5CBB0BCD07A"
 			shape: "circle"
+			size: 0.8d
 			tasks: [{
 				id: "37AE17295945CBCB"
 				item: "legendarysurvivaloverhaul:canteen"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.899999999999999d
-		}
-		{
-			dependencies: ["3A2F8256E86DC5F3"]
-			id: "60ECB1BE4EC30A0C"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "0D9243555A46E690"
-				title: "Kiln"
-				type: "custom"
-			}]
-			x: -3.4818027210884352d
-			y: -0.4706632653061149d
+			x: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
@@ -959,8 +944,40 @@
 				}
 				type: "item"
 			}]
-			x: -1.8548469387755233d
-			y: -2.770663265306112d
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["73488B39DFE88402"]
+			id: "0B0EFC197D48AFB7"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0809181930A86E28"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					id: "102A61C0386BAD03"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "01181BF216855A8C"
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "313A46629A99505A"
+					item: { Count: 10, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -3.5d
 		}
 	]
 	title: "First Days of Caveman"

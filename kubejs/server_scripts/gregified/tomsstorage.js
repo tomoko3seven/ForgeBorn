@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
         .assembler('gtceu:assembler/ts.crafting_terminal')
         .itemInputs(
             'toms_storage:ts.storage_terminal',
-            'forestry:worktable',
+            //'forestry:worktable',
             '#gtceu:circuits/lv',
             'gtceu:computer_monitor_cover',
             '4x gtceu:nickel_double_wire'
