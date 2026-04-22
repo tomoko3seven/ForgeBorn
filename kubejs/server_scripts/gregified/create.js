@@ -50,6 +50,22 @@ ServerEvents.tags('item', (event) => {
 ServerEvents.recipes((event) => {
     //Mechanism related removals
     event.remove({ type: 'create:mechanical_crafting' });
+    event.remove({ type: 'create:mixing' });
+    event.remove({ type: 'create:crushing' });
+    event.remove({ type: 'create:cutting' });
+    event.remove({ type: 'create:compacting' })
+    event.remove({ type: 'create:filling' })    
+
+    event.remove({ type: 'vintage:centrifugation' });
+    event.remove({ type: 'vintage:coiling' });
+    event.remove({ type: 'vintage:curving' });
+    event.remove({ type: 'vintage:laser_cutting' });
+    event.remove({ type: 'vintage:pressurizing' });
+    event.remove({ type: 'vintage:turning' });
+    event.remove({ type: 'vintage:vacuumizing' });
+    event.remove({ type: 'vintage:pressing' });
+    
+
     event.remove({
         id: 'create:cutting/compat/blue_skies/stripped_cherry_wood',
     });
@@ -1390,7 +1406,7 @@ ServerEvents.recipes((event) => {
         'create:andesite_funnel',
         [
             'RRR',
-            'RAR ',
+            'RAR',
             '   ',
         ],
         {
@@ -1404,12 +1420,12 @@ ServerEvents.recipes((event) => {
         'create:andesite_tunnel',
         [
             'RRR',
-            'RAR ',
+            'RAR',
             'RAR',
         ],
         {
             A: 'gtceu:rubber_foil',
-            R: 'gtceu:andesite_alloy_plate'
+            R: '#forge:plates/andesite_alloy'
         }
     );
     //Brass Tunnel
@@ -1418,7 +1434,7 @@ ServerEvents.recipes((event) => {
         'create:brass_tunnel',
         [
             'RTR',
-            'RAR ',
+            'RAR',
             'RAR',
         ],
         {
@@ -1447,7 +1463,7 @@ ServerEvents.recipes((event) => {
         'create_connected:item_silo',
         [
             'R R',
-            'RAR ',
+            'RAR',
             'R R',
         ],
         {
@@ -1462,6 +1478,28 @@ ServerEvents.recipes((event) => {
         'create:andesite_alloy',
         'gtceu:andesite_alloy_plate'
     );
+    //Brass Hand
+    event.remove({ output: 'create:brass_hand' });
+    event.shaped(
+        'create:brass_hand',
+        [
+            ' A ',
+            'RRR ',
+            ' RR',
+        ],
+        {
+            A: '#forge:plates/andesite_alloy',
+            R: 'gtceu:brass_plate'
+        }
+    );
+    event.recipes.gtceu
+        .assembler('create:brass_hand')
+        .itemInputs('4x gtceu:brass_plate')
+        .itemInputs('create:andesite_alloy')
+        .itemOutputs('create:brass_hand')
+        .circuit(11)
+        .duration(100)
+        .EUt(8);
     //Sequenced Gearshift
     /*event.recipes.gtceu
         .assembler('create:sequenced_gearshift')
@@ -1907,15 +1945,6 @@ ServerEvents.recipes((event) => {
             N: 'minecraft:netherrack',
         }
     );
-    //Brass Hand
-    event.recipes.gtceu
-        .assembler('create:brass_hand')
-        .itemInputs('4x gtceu:brass_plate')
-        .itemInputs('create:andesite_alloy')
-        .itemOutputs('create:brass_hand')
-        .circuit(11)
-        .duration(100)
-        .EUt(8);
     //Rose Quartz
     event.remove({ output: 'create:rose_quartz' });
     event.recipes.gtceu
