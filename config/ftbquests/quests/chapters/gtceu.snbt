@@ -85,7 +85,7 @@
 			}]
 			title: "Regular Furnace"
 			x: -5.5d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4D45BC7F9DD88068"]
@@ -130,7 +130,7 @@
 				}
 			]
 			x: -8.397959183673441d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2BDB8A9D6652280D"]
@@ -146,7 +146,7 @@
 			}]
 			title: "My advice"
 			x: -6.5d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
@@ -166,7 +166,7 @@
 				type: "item"
 			}]
 			x: -8.39999999999999d
-			y: -2.089965986394582d
+			y: -1.0899659863945819d
 		}
 		{
 			dependencies: ["2BDB8A9D6652280D"]
@@ -195,7 +195,7 @@
 			]
 			title: "Copper and Tin"
 			x: -3.5d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3A4B35AA64F60096"]
@@ -216,7 +216,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["21DC8ECCCE15351E"]
@@ -247,7 +247,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5D617C14AF5E2ABB"]
@@ -274,7 +274,7 @@
 				}
 			]
 			x: -0.5d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4D45BC7F9DD88068"]
@@ -297,7 +297,7 @@
 			}]
 			title: "Some information about the environment"
 			x: -9.861309523809545d
-			y: 0.8459183673469326d
+			y: 1.8459183673469326d
 		}
 		{
 			dependencies: ["73FB99F48CD69B25"]
@@ -325,7 +325,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["661E54379A9CDCEE"]
@@ -344,7 +344,7 @@
 			}]
 			title: "Best source of fuel"
 			x: 0.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["661E54379A9CDCEE"]
@@ -359,7 +359,7 @@
 			}]
 			title: "BLOW UP - Radiohead"
 			x: -1.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
@@ -461,7 +461,7 @@
 			]
 			title: "Flint Tools"
 			x: -6.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1DC5DC64F32415C0"]
@@ -482,7 +482,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2BDB8A9D6652280D"]
@@ -768,7 +768,7 @@
 				}
 			]
 			x: -11.300000000000002d
-			y: -0.5000000000000007d
+			y: 0.49999999999999933d
 		}
 		{
 			dependencies: ["41BA880BB1F7D39E"]
@@ -801,7 +801,7 @@
 				type: "item"
 			}]
 			x: -9.9d
-			y: -0.5000000000000007d
+			y: 0.49999999999999933d
 		}
 		{
 			dependencies: [
@@ -862,7 +862,7 @@
 			}]
 			title: "Storage Drawers"
 			x: -8.39715136054425d
-			y: -3.1341836734693844d
+			y: -2.1341836734693844d
 		}
 		{
 			dependencies: ["1DC5DC64F32415C0"]
@@ -887,7 +887,7 @@
 				}
 			]
 			x: -6.499022108843567d
-			y: 0.9776360544217582d
+			y: 1.9776360544217582d
 		}
 		{
 			dependencies: ["2E957F7E56FB198B"]
@@ -899,7 +899,7 @@
 				type: "item"
 			}]
 			x: -8.40616496598642d
-			y: 0.9467687074829954d
+			y: 1.9467687074829954d
 		}
 		{
 			dependencies: ["73FB99F48CD69B25"]
@@ -913,7 +913,7 @@
 			}]
 			title: "Advice For Getting Resources"
 			x: 1.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7E1A7E5E5EE9A90B"]
@@ -978,6 +978,15 @@
 			]
 			x: 1.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["610F433CFC55B005"]
+			icon: "kubejs:seared_bricks_raw"
+			id: "17E52B0FCD96C5F7"
+			shape: "circle"
+			title: "Tinkers Constract Smeltery"
+			x: -2.0d
+			y: -2.3d
 		}
 	]
 	title: "First Days of Caveman"
