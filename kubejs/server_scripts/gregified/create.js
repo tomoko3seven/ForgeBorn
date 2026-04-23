@@ -165,8 +165,7 @@ ServerEvents.recipes((event) => {
             F: '#forge:tools/files',
         }
     );
-
-    /*event.recipes.gtceu
+    event.recipes.gtceu
         .assembler('create:shaft')
         .itemInputs('2x gtceu:andesite_alloy_rod')
         .itemOutputs('8x create:shaft')
@@ -179,7 +178,7 @@ ServerEvents.recipes((event) => {
         .notConsumable('gtceu:normal_pipe_extruder_mold')
         .itemOutputs('12x create:shaft')
         .duration(50)
-        .EUt(GTValues.VA[GTValues.MV]);*/
+        .EUt(GTValues.VA[GTValues.MV]);
     //Andesite Casing
     event.recipes.gtceu
         .assembler('create:andesite_casing')
@@ -1500,6 +1499,127 @@ ServerEvents.recipes((event) => {
         .circuit(11)
         .duration(100)
         .EUt(8);
+    //Packager
+    event.remove({ output: 'create:packager' });
+    event.shaped(
+        'create:packager',
+        [
+            ' A ',
+            'ACA ',
+            'RAR',
+        ],
+        {
+            A: '#forge:plates/iron',
+            C: 'create:cardboard_block',
+            R: 'gtceu:red_alloy_single_cable'
+        }
+    );
+    //Frogport
+    event.remove({ id: 'create:crafting/logistics/package_frogport' });
+    event.shaped(
+        'create:package_frogport',
+        [
+            'SXS',
+            'CFC',
+            'SES',
+        ],
+        {
+            F: 'create:item_vault',
+            X: 'ulvcovm:ulv_robot_arm',
+            E: 'gtceu:andesite_alloy_spring',
+            S: 'gtceu:andesite_alloy_plate',
+            C: '#gtceu:circuits/ulv',
+        }
+    );
+    //Display Link
+    event.recipes.gtceu
+        .assembler('create:display_link')
+        .itemInputs(
+            'create:brass_casing',
+            'create:transmitter',
+            'gtceu:copper_plate'
+        )
+        .itemOutputs('create:display_link')
+        .circuit(6)
+        .duration(50)
+        .EUt(8);
+    //Display Board
+    event.remove({ output: 'create:display_board' });
+    event.shaped(
+        '2x create:display_board',
+        [
+            '   ',
+            'PEP',
+            '   ',
+        ],
+        {
+            P: 'gtceu:andesite_alloy_plate',
+            E: 'create:electron_tube',
+        }
+    );
+    event.recipes.gtceu
+        .assembler('create:display_board')
+        .itemInputs('2x gtceu:andesite_alloy_plate', 'create:electron_tube')
+        .itemOutputs('4x create:display_board')
+        .circuit(10)
+        .duration(50)
+        .EUt(8);
+    //Rose Quartz Lamp
+    event.remove({ output: 'create:rose_quartz_lamp' });
+    event.shaped(
+        'create:rose_quartz_lamp',
+        [
+            'DPD',
+            'PEP',
+            'DPD',
+        ],
+        {
+            P: '#forge:dusts/redstone',
+            E: 'create:polished_rose_quartz',
+            D: '#forge:plates/zinc'
+        }
+    );
+    //Copper Diving Helmet
+    event.remove({ output: 'create:copper_diving_helmet' });
+    event.shaped(
+        'create:copper_diving_helmet',
+        [
+            'PPP',
+            'PGP',
+            '   ',
+        ],
+        {
+            P: 'gtceu:copper_plate',
+            G: '#forge:glass_panes/colorless'
+        }
+    );
+    //Copper Diving Boots
+    event.remove({ output: 'create:copper_diving_boots' });
+    event.shaped(
+        'create:copper_diving_boots',
+        [
+            'P P',
+            'P P',
+            'A A',
+        ],
+        {
+            P: 'gtceu:copper_plate',
+            A: '#forge:plates/andesite_alloy'
+        }
+    );
+    //Sand Paper
+    event.remove({ id: 'create:crafting/materials/sand_paper' });
+    event.recipes.gtceu
+        .assembler('create:sand_paper')
+        .itemInputs(
+            'create:brass_casing',
+            'create:cogwheel',
+            'create:electron_tube'
+        )
+        .itemOutputs('create:sand_paper')
+        .circuit(5)
+        .duration(50)
+        .EUt(8);
     //Sequenced Gearshift
     /*event.recipes.gtceu
         .assembler('create:sequenced_gearshift')
@@ -1823,39 +1943,6 @@ ServerEvents.recipes((event) => {
         .circuit(6)
         .duration(50)
         .EUt(8);
-    //Display Link
-    event.recipes.gtceu
-        .assembler('create:display_link')
-        .itemInputs(
-            'create:brass_casing',
-            'create:transmitter',
-            'gtceu:copper_plate'
-        )
-        .itemOutputs('create:display_link')
-        .circuit(6)
-        .duration(50)
-        .EUt(8);
-    //Display Board
-    event.remove({ output: 'create:display_board' });
-    event.shaped(
-        '2x create:display_board',
-        [
-            '   ',
-            'PEP',
-            '   ',
-        ],
-        {
-            P: 'gtceu:andesite_alloy_plate',
-            E: 'create:electron_tube',
-        }
-    );
-    event.recipes.gtceu
-        .assembler('create:display_board')
-        .itemInputs('2x gtceu:andesite_alloy_plate', 'create:electron_tube')
-        .itemOutputs('4x create:display_board')
-        .circuit(10)
-        .duration(50)
-        .EUt(8);
     //Nixie Tube
     event.recipes.gtceu
         .assembler('create:nixie_tube')
@@ -1985,23 +2072,6 @@ ServerEvents.recipes((event) => {
             X: 'ulvcovm:ulv_conveyor_module',
             E: 'gtceu:andesite_alloy_plate',
             S: 'gtceu:andesite_alloy_rod',
-            C: '#gtceu:circuits/ulv',
-        }
-    );
-    //frogport, kinda like a hopper
-    event.remove({ id: 'create:crafting/logistics/package_frogport' });
-    event.shaped(
-        'create:package_frogport',
-        [
-            'SXS',
-            'CFC',
-            'SES',
-        ],
-        {
-            F: 'create:item_vault',
-            X: 'ulvcovm:ulv_robot_arm',
-            E: 'gtceu:andesite_alloy_spring',
-            S: 'gtceu:andesite_alloy_plate',
             C: '#gtceu:circuits/ulv',
         }
     );
