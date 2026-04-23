@@ -536,7 +536,7 @@
 				type: "item"
 			}]
 			x: 21.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -553,7 +553,7 @@
 				type: "item"
 			}]
 			x: 23.5d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1D66BF00AD04DB6F"]
@@ -597,7 +597,7 @@
 				type: "item"
 			}]
 			x: 21.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["68D6CBA3B0836C88"]
@@ -658,7 +658,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
