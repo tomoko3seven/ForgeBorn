@@ -83,6 +83,13 @@ StartupEvents.registry('item', (event) => {
     event.create('rope');
     event.create('blank_upgrade');
 
+    event.create('abrasive_paste');
+    event.create('paste_treated_paper').displayName('Paste-Treated Paper');
+
+    event.create('mica_based_foil');
+    event.create('mica_based_sheet');
+    event.create('mica_based_pulp');
+
     event.create('crushed_blue_moss');
     event.create('blue_moss_cellulose_pulp');
     event.create('blue_moss_substrate');
