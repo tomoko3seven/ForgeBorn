@@ -264,7 +264,7 @@
 				title: "1"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -3.6999999999999997d
 			y: 0.0d
 		}
 		{
@@ -276,7 +276,7 @@
 				type: "custom"
 			}]
 			title: "12"
-			x: -4.0d
+			x: -3.6999999999999997d
 			y: -3.5d
 		}
 		{
@@ -594,7 +594,7 @@
 				item: "gtca:green_house"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 12.0d
 			y: 5.0d
 		}
 		{
@@ -606,7 +606,7 @@
 				title: "Compact Growth Chamber"
 				type: "custom"
 			}]
-			x: 15.0d
+			x: 12.0d
 			y: 4.0d
 		}
 		{
@@ -1898,6 +1898,145 @@
 			}]
 			x: -19.0d
 			y: 7.0d
+		}
+		{
+			id: "4FC9233C5E8F2609"
+			shape: "circle"
+			tasks: [{
+				id: "175186F1FAD05671"
+				item: "undergarden:virulent_mix_bucket"
+				type: "item"
+			}]
+			x: 15.500000000000002d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0EE40516BA207B6A"
+				"4B94A52CC6EC267D"
+			]
+			hide_dependency_lines: true
+			id: "32DCA4BB7D3D923C"
+			tasks: [{
+				id: "7E166DBCD40D8639"
+				item: "gtceu:mv_extractor"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4FC9233C5E8F2609"
+				"32DCA4BB7D3D923C"
+			]
+			id: "62A358D8066FDEE2"
+			tasks: [{
+				id: "0B9788AA73D307B8"
+				title: "virulent slurry"
+				type: "custom"
+			}]
+			x: 15.500000000000002d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62A358D8066FDEE2"]
+			id: "48703CD6C87C33B0"
+			tasks: [{
+				id: "1322C40E0C04BB7D"
+				item: "gtceu:biomass_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["62A358D8066FDEE2"]
+			id: "60EFCB300F6EB0D0"
+			tasks: [{
+				id: "5A10371BD32427E2"
+				title: "toxic waste"
+				type: "custom"
+			}]
+			x: 15.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["62A358D8066FDEE2"]
+			id: "6E97BCE508E37B86"
+			tasks: [{
+				id: "606D8188E55C2B59"
+				title: "ancient suspension of undergarden microorganisms "
+				type: "custom"
+			}]
+			x: 16.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["62A358D8066FDEE2"]
+			id: "7B849664A51C66FC"
+			tasks: [{
+				id: "3DC8EB4E06379AE8"
+				title: "toxic residue"
+				type: "custom"
+			}]
+			x: 17.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["48703CD6C87C33B0"]
+			id: "7FFFF7A155B0A89B"
+			tasks: [{
+				id: "3D283CAC6A7ED3D4"
+				title: "Biochar n Volatile Gas"
+				type: "custom"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60EFCB300F6EB0D0"]
+			id: "50776C365BCED0AB"
+			tasks: [{
+				id: "30B96D8FF00FCB64"
+				title: "vaporize"
+				type: "custom"
+			}]
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["50776C365BCED0AB"]
+			id: "3FBD92EF47F65A61"
+			tasks: [{
+				id: "55DB4D87C4AD4ED8"
+				title: "volatile gas"
+				type: "custom"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7B849664A51C66FC"]
+			id: "528C44132C24D06F"
+			tasks: [{
+				id: "53ABA47561A0F642"
+				title: "heavy sludge n sulfur compounds"
+				type: "custom"
+			}]
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["528C44132C24D06F"]
+			id: "4F4F40C95308C43E"
+			tasks: [{
+				id: "0AD992F0A9FED045"
+				title: "sulfur n sulfur dioxide"
+				type: "custom"
+			}]
+			x: 17.0d
+			y: 3.0d
 		}
 	]
 	title: "&bMedium Voltage"

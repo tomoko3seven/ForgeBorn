@@ -141,8 +141,8 @@
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: 4.9d
-			y: -5.0d
+			x: 2.5000000000000004d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -307,8 +307,8 @@
 				title: "Steel Upgrade!"
 				type: "checkmark"
 			}]
-			x: 1.975661139455795d
-			y: -2.5704081632652986d
+			x: -3.5d
+			y: 2.1d
 		}
 		{
 			dependencies: ["41298DA7145EE9D4"]
@@ -584,8 +584,8 @@
 				item: "gtceu:steam_grinder"
 				type: "item"
 			}]
-			x: 2.9d
-			y: -5.0d
+			x: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6DEE2335B62CFF24"]
@@ -608,8 +608,8 @@
 				title: "Multiblocks"
 				type: "checkmark"
 			}]
-			x: 3.9d
-			y: -4.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0C7FEB46E0AAF532"]
@@ -1086,6 +1086,10 @@
 			y: -3.0d
 		}
 		{
+			dependencies: [
+				"68D6CBA3B0836C88"
+				"10C645C144E2548B"
+			]
 			id: "29E36A37031EC363"
 			shape: "circle"
 			tasks: [{
@@ -1215,6 +1219,17 @@
 			}]
 			x: 15.5d
 			y: -10.0d
+		}
+		{
+			id: "10C645C144E2548B"
+			shape: "circle"
+			tasks: [{
+				id: "740C4580CEFE7833"
+				item: "kubejs:abrasive_paste"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

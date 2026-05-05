@@ -24,7 +24,7 @@ StartupEvents.registry('block', (event) => {
         .soundType('stone')
         .tagBlock('minecraft:mineable/pickaxe');
 
-    event
+    /*event
         .create('heavy_cabeling')
         .material('wool')
         .hardness(2.0)
@@ -32,7 +32,7 @@ StartupEvents.registry('block', (event) => {
         .property(BlockProperty.AXIS)
         .placementState((ctx) => {
             return ctx.set('axis', ctx.clickedFace.axis);
-        });
+        });*/
 
     //Huge Thanks to Puff
     global.Casings = [

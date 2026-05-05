@@ -1412,6 +1412,38 @@
 			x: 6.0d
 			y: -7.0d
 		}
+		{
+			dependencies: ["169F681804AC4A89"]
+			id: "738681D855749DD8"
+			tasks: [{
+				id: "00139DDA96686387"
+				item: "kubejs:mica_based_sheet"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			id: "169F681804AC4A89"
+			tasks: [{
+				id: "1883308B22726380"
+				item: "kubejs:mica_based_pulp"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["738681D855749DD8"]
+			id: "657E8266E9089F3D"
+			tasks: [{
+				id: "3515CCE0DD955B03"
+				item: "kubejs:mica_insulator_foil"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
 	]
 	title: "Low Voltage"
 }

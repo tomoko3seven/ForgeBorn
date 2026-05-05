@@ -86,7 +86,7 @@ StartupEvents.registry('item', (event) => {
     event.create('abrasive_paste');
     event.create('paste_treated_paper').displayName('Paste-Treated Paper');
 
-    event.create('mica_based_foil');
+    event.create('mica_insulator_foil');
     event.create('mica_based_sheet');
     event.create('mica_based_pulp');
 
@@ -253,5 +253,3 @@ StartupEvents.registry('item', (event) => {
     Circuit('godium', 'processor_computer', 'uiv');
     Mainframe('godium', 'max');
 });
-
-Platform.mods.kubejs.name = 'ForgeBorn';
