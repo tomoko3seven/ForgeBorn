@@ -60,12 +60,6 @@
     "enlarged_me_stocking_bus_info": true,
     "pterb_info": true
   },
-  "railcraft": {
-    "signals": true,
-    "track_component": true,
-    "locomotive": true,
-    "switch_track": true
-  },
   "avaritia": {
     "extreme_smithing": true,
     "crafting_table": true,
@@ -73,9 +67,6 @@
   },
   "specialmobs": {
     "display_ninja_disguises": true
-  },
-  "immersiveengineering": {
-    "multiblock_icon": true
   },
   "gtceu": {
     "primitive_pump": true,
@@ -164,5 +155,8 @@
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
+  },
+  "aether_redux": {
+    "logicator": true
   }
 }

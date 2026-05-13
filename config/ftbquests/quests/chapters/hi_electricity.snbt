@@ -5,32 +5,14 @@
 	group: "693226878D58638A"
 	icon: "gtceu:ulv_machine_hull"
 	id: "2A22A2F6A41A7A60"
-	images: [
-		{
-			height: 2.4d
-			image: "gtceu:block/casings/voltage/lv/bottom"
-			rotation: 45.0d
-			width: 2.4d
-			x: -3.8964285714285722d
-			y: 12.323511904761908d
-		}
-		{
-			height: 2.4d
-			image: "gtceu:block/casings/voltage/lv/bottom"
-			rotation: 0.0d
-			width: 2.4d
-			x: -3.8488095238095212d
-			y: 12.371130952380966d
-		}
-		{
-			height: 2.0d
-			image: "gui:textures/ulv_age.png"
-			rotation: 0.0d
-			width: 4.1d
-			x: -1.5d
-			y: 5.5d
-		}
-	]
+	images: [{
+		height: 2.0d
+		image: "gui:textures/ulv_age.png"
+		rotation: 0.0d
+		width: 4.1d
+		x: 2.5d
+		y: -6.0d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -45,7 +27,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
@@ -91,7 +73,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3884187493BA916A"]
@@ -131,65 +113,13 @@
 			}]
 			title: "Fall through Bedrock."
 			x: -10.499999999999998d
-			y: -7.0d
-		}
-		{
-			dependencies: ["645FC277598EA984"]
-			description: [
-				"The Sky of Beginning"
-				""
-				"Pick up as many of Botania's mystical flowers as you can. Right now, white is the most useful for you."
-				""
-				"You may also grow them by using a mystical fertilizer on a petal placed on the floor, or by using mystical fertilizer on grass."
-			]
-			id: "2271ABC7231D8B63"
-			tasks: [{
-				id: "5F8E02A14EA9FB1E"
-				item: "botania:white_petal"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["2271ABC7231D8B63"]
-			id: "6BED4439C998605A"
-			tasks: [{
-				id: "6485AC34C9DB8E4B"
-				item: "botania:apothecary_default"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2271ABC7231D8B63"]
-			description: ["Used in \"Botania\" and \"Nature's Aura\" recipes."]
-			id: "2E601621FDC14F92"
-			tasks: [{
-				id: "08D0C7913BED82EA"
-				item: "kubejs:omnipetal"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["6BED4439C998605A"]
-			description: [""]
-			id: "2CFF6BCC5C94D72F"
-			tasks: [{
-				id: "73BA1E60B943D289"
-				item: "botania:pure_daisy"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -0.7999999999999999d
+			y: -7.5d
 		}
 		{
 			dependencies: [
-				"5B7BC416799EA7AC"
-				"089DE1A20438504A"
+				"1599BA12A06CF737"
+				"36A9C9567012F3A2"
+				"0593F704E467025C"
 			]
 			description: ["A standard mana pool"]
 			id: "60CC6B0FFB125162"
@@ -199,89 +129,32 @@
 				item: "botania:floating_endoflame"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "6E2DF8643C743DC9"
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 2.1285714285714334d
-			y: -0.7500000000000071d
-		}
-		{
-			dependencies: ["2CFF6BCC5C94D72F"]
-			id: "236E5910A5F70B4E"
-			rewards: [{
-				id: "3E8E4115F1A3FA92"
-				item: "botania:endoflame"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0A4C5B4A1576DCA6"
-				item: "botania:livingrock"
-				type: "item"
-			}]
-			x: 6.021428571428579d
-			y: 0.857142857142847d
-		}
-		{
-			dependencies: [
-				"2E601621FDC14F92"
-				"1567303A505B75C2"
-			]
-			id: "7E27C475FE68D0FD"
-			tasks: [{
-				id: "1F982DB284D26594"
-				item: "naturesaura:nature_altar"
-				type: "item"
-			}]
 			x: 9.0d
-			y: -0.8d
-		}
-		{
-			dependencies: ["7E27C475FE68D0FD"]
-			description: ["The key to Botania."]
-			id: "7E4FED40355C4195"
-			tasks: [{
-				id: "79F0A8BBB86DA933"
-				item: "kubejs:mana_core"
-				type: "item"
-			}]
-			x: 8.985714285714302d
-			y: 0.8928571428571388d
+			y: 2.5d
 		}
 		{
 			dependencies: [
-				"7E4FED40355C4195"
-				"236E5910A5F70B4E"
-			]
-			description: ["A weaker version of the Mana Pool. It has a very small Mana capacity."]
-			id: "5F4EAA3099100BE6"
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				id: "1C9B67E560F9038B"
-				item: "botania:diluted_pool"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.1d
-		}
-		{
-			dependencies: [
-				"5F4EAA3099100BE6"
 				"12AFFE6ACED3F9FA"
+				"60CC6B0FFB125162"
 			]
 			description: ["Manasteel is a supreme material for early-game tools. Use it wisely and craft it in bulk."]
 			id: "611883FA18804DBD"
 			shape: "hexagon"
-			size: 1.2d
+			size: 1.0d
 			tasks: [{
 				id: "46ACE59CE4972F77"
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 7.521428571428579d
-			y: 2.607142857142847d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2F2E26046D98117D"]
@@ -292,7 +165,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4E1C035012ADA7CA"]
@@ -304,7 +177,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 5.799999999999999d
+			y: 7.299999999999999d
 		}
 		{
 			dependencies: ["4E1C035012ADA7CA"]
@@ -316,7 +189,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 9.1d
+			y: 8.6d
 		}
 		{
 			dependencies: [
@@ -326,7 +199,7 @@
 			description: ["Use the Seal to become worthy of entering the Nether."]
 			id: "4E1C035012ADA7CA"
 			shape: "hexagon"
-			size: 1.6d
+			size: 1.5d
 			tasks: [
 				{
 					dimension: "minecraft:the_nether"
@@ -339,8 +212,8 @@
 					type: "item"
 				}
 			]
-			x: 10.9d
-			y: 7.499999999999999d
+			x: 14.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["60CC6B0FFB125162"]
@@ -351,8 +224,8 @@
 				item: { Count: 4, id: "botania:mana_powder" }
 				type: "item"
 			}]
-			x: 4.011904761904759d
-			y: -0.7505102040816354d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -366,23 +239,23 @@
 				item: "gtceu:ulv_cutter"
 				type: "item"
 			}]
-			x: -0.03333333333332292d
-			y: 2.5809523809523798d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3CE0DCD46A0E35AD"]
 			description: ["Needed for a new forest ritual!"]
 			id: "1567303A505B75C2"
 			shape: "hexagon"
-			size: 1.6d
+			size: 1.0d
 			tasks: [{
 				count: 8L
 				id: "4C45097E8B585A8F"
 				item: "naturesaura:wood_stand"
 				type: "item"
 			}]
-			x: 10.923809523809517d
-			y: -0.7857142857142847d
+			x: 13.5d
+			y: -0.7999999999999999d
 		}
 		{
 			dependencies: ["1567303A505B75C2"]
@@ -392,22 +265,25 @@
 				item: "kubejs:token_of_light"
 				type: "item"
 			}]
-			x: 9.91904761904762d
-			y: 2.5238095238095184d
+			x: 13.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["1567303A505B75C2"]
+			dependencies: ["5F19E97E9BD5EA94"]
 			id: "21C2D598C265D706"
 			tasks: [{
 				id: "13FD01BEC5B96A74"
 				item: "kubejs:token_of_darkness"
 				type: "item"
 			}]
-			x: 11.919047619047612d
-			y: 2.5238095238095184d
+			x: 18.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["039A1E011CF022FD"]
+			dependencies: [
+				"039A1E011CF022FD"
+				"36A9C9567012F3A2"
+			]
 			id: "089DE1A20438504A"
 			tasks: [{
 				count: 16L
@@ -415,8 +291,8 @@
 				item: { Count: 16, id: "gtceu:livingrock_plate" }
 				type: "item"
 			}]
-			x: 2.1499999999999986d
-			y: 0.8571428571428541d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -426,7 +302,7 @@
 			]
 			id: "25FCA058437B0F4C"
 			shape: "octagon"
-			size: 1.8d
+			size: 1.0d
 			tasks: [
 				{
 					id: "166A80D140D5C37E"
@@ -440,8 +316,8 @@
 					type: "item"
 				}
 			]
-			x: 2.1857142857142833d
-			y: 3.9642857142857153d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["74E480FBC0BE66B0"]
@@ -452,7 +328,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["611883FA18804DBD"]
@@ -482,7 +358,7 @@
 			}]
 			title: "Mana-Steel Tools"
 			x: 6.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["039A1E011CF022FD"]
@@ -493,8 +369,8 @@
 				item: "gtceu:livingwood_plate"
 				type: "item"
 			}]
-			x: -2.2142857142857153d
-			y: 2.578571428571429d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
@@ -547,23 +423,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2271ABC7231D8B63"]
-			id: "50A00E1A6980321C"
-			shape: "circle"
-			tasks: [{
-				id: "067974062756DFD5"
-				item: {
-					Count: 1
-					id: "botania:twig_wand"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: -1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["25FCA058437B0F4C"]
@@ -590,8 +450,8 @@
 					type: "item"
 				}
 			]
-			x: 2.1619047619047578d
-			y: 6.102380952380955d
+			x: 2.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -605,7 +465,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -619,7 +479,7 @@
 				type: "item"
 			}]
 			x: 1.4d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -633,7 +493,7 @@
 				type: "item"
 			}]
 			x: 2.8d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -647,7 +507,7 @@
 				type: "item"
 			}]
 			x: 4.199999999999999d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["4AC5E057FBD83372"]
@@ -692,8 +552,8 @@
 					type: "item"
 				}
 			]
-			x: 4.209523809523809d
-			y: 6.126190476190473d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["4923249498343065"]
@@ -711,8 +571,8 @@
 					type: "item"
 				}
 			]
-			x: 5.780952380952385d
-			y: 6.126190476190473d
+			x: -1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["01D3D697522331EF"]
@@ -725,7 +585,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 9.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -741,7 +601,7 @@
 			}]
 			title: "Cloggrum Steel"
 			x: 0.0d
-			y: 9.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -757,7 +617,7 @@
 				type: "item"
 			}]
 			x: 1.3928571428571388d
-			y: 9.042857142857144d
+			y: 11.542857142857144d
 		}
 		{
 			dependencies: [
@@ -774,7 +634,7 @@
 			}]
 			title: "Prisamarine-Infused Alloy"
 			x: 2.8214285714285765d
-			y: 9.042857142857144d
+			y: 11.542857142857144d
 		}
 		{
 			dependencies: [
@@ -788,7 +648,7 @@
 				type: "item"
 			}]
 			x: 4.202380952380949d
-			y: 9.042857142857144d
+			y: 11.542857142857144d
 		}
 		{
 			dependencies: ["03B56ECF5AA7CF3E"]
@@ -939,7 +799,7 @@
 			]
 			title: "Follow the Shiny Object"
 			x: -1.5d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -953,14 +813,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 2.2d
+			size: 2.0d
 			tasks: [{
 				id: "7AD28E3C84247736"
 				item: "gtceu:lv_machine_casing"
 				type: "item"
 			}]
-			x: -3.896428571428572d
-			y: 12.371130952380966d
+			x: -4.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1169EBFFA83FE0C3"]
@@ -972,8 +832,8 @@
 				item: { Count: 16, id: "naturesaura:gold_leaf" }
 				type: "item"
 			}]
-			x: 10.922789115646275d
-			y: -2.4780612244897995d
+			x: 13.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3884187493BA916A"]
@@ -1019,10 +879,10 @@
 			}]
 			title: "Uhh... We didn't have this before."
 			x: -8.5d
-			y: -7.0d
+			y: -7.5d
 		}
 		{
-			dependencies: ["3AE3AD4D597D8061"]
+			dependencies: ["1D88C24F8397F324"]
 			id: "1169EBFFA83FE0C3"
 			tasks: [{
 				count: 32L
@@ -1030,8 +890,8 @@
 				item: { Count: 32, id: "naturesaura:gold_fiber" }
 				type: "item"
 			}]
-			x: 10.9d
-			y: -7.5d
+			x: 16.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6EF72FE4C3597EFB"]
@@ -1089,7 +949,7 @@
 				type: "checkmark"
 			}]
 			x: 7.5d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["310B08BB2DFC4D6F"]
@@ -1103,26 +963,8 @@
 				item: { Count: 12, id: "minecraft:obsidian" }
 				type: "item"
 			}]
-			x: 9.4d
-			y: 7.5d
-		}
-		{
-			dependencies: ["3884187493BA916A"]
-			description: ["Create this book and learn the new mod!"]
-			id: "3AE3AD4D597D8061"
-			tasks: [{
-				id: "4319BA2130F90CE1"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "naturesaura:book"
-					}
-				}
-				type: "item"
-			}]
-			x: 2.0d
-			y: -7.5d
+			x: 16.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1156,7 +998,7 @@
 			}]
 			title: "Advanced Materials"
 			x: 2.1d
-			y: 11.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1226,8 +1068,8 @@
 				item: { Count: 3, id: "minecraft:wither_skeleton_skull" }
 				type: "item"
 			}]
-			x: 9.92142857142857d
-			y: 4.9613095238095255d
+			x: 13.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1242,8 +1084,8 @@
 				item: { Count: 4, id: "minecraft:soul_sand" }
 				type: "item"
 			}]
-			x: 11.92142857142857d
-			y: 4.9613095238095255d
+			x: 15.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1258,30 +1100,20 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 10.892857142857139d
-			y: 6.075595238095232d
+			x: 14.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["49FCC2EDF68DCD61"]
-			id: "50EDD490677F8101"
-			tasks: [{
-				id: "461F9049C8E9C198"
-				item: "gtceu:ulv_mixer"
-				type: "item"
-			}]
-			x: 0.03452380952381873d
-			y: 12.426488095238097d
-		}
-		{
-			dependencies: ["50EDD490677F8101"]
 			id: "017D4588A06D1F22"
+			shape: "circle"
 			tasks: [{
 				id: "3E021FE0FDA31C05"
 				item: { Count: 4, id: "gtceu:cloggrumite_dust" }
 				type: "item"
 			}]
-			x: -1.4654761904761813d
-			y: 12.426488095238097d
+			x: 0.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["03B56ECF5AA7CF3E"]
@@ -1292,7 +1124,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: -7.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1333,10 +1165,7 @@
 			y: -4.178188775510193d
 		}
 		{
-			dependencies: [
-				"1567303A505B75C2"
-				"7E27C475FE68D0FD"
-			]
+			dependencies: ["1567303A505B75C2"]
 			id: "44944439B25243D2"
 			shape: "circle"
 			tasks: [{
@@ -1344,8 +1173,8 @@
 				item: "kubejs:transmutation_core"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -0.8d
+			x: 15.5d
+			y: -0.7999999999999999d
 		}
 		{
 			dependencies: ["44944439B25243D2"]
@@ -1356,8 +1185,321 @@
 				item: "naturesaura:conversion_catalyst"
 				type: "item"
 			}]
-			x: 14.001530612244906d
-			y: 4.955463435374156d
+			x: 15.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["645FC277598EA984"]
+			id: "2E07D0DE25B7E980"
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "26C332D305127F6A"
+				item: {
+					Count: 1
+					id: "rootsclassic:bark_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2E07D0DE25B7E980"]
+			id: "3A06B833CF40DE9C"
+			tasks: [
+				{
+					id: "60D5489CD7B7F389"
+					item: "rootsclassic:spruce_bark"
+					type: "item"
+				}
+				{
+					id: "7C174793C3B4FB1B"
+					item: "rootsclassic:oak_bark"
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"3A06B833CF40DE9C"
+				"1758AA46E3B1BF09"
+			]
+			id: "31925494AE32A845"
+			tasks: [
+				{
+					id: "18B148726AF60D40"
+					item: "rootsclassic:mortar"
+					type: "item"
+				}
+				{
+					id: "4A058ABC8FA63F0D"
+					item: "rootsclassic:pestle"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2E07D0DE25B7E980"]
+			id: "1758AA46E3B1BF09"
+			tasks: [{
+				id: "6AAAF64E1D471D5C"
+				item: "rootsclassic:old_root"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["31925494AE32A845"]
+			id: "3BFEFF4DCCD3D308"
+			shape: "circle"
+			tasks: [{
+				id: "6F21F0D246D9BD9A"
+				item: "rootsclassic:imbuer"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["31925494AE32A845"]
+			id: "1D88C24F8397F324"
+			tasks: [{
+				id: "40285924BF228520"
+				item: "rootsclassic:spell_powder"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1D88C24F8397F324"]
+			id: "4BBBFA1877D4BC0E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5C4B5B707F9F1F2E"
+				item: "rootsclassic:altar"
+				type: "item"
+			}]
+			x: 18.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4BBBFA1877D4BC0E"]
+			id: "5F19E97E9BD5EA94"
+			tasks: [{
+				id: "50052F9DA8CD0312"
+				item: {
+					Count: 1
+					id: "rootsclassic:engraved_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.5d
+			y: -0.7999999999999999d
+		}
+		{
+			dependencies: ["645FC277598EA984"]
+			id: "4F9CF00A7278A038"
+			tasks: [{
+				id: "367D7111A27675FA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7974F8732E7BB7FB"]
+			icon: {
+				Count: 1
+				id: "botania:twig_wand"
+				tag: {
+					color1: 0
+					color2: 0
+				}
+			}
+			id: "270533B423D24CDA"
+			shape: "circle"
+			tasks: [{
+				id: "0FCFDD2C7BFF7EFD"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4F9CF00A7278A038"]
+			id: "4CFC45BFCE826AC9"
+			tasks: [{
+				id: "0DBCC8AF07278CB7"
+				item: "kubejs:omnipetal"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3CE0DCD46A0E35AD"]
+			id: "2FE8CA00D63829FB"
+			tasks: [{
+				id: "363FC60AC8FB2E18"
+				item: "naturesaura:token_joy"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4CFC45BFCE826AC9"
+				"2FE8CA00D63829FB"
+			]
+			id: "2567664F1E207188"
+			size: 1.4d
+			tasks: [{
+				id: "3CD3C9769E13C810"
+				item: "naturesaura:nature_altar"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6019E742E1E9706A"
+				"2567664F1E207188"
+			]
+			id: "50E546C25FC49405"
+			tasks: [
+				{
+					id: "1EFC62DAC2CA2C1B"
+					item: "minecraft:light_blue_dye"
+					type: "item"
+				}
+				{
+					id: "1D8036348ED0660B"
+					title: "crystallised blue "
+					type: "custom"
+				}
+			]
+			x: 10.5d
+			y: -0.7999999999999999d
+		}
+		{
+			icon: "minecraft:bee_nest"
+			id: "6019E742E1E9706A"
+			shape: "circle"
+			tasks: [{
+				id: "06C5726EE42ADD44"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: -0.7999999999999999d
+		}
+		{
+			dependencies: ["50E546C25FC49405"]
+			id: "7860EBE499C3C819"
+			shape: "circle"
+			tasks: [{
+				id: "1DFFFA3CAE6600ED"
+				item: "kubejs:mana_core"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.7999999999999999d
+		}
+		{
+			dependencies: [
+				"7860EBE499C3C819"
+				"4242972AAD439274"
+			]
+			id: "1599BA12A06CF737"
+			shape: "circle"
+			tasks: [{
+				id: "766184268DDCEE44"
+				item: "kubejs:advanced_mana_core"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["26D1F71CA6AD5522"]
+			id: "36A9C9567012F3A2"
+			tasks: [{
+				id: "6FE01A3F3E42CE65"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4F9CF00A7278A038"
+				"62E5041C337E96DD"
+			]
+			id: "26D1F71CA6AD5522"
+			tasks: [{
+				id: "229B5631D3F1C24C"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26D1F71CA6AD5522"]
+			id: "7974F8732E7BB7FB"
+			tasks: [{
+				id: "1395B0AE724FB693"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.7999999999999999d
+		}
+		{
+			id: "4242972AAD439274"
+			shape: "circle"
+			tasks: [{
+				id: "3B3073151D9DC322"
+				item: "gtceu:powderbarrel"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F9CF00A7278A038"]
+			id: "62E5041C337E96DD"
+			shape: "circle"
+			tasks: [{
+				id: "2E639443F5688606"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
 		}
 	]
 	title: "Hi, Electricity!"

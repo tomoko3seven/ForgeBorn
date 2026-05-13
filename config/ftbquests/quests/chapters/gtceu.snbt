@@ -912,7 +912,7 @@
 				type: "item"
 			}]
 			title: "Advice For Getting Resources"
-			x: 1.0d
+			x: -1.5d
 			y: 0.5d
 		}
 		{
@@ -987,6 +987,24 @@
 			title: "Tinkers Constract Smeltery"
 			x: -2.0d
 			y: -2.3d
+		}
+		{
+			dependencies: ["73FB99F48CD69B25"]
+			id: "5462B09A6455D251"
+			shape: "circle"
+			tasks: [{
+				id: "0027810BC8D4E397"
+				item: {
+					Count: 1
+					id: "rootsclassic:bark_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
 		}
 	]
 	title: "First Days of Caveman"

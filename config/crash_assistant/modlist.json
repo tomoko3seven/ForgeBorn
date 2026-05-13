@@ -39,6 +39,34 @@
     "curseForgeHash": 3724438651,
     "modrinthHash": "1a546af04844677542b6914191783c7de15364fc"
   },
+  "aeroblender-1.20.1-1.0.1-neoforge.jar": {
+    "jarName": "aeroblender-1.20.1-1.0.1-neoforge.jar",
+    "modId": "aeroblender",
+    "version": "1.20.1-1.0.1-neoforge",
+    "curseForgeHash": 2937064488,
+    "modrinthHash": "98e6a2a4c312f2aae0eb674ea5a923037378c7da"
+  },
+  "aether-1.20.1-1.5.2-neoforge.jar": {
+    "jarName": "aether-1.20.1-1.5.2-neoforge.jar",
+    "modId": "aether",
+    "version": "1.20.1-1.5.2-neoforge",
+    "curseForgeHash": 484305058,
+    "modrinthHash": "fb6af601028e399016271bc166fd1de888680de7"
+  },
+  "aether-redux-2.0.19-1.20.1-neoforge.jar": {
+    "jarName": "aether-redux-2.0.19-1.20.1-neoforge.jar",
+    "modId": "aether_redux",
+    "version": "2.0.19",
+    "curseForgeHash": 1194643967,
+    "modrinthHash": "d9ea324cc1503d769d07e23742dbfeab01fda7ea"
+  },
+  "aether_delight_1.0.0_forge_1.20.1.jar": {
+    "jarName": "aether_delight_1.0.0_forge_1.20.1.jar",
+    "modId": "aetherdelight",
+    "version": "1.0.0",
+    "curseForgeHash": 290731399,
+    "modrinthHash": "06fa2c938df90e4a8220b8bb4168a637b5c15989"
+  },
   "AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar": {
     "jarName": "AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
     "modId": "ambientsounds",
@@ -612,6 +640,13 @@
     "version": "1.0.0",
     "curseForgeHash": 3034467947,
     "modrinthHash": "f025cc4528288871ff5dd13c5ac0b0900c1a1ae0"
+  },
+  "Functional Aether 1.20.1-0.0.1.jar": {
+    "jarName": "Functional Aether 1.20.1-0.0.1.jar",
+    "modId": "functional_aether",
+    "version": "0.0.1",
+    "curseForgeHash": 3831012770,
+    "modrinthHash": "9fe864dda4eaffa28dffdab8428750740a837539"
   },
   "functionalstorage-1.20.1-1.2.13.jar": {
     "jarName": "functionalstorage-1.20.1-1.2.13.jar",

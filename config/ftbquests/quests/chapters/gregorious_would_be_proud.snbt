@@ -7,6 +7,30 @@
 	id: "2705C5D2758B2ADE"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "44A409FA12E4E419"
+			shape: "circle"
+			tasks: [{
+				id: "702501571185C4B7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44A409FA12E4E419"]
+			id: "120D98CFAE6A0EEB"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "33D49C852F8B6ACD"
+				item: "gtceu:nan_certificate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
 	title: "Greg would be proud..."
 }
