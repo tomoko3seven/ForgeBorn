@@ -1620,7 +1620,100 @@ ServerEvents.recipes((event) => {
         .circuit(5)
         .duration(50)
         .EUt(8);
+
+
+
+
+
+
+
 });
+const GTCEuAPI = Java.loadClass(
+    'com.gregtechceu.gtceu.api.GTCEuAPI'
+)
+
+const TagPrefix = Java.loadClass(
+    'com.gregtechceu.gtceu.api.data.tag.TagPrefix'
+)
+
+ServerEvents.recipes(event => {
+    
+
+    //Vintage/GT
+    GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
+
+        if (!TagPrefix.ingot.doGenerateItem(material)) return
+        if (!TagPrefix.rod.doGenerateItem(material)) return
+        if (!TagPrefix.plate.doGenerateItem(material)) return
+        if (!TagPrefix.spring.doGenerateItem(material)) return
+
+        const name = material.getName()
+
+        event.recipes.vintage.turning(
+            Item.of(`gtceu:${name}_rod`),
+            `gtceu:${name}_ingot`
+        ).processingTime(300)
+
+        event.recipes.vintage.coiling(
+            Item.of(`gtceu:${name}_spring`),
+            `gtceu:${name}_rod`
+        ).processingTime(300)
+
+
+        /*const centrifugeRecipes = GTRecipeTypes.CENTRIFUGE_RECIPES.getRecipes()
+
+        centrifugeRecipes.forEach(recipe => {
+
+        // только ULV
+        if (recipe.data.eu > 8) return
+
+        // только рецепты с 1 item input
+        if (recipe.inputs.size() != 1) return
+
+        const input = recipe.inputs.get(0)
+
+        // только item input
+        if (!input.content) return
+
+        // outputs
+        const itemOutputs = []
+        const fluidOutputs = []
+
+        recipe.outputs.forEach(out => {
+            itemOutputs.push(out.content)
+        })
+
+        recipe.tickOutputs.forEach(out => {
+            itemOutputs.push(out.content)
+        })
+
+        recipe.fluidOutputs.forEach(out => {
+            fluidOutputs.push(out.content)
+        })
+
+        // если нет output — пропуск
+        if (itemOutputs.length == 0 && fluidOutputs.length == 0) return
+
+        // берем первый fluid output либо первый item output
+        let output = null
+
+        if (fluidOutputs.length > 0) {
+            output = fluidOutputs[0]
+        } else {
+            output = itemOutputs[0]
+        }
+
+        event.recipes.vintage.centrifugation(
+            output,
+            input.content
+        )
+        .processingTime(recipe.duration)
+        .minimalRPM(80)
+
+    })*/
+    })
+
+})
 
 ServerEvents.recipes((event) => {
     event.recipes.create.filling('gtceu:treated_wood_planks', [

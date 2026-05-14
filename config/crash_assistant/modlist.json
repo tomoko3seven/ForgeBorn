@@ -53,13 +53,6 @@
     "curseForgeHash": 484305058,
     "modrinthHash": "fb6af601028e399016271bc166fd1de888680de7"
   },
-  "aether-redux-2.0.19-1.20.1-neoforge.jar": {
-    "jarName": "aether-redux-2.0.19-1.20.1-neoforge.jar",
-    "modId": "aether_redux",
-    "version": "2.0.19",
-    "curseForgeHash": 1194643967,
-    "modrinthHash": "d9ea324cc1503d769d07e23742dbfeab01fda7ea"
-  },
   "aether_delight_1.0.0_forge_1.20.1.jar": {
     "jarName": "aether_delight_1.0.0_forge_1.20.1.jar",
     "modId": "aetherdelight",
@@ -690,12 +683,40 @@
     "curseForgeHash": 2780146631,
     "modrinthHash": "b2334d1beef5de35fcc20e2024c53c15498efaad"
   },
+  "gregic_tinkering-1.2.2.jar": {
+    "jarName": "gregic_tinkering-1.2.2.jar",
+    "modId": "gregic_tinkering",
+    "version": "1.2.2",
+    "curseForgeHash": 157661637,
+    "modrinthHash": "aa6e653a53716529d7f40d13f19322ccf469d6cf"
+  },
+  "gregtech-vaults-0.1.0.jar": {
+    "jarName": "gregtech-vaults-0.1.0.jar",
+    "modId": "gregtechvaults",
+    "version": "0.1.0",
+    "curseForgeHash": 666614611,
+    "modrinthHash": "135bb7a87d4422178bb1c42fad95622670bddcb4"
+  },
   "gtceu-1.20.1-7.5.2.jar": {
     "jarName": "gtceu-1.20.1-7.5.2.jar",
     "modId": "gtceu",
     "version": "7.5.2",
     "curseForgeHash": 1531048014,
     "modrinthHash": "31af78af75d3d2a84582c204c083d225d4df9fcb"
+  },
+  "gtceuterminal-4.6.1.jar": {
+    "jarName": "gtceuterminal-4.6.1.jar",
+    "modId": "gtceuterminal",
+    "version": "4.6.1",
+    "curseForgeHash": 2154645239,
+    "modrinthHash": "1a60994dae6be7311225b90974d56ea586802cb1"
+  },
+  "gtmfo-0.0.5.jar": {
+    "jarName": "gtmfo-0.0.5.jar",
+    "modId": "gtmfo",
+    "version": "0.0.5",
+    "curseForgeHash": 3086671484,
+    "modrinthHash": "b44004c8bdbd29e13ad858ec9cdef3604bf9c33a"
   },
   "gtmutils-2.8.0.jar": {
     "jarName": "gtmutils-2.8.0.jar",
@@ -1486,6 +1507,13 @@
     "curseForgeHash": 1777031521,
     "modrinthHash": "b8348dbe2ac3226613332eaf65d0fdfa6e76d8c3"
   },
+  "universalcircuits-1.0.2+mc.20.1.jar": {
+    "jarName": "universalcircuits-1.0.2+mc.20.1.jar",
+    "modId": "universal_circuits",
+    "version": "1.0.2+mc.20.1",
+    "curseForgeHash": 234144249,
+    "modrinthHash": "45c418e4dfee3cc493c598cb426207b461a8d6fb"
+  },
   "useful_backpacks-forge-1.20.1-2.0.1.124.jar": {
     "jarName": "useful_backpacks-forge-1.20.1-2.0.1.124.jar",
     "modId": "usefulbackpacks",
@@ -1506,13 +1534,6 @@
     "version": "0.1.6",
     "curseForgeHash": 1702625402,
     "modrinthHash": "279a68afc8d815e957cabc689e925cdaf7578109"
-  },
-  "world_preview-forge-1.20.1-1.3.1.jar": {
-    "jarName": "world_preview-forge-1.20.1-1.3.1.jar",
-    "modId": "world_preview",
-    "version": "1.3.1",
-    "curseForgeHash": 442068094,
-    "modrinthHash": "98067c700d31f1b716cfbd6ddbeefd772bbba5bb"
   },
   "worldplaytime-1.2.3-1.20.x-FORGE.jar": {
     "jarName": "worldplaytime-1.2.3-1.20.x-FORGE.jar",
