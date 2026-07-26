@@ -53,8 +53,8 @@ ServerEvents.recipes((event) => {
     event.remove({ type: 'create:mixing' });
     event.remove({ type: 'create:crushing' });
     event.remove({ type: 'create:cutting' });
-    event.remove({ type: 'create:compacting' })
-    event.remove({ type: 'create:filling' })    
+    event.remove({ type: 'create:compacting' });
+    event.remove({ type: 'create:filling' });
 
     event.remove({ type: 'vintage:centrifugation' });
     event.remove({ type: 'vintage:coiling' });
@@ -64,7 +64,6 @@ ServerEvents.recipes((event) => {
     event.remove({ type: 'vintage:turning' });
     event.remove({ type: 'vintage:vacuumizing' });
     event.remove({ type: 'vintage:pressing' });
-    
 
     event.remove({
         id: 'create:cutting/compat/blue_skies/stripped_cherry_wood',
@@ -1218,7 +1217,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             P: '#forge:plates/brass',
-            S: 'create:shaft'
+            S: 'create:shaft',
         }
     );
     //Double Smokestack
@@ -1232,7 +1231,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             P: '#forge:plates/steel',
-            C: 'minecraft:campfire'
+            C: 'minecraft:campfire',
         }
     );
     //Coalburner Smokestack
@@ -1246,7 +1245,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             P: '#forge:plates/steel',
-            C: 'minecraft:campfire'
+            C: 'minecraft:campfire',
         }
     );
     //Hand Crank
@@ -1260,7 +1259,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             P: 'gtceu:treated_wood_planks',
-            R: 'gtceu:andesite_alloy_rod'
+            R: 'gtceu:andesite_alloy_rod',
         }
     );
     //Copper Backtank
@@ -1276,7 +1275,7 @@ ServerEvents.recipes((event) => {
             A: '#forge:plates/andesite_alloy',
             C: 'gtceu:copper_plate',
             S: 'create:shaft',
-            D: 'gtceu:bronze_drum'
+            D: 'gtceu:bronze_drum',
         }
     );
     //Schematicannon
@@ -1292,7 +1291,7 @@ ServerEvents.recipes((event) => {
             S: 'gtceu:steel_large_fluid_pipe',
             T: 'gtceu:treated_wood_planks',
             B: 'minecraft:smooth_stone',
-            D: 'minecraft:dispenser'
+            D: 'minecraft:dispenser',
         }
     );
     //Water Wheel
@@ -1312,7 +1311,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             R: '#forge:rods/andesite_alloy',
-            M: 'farmersdelight:safety_net'
+            M: 'farmersdelight:safety_net',
         }
     );
     //Empty Blaze Burner
@@ -1327,7 +1326,7 @@ ServerEvents.recipes((event) => {
         {
             R: '#forge:plates/steel',
             B: 'gtceu:steel_block',
-            M: 'minecraft:netherrack'
+            M: 'minecraft:netherrack',
         }
     );
     //Chute
@@ -1341,7 +1340,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             R: '#forge:plates/steel',
-            M: 'gtceu:steel_normal_fluid_pipe'
+            M: 'gtceu:steel_normal_fluid_pipe',
         }
     );
     //Metal Bracket
@@ -1356,7 +1355,7 @@ ServerEvents.recipes((event) => {
         {
             N: '#forge:nuggets/steel',
             S: 'gtceu:steel_plate',
-            A: 'gtceu:andesite_alloy_rod'
+            A: 'gtceu:andesite_alloy_rod',
         }
     );
     //Mechanical Pipe
@@ -1379,7 +1378,7 @@ ServerEvents.recipes((event) => {
         {
             G: '#forge:plates/gold',
             P: 'gtceu:gold_large_fluid_pipe',
-            C: '#forge:plates/copper'
+            C: '#forge:plates/copper',
         }
     );
     //Mechanical Arm
@@ -1410,7 +1409,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             A: 'gtceu:rubber_foil',
-            R: 'gtceu:andesite_alloy_plate'
+            R: 'gtceu:andesite_alloy_plate',
         }
     );
     //Andesite Tunnel
@@ -1424,7 +1423,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             A: 'gtceu:rubber_foil',
-            R: '#forge:plates/andesite_alloy'
+            R: '#forge:plates/andesite_alloy',
         }
     );
     //Brass Tunnel
@@ -1439,7 +1438,7 @@ ServerEvents.recipes((event) => {
         {
             A: 'gtceu:rubber_foil',
             T: 'create:electron_tube',
-            R: 'gtceu:brass_plate'
+            R: 'gtceu:brass_plate',
         }
     );
     //Item Vault
@@ -1453,7 +1452,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             A: 'minecraft:barrel',
-            R: 'gtceu:steel_plate'
+            R: 'gtceu:steel_plate',
         }
     );
     //Item Silo
@@ -1467,7 +1466,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             A: 'minecraft:barrel',
-            R: 'gtceu:steel_plate'
+            R: 'gtceu:steel_plate',
         }
     );
     //Item Hatch
@@ -1488,7 +1487,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             A: '#forge:plates/andesite_alloy',
-            R: 'gtceu:brass_plate'
+            R: 'gtceu:brass_plate',
         }
     );
     event.recipes.gtceu
@@ -1511,7 +1510,7 @@ ServerEvents.recipes((event) => {
         {
             A: '#forge:plates/iron',
             C: 'create:cardboard_block',
-            R: 'gtceu:red_alloy_single_cable'
+            R: 'gtceu:red_alloy_single_cable',
         }
     );
     //Frogport
@@ -1576,7 +1575,7 @@ ServerEvents.recipes((event) => {
         {
             P: '#forge:dusts/redstone',
             E: 'create:polished_rose_quartz',
-            D: '#forge:plates/zinc'
+            D: '#forge:plates/zinc',
         }
     );
     //Copper Diving Helmet
@@ -1590,7 +1589,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             P: 'gtceu:copper_plate',
-            G: '#forge:glass_panes/colorless'
+            G: '#forge:glass_panes/colorless',
         }
     );
     //Copper Diving Boots
@@ -1604,7 +1603,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             P: 'gtceu:copper_plate',
-            A: '#forge:plates/andesite_alloy'
+            A: '#forge:plates/andesite_alloy',
         }
     );
     //Sand Paper
@@ -1620,45 +1619,30 @@ ServerEvents.recipes((event) => {
         .circuit(5)
         .duration(50)
         .EUt(8);
-
-
-
-
-
-
-
 });
-const GTCEuAPI = Java.loadClass(
-    'com.gregtechceu.gtceu.api.GTCEuAPI'
-)
+const GTCEuAPI = Java.loadClass('com.gregtechceu.gtceu.api.GTCEuAPI');
 
 const TagPrefix = Java.loadClass(
     'com.gregtechceu.gtceu.api.data.tag.TagPrefix'
-)
+);
 
-ServerEvents.recipes(event => {
-    
-
+ServerEvents.recipes((event) => {
     //Vintage/GT
-    GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
+    GTCEuAPI.materialManager.getRegisteredMaterials().forEach((material) => {
+        if (!TagPrefix.ingot.doGenerateItem(material)) return;
+        if (!TagPrefix.rod.doGenerateItem(material)) return;
+        if (!TagPrefix.plate.doGenerateItem(material)) return;
+        if (!TagPrefix.spring.doGenerateItem(material)) return;
 
-        if (!TagPrefix.ingot.doGenerateItem(material)) return
-        if (!TagPrefix.rod.doGenerateItem(material)) return
-        if (!TagPrefix.plate.doGenerateItem(material)) return
-        if (!TagPrefix.spring.doGenerateItem(material)) return
+        const name = material.getName();
 
-        const name = material.getName()
+        event.recipes.vintage
+            .turning(Item.of(`gtceu:${name}_rod`), `gtceu:${name}_ingot`)
+            .processingTime(300);
 
-        event.recipes.vintage.turning(
-            Item.of(`gtceu:${name}_rod`),
-            `gtceu:${name}_ingot`
-        ).processingTime(300)
-
-        event.recipes.vintage.coiling(
-            Item.of(`gtceu:${name}_spring`),
-            `gtceu:${name}_rod`
-        ).processingTime(300)
-
+        event.recipes.vintage
+            .coiling(Item.of(`gtceu:${name}_spring`), `gtceu:${name}_rod`)
+            .processingTime(300);
 
         /*const centrifugeRecipes = GTRecipeTypes.CENTRIFUGE_RECIPES.getRecipes()
 
@@ -1711,9 +1695,8 @@ ServerEvents.recipes(event => {
         .minimalRPM(80)
 
     })*/
-    })
-
-})
+    });
+});
 
 ServerEvents.recipes((event) => {
     event.recipes.create.filling('gtceu:treated_wood_planks', [

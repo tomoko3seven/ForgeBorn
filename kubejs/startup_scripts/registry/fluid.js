@@ -13,4 +13,9 @@ StartupEvents.registry('fluid', (event) => {
         .bucketColor(Color.rgba(67, 244, 247, 255))
         .stillTexture('kubejs:block/earth_essence')
         .displayName('Earth Essence');
+    event
+        .create('wind_essence')
+        .bucketColor(Color.rgba(67, 244, 247, 255))
+        .stillTexture('kubejs:block/fluid/fluid.essence_air')
+        .displayName('Wind Essence');
 });

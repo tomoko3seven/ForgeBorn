@@ -980,13 +980,11 @@
 		{
 			dependencies: [
 				"3067C6D55D17F3BB"
-				"50477B8090DFD978"
-				"5BBA9049B00291E1"
-				"3AD00F8BC95BFE12"
+				"5DA35BCC75E753A6"
 			]
 			id: "5F611F850DDDA517"
 			shape: "hexagon"
-			size: 1.7d
+			size: 1.5d
 			tasks: [
 				{
 					id: "34D89286FDC00ED3"
@@ -1000,8 +998,8 @@
 					type: "item"
 				}
 			]
-			x: 3.1d
-			y: 10.499999999999998d
+			x: -6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -1014,8 +1012,8 @@
 				item: "gtceu:sapphire_dust"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 9.6d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["72F6BF1695F1F1C0"]
@@ -1025,8 +1023,8 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 9.6d
+			x: -7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1041,8 +1039,8 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: -0.2d
-			y: 10.5d
+			x: -5.8500000000000005d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2897BF847490FB87"]
@@ -1129,8 +1127,8 @@
 				item: "legendarysurvivaloverhaul:large_canteen"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 11.1d
+			x: -7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["103F71A8BA3E3DFF"]
@@ -1225,7 +1223,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["22B0D4002FE6E8C2"]
+			dependencies: [
+				"22B0D4002FE6E8C2"
+				"4EDE76038AA1ACC4"
+			]
 			hide_dependency_lines: true
 			id: "3067C6D55D17F3BB"
 			shape: "circle"
@@ -1234,8 +1235,8 @@
 				item: "kubejs:basic_mechanical_parts"
 				type: "item"
 			}]
-			x: 3.1d
-			y: 9.0d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["22B0D4002FE6E8C2"]
@@ -1287,93 +1288,6 @@
 			}]
 			x: 7.0d
 			y: 4.5d
-		}
-		{
-			dependencies: ["1C061810F9FE0BE5"]
-			id: "50477B8090DFD978"
-			shape: "circle"
-			tasks: [
-				{
-					count: 128L
-					id: "42EC70C95DB37CC5"
-					item: { Count: 128, id: "gtceu:cupronickel_double_wire" }
-					type: "item"
-				}
-				{
-					count: 128L
-					id: "56AD2DCFED8F623F"
-					item: { Count: 128, id: "gtceu:bronze_foil" }
-					type: "item"
-				}
-				{
-					id: "5697E36D7DFF78F0"
-					title: "Mica Insulation Foil"
-					type: "custom"
-				}
-			]
-			x: 4.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["34BA4B772E85B38C"]
-			id: "5BBA9049B00291E1"
-			shape: "circle"
-			tasks: [
-				{
-					id: "6A87C9BF91A5EF03"
-					item: "gtceu:tin_alloy_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5A66A049FF678690"
-					title: "Done!"
-					type: "checkmark"
-				}
-			]
-			x: 6.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["22B0D4002FE6E8C2"]
-			id: "1C061810F9FE0BE5"
-			shape: "circle"
-			tasks: [{
-				count: 64L
-				id: "4F57769EBE80406D"
-				item: { Count: 64, id: "gtceu:cupronickel_ingot" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["22B0D4002FE6E8C2"]
-			id: "3AD00F8BC95BFE12"
-			shape: "circle"
-			tasks: [{
-				count: 64L
-				id: "26D034E6360159B1"
-				item: { Count: 64, id: "gtceu:invar_ingot" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"11EDD3891149738B"
-				"60B922B853FA6747"
-			]
-			hide_dependency_lines: true
-			id: "34BA4B772E85B38C"
-			tasks: [{
-				id: "6462ECA4A6C495A0"
-				item: "gtceu:lv_extractor"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 11.5d
 		}
 		{
 			dependencies: ["30D87588E7B344C5"]

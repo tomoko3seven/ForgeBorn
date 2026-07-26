@@ -70,10 +70,10 @@
 			y: -3.0d
 		}
 		{
-			height: 3.0d
-			image: "gui:textures/forgeborn.png"
+			height: 1.5d
+			image: "gui:textures/forgeborn_v2.png"
 			rotation: 0.0d
-			width: 15.0d
+			width: 12.0d
 			x: 0.0d
 			y: -6.0d
 		}

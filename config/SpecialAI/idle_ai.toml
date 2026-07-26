@@ -157,9 +157,8 @@
   # Like "grief_targets.whitelist", but these blocks will not be targeted if they have a loot table tag.
   # For example, unopened dungeon chests will not be targeted.
   # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
-  #   "minecraft:ender_chest", "minecraft:trapped_chest", "minecraft:barrel", "aether:treasure_chest",
-  #   "ars_nouveau:archwood_chest", "tide:wooden_crate", "tide:obsidian_crate", "tide:purpur_crate",
-  #   "avaritia:compressed_chest" ]
+  #   "minecraft:ender_chest", "minecraft:trapped_chest", "minecraft:barrel", "ars_nouveau:archwood_chest",
+  #   "tide:wooden_crate", "tide:obsidian_crate", "tide:purpur_crate", "avaritia:compressed_chest" ]
   idle_griefing.targets.lootable_list = [
     "minecraft:chest",
     "minecraft:ender_chest",
@@ -239,8 +238,8 @@
   # List of blocks that can be hidden in by the idle hiding AI. Note that only blocks with tile entities are able to
   #   be hidden in.
   # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
-  #   "minecraft:trapped_chest", "minecraft:barrel", "aether:treasure_chest", "ars_nouveau:archwood_chest",
-  #   "tide:wooden_crate", "tide:obsidian_crate", "tide:purpur_crate", "avaritia:compressed_chest" ]
+  #   "minecraft:trapped_chest", "minecraft:barrel", "ars_nouveau:archwood_chest", "tide:wooden_crate",
+  #   "tide:obsidian_crate", "tide:purpur_crate", "avaritia:compressed_chest" ]
   idle_hiding.targets.whitelist = [
     "minecraft:chest",
     "minecraft:trapped_chest",

@@ -119,7 +119,6 @@
 			dependencies: [
 				"1599BA12A06CF737"
 				"36A9C9567012F3A2"
-				"0593F704E467025C"
 			]
 			description: ["A standard mana pool"]
 			id: "60CC6B0FFB125162"
@@ -193,13 +192,13 @@
 		}
 		{
 			dependencies: [
-				"34FC06C0C9D594AA"
-				"04E723EB33963031"
+				"23218126690F0949"
+				"2C4B0D8670139894"
 			]
 			description: ["Use the Seal to become worthy of entering the Nether."]
 			id: "4E1C035012ADA7CA"
 			shape: "hexagon"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					dimension: "minecraft:the_nether"
@@ -212,7 +211,7 @@
 					type: "item"
 				}
 			]
-			x: 14.5d
+			x: 10.5d
 			y: 8.0d
 		}
 		{
@@ -241,43 +240,6 @@
 			}]
 			x: 0.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["3CE0DCD46A0E35AD"]
-			description: ["Needed for a new forest ritual!"]
-			id: "1567303A505B75C2"
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				count: 8L
-				id: "4C45097E8B585A8F"
-				item: "naturesaura:wood_stand"
-				type: "item"
-			}]
-			x: 13.5d
-			y: -0.7999999999999999d
-		}
-		{
-			dependencies: ["1567303A505B75C2"]
-			id: "0593F704E467025C"
-			tasks: [{
-				id: "4973F0E1255EEBA3"
-				item: "kubejs:token_of_light"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["5F19E97E9BD5EA94"]
-			id: "21C2D598C265D706"
-			tasks: [{
-				id: "13FD01BEC5B96A74"
-				item: "kubejs:token_of_darkness"
-				type: "item"
-			}]
-			x: 18.5d
-			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -454,10 +416,7 @@
 			y: 8.5d
 		}
 		{
-			dependencies: [
-				"3A7ACEC9F31B36FF"
-				"18F03EC732084EE6"
-			]
+			dependencies: ["3A7ACEC9F31B36FF"]
 			id: "12B18BA775D485A5"
 			tasks: [{
 				id: "02BC0964F496EC37"
@@ -468,10 +427,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"3A7ACEC9F31B36FF"
-				"18F03EC732084EE6"
-			]
+			dependencies: ["3A7ACEC9F31B36FF"]
 			id: "278F193C885CC35F"
 			tasks: [{
 				id: "266C70E71C6768CC"
@@ -482,10 +438,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"3A7ACEC9F31B36FF"
-				"18F03EC732084EE6"
-			]
+			dependencies: ["3A7ACEC9F31B36FF"]
 			id: "70DE12E7C1CDFE7C"
 			tasks: [{
 				id: "2E80F762D960D852"
@@ -496,10 +449,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"3A7ACEC9F31B36FF"
-				"18F03EC732084EE6"
-			]
+			dependencies: ["3A7ACEC9F31B36FF"]
 			id: "64F09E6FD2A4ED1B"
 			tasks: [{
 				id: "4E4B5D82E0885D7D"
@@ -775,31 +725,14 @@
 			hide_dependency_lines: true
 			id: "18F03EC732084EE6"
 			shape: "circle"
-			tasks: [
-				{
-					id: "203940C22E9BA760"
-					item: "gtceu:aqua_gem"
-					type: "item"
-				}
-				{
-					id: "787F7333968D7D28"
-					item: "gtceu:fire_gem"
-					type: "item"
-				}
-				{
-					id: "129BEE46A9AB36CA"
-					item: "gtceu:wind_gem"
-					type: "item"
-				}
-				{
-					id: "1C67C31B542EAB2C"
-					item: "gtceu:earth_gem"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "787F7333968D7D28"
+				item: "gtceu:fire_gem"
+				type: "item"
+			}]
 			title: "Follow the Shiny Object"
-			x: -1.5d
-			y: 10.0d
+			x: 15.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -821,19 +754,6 @@
 			}]
 			x: -4.0d
 			y: 15.0d
-		}
-		{
-			dependencies: ["1169EBFFA83FE0C3"]
-			id: "3CE0DCD46A0E35AD"
-			shape: "circle"
-			tasks: [{
-				count: 16L
-				id: "461ABB3827907D14"
-				item: { Count: 16, id: "naturesaura:gold_leaf" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["3884187493BA916A"]
@@ -880,18 +800,6 @@
 			title: "Uhh... We didn't have this before."
 			x: -8.5d
 			y: -7.5d
-		}
-		{
-			dependencies: ["1D88C24F8397F324"]
-			id: "1169EBFFA83FE0C3"
-			tasks: [{
-				count: 32L
-				id: "7EE7AA95499016A8"
-				item: { Count: 32, id: "naturesaura:gold_fiber" }
-				type: "item"
-			}]
-			x: 16.0d
-			y: -2.5d
 		}
 		{
 			dependencies: ["6EF72FE4C3597EFB"]
@@ -950,21 +858,6 @@
 			}]
 			x: 7.5d
 			y: -7.5d
-		}
-		{
-			dependencies: ["310B08BB2DFC4D6F"]
-			description: ["Using Tinkers' Construct, you will be able to mine Obsidian."]
-			hide_dependency_lines: true
-			id: "34FC06C0C9D594AA"
-			shape: "circle"
-			tasks: [{
-				count: 12L
-				id: "28C2DD7B15DB8C30"
-				item: { Count: 12, id: "minecraft:obsidian" }
-				type: "item"
-			}]
-			x: 16.0d
-			y: 8.0d
 		}
 		{
 			dependencies: ["5B7BC416799EA7AC"]
@@ -1056,54 +949,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"0593F704E467025C"
-				"394471D30B95C15F"
-			]
-			id: "55236B3D2827E305"
-			shape: "hexagon"
-			tasks: [{
-				count: 3L
-				id: "2B83EC5BDA4F209C"
-				item: { Count: 3, id: "minecraft:wither_skeleton_skull" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"21C2D598C265D706"
-				"394471D30B95C15F"
-			]
-			id: "1E47C8F008F48B23"
-			shape: "hexagon"
-			tasks: [{
-				count: 4L
-				id: "31171D5FAB2132CE"
-				item: { Count: 4, id: "minecraft:soul_sand" }
-				type: "item"
-			}]
-			x: 15.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"1E47C8F008F48B23"
-				"55236B3D2827E305"
-			]
-			id: "04E723EB33963031"
-			shape: "heart"
-			tasks: [{
-				entity: "minecraft:wither"
-				id: "2B043C16DA893FDF"
-				type: "kill"
-				value: 1L
-			}]
-			x: 14.5d
-			y: 6.0d
-		}
-		{
 			dependencies: ["49FCC2EDF68DCD61"]
 			id: "017D4588A06D1F22"
 			shape: "circle"
@@ -1165,30 +1010,6 @@
 			y: -4.178188775510193d
 		}
 		{
-			dependencies: ["1567303A505B75C2"]
-			id: "44944439B25243D2"
-			shape: "circle"
-			tasks: [{
-				id: "62BC0775C164F4D2"
-				item: "kubejs:transmutation_core"
-				type: "item"
-			}]
-			x: 15.5d
-			y: -0.7999999999999999d
-		}
-		{
-			dependencies: ["44944439B25243D2"]
-			id: "394471D30B95C15F"
-			shape: "circle"
-			tasks: [{
-				id: "7D6E37FF94732E8D"
-				item: "naturesaura:conversion_catalyst"
-				type: "item"
-			}]
-			x: 15.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["645FC277598EA984"]
 			id: "2E07D0DE25B7E980"
 			shape: "hexagon"
@@ -1244,7 +1065,7 @@
 				}
 			]
 			x: 16.0d
-			y: -7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["2E07D0DE25B7E980"]
@@ -1277,8 +1098,8 @@
 				item: "rootsclassic:spell_powder"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -5.0d
+			x: 18.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1D88C24F8397F324"]
@@ -1291,7 +1112,7 @@
 				type: "item"
 			}]
 			x: 18.5d
-			y: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4BBBFA1877D4BC0E"]
@@ -1308,7 +1129,7 @@
 				type: "item"
 			}]
 			x: 18.5d
-			y: -0.7999999999999999d
+			y: -1.5d
 		}
 		{
 			dependencies: ["645FC277598EA984"]
@@ -1343,94 +1164,24 @@
 				id: "0FCFDD2C7BFF7EFD"
 				type: "checkmark"
 			}]
-			x: 9.0d
-			y: -2.5d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["4F9CF00A7278A038"]
+			dependencies: ["74C9FD003CFDB6F8"]
 			id: "4CFC45BFCE826AC9"
 			tasks: [{
 				id: "0DBCC8AF07278CB7"
 				item: "kubejs:omnipetal"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["3CE0DCD46A0E35AD"]
-			id: "2FE8CA00D63829FB"
-			tasks: [{
-				id: "363FC60AC8FB2E18"
-				item: "naturesaura:token_joy"
-				type: "item"
-			}]
-			x: 12.0d
-			y: -2.5d
-		}
-		{
 			dependencies: [
-				"4CFC45BFCE826AC9"
-				"2FE8CA00D63829FB"
-			]
-			id: "2567664F1E207188"
-			size: 1.4d
-			tasks: [{
-				id: "3CD3C9769E13C810"
-				item: "naturesaura:nature_altar"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"6019E742E1E9706A"
-				"2567664F1E207188"
-			]
-			id: "50E546C25FC49405"
-			tasks: [
-				{
-					id: "1EFC62DAC2CA2C1B"
-					item: "minecraft:light_blue_dye"
-					type: "item"
-				}
-				{
-					id: "1D8036348ED0660B"
-					title: "crystallised blue "
-					type: "custom"
-				}
-			]
-			x: 10.5d
-			y: -0.7999999999999999d
-		}
-		{
-			icon: "minecraft:bee_nest"
-			id: "6019E742E1E9706A"
-			shape: "circle"
-			tasks: [{
-				id: "06C5726EE42ADD44"
-				type: "checkmark"
-			}]
-			x: 12.0d
-			y: -0.7999999999999999d
-		}
-		{
-			dependencies: ["50E546C25FC49405"]
-			id: "7860EBE499C3C819"
-			shape: "circle"
-			tasks: [{
-				id: "1DFFFA3CAE6600ED"
-				item: "kubejs:mana_core"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -0.7999999999999999d
-		}
-		{
-			dependencies: [
-				"7860EBE499C3C819"
-				"4242972AAD439274"
+				"2D15B3CF92A67980"
+				"4352E1D87611FBC2"
 			]
 			id: "1599BA12A06CF737"
 			shape: "circle"
@@ -1439,8 +1190,8 @@
 				item: "kubejs:advanced_mana_core"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.0d
+			x: 10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["26D1F71CA6AD5522"]
@@ -1465,7 +1216,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["26D1F71CA6AD5522"]
@@ -1476,18 +1227,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -0.7999999999999999d
-		}
-		{
-			id: "4242972AAD439274"
-			shape: "circle"
-			tasks: [{
-				id: "3B3073151D9DC322"
-				item: "gtceu:powderbarrel"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4F9CF00A7278A038"]
@@ -1499,7 +1239,240 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4BBBFA1877D4BC0E"]
+			id: "62B8C3C20E1BDD59"
+			tasks: [{
+				id: "54A167B12B42EA06"
+				item: {
+					Count: 1
+					id: "rootsclassic:wildwood_mask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4BBBFA1877D4BC0E"]
+			id: "28DFEF87B9F72900"
+			tasks: [{
+				id: "6DE155B69B527DDE"
+				item: {
+					Count: 1
+					id: "rootsclassic:wildwood_plate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 17.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4BBBFA1877D4BC0E"]
+			id: "143D22FB69D85A20"
+			tasks: [{
+				id: "4098FF19A0D80CBA"
+				item: {
+					Count: 1
+					id: "rootsclassic:wildwood_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4BBBFA1877D4BC0E"]
+			id: "74DFDEA0EC9CCB2C"
+			tasks: [{
+				id: "516CBB9D829F78A8"
+				item: {
+					Count: 1
+					id: "rootsclassic:wildwood_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 21.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4BBBFA1877D4BC0E"]
+			id: "4C2F062F47D642AF"
+			shape: "circle"
+			size: 1.2d
+			tasks: [{
+				id: "4106D5065452A8D0"
+				title: "custom altar"
+				type: "custom"
+			}]
+			x: 18.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F19E97E9BD5EA94"
+				"62B8C3C20E1BDD59"
+				"4C2F062F47D642AF"
+				"143D22FB69D85A20"
+				"28DFEF87B9F72900"
+				"74DFDEA0EC9CCB2C"
+			]
+			id: "45305828ECA58FD1"
+			size: 2.0d
+			tasks: [{
+				id: "22CE158C037ADEF4"
+				title: "defeat druid boss"
+				type: "custom"
+			}]
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["38BB64441276EA93"]
+			id: "528021BD5FC320AC"
+			tasks: [{
+				id: "1C049AFA4ED4B3FB"
+				item: "naturesaura:gold_powder"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1758AA46E3B1BF09"]
+			id: "38BB64441276EA93"
+			tasks: [{
+				count: 4L
+				id: "4A152F19D9868D47"
+				item: { Count: 4, id: "naturesaura:gold_fiber" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["528021BD5FC320AC"]
+			id: "74C9FD003CFDB6F8"
+			tasks: [{
+				count: 8L
+				id: "7D1BD6201F6167DD"
+				item: { Count: 8, id: "naturesaura:wood_stand" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["762FB2023F0E59E2"]
+			id: "4352E1D87611FBC2"
+			tasks: [{
+				id: "16649D3B65B8F0C5"
+				item: "kubejs:mana_core"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["45305828ECA58FD1"]
+			id: "2D15B3CF92A67980"
+			tasks: [{
+				id: "2E79B5B2480F54BF"
+				title: "grinding tool"
+				type: "custom"
+			}]
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			id: "59C1B549024B2390"
+			tasks: [{
+				id: "19E9126C761AEDFE"
+				item: "minecraft:honeycomb"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"59C1B549024B2390"
+				"74C9FD003CFDB6F8"
+			]
+			id: "762FB2023F0E59E2"
+			tasks: [{
+				id: "7A7DCBC3241BF3C1"
+				title: "raw mana crystal"
+				type: "custom"
+			}]
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2D15B3CF92A67980"
+				"18F03EC732084EE6"
+			]
+			id: "4841A9464BB06EC3"
+			tasks: [{
+				id: "12A1AFD38A5D4ED2"
+				title: "Mysterious Golden Key"
+				type: "custom"
+			}]
+			title: "Mysterios Red Key"
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			id: "23218126690F0949"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "065A8496D55AED9F"
+				title: "Dimension Travel"
+				type: "custom"
+			}]
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4841A9464BB06EC3"
+				"320705510C750B94"
+			]
+			id: "2C4B0D8670139894"
+			tasks: [{
+				id: "3B47AADB9F321E75"
+				title: "Visit Dungeon and defeat the boss"
+				type: "custom"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			id: "320705510C750B94"
+			shape: "circle"
+			tasks: [{
+				id: "4782ABBEE264DAB3"
+				title: "Proper Gear"
+				type: "checkmark"
+			}]
+			x: 15.5d
+			y: 8.0d
 		}
 	]
 	title: "Hi, Electricity!"
