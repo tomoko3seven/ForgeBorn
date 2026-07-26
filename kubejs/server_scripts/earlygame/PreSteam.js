@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: 'gtceu:wood_gear' });
 
     event.shapeless('minecraft:stick', [
-        // arg 1: output	//arg 2: the array of inputs
+        // arg 1: output	//arg 2: the array of inputss
         '#minecraft:saplings',
     ]);
     event.shapeless('gtceu:flint_axe', [
