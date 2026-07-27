@@ -156,7 +156,7 @@
     "hud": true,
     "hud.redstone": true
   },
-  "aether_redux": {
-    "logicator": true
+  "corpse": {
+    "corpse": true
   }
 }

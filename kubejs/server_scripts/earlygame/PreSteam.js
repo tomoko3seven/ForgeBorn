@@ -44,14 +44,13 @@ ServerEvents.recipes((event) => {
     event.shaped(
         Item.of('minecraft:chest'),
         [
-            'BCB',
+            'CCC',
             'GFG',
-            'BCB',
+            'CCC',
         ],
         {
             C: '#minecraft:planks',
             G: 'gtceu:wood_gear',
-            B: '#minecraft:logs',
             F: 'minecraft:flint',
         }
     );

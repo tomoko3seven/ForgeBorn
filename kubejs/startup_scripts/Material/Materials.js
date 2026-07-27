@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
 
         .iconSet(GTMaterialIconSet.ROUGH)
         .toolStats(
-            new ToolProperty(1, 1, 76, 1, [
+            new ToolProperty(1, 1, 32, 1, [
                 GTToolType.FILE,
             ])
         );

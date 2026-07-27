@@ -1103,7 +1103,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.0d
 			y: -4.5d
 		}
 		{
@@ -1117,7 +1117,7 @@
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: -4.5d
 		}
 		{
@@ -1128,7 +1128,7 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: -4.5d
 		}
 		{
@@ -1142,7 +1142,7 @@
 				item: "powergrid:generator_clutch"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.0d
 			y: -4.5d
 		}
 		{
@@ -1165,14 +1165,14 @@
 			]
 			id: "517D0B27D87A97A4"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "390CC2D3082E0F4A"
 				item: "powergrid:generator_induction_rotor"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -7.5d
+			x: 15.0d
+			y: -7.0d
 		}
 		{
 			id: "2CC22DF5D63B145B"
@@ -1182,8 +1182,8 @@
 				item: "powergrid:copper_coil"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -7.5d
+			x: 13.5d
+			y: -7.0d
 		}
 		{
 			id: "3B20507621D7C0D5"
@@ -1193,8 +1193,8 @@
 				item: "powergrid:device_connector"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -10.0d
+			x: 14.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["517D0B27D87A97A4"]
@@ -1204,8 +1204,8 @@
 				item: "powergrid:generator_commutator"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -10.0d
+			x: 15.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["614BD008FEA9662F"]
@@ -1217,8 +1217,8 @@
 				title: "ENERGY!"
 				type: "checkmark"
 			}]
-			x: 15.5d
-			y: -10.0d
+			x: 13.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -1230,7 +1230,7 @@
 				item: "kubejs:abrasive_paste"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: -4.5d
 		}
 	]

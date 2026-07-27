@@ -139,7 +139,7 @@
 	[temperature.biomes]
 		# How much a biome's temperature effects are multiplied.
 		#Range: 0.0 ~ 1000.0
-		"Biome Temperature Multiplier" = 18.0
+		"Biome Temperature Multiplier" = 14.0
 		# Whether biomes will have an effect on a player's temperature.
 		"Biomes affect Temperature" = true
 		# How much hot biome's dryness will make nights really cold.
@@ -167,11 +167,11 @@
 		# How much of an effect rain has on temperature.
 		# It means that for a value of -2, the body temperature of the player is reduced by 2.
 		#Range: -1000.0 ~ 1000.0
-		"Rain Temperature Modifier" = -2.0
+		"Rain Temperature Modifier" = -1.0
 		# How much of an effect snow has on temperature.
 		# It means that for a value of -6, the body temperature of the player is reduced by 6.
 		#Range: -1000.0 ~ 1000.0
-		"Snow Temperature Modifier" = -6.0
+		"Snow Temperature Modifier" = -4.0
 
 	# Freeze effect increases while inside snow powder.
 	[temperature.freeze]
@@ -186,7 +186,7 @@
 		# How much Time has effect on Temperature.
 		# Maximum effect at noon (positive) and midnight (negative), following a sinusoidal
 		#Range: 0.0 ~ Infinity
-		"Time Based Temperature Modifier" = 2.0
+		"Time Based Temperature Modifier" = 1.5
 		# How strongly time in extreme temperature biomes affect player's temperature.
 		# Extreme temperature biomes (like snowy taiga, deserts, ...) will multiply the time based temperature by this value, while temperate biome won't be affected by this value, following a linear.
 		#Range: 1.0 ~ Infinity
@@ -198,7 +198,7 @@
 		"Shade Time Modifier" = -6.0
 		# Defines when the biome temperature added by the season temperature (if seasons mod loaded) will trigger a shade effect.
 		#Range: 0.0 ~ 10000.0
-		"Shade Time Modifier Threshold" = 9.0
+		"Shade Time Modifier Threshold" = 4.0
 
 	# Temperature coat adds temperature effects on armors by using the sewing table.
 	# Adaptive means the coating will maintain the player's temperature temperate.

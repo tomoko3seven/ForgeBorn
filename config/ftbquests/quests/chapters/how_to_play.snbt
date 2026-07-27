@@ -77,6 +77,14 @@
 			x: 0.0d
 			y: -6.0d
 		}
+		{
+			height: 1.0d
+			image: "minecraft-cursor:textures/cursors/default.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.0d
+			y: 0.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -266,6 +274,21 @@
 			title: "Bugs and Problems"
 			x: 6.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["6C05FB0557D90AA3"]
+			description: ["There is config file and variuos thing that can change your cursor. Consider that if you dislike the current one."]
+			hide_dependency_lines: true
+			id: "6AD093183A16384A"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "78CE4488A60DB41E"
+				title: "Custom Cursor"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 0.0d
 		}
 	]
 	title: "Introduction"

@@ -39,6 +39,6 @@ LootJS.modifiers((event) => {
 LootJS.modifiers((event) => {
     event
         .addBlockLootModifier('minecraft:grass')
+        .randomChance(0.1)
         .addLoot('kubejs:plant_fiber')
-        .randomChance(0.2);
 });

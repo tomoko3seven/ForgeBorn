@@ -1608,18 +1608,27 @@ ServerEvents.recipes((event) => {
     );
     //Sand Paper
     event.remove({ id: 'create:crafting/materials/sand_paper' });
+    event.remove({ id: 'create:crafting/materials/red_sand_paper' });
+    event.recipes.create.mixing('kubejs:abrasive_paste', ['2x gtceu:flint_dust', 'gtceu:clay_dust', Fluid.of('minecraft:water')])
+    event.shaped(
+        'kubejs:paste_treated_paper',
+        [
+            ' A ',
+            ' P ',
+            ' A ',
+        ],
+        {
+            P: 'kubejs:abrasive_paste',
+            A: 'minecraft:paper'
+        }
+    );
     event.recipes.gtceu
-        .assembler('create:sand_paper')
-        .itemInputs(
-            'create:brass_casing',
-            'create:cogwheel',
-            'create:electron_tube'
-        )
+        .alloy_smelter('create:sand_paper')
+        .itemInputs('kubejs:paste_treated_paper', '#forge:dusts/coal')
         .itemOutputs('create:sand_paper')
-        .circuit(5)
         .duration(50)
         .EUt(8);
-});
+        });
 const GTCEuAPI = Java.loadClass('com.gregtechceu.gtceu.api.GTCEuAPI');
 
 const TagPrefix = Java.loadClass(
